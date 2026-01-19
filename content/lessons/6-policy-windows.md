@@ -3,6 +3,8 @@ number: 6
 slug: "policy-windows"
 title: "Windows Open, Then Slam Shut: Success Cases Were Policy-Window Ready"
 shortTitle: "Timing and Readiness"
+icon: "ClockIcon"
+topics: ["Timing", "Political Opportunity"]
 relatedCaseStudies: ["fcc-spectrum", "dice-modeling", "emissions-trading", "moving-to-opportunity", "needle-exchange"]
 ---
 

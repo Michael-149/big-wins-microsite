@@ -3,6 +3,8 @@ number: 2
 slug: "archetypes"
 title: "Two Key Archetypes of Success: 'PI as Idea-Entrepreneur' vs 'Field Accumulation'"
 shortTitle: "Two Pathways to Impact"
+icon: "UserGroupIcon"
+topics: ["Researcher Roles", "Impact Pathways"]
 relatedCaseStudies: ["growth-mindset", "dice-modeling", "amc-vaccines", "needle-exchange", "emissions-trading", "behavioral-nudges"]
 ---
 

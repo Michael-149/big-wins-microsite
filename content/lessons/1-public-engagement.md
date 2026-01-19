@@ -3,6 +3,8 @@ number: 1
 slug: "public-engagement"
 title: "Social Science Has Benefited Society Without 'Partnership-Based Research' – But Not Without Extensive Public Engagement"
 shortTitle: "Public Engagement Matters"
+icon: "UsersIcon"
+topics: ["Stakeholder Engagement", "Research Practice"]
 relatedCaseStudies: ["dice-modeling", "emissions-trading", "amc-vaccines", "moving-to-opportunity", "needle-exchange", "behavioral-nudges", "growth-mindset"]
 ---
 

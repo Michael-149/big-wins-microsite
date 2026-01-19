@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { LessonFrontmatter } from '@/lib/types';
+import LessonIcon from '@/components/icons/LessonIcon';
 
 interface LessonCardProps {
   lesson: {
@@ -9,7 +10,7 @@ interface LessonCardProps {
 }
 
 export default function LessonCard({ lesson }: LessonCardProps) {
-  const { number, shortTitle } = lesson.frontmatter;
+  const { number, shortTitle, icon } = lesson.frontmatter;
 
   // Create engaging descriptions for each lesson
   const descriptions: Record<number, string> = {
@@ -26,12 +27,23 @@ export default function LessonCard({ lesson }: LessonCardProps) {
   return (
     <Link
       href={`/lessons/${lesson.slug}`}
-      className="block bg-white border border-gray-200 rounded-lg p-6 transition-all duration-200 hover:shadow-xl hover:border-sil-primary group"
+      className="block bg-white border border-gray-200 rounded-lg p-6 transition-all duration-300 hover:shadow-xl hover:border-sil-primary hover:-translate-y-1 group"
     >
       <article className="flex flex-col h-full">
-        {/* Lesson Number */}
-        <div className="inline-flex items-center justify-center w-10 h-10 bg-sil-primary text-white rounded font-bold text-lg mb-4 flex-shrink-0 group-hover:bg-sil-teal-2 transition-colors duration-200">
-          {number}
+        {/* Icon + Number Badge */}
+        <div className="flex items-center gap-3 mb-4">
+          {/* Icon Container */}
+          <div className="flex items-center justify-center w-12 h-12 bg-sil-primary/10 rounded-lg group-hover:bg-sil-primary/20 transition-colors duration-300">
+            <LessonIcon
+              iconName={icon}
+              className="w-6 h-6 text-sil-primary group-hover:text-sil-teal-2 transition-colors duration-300"
+            />
+          </div>
+
+          {/* Number Badge */}
+          <div className="flex items-center justify-center w-8 h-8 bg-sil-primary text-white rounded-full font-bold text-sm group-hover:bg-sil-teal-2 transition-all duration-300 group-hover:scale-110">
+            {number}
+          </div>
         </div>
 
         {/* Short Title */}

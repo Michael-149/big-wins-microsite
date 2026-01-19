@@ -3,6 +3,8 @@ number: 8
 slug: "different-roles"
 title: "Different Roles of Research at Different Stages"
 shortTitle: "Research Roles Evolve"
+icon: "PuzzlePieceIcon"
+topics: ["Research Roles", "Impact Strategies"]
 relatedCaseStudies: ["fcc-spectrum", "moving-to-opportunity", "growth-mindset", "emissions-trading", "dice-modeling", "needle-exchange"]
 ---
 

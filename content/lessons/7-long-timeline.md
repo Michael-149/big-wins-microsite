@@ -3,6 +3,8 @@ number: 7
 slug: "long-timeline"
 title: "Pace of Large-Scale Change Can Be Long"
 shortTitle: "Patient Capital Required"
+icon: "CalendarDaysIcon"
+topics: ["Sustained Engagement", "Field Building"]
 relatedCaseStudies: ["needle-exchange", "behavioral-nudges", "emissions-trading", "moving-to-opportunity", "dice-modeling", "fcc-spectrum"]
 ---
 

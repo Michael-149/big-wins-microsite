@@ -3,6 +3,8 @@ number: 5
 slug: "legitimacy-narrative"
 title: "Legitimacy and Narrative Matter"
 shortTitle: "How You Frame It Matters"
+icon: "ChatBubbleLeftRightIcon"
+topics: ["Strategic Framing", "Political Economy"]
 relatedCaseStudies: ["behavioral-nudges", "emissions-trading", "needle-exchange", "fcc-spectrum", "dice-modeling", "moving-to-opportunity"]
 ---
 

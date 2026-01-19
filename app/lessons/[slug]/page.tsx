@@ -1,5 +1,8 @@
 import { getLesson, getAllLessons, getCaseStudiesForLesson } from '@/lib/content';
 import LessonSidebar from '@/components/lesson/LessonSidebar';
+import LessonHero from '@/components/lesson/LessonHero';
+import LessonTabs from '@/components/lesson/LessonTabs';
+import LessonAccordion from '@/components/lesson/LessonAccordion';
 import RelatedCaseStudies from '@/components/lesson/RelatedCaseStudies';
 import ReadingProgressBar from '@/components/ui/ReadingProgressBar';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
@@ -10,6 +13,37 @@ interface PageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+// Parse H2 sections from HTML content
+function parseSections(htmlContent: string) {
+  const h2Regex = /<h2[^>]*>(.*?)<\/h2>/gi;
+  const matches = [...htmlContent.matchAll(h2Regex)];
+
+  if (matches.length === 0) {
+    return [{
+      id: 'overview',
+      title: 'Overview',
+      content: htmlContent,
+    }];
+  }
+
+  const sections: Array<{ id: string; title: string; content: string }> = [];
+
+  for (let i = 0; i < matches.length; i++) {
+    const match = matches[i];
+    const title = match[1].replace(/<[^>]*>/g, '');
+    const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+    const startIndex = match.index! + match[0].length;
+    const endIndex = i < matches.length - 1 ? matches[i + 1].index! : htmlContent.length;
+
+    const content = htmlContent.slice(startIndex, endIndex).trim();
+
+    sections.push({ id, title, content });
+  }
+
+  return sections;
 }
 
 // Generate static params for all lessons
@@ -48,14 +82,40 @@ export default async function LessonPage({ params }: PageProps) {
 
   const relatedCaseStudies = await getCaseStudiesForLesson(slug);
 
+  // Parse sections from content
+  const sections = parseSections(lesson.content);
+
   // Calculate previous and next lessons
   const currentIndex = allLessons.findIndex(l => l.slug === slug);
   const prevLesson = currentIndex > 0 ? allLessons[currentIndex - 1] : null;
   const nextLesson = currentIndex < allLessons.length - 1 ? allLessons[currentIndex + 1] : null;
 
+  // Engaging descriptions for each lesson
+  const descriptions: Record<number, string> = {
+    1: "Stakeholder engagement matters more than formal research partnerships for achieving real-world impact.",
+    2: "Different archetypes of researcher-champions drive impact in distinct ways—from idea entrepreneurs to field builders.",
+    3: "Implementation details are the intervention itself—small design choices determine success or failure at scale.",
+    4: "Translators between academic research and policy implementation are essential catalysts for evidence-based change.",
+    5: "Strategic framing that cuts across ideological divides enables adoption at scale in polarized environments.",
+    6: "Seizing political and institutional moments of opportunity accelerates impact when research is ready.",
+    7: "Decades-long sustained engagement—not quick wins—characterizes transformative research trajectories.",
+    8: "Researchers play multiple roles beyond publishing: advocate, advisor, implementer, and knowledge broker.",
+  };
+
   return (
     <>
       <ReadingProgressBar />
+
+      {/* Hero Section */}
+      <LessonHero
+        number={lesson.frontmatter.number}
+        title={lesson.frontmatter.title}
+        icon={lesson.frontmatter.icon}
+        topics={lesson.frontmatter.topics}
+        description={descriptions[lesson.frontmatter.number]}
+        relatedCaseStudiesCount={relatedCaseStudies.length}
+      />
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex gap-12">
           {/* Sidebar Navigation */}
@@ -72,32 +132,9 @@ export default async function LessonPage({ params }: PageProps) {
             ]}
           />
 
-          {/* Lesson Number Badge */}
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-sil-teal-1 text-white rounded-full font-bold text-2xl mb-6">
-            {lesson.frontmatter.number}
-          </div>
-
-          {/* Lesson Title */}
-          <h1 className="text-4xl md:text-5xl font-bold text-black mb-6 leading-tight">
-            {lesson.frontmatter.title}
-          </h1>
-
-          {/* Lesson Content */}
-          <div
-            className="prose prose-lg max-w-none
-              prose-headings:text-black prose-headings:font-bold
-              prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
-              prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
-              prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-6
-              prose-strong:text-black prose-strong:font-semibold
-              prose-a:text-sil-teal-2 prose-a:no-underline hover:prose-a:underline
-              prose-blockquote:border-l-4 prose-blockquote:border-sil-teal-3
-              prose-blockquote:bg-sil-teal-1/10 prose-blockquote:py-4 prose-blockquote:px-6
-              prose-blockquote:not-italic prose-blockquote:text-gray-700
-              prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6
-              prose-li:text-gray-700 prose-li:mb-2"
-            dangerouslySetInnerHTML={{ __html: lesson.content }}
-          />
+          {/* Section Navigation: Tabs (desktop) and Accordion (mobile) */}
+          <LessonTabs sections={sections} />
+          <LessonAccordion sections={sections} />
 
           {/* Key Takeaway Box */}
           <div className="mt-12 p-6 bg-sil-teal-3/10 border-2 border-sil-teal-3 rounded-lg">

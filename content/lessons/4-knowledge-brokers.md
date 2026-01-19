@@ -3,6 +3,8 @@ number: 4
 slug: "knowledge-brokers"
 title: "'Knowledge Brokers' and Credible Messengers Are Essential to Turning Science into Decisions"
 shortTitle: "Knowledge Brokers Matter"
+icon: "ArrowsRightLeftIcon"
+topics: ["Translation", "Policy Practice"]
 relatedCaseStudies: ["amc-vaccines", "emissions-trading", "growth-mindset", "behavioral-nudges", "fcc-spectrum", "moving-to-opportunity", "needle-exchange"]
 ---
 

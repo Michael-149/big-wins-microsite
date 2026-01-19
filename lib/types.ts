@@ -11,7 +11,8 @@ export interface LessonFrontmatter {
   slug: string;
   title: string;
   shortTitle: string;
-  icon?: string;
+  icon: string; // Required: Heroicons icon name
+  topics?: string[]; // Optional: Topic tags for categorization
   relatedCaseStudies: string[]; // Array of case study slugs
 }
 

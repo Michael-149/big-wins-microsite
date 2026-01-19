@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import LessonIcon from '@/components/icons/LessonIcon';
 
 interface LessonSidebarProps {
   lessons: Array<{
@@ -6,6 +7,7 @@ interface LessonSidebarProps {
     frontmatter: {
       number: number;
       shortTitle: string;
+      icon: string;
     };
   }>;
   currentSlug: string;
@@ -25,13 +27,19 @@ export default function LessonSidebar({ lessons, currentSlug }: LessonSidebarPro
               <li key={lesson.slug}>
                 <Link
                   href={`/lessons/${lesson.slug}`}
-                  className={`block px-4 py-2 rounded-lg transition-colors ${
+                  className={`flex items-center gap-2 px-3 py-2 rounded-lg transition-colors ${
                     isActive
-                      ? 'bg-sil-teal-1 text-white font-semibold'
+                      ? 'bg-sil-primary text-white font-semibold'
                       : 'text-gray-700 hover:bg-gray-100 hover:text-sil-teal-2'
                   }`}
                 >
-                  <span className="text-sm font-bold mr-2">{lesson.frontmatter.number}.</span>
+                  <LessonIcon
+                    iconName={lesson.frontmatter.icon}
+                    className={`w-4 h-4 flex-shrink-0 ${
+                      isActive ? 'text-white' : 'text-sil-primary'
+                    }`}
+                  />
+                  <span className="text-sm font-bold">{lesson.frontmatter.number}.</span>
                   <span className="text-sm">{lesson.frontmatter.shortTitle}</span>
                 </Link>
               </li>

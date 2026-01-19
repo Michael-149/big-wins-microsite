@@ -3,6 +3,8 @@ number: 3
 slug: "design-details"
 title: "'Design Details' Aren't Details: They Are the Intervention"
 shortTitle: "Design Details Matter"
+icon: "Cog6ToothIcon"
+topics: ["Policy Design", "Implementation"]
 relatedCaseStudies: ["moving-to-opportunity", "fcc-spectrum", "amc-vaccines", "behavioral-nudges", "emissions-trading"]
 ---
 
