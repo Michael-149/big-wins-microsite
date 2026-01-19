@@ -1,6 +1,7 @@
 ---
 title: "DICE Model: Climate-Economy Policy Modeling"
 slug: "dice-modeling"
+icon: "HeartIcon"
 domain: "Climate Economics / Environmental Policy"
 domainColor: "sil-teal-3"
 keyResearchers: ["William D. Nordhaus", "Lint Barrage"]

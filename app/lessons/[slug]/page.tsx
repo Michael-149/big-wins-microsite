@@ -92,7 +92,7 @@ export default async function LessonPage({ params }: PageProps) {
 
   // Engaging descriptions for each lesson
   const descriptions: Record<number, string> = {
-    1: "Stakeholder engagement matters more than formal research partnerships for achieving real-world impact.",
+    1: "From partnerships to advocacy to community-driven innovation—engagement takes many forms, all essential for translating research into lasting change.",
     2: "Different archetypes of researcher-champions drive impact in distinct ways—from idea entrepreneurs to field builders.",
     3: "Implementation details are the intervention itself—small design choices determine success or failure at scale.",
     4: "Translators between academic research and policy implementation are essential catalysts for evidence-based change.",
@@ -113,7 +113,6 @@ export default async function LessonPage({ params }: PageProps) {
         icon={lesson.frontmatter.icon}
         topics={lesson.frontmatter.topics}
         description={descriptions[lesson.frontmatter.number]}
-        relatedCaseStudiesCount={relatedCaseStudies.length}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

@@ -1,6 +1,7 @@
 ---
 title: "Advance Market Commitment for Pneumococcal Vaccines"
 slug: "amc-vaccines"
+icon: "BanknotesIcon"
 domain: "Development Economics / Global Health"
 domainColor: "sil-red-1"
 keyResearchers: ["Michael Kremer", "Jonathan Levin", "Christopher Snyder"]

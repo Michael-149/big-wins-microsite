@@ -1,6 +1,7 @@
 ---
 title: "FCC Spectrum Licensing Reforms"
 slug: "fcc-spectrum"
+icon: "ChartBarIcon"
 domain: "Market Design / Telecommunications"
 domainColor: "sil-teal-3"
 keyResearchers: ["Paul Milgrom", "Robert Wilson", "Ronald Coase"]

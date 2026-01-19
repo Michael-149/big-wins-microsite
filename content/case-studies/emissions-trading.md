@@ -1,6 +1,7 @@
 ---
 title: "Emissions Trading Schemes"
 slug: "emissions-trading"
+icon: "GlobeAltIcon"
 domain: "Environmental Economics / Climate Policy"
 domainColor: "sil-teal-2"
 keyResearchers: ["Ronald Coase", "Robert Stavins", "Thomas Tietenberg"]

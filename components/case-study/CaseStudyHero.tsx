@@ -1,7 +1,9 @@
 import AnimatedMetric from '@/components/ui/AnimatedMetric';
+import CaseStudyIcon from '@/components/icons/CaseStudyIcon';
 
 interface CaseStudyHeroProps {
   title: string;
+  icon: string;
   domain: string;
   heroMetric: string;
   timespan: string;
@@ -10,17 +12,37 @@ interface CaseStudyHeroProps {
 
 export default function CaseStudyHero({
   title,
+  icon,
   domain,
   heroMetric,
   timespan,
   keyResearchers,
 }: CaseStudyHeroProps) {
   return (
-    <section className="bg-sil-primary text-white py-16 md:py-20 border-b border-sil-teal-2">
-      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-        {/* Domain Tag */}
-        <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded mb-6">
-          <span className="text-white font-semibold text-sm">{domain}</span>
+    <section className="relative bg-gradient-to-br from-sil-red-1 via-sil-red-2 to-cardinal text-white py-16 md:py-24 overflow-hidden">
+      {/* Subtle geometric background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
+      </div>
+
+      <div className="relative max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
+        {/* Icon Badge - Visually distinct from lessons */}
+        <div className="flex items-center gap-6 mb-8">
+          <div className="relative">
+            <div className="absolute inset-0 bg-white/10 rounded-xl blur-xl" />
+            <div className="relative flex items-center justify-center w-16 h-16 md:w-20 md:h-20 bg-white/20 backdrop-blur-md rounded-xl border border-white/30 shadow-2xl">
+              <CaseStudyIcon
+                iconName={icon}
+                className="w-8 h-8 md:w-10 md:h-10 text-white drop-shadow-lg"
+              />
+            </div>
+          </div>
+
+          {/* Domain Tag */}
+          <div className="inline-block bg-white/15 backdrop-blur-sm px-4 py-2 rounded-full border border-white/25">
+            <span className="text-white/90 font-medium text-xs md:text-sm tracking-wide">{domain}</span>
+          </div>
         </div>
 
         {/* Title */}

@@ -1,5 +1,6 @@
 import { getCaseStudy, getAllCaseStudies, getLessonsForCaseStudy } from '@/lib/content';
 import CaseStudyHero from '@/components/case-study/CaseStudyHero';
+import CaseStudySidebar from '@/components/case-study/CaseStudySidebar';
 import CaseStudyTabs from '@/components/case-study/CaseStudyTabs';
 import CaseStudyAccordion from '@/components/case-study/CaseStudyAccordion';
 import Timeline from '@/components/case-study/Timeline';
@@ -99,6 +100,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
       {/* Hero Section */}
       <CaseStudyHero
         title={caseStudy.frontmatter.title}
+        icon={caseStudy.frontmatter.icon}
         domain={caseStudy.frontmatter.domain}
         heroMetric={caseStudy.frontmatter.heroMetric}
         timespan={caseStudy.frontmatter.timespan}
@@ -107,15 +109,20 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
       {/* Main Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="max-w-4xl mx-auto">
-          {/* Breadcrumbs */}
-          <Breadcrumbs
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Case Studies', href: '/case-studies' },
-              { label: caseStudy.frontmatter.title },
-            ]}
-          />
+        <div className="flex gap-12">
+          {/* Sidebar Navigation */}
+          <CaseStudySidebar caseStudies={allCaseStudies} currentSlug={slug} />
+
+          {/* Main Content */}
+          <article className="flex-1 max-w-4xl">
+            {/* Breadcrumbs */}
+            <Breadcrumbs
+              items={[
+                { label: 'Home', href: '/' },
+                { label: 'Case Studies', href: '/case-studies' },
+                { label: caseStudy.frontmatter.title },
+              ]}
+            />
 
           {/* Tabs for Desktop */}
           <CaseStudyTabs sections={sections} />
@@ -243,6 +250,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 : undefined
             }
           />
+          </article>
         </div>
       </div>
     </>

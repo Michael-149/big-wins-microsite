@@ -6,7 +6,6 @@ interface LessonHeroProps {
   icon: string;
   topics?: string[];
   description: string;
-  relatedCaseStudiesCount: number;
 }
 
 export default function LessonHero({
@@ -15,7 +14,6 @@ export default function LessonHero({
   icon,
   topics = [],
   description,
-  relatedCaseStudiesCount,
 }: LessonHeroProps) {
   return (
     <section className="relative bg-gradient-to-br from-sil-primary via-sil-teal-2 to-sil-teal-3 text-white py-16 md:py-24 overflow-hidden">
@@ -70,47 +68,9 @@ export default function LessonHero({
         </h1>
 
         {/* Description - Compelling sub-headline */}
-        <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl leading-relaxed font-light">
+        <p className="text-lg md:text-xl text-white/90 max-w-3xl leading-relaxed font-light">
           {description}
         </p>
-
-        {/* Metadata Footer - Subtle info bar */}
-        <div className="flex flex-wrap items-center gap-6 pt-6 border-t border-white/20">
-          <div className="flex items-center gap-2">
-            <svg
-              className="w-5 h-5 text-white/70"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
-            <span className="text-white/70 text-sm">
-              {relatedCaseStudiesCount} {relatedCaseStudiesCount === 1 ? 'case study' : 'case studies'}
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <svg
-              className="w-5 h-5 text-white/70"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-              />
-            </svg>
-            <span className="text-white/70 text-sm">5-7 min read</span>
-          </div>
-        </div>
       </div>
     </section>
   );

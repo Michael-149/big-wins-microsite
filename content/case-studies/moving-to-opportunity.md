@@ -1,6 +1,7 @@
 ---
 title: "Moving to Opportunity"
 slug: "moving-to-opportunity"
+icon: "HomeIcon"
 domain: "Housing Policy / Economic Mobility"
 domainColor: "sil-teal-1"
 keyResearchers: ["Raj Chetty", "Nathaniel Hendren", "Lawrence Katz"]

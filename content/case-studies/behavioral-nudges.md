@@ -1,6 +1,7 @@
 ---
 title: "Behavioral Nudges"
 slug: "behavioral-nudges"
+icon: "LightBulbIcon"
 domain: "Behavioral Economics / Public Policy"
 domainColor: "sil-teal-3"
 keyResearchers: ["Richard Thaler", "Cass Sunstein", "Daniel Kahneman"]

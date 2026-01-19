@@ -25,6 +25,7 @@ export interface Lesson {
 export interface CaseStudyFrontmatter {
   title: string;
   slug: string;
+  icon: string; // Required: Heroicons icon name (solid icons for case studies)
   domain: string;
   domainColor?: string;
   keyResearchers: string[];

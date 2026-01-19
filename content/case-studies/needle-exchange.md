@@ -1,6 +1,7 @@
 ---
 title: "Syringe Services Programs (Needle Exchange)"
 slug: "needle-exchange"
+icon: "BeakerIcon"
 domain: "Public Health / Harm Reduction"
 domainColor: "sil-teal-2"
 keyResearchers: ["Don Des Jarlais", "Robert Heimer", "David Vlahov"]

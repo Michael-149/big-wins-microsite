@@ -1,6 +1,7 @@
 ---
 title: "Growth Mindset in Education"
 slug: "growth-mindset"
+icon: "AcademicCapIcon"
 domain: "Educational Psychology / Social-Emotional Learning"
 domainColor: "sil-teal-1"
 keyResearchers: ["Carol S. Dweck", "David S. Yeager", "Gregory Walton"]
