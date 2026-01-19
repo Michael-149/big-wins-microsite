@@ -10,10 +10,7 @@ interface TimelineProps {
 
 export default function Timeline({ events }: TimelineProps) {
   return (
-    <div className="my-12">
-      <h3 className="text-2xl font-bold text-black mb-8">Timeline</h3>
-
-      <div className="relative">
+    <div className="relative">
         {/* Timeline Line */}
         <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-sil-teal-3/30 md:-ml-px" />
 
@@ -52,6 +49,5 @@ export default function Timeline({ events }: TimelineProps) {
           ))}
         </div>
       </div>
-    </div>
   );
 }

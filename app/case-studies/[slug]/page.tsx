@@ -2,9 +2,13 @@ import { getCaseStudy, getAllCaseStudies, getLessonsForCaseStudy } from '@/lib/c
 import CaseStudyHero from '@/components/case-study/CaseStudyHero';
 import CaseStudyTabs from '@/components/case-study/CaseStudyTabs';
 import CaseStudyAccordion from '@/components/case-study/CaseStudyAccordion';
+import Timeline from '@/components/case-study/Timeline';
 import ReadingProgressBar from '@/components/ui/ReadingProgressBar';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import PrevNextNav from '@/components/ui/PrevNextNav';
+import MetricGrid from '@/components/visualizations/MetricGrid';
+import BeforeAfterBar from '@/components/visualizations/BeforeAfterBar';
+import ROIComparison from '@/components/visualizations/ROIComparison';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 
@@ -118,6 +122,66 @@ export default async function CaseStudyPage({ params }: PageProps) {
 
           {/* Accordion for Mobile */}
           <CaseStudyAccordion sections={sections} />
+
+          {/* Moving to Opportunity Specific Visualizations */}
+          {slug === 'moving-to-opportunity' && (
+            <>
+              {/* Metric Grid */}
+              <MetricGrid
+                metrics={[
+                  {
+                    value: '31%',
+                    label: 'Higher Adult Earnings',
+                    description: 'For children who moved before age 13',
+                    highlight: true,
+                  },
+                  {
+                    value: '$302,000',
+                    label: 'Lifetime Earnings Increase',
+                    description: 'Per child moved to opportunity neighborhoods',
+                  },
+                  {
+                    value: '9',
+                    label: 'HUD Demonstration Sites',
+                    description: 'Cities implementing MTO-inspired programs',
+                  },
+                  {
+                    value: '4,600',
+                    label: 'Families in Original Study',
+                    description: 'Across five cities (1994-2011)',
+                  },
+                ]}
+                title="Impact at a Glance"
+              />
+
+              {/* Before/After Bar - CMTO Success Rate */}
+              <BeforeAfterBar
+                before={15}
+                after={53}
+                label="Program Success Rate Improvement"
+                description="CMTO demonstration vs. original MTO"
+              />
+
+              {/* ROI Comparison */}
+              <ROIComparison
+                investment="$2,600"
+                return="$302,000"
+                multiplier="116"
+                investmentLabel="Per-Family Intervention Cost"
+                returnLabel="Lifetime Earnings Increase"
+                description="Every dollar invested in CMTO housing assistance yields $116 in lifetime earnings for children moved to opportunity neighborhoods."
+              />
+
+              {/* Timeline */}
+              {caseStudy.frontmatter.timeline && (
+                <div className="my-16">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Path to Impact</h2>
+                  <div className="h-1 w-20 bg-gradient-to-r from-sil-primary to-sil-teal-2 rounded-full mb-8" />
+                  <Timeline events={caseStudy.frontmatter.timeline} />
+                </div>
+              )}
+            </>
+          )}
 
           {/* Lessons Exemplified */}
           {relatedLessons.length > 0 && (
