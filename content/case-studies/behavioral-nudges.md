@@ -7,6 +7,25 @@ keyResearchers: ["Richard Thaler", "Cass Sunstein", "Daniel Kahneman"]
 timespan: "1970s-present"
 heroMetric: "30+ national nudge units worldwide"
 lessonsExemplified: ["archetypes", "legitimacy-narrative", "knowledge-brokers"]
+timeline:
+  - year: "1950s-1970s"
+    title: "Bounded Rationality Foundation"
+    description: "Herbert Simon introduces bounded rationality; Kahneman & Tversky document heuristics and biases"
+  - year: "2001"
+    title: "401(k) Breakthrough Study"
+    description: "Madrian & Shea show automatic enrollment increases participation from 46% to 90%"
+  - year: "2008"
+    title: "Nudge Book Published"
+    description: "Thaler & Sunstein synthesize behavioral insights and introduce 'libertarian paternalism' framework"
+  - year: "2010"
+    title: "UK Behavioural Insights Team"
+    description: "First national 'nudge unit' established by UK government to apply behavioral science to policy"
+  - year: "2015"
+    title: "U.S. Federal Adoption"
+    description: "Obama administration creates Social and Behavioral Sciences Team, issues executive order on behavioral insights"
+  - year: "2022"
+    title: "Federal Law Codification"
+    description: "SECURE 2.0 Act mandates automatic 401(k) enrollment nationwide, embedding nudge principles in law"
 ---
 
 # Behavioral Nudges

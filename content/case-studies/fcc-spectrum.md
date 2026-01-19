@@ -7,6 +7,25 @@ keyResearchers: ["Paul Milgrom", "Robert Wilson", "Ronald Coase"]
 timespan: "1959-present"
 heroMetric: "$233B in auction revenues"
 lessonsExemplified: ["knowledge-brokers", "policy-windows", "design-details", "long-timeline"]
+timeline:
+  - year: "1959"
+    title: "Coase's Radical Proposal"
+    description: "Ronald Coase proposes treating spectrum as property that can be bought and sold—initially dismissed as impractical"
+  - year: "1984-1993"
+    title: "Internal Advocacy"
+    description: "FCC economists Kwerel & Williams build case for auctions; Congress authorizes experimental approach"
+  - year: "1994"
+    title: "First Spectrum Auctions"
+    description: "FCC conducts inaugural auctions using Milgrom-Wilson simultaneous ascending design, proving concept viable"
+  - year: "2008"
+    title: "700 MHz Auction Success"
+    description: "$19.6B raised in auction enabling 4G LTE deployment nationwide"
+  - year: "2020"
+    title: "6 GHz Band Opening"
+    description: "FCC opens 1200 MHz for unlicensed Wi-Fi use, expanding capacity 5x and enabling Wi-Fi 6E/7"
+  - year: "2023"
+    title: "$233B+ Total Impact"
+    description: "Over 100 auctions conducted, with 6 GHz unlicensed opening generating $870B economic value"
 ---
 
 # FCC Spectrum Licensing Reforms

@@ -7,6 +7,25 @@ keyResearchers: ["Ronald Coase", "Robert Stavins", "Thomas Tietenberg"]
 timespan: "1960-present"
 heroMetric: "95% reduction in acid rain pollution"
 lessonsExemplified: ["archetypes", "knowledge-brokers", "design-details", "legitimacy-narrative"]
+timeline:
+  - year: "1960-1970s"
+    title: "Theoretical Foundation"
+    description: "Coase, Dales, and Montgomery develop property rights and market-based pollution control theory"
+  - year: "1990"
+    title: "Clean Air Act Amendments"
+    description: "Congress authorizes EPA to implement first major cap-and-trade program for acid rain"
+  - year: "1995"
+    title: "Acid Rain Program Launch"
+    description: "EPA begins SO₂ and NOx trading program for power plants nationwide"
+  - year: "2005"
+    title: "EU ETS Established"
+    description: "European Union launches world's largest carbon market covering 11,000+ installations"
+  - year: "2008-2016"
+    title: "Proven Impact"
+    description: "95% SO₂ reduction in U.S.; EU ETS achieves 3.8% emissions reduction representing half of Kyoto commitments"
+  - year: "2024"
+    title: "Global Adoption"
+    description: "68 carbon pricing instruments operate worldwide, pricing 30%+ of global GHG emissions"
 ---
 
 # Emissions Trading Schemes

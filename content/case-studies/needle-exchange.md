@@ -7,6 +7,25 @@ keyResearchers: ["Don Des Jarlais", "Robert Heimer", "David Vlahov"]
 timespan: "1985-present"
 heroMetric: "97% HIV prevention effectiveness"
 lessonsExemplified: ["archetypes", "public-engagement", "policy-windows", "legitimacy-narrative"]
+timeline:
+  - year: "1985-1988"
+    title: "Underground Programs Begin"
+    description: "Community activists start first illegal needle exchanges in response to AIDS crisis hitting injection drug users"
+  - year: "1989-1993"
+    title: "Early Research Evidence"
+    description: "Tacoma and New Haven studies demonstrate HIV risk reduction; first government programs authorized"
+  - year: "1995"
+    title: "CDC Report"
+    description: "Federal review finds SSPs reduce HIV transmission without increasing drug use"
+  - year: "1998-2011"
+    title: "Funding Battles"
+    description: "Despite evidence, federal funding ban remains in place due to political opposition"
+  - year: "2015"
+    title: "Federal Funding Allowed"
+    description: "HIV outbreak in Indiana prompts federal policy shift; funding restrictions partially lifted"
+  - year: "2024"
+    title: "500 Programs Nationwide"
+    description: "40-60% HIV reduction proven; ~500 SSPs operate with 76% hepatitis C reduction in high-coverage areas"
 ---
 
 # Syringe Services Programs (Needle Exchange)

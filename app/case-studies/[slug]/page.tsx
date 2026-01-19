@@ -172,15 +172,16 @@ export default async function CaseStudyPage({ params }: PageProps) {
                 description="Every dollar invested in CMTO housing assistance yields $116 in lifetime earnings for children moved to opportunity neighborhoods."
               />
 
-              {/* Timeline */}
-              {caseStudy.frontmatter.timeline && (
-                <div className="my-16">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-2">Path to Impact</h2>
-                  <div className="h-1 w-20 bg-gradient-to-r from-sil-primary to-sil-teal-2 rounded-full mb-8" />
-                  <Timeline events={caseStudy.frontmatter.timeline} />
-                </div>
-              )}
             </>
+          )}
+
+          {/* Timeline - Show for ALL case studies that have timeline data */}
+          {caseStudy.frontmatter.timeline && (
+            <div className="my-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-2">Path to Impact</h2>
+              <div className="h-1 w-20 bg-gradient-to-r from-sil-primary to-sil-teal-2 rounded-full mb-8" />
+              <Timeline events={caseStudy.frontmatter.timeline} />
+            </div>
           )}
 
           {/* Lessons Exemplified */}

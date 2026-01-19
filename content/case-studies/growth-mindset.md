@@ -7,6 +7,25 @@ keyResearchers: ["Carol S. Dweck", "David S. Yeager", "Gregory Walton"]
 timespan: "1970s-present"
 heroMetric: "Millions of students reached"
 lessonsExemplified: ["archetypes", "knowledge-brokers", "legitimacy-narrative"]
+timeline:
+  - year: "1970s-1980s"
+    title: "Early Research Foundations"
+    description: "Dweck's work on learned helplessness establishes connections between beliefs about ability and academic performance"
+  - year: "2006"
+    title: "Mindset Book Published"
+    description: "Dweck's bestselling book popularizes growth mindset for mainstream audiences, catalyzing educational adoption"
+  - year: "2010-2015"
+    title: "Large-Scale Trials"
+    description: "Yeager and colleagues conduct major studies showing mindset interventions improve achievement for thousands of students"
+  - year: "2015-2018"
+    title: "EdTech Integration"
+    description: "Khan Academy, Coursera, and school districts integrate growth mindset into platforms reaching millions"
+  - year: "2018"
+    title: "Global Adoption"
+    description: "PISA survey shows 65% of students globally demonstrate growth mindset beliefs"
+  - year: "2024"
+    title: "Widespread Implementation"
+    description: "Growth mindset embedded in teacher training, curricula, and accountability systems across dozens of countries"
 ---
 
 # Growth Mindset in Education

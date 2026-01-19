@@ -7,6 +7,25 @@ keyResearchers: ["Michael Kremer", "Jonathan Levin", "Christopher Snyder"]
 timespan: "2000-present"
 heroMetric: "700,000 lives saved"
 lessonsExemplified: ["archetypes", "knowledge-brokers", "design-details", "public-engagement"]
+timeline:
+  - year: "2000-2005"
+    title: "Academic Theory Development"
+    description: "Kremer and Glennerster publish AMC concept; Center for Global Development begins design work"
+  - year: "2006-2007"
+    title: "Technical Working Groups"
+    description: "Economists and health experts refine operational details for pneumococcal AMC implementation"
+  - year: "2009"
+    title: "AMC Launch"
+    description: "$1.5B commitment from 6 donors (Italy, UK, Canada, Russia, Norway, Gates Foundation) for pneumococcal vaccines"
+  - year: "2010-2015"
+    title: "Manufacturer Engagement"
+    description: "Pfizer, GSK, and Serum Institute of India develop and scale production for developing countries"
+  - year: "2016-2022"
+    title: "Mass Immunization"
+    description: "150+ million children across 70+ countries receive AMC-supported vaccines"
+  - year: "2023"
+    title: "700,000 Lives Saved"
+    description: "Conservative estimates show dramatic impact, with 20+ countries graduating to self-financing"
 ---
 
 # Advance Market Commitment for Pneumococcal Vaccines

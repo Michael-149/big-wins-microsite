@@ -7,6 +7,25 @@ keyResearchers: ["William D. Nordhaus", "Lint Barrage"]
 timespan: "1992-present"
 heroMetric: "$190 per ton Social Cost of Carbon"
 lessonsExemplified: ["archetypes", "policy-windows", "long-timeline", "different-roles"]
+timeline:
+  - year: "1992"
+    title: "DICE Model Introduced"
+    description: "Nordhaus publishes first integrated climate-economy model combining climate science with economic analysis"
+  - year: "2009"
+    title: "Federal SCC Adoption"
+    description: "U.S. Interagency Working Group establishes Social Cost of Carbon using DICE and other IAMs"
+  - year: "2013"
+    title: "SCC in Regulations"
+    description: "Federal agencies begin systematically using SCC ($40/ton) in cost-benefit analyses for climate rules"
+  - year: "2018"
+    title: "Nobel Prize Recognition"
+    description: "Nordhaus awarded Nobel Prize in Economics for integrating climate change into long-run macroeconomic analysis"
+  - year: "2021"
+    title: "Biden Administration Update"
+    description: "Executive order re-establishes working group, updates SCC to $51/ton reflecting latest climate science"
+  - year: "2024"
+    title: "DICE-2023 Release"
+    description: "Barrage & Nordhaus update model with improved climate sensitivity, projecting $190/ton SCC by 2050"
 ---
 
 # DICE Model: Climate-Economy Policy Modeling
