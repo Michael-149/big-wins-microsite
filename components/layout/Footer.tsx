@@ -16,7 +16,7 @@ export default function Footer() {
               loading="lazy"
             />
             <p className="text-sm text-gray-400 max-w-md leading-relaxed">
-              Powered by Stanford Impact Labs, advancing social science research that transforms policy and improves lives.
+              Powered by Stanford Impact Labs, partnering to put social science to use for society.
             </p>
           </div>
 
@@ -36,6 +36,22 @@ export default function Footer() {
                 className="text-gray-300 hover:text-sil-primary transition-colors text-sm font-medium"
               >
                 About This Project
+              </a>
+              <a
+                href="https://forms.gle/gLgeuRk9qD1dm5XV9"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-sil-primary transition-colors text-sm font-medium"
+              >
+                Report Bugs or Errors
+              </a>
+              <a
+                href="https://michael-149.github.io/big-wins/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-sil-primary transition-colors text-sm font-medium"
+              >
+                Play the Game 🎮
               </a>
             </nav>
           </div>
