@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="flex flex-col gap-6">
             <Image
-              src="/images/SIL-Logo-RGB-Colour-soft.png"
+              src="/big-wins-microsite/images/SIL-Logo-RGB-Colour-soft.png"
               alt="Stanford Impact Labs"
               width={200}
               height={60}
