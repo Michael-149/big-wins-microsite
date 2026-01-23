@@ -47,7 +47,7 @@ export default function Footer() {
                 Report Bugs or Errors
               </a>
               <a
-                href="https://michael-149.github.io/big-wins/"
+                href="https://michael-149.github.io/big-wins-game/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-sil-primary transition-colors text-sm font-medium"
