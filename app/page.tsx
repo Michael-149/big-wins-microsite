@@ -26,7 +26,7 @@ export default function Home() {
               </Link>
               <span className="text-gray-400">or</span>
               <a
-                href="https://michael-149.github.io/big-wins/"
+                href="https://michael-149.github.io/big-wins-game/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block text-sil-primary hover:text-sil-teal-2 font-semibold transition-colors"
