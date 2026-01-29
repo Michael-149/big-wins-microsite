@@ -60,6 +60,12 @@ export default function Header() {
             >
               About
             </Link>
+            <Link
+              href="/get-involved"
+              className="text-gray-700 hover:text-sil-primary transition-colors font-medium text-sm md:text-base"
+            >
+              Get Involved
+            </Link>
           </div>
         </div>
       </nav>
