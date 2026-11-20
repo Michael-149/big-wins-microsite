@@ -1,6 +1,6 @@
 import { PageShell } from '@/components/chrome';
 import { ArrowLink } from '@/components/ui';
-import { href } from '@/lib/site';
+import { absoluteUrl, href } from '@/lib/site';
 
 // Short alias: /considered forwards to /cases-considered, the page's address.
 // A static host cannot send a redirect, so the page refreshes to it and shows
@@ -13,7 +13,7 @@ export default function ConsideredAlias() {
   return (
     <PageShell current="method" page="/considered">
       <meta httpEquiv="refresh" content={`0; url=${to}`} />
-      <link rel="canonical" href={to} />
+      <link rel="canonical" href={absoluteUrl('/cases-considered')} />
       <div className="container">
         <div className="not-found">
           <h1 className="t-h1">Cases we considered</h1>

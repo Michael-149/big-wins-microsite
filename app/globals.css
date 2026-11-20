@@ -626,28 +626,29 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 @media (max-width: 767px) { .site-footer__sym { width: 60px; height: 44px; top: 2px; right: 2px; } .footer-nav ul { grid-template-columns: 1fr 1fr; column-gap: 16px; } .global-footer img { width: 150px; } }
 
 /* ---------- Home (DESIGN-DECISION 6.1) ---------- */
-.home-hero { padding-top: var(--space-l); padding-bottom: var(--space-l); grid-template-rows: auto 1fr; }
+.home-hero { padding-top: 40px; padding-bottom: var(--space-l); grid-template-rows: auto 1fr; }
 .home-hero__top { grid-column: 1 / 8; grid-row: 1; }
 .home-hero__stakes { grid-column: 8 / -1; grid-row: 1 / span 2; }
 .home-hero__rest { grid-column: 1 / 8; grid-row: 2; }
 .home-hero h1 { margin-top: 16px; max-width: 14ch; }
-.home-hero__subtitle { margin-top: 20px; max-width: 34ch; }
-.home-hero__lead { margin-top: 20px; max-width: 62ch; }
-.home-hero__actions { margin-top: 28px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; }
-.home-hero__limits { margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--line-strong); max-width: 62ch; }
+.home-hero__subtitle { margin-top: 16px; max-width: 34ch; }
+.home-hero__lead { margin-top: 16px; max-width: 62ch; }
+.home-hero__actions { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; }
+.home-hero__limits { margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--line-strong); max-width: 62ch; }
 .stats--home .stats__heading { margin-bottom: 12px; }
-/* Home stakes at 1024px and up: figure beside its name (DS row), figure column
-   sized to the widest figure through subgrid, so four rows fit the first screen. */
-@media (min-width: 1024px) {
+/* Home stakes at 1200px and up: figure beside its name (DS row), figure column
+   sized to the widest figure through subgrid, figures at the DS compact step
+   (44/44), so four rows fit the first screen. Narrower screens stack them. */
+@media (min-width: 1200px) {
   .stats--home ul { display: grid; grid-template-columns: max-content minmax(0, 1fr); column-gap: 24px; }
   .stats--home li { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; }
   .stats--home .stat { grid-column: 1 / -1; grid-template-columns: subgrid; align-items: start; column-gap: 24px; }
-  .stats--home .stat__name { top: 0; padding-top: 4px; }
+  .stats--home .stat__name { top: 0; padding-top: 2px; }
   .stats--home .stat__detail { margin-top: 2px; }
 }
 .stats--home .stat { padding: 12px 0; row-gap: 2px; }
 .stats--home .stat__case { margin-top: 4px; }
-.stats--home .stat__value { font-size: 56px; line-height: 56px; }
+.stats--home .stat__value { font-size: 44px; line-height: 44px; }
 .stats--home .stat__value--long { font-size: 44px; line-height: 44px; }
 .section-head { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--gutter); align-items: end; padding-bottom: 24px; border-bottom: 1px solid var(--line-strong); margin-bottom: var(--space-l); }
 .section-head__title { grid-column: 1 / 7; }
