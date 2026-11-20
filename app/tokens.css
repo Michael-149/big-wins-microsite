@@ -1,0 +1,87 @@
+/* Stanford Impact Labs 2026 09 design system tokens (light theme only).
+   Copied from the design kit's tokens.css. The Strawford @font-face rules are
+   removed (web license unconfirmed); --font-sans uses DM Sans, the system's
+   sanctioned alternative, loaded by next/font (see app/fonts.ts). */
+
+:root {
+  color-scheme: light;
+  --teal-1: #4ae3c9;
+  --teal-2: #28b89d;
+  --teal-3: #265957;
+  --red-1: #ff5a41;
+  --red-2: #df3035;
+  --cardinal: #8c1515;
+  --black: #000000;
+  --white: #ffffff;
+  --grey-100: #f5f5f5;
+  --grey-slide: #e7e6e6;
+  --grey-700: #3d3d3d;
+  --stanford-black: #2e2d29;
+  --surface: #ffffff;
+  --surface-subtle: var(--grey-100);
+  --ink: #000000;
+  --ink-muted: var(--grey-700);
+  --line: var(--grey-100);
+  --line-strong: #000000;
+  --accent: var(--teal-1);
+  --accent-hover: var(--teal-2);
+  --on-accent: #000000;
+  --link-underline: var(--teal-1);
+  --link-hover: var(--teal-3);
+  --emphasis: var(--cardinal);
+  --emphasis-hover: var(--red-2);
+  --focus: var(--teal-3);
+  --focus-on-band: #000000;
+  --band: var(--teal-1);
+  --on-band: #000000;
+  --band-deep: var(--teal-3);
+  --on-band-deep: #ffffff;
+  --chart-1: var(--teal-1);
+  --chart-2: var(--teal-2);
+  --chart-3: var(--teal-3);
+  --chart-4: var(--red-1);
+  --chart-5: var(--red-2);
+  --chart-6: var(--cardinal);
+  --space-xs: 8px;
+  --space-s: 16px;
+  --space-m: 24px;
+  --space-l: 48px;
+  --space-xl: 64px;
+  --space-2xl: 96px;
+  --gutter: 40px;
+  --radius-none: 0;
+  --radius-md: 6px;
+  --radius-full: 100%;
+  --shadow-image: 0 6px 8px -4px rgba(0,0,0,.25);
+  --shadow-cover: 0 7px 14px -3px #37474a;
+  --shadow-menu: 0 4px 9px -4px rgba(0,0,0,.25);
+  --container-max: 1280px;
+  --container-narrow: 840px;
+  --grid-columns: 12;
+  --slide-width: 960px;
+  --slide-height: 600px;
+  --logo-clearance: 1em;
+  --font-sans: var(--font-dm-sans, "DM Sans", "Helvetica Neue", Arial, sans-serif);
+  --font-workspace: var(--font-dm-sans, "DM Sans", "Helvetica Neue", Arial, sans-serif);
+}
+@media (max-width: 1023px) { :root { --gutter: 20px; --space-s: 16px; --space-m: 16px; --space-l: 40px; --space-xl: 48px; --space-2xl: 64px; } }
+@media (max-width: 767px) { :root { --gutter: 16px; --space-s: 8px; --space-l: 24px; --space-xl: 40px; --space-2xl: 56px; } }
+
+/* Lesson identity (DESIGN-DECISION 5.1): eight brand fills, each with its
+   accessible text color. Hue families alternate so no two neighbors match. */
+:root {
+  --l1: var(--teal-1);   --on-l1: #000000; /* 13.1:1 */
+  --l2: var(--cardinal); --on-l2: #ffffff; /*  9.4:1 */
+  --l3: var(--teal-2);   --on-l3: #000000; /*  8.4:1 */
+  --l4: var(--black);    --on-l4: #ffffff; /* 21.0:1 */
+  --l5: var(--teal-3);   --on-l5: #ffffff; /*  7.9:1 */
+  --l6: var(--red-1);    --on-l6: #000000; /*  6.8:1 */
+  --l7: var(--grey-700); --on-l7: #ffffff; /* 10.9:1 */
+  --l8: var(--red-2);    --on-l8: #ffffff; /*  4.55:1, keep text 14px Medium or larger */
+
+  /* Phases of a case (origin, research, translation, scale): bar segments only. */
+  --phase-origin: var(--black);
+  --phase-research: var(--teal-1);
+  --phase-translation: var(--teal-2);
+  --phase-scale: var(--teal-3);
+}

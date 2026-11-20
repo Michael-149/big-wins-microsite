@@ -1,35 +1,76 @@
 ---
-title: "Advance Market Commitment for Pneumococcal Vaccines"
 slug: "amc-vaccines"
-icon: "BanknotesIcon"
-domain: "Development Economics / Global Health"
-domainColor: "sil-red-1"
-keyResearchers: ["Michael Kremer", "Jonathan Levin", "Christopher Snyder"]
-timespan: "2000-present"
-heroMetric: "700,000 lives saved"
-lessonsExemplified: ["archetypes", "knowledge-brokers", "design-details", "public-engagement"]
+title: "Advance Market Commitment for Pneumococcal Vaccines"
+shortTitle: "Vaccine market commitments"
+order: 8
+domain: "Global health"
+disciplines:
+  - "Economics"
+geography: "Low- and middle-income countries"
+years: "2000 to today"
+winStatement: "[draft] The 2009 pneumococcal Advance Market Commitment (AMC) was a $1.5 billion financing innovation designed to accelerate vaccine development and access for developing countries."
+summary: "[draft] The 2009 pneumococcal Advance Market Commitment (AMC) was a $1.5 billion financing innovation designed to accelerate vaccine development and access for developing countries. The problem was stark: vaccine manufacturers had little incentive to develop or adapt vaccines specifically for low-income markets that couldn't afford profitable pricing."
+people:
+  - name: "Michael Kremer"
+    role: "[draft] role to confirm"
+  - name: "Jonathan Levin"
+    role: "[draft] role to confirm"
+  - name: "Christopher Snyder"
+    role: "[draft] role to confirm"
+lessons:
+  - slug: "2-archetypes"
+    note: "[draft]"
+  - slug: "4-knowledge-brokers"
+    note: "[draft]"
+  - slug: "3-design-details"
+    note: "[draft]"
+  - slug: "1-public-engagement"
+    note: "[draft]"
+stats:
+  - value: "700,000"
+    label: "Lives saved"
+    detail: "[draft] from the January 2026 draft; not yet checked"
+    source: "jan2026-draft"
+  - value: "150+ million"
+    label: "Children immunized across 70+ countries via AMC-supported vaccines"
+    detail: "[draft] from the January 2026 draft; not yet checked"
+    source: "jan2026-draft"
 timeline:
-  - year: "2000-2005"
-    title: "Academic Theory Development"
-    description: "Kremer and Glennerster publish AMC concept; Center for Global Development begins design work"
-  - year: "2006-2007"
-    title: "Technical Working Groups"
-    description: "Economists and health experts refine operational details for pneumococcal AMC implementation"
-  - year: "2009"
-    title: "AMC Launch"
-    description: "$1.5B commitment from 6 donors (Italy, UK, Canada, Russia, Norway, Gates Foundation) for pneumococcal vaccines"
-  - year: "2010-2015"
-    title: "Manufacturer Engagement"
-    description: "Pfizer, GSK, and Serum Institute of India develop and scale production for developing countries"
-  - year: "2016-2022"
-    title: "Mass Immunization"
-    description: "150+ million children across 70+ countries receive AMC-supported vaccines"
-  - year: "2023"
-    title: "700,000 Lives Saved"
-    description: "Conservative estimates show dramatic impact, with 20+ countries graduating to self-financing"
+  - year: 2000
+    endYear: 2005
+    phase: "origin"
+    text: "Academic Theory Development: Kremer and Glennerster publish AMC concept; Center for Global Development begins design work"
+    source: "jan2026-draft"
+  - year: 2006
+    endYear: 2007
+    phase: "research"
+    text: "Technical Working Groups: Economists and health experts refine operational details for pneumococcal AMC implementation"
+    source: "jan2026-draft"
+  - year: 2009
+    phase: "research"
+    text: "AMC Launch: $1.5B commitment from 6 donors (Italy, UK, Canada, Russia, Norway, Gates Foundation) for pneumococcal vaccines"
+    source: "jan2026-draft"
+  - year: 2010
+    endYear: 2015
+    phase: "translation"
+    text: "Manufacturer Engagement: Pfizer, GSK, and Serum Institute of India develop and scale production for developing countries"
+    source: "jan2026-draft"
+  - year: 2016
+    endYear: 2022
+    phase: "scale"
+    text: "Mass Immunization: 150+ million children across 70+ countries receive AMC-supported vaccines"
+    source: "jan2026-draft"
+  - year: 2023
+    phase: "scale"
+    text: "700,000 Lives Saved: Conservative estimates show dramatic impact, with 20+ countries graduating to self-financing"
+    source: "jan2026-draft"
+goDeeper: []
+lastReviewed: "2026-01-01"
+sources:
+  - id: "jan2026-draft"
+    citation: "[draft] Stanford Impact Labs. (2026). January 2026 draft of this page. Figures and links not yet checked."
+    type: "web"
 ---
-
-# Advance Market Commitment for Pneumococcal Vaccines
 
 ## Overview
 
@@ -37,14 +78,14 @@ The 2009 pneumococcal Advance Market Commitment (AMC) was a $1.5 billion financi
 
 The pneumococcal AMC has been remarkably successful. By guaranteeing a market, it catalyzed manufacturers to develop vaccines suitable for developing country conditions and scale up production. The initiative has enabled immunization of over 150 million children across 70+ countries against pneumococcal disease, which causes pneumonia, meningitis, and sepsis. Conservative estimates suggest the vaccine has saved approximately 700,000 lives. The AMC demonstrated that market-shaping mechanisms could address global health market failures where traditional aid or pure market approaches failed.
 
-The path from academic theory to implementation required bridging institutions—the Center for Global Development convened working groups translating economic concepts into operational design, and Gavi (the Vaccine Alliance) managed implementation. This case exemplifies how breakthrough ideas require sustained knowledge brokering and meticulous attention to design details for real-world success.
+The path from academic theory to implementation required bridging institutions, the Center for Global Development convened working groups translating economic concepts into operational design, and Gavi (the Vaccine Alliance) managed implementation. This case exemplifies how breakthrough ideas require sustained knowledge brokering and meticulous attention to design details for real-world success.
 
-> "The AMC demonstrated that market-shaping mechanisms can address global health failures where traditional approaches fall short, saving an estimated 700,000 lives." — Summary of pneumococcal AMC impact
+> "The AMC demonstrated that market-shaping mechanisms can address global health failures where traditional approaches fall short, saving an estimated 700,000 lives.", Summary of pneumococcal AMC impact
 
 ## Impact Metrics
 
 - **150+ million children immunized** across 70+ countries via AMC-supported vaccines ([Gavi](https://www.gavi.org/investing-gavi/innovative-financing/pneumococcal-amc))
-- **~700,000 lives saved** (conservative estimate) from pneumococcal disease prevention ([Kremer, Levin, Snyder, 2020](https://pubs-aeaweb-org.stanford.idm.oclc.org/doi/pdfplus/10.1257/pandp.20201017))
+- **~700,000 lives saved** (conservative estimate) from pneumococcal disease prevention ([Kremer, Levin, Snyder, 2020](https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.20201017))
 - **$1.5 billion donor commitment** from six countries (Italy, UK, Canada, Russia, Norway, Gates Foundation) successfully mobilized manufacturer participation
 - **70+ developing countries** receiving AMC-supported vaccines, including 20+ graduating to self-financing as incomes rose
 - **3 major manufacturers** (Pfizer, GSK, Serum Institute of India) engaged in production and distribution
@@ -59,11 +100,11 @@ The path from academic theory to implementation required bridging institutions�
 - Gavi (the Vaccine Alliance) - operational implementation partner
 
 **Major Publications & Milestones:**
-- [Kremer, 2000](https://www-nber-org.stanford.idm.oclc.org/system/files/chapters/c10776/c10776.pdf): "Creating Markets for New Vaccines: Part I: Rationale" - argued AMCs could stimulate vaccine development by guaranteeing future markets
+- [Kremer, 2000](https://www.nber.org/system/files/chapters/c10776/c10776.pdf): "Creating Markets for New Vaccines: Part I: Rationale" - argued AMCs could stimulate vaccine development by guaranteeing future markets
 - [Kremer, 2000](https://www.journals.uchicago.edu/doi/pdf/10.1086/ipe.1.25056142): "Part II: Design Issues" - detailed implementation challenges, providing blueprint for practical application
 - [CGD Working Group, 2003-2005](https://www.cgdev.org/page/advance-market-commitment): Convened academics, policymakers, Gavi; refined theory into actionable policy over 1.5 years
 - [Gavi Technical Design, 2005-2009](https://www.gavi.org/investing-gavi/innovative-financing/pneumococcal-amc): Engaged manufacturers, donor countries, low-income countries in final operational design
-- [Kremer, Levin, Snyder, 2020](https://pubs-aeaweb-org.stanford.idm.oclc.org/doi/pdfplus/10.1257/pandp.20201017): "Advance Market Commitments: Insights from Theory and Experience" - retrospective evaluation of design choices and outcomes
+- [Kremer, Levin, Snyder, 2020](https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.20201017): "Advance Market Commitments: Insights from Theory and Experience" - retrospective evaluation of design choices and outcomes
 
 The progression shows deliberate movement from academic theory → policy translation via working groups → operational design with stakeholder engagement → implementation and evaluation.
 
@@ -75,7 +116,7 @@ The theory was elegant but raised immediate practical questions: How to set pric
 
 **Proof of Concept via Working Groups (2003-2005):** This is where knowledge brokering became critical. The Center for Global Development convened a working group bringing together economists, vaccine experts, policymakers, Gavi representatives, and public health specialists. Meeting over 18 months, the group tackled granular design questions: Should one manufacturer be guaranteed the entire market or should it be split? How to balance incentivizing R&D versus ensuring affordable tail prices after initial purchases? How to verify vaccines meet quality standards?
 
-The working group produced a final report translating Kremer's economic theory into an operational blueprint. Crucially, they chose to focus initially on pneumococcal vaccines—a disease with huge burden in developing countries, existing vaccine technology that needed adaptation and scaling rather than de novo development, and multiple potential manufacturers to maintain competition.
+The working group produced a final report translating Kremer's economic theory into an operational blueprint. Crucially, they chose to focus initially on pneumococcal vaccines, a disease with huge burden in developing countries, existing vaccine technology that needed adaptation and scaling rather than de novo development, and multiple potential manufacturers to maintain competition.
 
 **Critical Inflection Points:**
 
@@ -91,7 +132,7 @@ Six donors (Italy, UK, Canada, Russia, Norway, Gates Foundation) committed the $
 
 The AMC launched successfully, with rapid uptake. Within years, over 70 developing countries were receiving pneumococcal vaccines through the mechanism. Manufacturers scaled production, and prices dropped as competition intensified and tail pricing kicked in. Importantly, as countries' incomes rose, they graduated from AMC support to self-financing, demonstrating sustainability.
 
-The success prompted discussions of AMCs for other diseases (malaria, tuberculosis), though replication proved challenging—pneumococcal vaccines were a particularly suitable initial target because technology existed and needed adaptation/scaling, not fundamental new R&D. Nevertheless, the AMC proved that market-shaping financing could work at scale for global health.
+The success prompted discussions of AMCs for other diseases (malaria, tuberculosis), though replication proved challenging, pneumococcal vaccines were a particularly suitable initial target because technology existed and needed adaptation/scaling, not fundamental new R&D. Nevertheless, the AMC proved that market-shaping financing could work at scale for global health.
 
 ## Current Status
 
@@ -99,20 +140,20 @@ The pneumococcal AMC continues operating as of 2024, with ongoing immunizations 
 
 Current debates focus on: whether AMCs work better for adapting existing technologies versus developing entirely new ones; how to structure tail pricing to ensure long-term affordability; and whether similar pull mechanisms could address other development challenges beyond vaccines (e.g., agricultural technologies, clean energy).
 
-The pneumococcal AMC demonstrated proof of concept but also revealed limitations—market-shaping mechanisms require careful design for each context, substantial donor coordination, and diseases/products with suitable market characteristics. It's a tool, not a panacea, but an important addition to the global health financing toolkit.
+The pneumococcal AMC demonstrated proof of concept but also revealed limitations, market-shaping mechanisms require careful design for each context, substantial donor coordination, and diseases/products with suitable market characteristics. It's a tool, not a panacea, but an important addition to the global health financing toolkit.
 
 ## Lessons Exemplified
 
-**Knowledge Brokers Essential:** The AMC succeeded because of bridging institutions—CGD working groups translating theory into policy, Gavi managing implementation. Kremer's breakthrough idea would have remained academic without organizations that could convene stakeholders, navigate political economy, and design operational mechanisms. The lesson for impact-oriented research: producing great ideas is necessary but insufficient; translation requires institutional infrastructure for knowledge brokering.
+**Knowledge Brokers Essential:** The AMC succeeded because of bridging institutions, CGD working groups translating theory into policy, Gavi managing implementation. Kremer's breakthrough idea would have remained academic without organizations that could convene stakeholders, navigate political economy, and design operational mechanisms. The lesson for impact-oriented research: producing great ideas is necessary but insufficient; translation requires institutional infrastructure for knowledge brokering.
 
-**Design Details Matter:** The difference between AMC success and failure hinged on technical details—price levels, competition mechanisms, co-payment structures, tail pricing, quality verification. Generic advice to "create market incentives" wouldn't have worked. Success required economists deeply engaging with vaccine manufacturer economics, country payment capacity, donor political constraints, and program sustainability requirements. This granular design work may be less intellectually glamorous than conceptual breakthroughs but proved equally essential.
+**Design Details Matter:** The difference between AMC success and failure hinged on technical details, price levels, competition mechanisms, co-payment structures, tail pricing, quality verification. Generic advice to "create market incentives" wouldn't have worked. Success required economists deeply engaging with vaccine manufacturer economics, country payment capacity, donor political constraints, and program sustainability requirements. This granular design work may be less intellectually glamorous than conceptual breakthroughs but proved equally essential.
 
-**Partnership vs. Stakeholder Engagement:** The AMC didn't follow traditional "partnership-based research" models but required extensive stakeholder engagement—manufacturers informed pricing discussions, recipient countries shaped eligibility criteria, donors influenced scale. This demonstrates that impactful research can emerge from responsive engagement with stakeholders without formal co-design partnerships. The key is bidirectional learning and adaptation rather than researchers dictating solutions.
+**Partnership vs. Stakeholder Engagement:** The AMC didn't follow traditional "partnership-based research" models but required extensive stakeholder engagement, manufacturers informed pricing discussions, recipient countries shaped eligibility criteria, donors influenced scale. This demonstrates that impactful research can emerge from responsive engagement with stakeholders without formal co-design partnerships. The key is bidirectional learning and adaptation rather than researchers dictating solutions.
 
 **Theory Informs But Doesn't Determine Practice:** Kremer provided the conceptual framework, but operational success required adapting theory to real-world constraints. The working group process discovered that willingness-to-pay, political economy of donor commitments, manufacturer capacity, and country sustainability considerations all required design modifications from pure theoretical models. The lesson: rigorous theory provides direction, but implementation requires pragmatic compromise and learning.
 
-**Sustained Researcher Engagement:** Kremer, Levin, and collaborators remained engaged from initial papers (2000) through working groups (2003-2005), implementation support (2005-2009), and retrospective evaluation (2020)—two decades of involvement. This long-term commitment enabled continuous refinement based on implementation feedback, contrasting with publish-and-move-on academic norms.
+**Sustained Researcher Engagement:** Kremer, Levin, and collaborators remained engaged from initial papers (2000) through working groups (2003-2005), implementation support (2005-2009), and retrospective evaluation (2020), two decades of involvement. This long-term commitment enabled continuous refinement based on implementation feedback, contrasting with publish-and-move-on academic norms.
 
 ---
 
-*Sources: [Gavi AMC](https://www.gavi.org/investing-gavi/innovative-financing/pneumococcal-amc), [Kremer, Levin, Snyder 2020 AEA P&P](https://pubs-aeaweb-org.stanford.idm.oclc.org/doi/pdfplus/10.1257/pandp.20201017), [CGD Working Group](https://www.cgdev.org/page/advance-market-commitment), [Kremer 2000 NBER](https://www-nber-org.stanford.idm.oclc.org/system/files/chapters/c10776/c10776.pdf)*
+*Sources: [Gavi AMC](https://www.gavi.org/investing-gavi/innovative-financing/pneumococcal-amc), [Kremer, Levin, Snyder 2020 AEA P&P](https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.20201017), [CGD Working Group](https://www.cgdev.org/page/advance-market-commitment), [Kremer 2000 NBER](https://www.nber.org/system/files/chapters/c10776/c10776.pdf)*

@@ -1,18 +1,32 @@
 ---
 number: 1
-slug: "public-engagement"
-title: "Public Engagement Drives Impact—and Takes Many Forms"
-shortTitle: "Public Engagement Matters"
-icon: "UsersIcon"
-topics: ["Stakeholder Engagement", "Research Practice"]
-relatedCaseStudies: ["dice-modeling", "emissions-trading", "amc-vaccines", "moving-to-opportunity", "needle-exchange", "behavioral-nudges", "growth-mindset"]
+slug: "1-public-engagement"
+title: "Public Engagement Drives Impact, and Takes Many Forms"
+shortTitle: "Engagement"
+inBrief: "[draft] Every successful case in our study demonstrates sustained, meaningful engagement with the people who will ultimately use or be affected by the research. This engagement takes remarkably different forms across cases, but its presence remains constant."
+cases:
+  - slug: "dice-modeling"
+    how: "[draft]"
+  - slug: "emissions-trading"
+    how: "[draft]"
+  - slug: "amc-vaccines"
+    how: "[draft]"
+  - slug: "moving-to-opportunity"
+    how: "[draft]"
+  - slug: "needle-exchange"
+    how: "[draft]"
+  - slug: "behavioral-nudges"
+    how: "[draft]"
+  - slug: "growth-mindset"
+    how: "[draft]"
+sources: []
 ---
 
 ## Sustained Engagement Is the Common Thread
 
 Every successful case in our study demonstrates sustained, meaningful engagement with the people who will ultimately use or be affected by the research. This engagement takes remarkably different forms across cases, but its presence remains constant.
 
-Public engagement isn't a single activity—it's an ongoing commitment to maintaining connections between research and real-world needs.
+Public engagement isn't a single activity, it's an ongoing commitment to maintaining connections between research and real-world needs.
 
 ## What Public Engagement Looks Like
 
@@ -53,8 +67,8 @@ Evidence of stakeholder demand and sustained dialogue signals research that addr
 - **Navigate political realities:** Understanding the policy landscape enables strategic timing
 - **Sustain momentum:** Long-term relationships support iterative improvement
 
-Importantly, engagement doesn't require formal research partnerships. Some of the most impactful cases maintained academic independence while staying deeply connected to practice. The key is sustained, meaningful dialogue—not organizational structure.
+Importantly, engagement doesn't require formal research partnerships. Some of the most impactful cases maintained academic independence while staying deeply connected to practice. The key is sustained, meaningful dialogue, not organizational structure.
 
 ## Key Takeaway
 
-Public engagement isn't optional for research impact—it's essential. The form it takes varies widely: formal partnerships, advisory roles, community collaboration, policy briefings, or institutional intermediaries. What matters is maintaining genuine, sustained connections to the people and contexts where research will be used. The most impactful research—regardless of methodology or discipline—emerges from this ongoing dialogue between knowledge production and real-world needs.
+Public engagement isn't optional for research impact, it's essential. The form it takes varies widely: formal partnerships, advisory roles, community collaboration, policy briefings, or institutional intermediaries. What matters is maintaining genuine, sustained connections to the people and contexts where research will be used. The most impactful research, regardless of methodology or discipline, emerges from this ongoing dialogue between knowledge production and real-world needs.

@@ -1,16 +1,30 @@
 ---
 number: 4
-slug: "knowledge-brokers"
+slug: "4-knowledge-brokers"
 title: "'Knowledge Brokers' and Credible Messengers Are Essential to Turning Science into Decisions"
-shortTitle: "Knowledge Brokers Matter"
-icon: "ArrowsRightLeftIcon"
-topics: ["Translation", "Policy Practice"]
-relatedCaseStudies: ["amc-vaccines", "emissions-trading", "growth-mindset", "behavioral-nudges", "fcc-spectrum", "moving-to-opportunity", "needle-exchange"]
+shortTitle: "Brokers"
+inBrief: "[draft] Across all eight case studies, a consistent pattern emerges: groundbreaking research findings rarely leap directly from academic journals to policy decisions. They need translators, connectors, and champions, intermediaries who can bridge the gap between evidence and action, packaging complex insights into forms that decision-makers can actually use."
+cases:
+  - slug: "amc-vaccines"
+    how: "[draft]"
+  - slug: "emissions-trading"
+    how: "[draft]"
+  - slug: "growth-mindset"
+    how: "[draft]"
+  - slug: "behavioral-nudges"
+    how: "[draft]"
+  - slug: "fcc-spectrum"
+    how: "[draft]"
+  - slug: "moving-to-opportunity"
+    how: "[draft]"
+  - slug: "needle-exchange"
+    how: "[draft]"
+sources: []
 ---
 
 ## Research Insights Don't Travel on Their Own
 
-Across all eight case studies, a consistent pattern emerges: groundbreaking research findings rarely leap directly from academic journals to policy decisions. They need translators, connectors, and champions—intermediaries who can bridge the gap between evidence and action, packaging complex insights into forms that decision-makers can actually use.
+Across all eight case studies, a consistent pattern emerges: groundbreaking research findings rarely leap directly from academic journals to policy decisions. They need translators, connectors, and champions, intermediaries who can bridge the gap between evidence and action, packaging complex insights into forms that decision-makers can actually use.
 
 The bridge between knowledge production and policy implementation isn't automatic. It requires dedicated infrastructure.
 
@@ -22,31 +36,31 @@ Knowledge brokering takes many institutional forms, each playing distinct roles 
 
 **Examples:** Center for Global Development (AMC), Project 88 (emissions trading), Yale symposium (Stern Review debate)
 
-These organizations create sustained dialogue spaces where researchers, policymakers, and practitioners build shared understanding and trust. They don't just host one-off conferences—they facilitate ongoing engagement that shapes how evidence gets interpreted and applied. The Center for Global Development spent years convening working groups with vaccine manufacturers, donors, and health ministries before the AMC concept became reality.
+These organizations create sustained dialogue spaces where researchers, policymakers, and practitioners build shared understanding and trust. They don't just host one-off conferences, they facilitate ongoing engagement that shapes how evidence gets interpreted and applied. The Center for Global Development spent years convening working groups with vaccine manufacturers, donors, and health ministries before the AMC concept became reality.
 
 ### Scaling Entities
 
 **Examples:** PERTS (growth mindset), Behavioral Insights Team/SBST/ideas42 (nudges), Auctionomics (FCC spectrum)
 
-Organizations specifically designed to operationalize research insights at scale. They handle the messy work of implementation: adapting interventions to different contexts, training practitioners, troubleshooting failures, and iterating on designs. PERTS didn't just publish Dweck's growth mindset research—they built teacher training programs, created classroom materials, and provided ongoing support for thousands of schools.
+Organizations specifically designed to operationalize research insights at scale. They handle the messy work of implementation: adapting interventions to different contexts, training practitioners, troubleshooting failures, and iterating on designs. PERTS didn't just publish Dweck's growth mindset research, they built teacher training programs, created classroom materials, and provided ongoing support for thousands of schools.
 
 ### Government Champions
 
 **Examples:** FCC economists (spectrum auctions), HUD partnerships (Moving to Opportunity), CDC/NIDA (needle exchanges)
 
-Insiders who understand both the research and the policy process. They identify opportunities for evidence-based approaches, navigate institutional constraints, and advocate for change within bureaucracies. FCC economists didn't just read Milgrom and Wilson's papers—they hired them as consultants, adapted auction designs to regulatory requirements, and championed the approach through internal decision-making processes.
+Insiders who understand both the research and the policy process. They identify opportunities for evidence-based approaches, navigate institutional constraints, and advocate for change within bureaucracies. FCC economists didn't just read Milgrom and Wilson's papers, they hired them as consultants, adapted auction designs to regulatory requirements, and championed the approach through internal decision-making processes.
 
 ### Think Tanks & Advocacy Groups
 
 **Examples:** Environmental Defense Fund (emissions trading), Wi-Fi Alliance (unlicensed spectrum), harm reduction advocates (needle exchanges)
 
-Organizations that combine research translation with strategic advocacy, building political coalitions and public support. They frame evidence in ways that resonate with different stakeholders, identify policy windows, and sustain pressure for change. The Environmental Defense Fund didn't just cite academic papers on cap-and-trade—they drafted model legislation, testified before Congress, and built bipartisan support.
+Organizations that combine research translation with strategic advocacy, building political coalitions and public support. They frame evidence in ways that resonate with different stakeholders, identify policy windows, and sustain pressure for change. The Environmental Defense Fund didn't just cite academic papers on cap-and-trade, they drafted model legislation, testified before Congress, and built bipartisan support.
 
 ### Credible Messengers
 
 **Examples:** National Academies, Government Accountability Office, bipartisan coalitions, respected former officials
 
-Trusted institutions that validate research findings and lower the perceived risk of adoption for policymakers. A National Academies report carries weight that individual studies don't. Recommendations from bipartisan commissions provide political cover. These messengers don't create new evidence—they certify existing evidence as reliable and actionable.
+Trusted institutions that validate research findings and lower the perceived risk of adoption for policymakers. A National Academies report carries weight that individual studies don't. Recommendations from bipartisan commissions provide political cover. These messengers don't create new evidence, they certify existing evidence as reliable and actionable.
 
 ## Beyond Summarization: Creating Decision-Ready Artifacts
 
@@ -58,7 +72,7 @@ Knowledge brokers don't just write literature reviews. They transform research i
 - **Decision metrics:** Social Cost of Carbon estimates, cost-benefit analyses with standardized assumptions
 - **Risk assessments:** What could go wrong, how to mitigate, what backup options exist
 
-The Center for Global Development didn't just endorse Advance Market Commitments—they produced legal contract templates that vaccine manufacturers could review with their lawyers. Opportunity Insights didn't just show that neighborhoods matter—they built interactive maps showing which neighborhoods provide upward mobility, making the research immediately actionable for housing authorities.
+The Center for Global Development didn't just endorse Advance Market Commitments, they produced legal contract templates that vaccine manufacturers could review with their lawyers. Opportunity Insights didn't just show that neighborhoods matter, they built interactive maps showing which neighborhoods provide upward mobility, making the research immediately actionable for housing authorities.
 
 ## The Translation Gap Is Real
 
@@ -71,7 +85,7 @@ Translating research for policy requires different skills:
 - Building trust through sustained relationships
 - Knowing when and how to present findings for maximum impact
 
-This translation work is neither trivial nor automatic. It requires significant time, resources, and specialized expertise—resources that academic incentive structures rarely reward.
+This translation work is neither trivial nor automatic. It requires significant time, resources, and specialized expertise, resources that academic incentive structures rarely reward.
 
 ## When Brokers Don't Exist
 
@@ -85,7 +99,7 @@ Most high-impact research benefited from deliberate brokering:
 
 ## Implications for Research Impact
 
-If the goal is real-world influence, identifying or creating knowledge brokering capacity should be part of the research strategy—not an afterthought. This means:
+If the goal is real-world influence, identifying or creating knowledge brokering capacity should be part of the research strategy, not an afterthought. This means:
 
 **For researchers:**
 - Identify existing brokers in your domain and build relationships early
@@ -108,4 +122,4 @@ If the goal is real-world influence, identifying or creating knowledge brokering
 
 ## Key Takeaway
 
-High-impact research almost never travels directly from journals to policy decisions. It requires intermediaries who translate evidence into actionable forms, build trust with decision-makers, and navigate political realities. Knowledge brokering infrastructure—convening organizations, scaling entities, government champions, advocacy groups, and credible messengers—determines whether research insights become working policies. Building or identifying this capacity should be a central component of any research impact strategy, not an afterthought. Sustainable change requires investing in the translation layer.
+High-impact research almost never travels directly from journals to policy decisions. It requires intermediaries who translate evidence into actionable forms, build trust with decision-makers, and navigate political realities. Knowledge brokering infrastructure, convening organizations, scaling entities, government champions, advocacy groups, and credible messengers, determines whether research insights become working policies. Building or identifying this capacity should be a central component of any research impact strategy, not an afterthought. Sustainable change requires investing in the translation layer.

@@ -1,258 +1,157 @@
-import { getCaseStudy, getAllCaseStudies, getLessonsForCaseStudy } from '@/lib/content';
-import CaseStudyHero from '@/components/case-study/CaseStudyHero';
-import CaseStudySidebar from '@/components/case-study/CaseStudySidebar';
-import CaseStudyTabs from '@/components/case-study/CaseStudyTabs';
-import CaseStudyAccordion from '@/components/case-study/CaseStudyAccordion';
-import Timeline from '@/components/case-study/Timeline';
-import ReadingProgressBar from '@/components/ui/ReadingProgressBar';
-import Breadcrumbs from '@/components/ui/Breadcrumbs';
-import PrevNextNav from '@/components/ui/PrevNextNav';
-import MetricGrid from '@/components/visualizations/MetricGrid';
-import BeforeAfterBar from '@/components/visualizations/BeforeAfterBar';
-import ROIComparison from '@/components/visualizations/ROIComparison';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
+import { Breadcrumbs, PageShell } from '@/components/chrome';
+import { ArticleSections, GoDeeperList, PeopleList, SourcesList } from '@/components/content-blocks';
+import { GuideContents, PageRail, type OnThisPageItem } from '@/components/nav';
+import { FeedbackBox, Html, LessonChip, MetaLine, Pager, StatList } from '@/components/ui';
+import { getCase, getCases, getHome, getLessons } from '@/lib/content';
+import { pageMetadata } from '@/lib/metadata';
+import { buildCasePage } from '@/lib/page-models';
+import { formatDate, href, numberWord } from '@/lib/site';
 
-interface PageProps {
-  params: Promise<{
-    slug: string;
-  }>;
+type Params = { params: Promise<{ slug: string }> };
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getCases().map((c) => ({ slug: c.slug }));
 }
 
-// Generate static params for all case studies
-export async function generateStaticParams() {
-  const caseStudies = getAllCaseStudies();
-  return caseStudies.map((caseStudy) => ({
-    slug: caseStudy.slug,
-  }));
-}
-
-// Generate metadata for each case study
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({ params }: Params) {
   const { slug } = await params;
-  const caseStudy = await getCaseStudy(slug);
-
-  if (!caseStudy) {
-    return {
-      title: 'Case Study Not Found',
-    };
-  }
-
-  return {
-    title: `${caseStudy.frontmatter.title} | Big Wins in Social Science`,
-    description: `${caseStudy.frontmatter.heroMetric} - ${caseStudy.frontmatter.domain}`,
-  };
+  const c = getCase(slug);
+  return pageMetadata({ title: c.title, description: c.summary, path: `/case-studies/${c.slug}` });
 }
 
-// Helper function to parse content into sections
-function parseSections(htmlContent: string) {
-  // Split by H2 headings
-  const h2Regex = /<h2[^>]*>(.*?)<\/h2>/gi;
-  const matches = [...htmlContent.matchAll(h2Regex)];
-
-  if (matches.length === 0) {
-    return [{
-      id: 'overview',
-      title: 'Overview',
-      content: htmlContent,
-    }];
-  }
-
-  const sections: Array<{ id: string; title: string; content: string }> = [];
-
-  for (let i = 0; i < matches.length; i++) {
-    const match = matches[i];
-    const title = match[1].replace(/<[^>]*>/g, ''); // Strip any HTML tags
-    const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-
-    const startIndex = match.index! + match[0].length;
-    const endIndex = i < matches.length - 1 ? matches[i + 1].index! : htmlContent.length;
-
-    const content = htmlContent.slice(startIndex, endIndex).trim();
-
-    sections.push({ id, title, content });
-  }
-
-  return sections;
-}
-
-export default async function CaseStudyPage({ params }: PageProps) {
+export default async function CasePage({ params }: Params) {
   const { slug } = await params;
-  const caseStudy = await getCaseStudy(slug);
-
-  if (!caseStudy) {
-    notFound();
-  }
-
-  const relatedLessons = await getLessonsForCaseStudy(slug);
-  const sections = parseSections(caseStudy.content);
-
-  // Calculate previous and next case studies (alphabetically by slug)
-  const allCaseStudies = getAllCaseStudies();
-  const sortedCaseStudies = allCaseStudies.sort((a, b) => a.slug.localeCompare(b.slug));
-  const currentIndex = sortedCaseStudies.findIndex(cs => cs.slug === slug);
-  const prevCaseStudy = currentIndex > 0 ? sortedCaseStudies[currentIndex - 1] : null;
-  const nextCaseStudy = currentIndex < sortedCaseStudies.length - 1 ? sortedCaseStudies[currentIndex + 1] : null;
+  const c = getCase(slug);
+  const m = buildCasePage(c);
+  const cases = getCases();
+  const lessons = getLessons();
+  const path = `/case-studies/${c.slug}`;
+  const where = `Case ${c.order} of ${m.total}`;
+  const caseLessons = m.shows.map((s) => s.lesson);
+  const onThisPage: OnThisPageItem[] = [
+    ...m.sections.map((s) => ({ id: s.id, title: s.title })),
+    ...(c.people.length ? [{ id: 'people', title: 'People' }] : []),
+    ...(c.goDeeper.length ? [{ id: 'go-deeper', title: 'Go deeper' }] : []),
+    ...(m.sources.count || m.sources.unused.length ? [{ id: 'sources', title: 'Sources' }] : []),
+  ];
+  const orientation = { where, title: c.shortTitle };
+  const all = numberWord(cases.length, true);
 
   return (
-    <>
-      <ReadingProgressBar />
-      {/* Hero Section */}
-      <CaseStudyHero
-        title={caseStudy.frontmatter.title}
-        icon={caseStudy.frontmatter.icon}
-        domain={caseStudy.frontmatter.domain}
-        heroMetric={caseStudy.frontmatter.heroMetric}
-        timespan={caseStudy.frontmatter.timespan}
-        keyResearchers={caseStudy.frontmatter.keyResearchers}
-      />
+    <PageShell current="cases" page={path} contributeTeaser={getHome()?.contributeTeaser}>
+      <div className="container">
+        <Breadcrumbs items={[{ label: 'Home', to: '/' }, { label: 'Cases', to: '/case-studies' }, { label: c.title }]} />
+        <GuideContents orientation={orientation} onThisPage={onThisPage} cases={cases} currentCase={c.slug} lessons={lessons} />
 
-      {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex gap-12">
-          {/* Sidebar Navigation */}
-          <CaseStudySidebar caseStudies={allCaseStudies} currentSlug={slug} />
+        <div className="case-hero grid12">
+          <div className="case-hero__top">
+            <MetaLine items={[where, c.domain, c.years]} />
+            <h1 className="t-h1">{c.title}</h1>
+            <Html as="p" className="t-lead case-hero__win" html={m.winHtml} />
+          </div>
 
-          {/* Main Content */}
-          <article className="flex-1 max-w-4xl">
-            {/* Breadcrumbs */}
-            <Breadcrumbs
-              items={[
-                { label: 'Home', href: '/' },
-                { label: 'Case Studies', href: '/case-studies' },
-                { label: caseStudy.frontmatter.title },
-              ]}
+          <div className="case-hero__stats">
+            <StatList
+              variant="stacked"
+              headingId="what-changed"
+              items={m.stats.map((s) => ({ value: s.value, label: s.label, detailHtml: s.detailHtml }))}
             />
+          </div>
 
-          {/* Tabs for Desktop */}
-          <CaseStudyTabs sections={sections} />
-
-          {/* Accordion for Mobile */}
-          <CaseStudyAccordion sections={sections} />
-
-          {/* Moving to Opportunity Specific Visualizations */}
-          {slug === 'moving-to-opportunity' && (
-            <>
-              {/* Metric Grid */}
-              <MetricGrid
-                metrics={[
-                  {
-                    value: '31%',
-                    label: 'Higher Adult Earnings',
-                    description: 'For children who moved before age 13',
-                    highlight: true,
-                  },
-                  {
-                    value: '$302,000',
-                    label: 'Lifetime Earnings Increase',
-                    description: 'Per child moved to opportunity neighborhoods',
-                  },
-                  {
-                    value: '9',
-                    label: 'HUD Demonstration Sites',
-                    description: 'Cities implementing MTO-inspired programs',
-                  },
-                  {
-                    value: '4,600',
-                    label: 'Families in Original Study',
-                    description: 'Across five cities (1994-2011)',
-                  },
-                ]}
-                title="Impact at a Glance"
-              />
-
-              {/* Before/After Bar - CMTO Success Rate */}
-              <BeforeAfterBar
-                before={15}
-                after={53}
-                label="Program Success Rate Improvement"
-                description="CMTO demonstration vs. original MTO"
-              />
-
-              {/* ROI Comparison */}
-              <ROIComparison
-                investment="$2,600"
-                return="$302,000"
-                multiplier="116"
-                investmentLabel="Per-Family Intervention Cost"
-                returnLabel="Lifetime Earnings Increase"
-                description="Every dollar invested in CMTO housing assistance yields $116 in lifetime earnings for children moved to opportunity neighborhoods."
-              />
-
-            </>
-          )}
-
-          {/* Timeline - Show for ALL case studies that have timeline data */}
-          {caseStudy.frontmatter.timeline && (
-            <div className="my-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-2">Path to Impact</h2>
-              <div className="h-1 w-20 bg-gradient-to-r from-sil-primary to-sil-teal-2 rounded-full mb-8" />
-              <Timeline events={caseStudy.frontmatter.timeline} />
-            </div>
-          )}
-
-          {/* Lessons Exemplified */}
-          {relatedLessons.length > 0 && (
-            <section className="mt-16 pt-16 border-t border-gray-200">
-              <h2 className="text-3xl font-bold text-black mb-4">
-                Lessons Exemplified
-              </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                This case study demonstrates these key lessons:
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {relatedLessons.map((lesson) => (
-                  <Link
-                    key={lesson.slug}
-                    href={`/lessons/${lesson.slug}`}
-                    className="block bg-white border-2 border-sil-teal-3 rounded-lg p-6 transition-all hover:shadow-lg hover:-translate-y-1 hover:border-sil-teal-1"
-                  >
-                    <article className="flex items-start gap-4">
-                      {/* Lesson Number */}
-                      <div className="flex-shrink-0 w-10 h-10 bg-sil-teal-1 text-white rounded-full font-bold text-lg flex items-center justify-center">
-                        {lesson.frontmatter.number}
-                      </div>
-
-                      {/* Lesson Info */}
-                      <div>
-                        <h3 className="text-lg font-bold text-black mb-1">
-                          {lesson.frontmatter.shortTitle}
-                        </h3>
-                        <p className="text-sm text-gray-600">
-                          Learn more about this lesson →
-                        </p>
-                      </div>
-                    </article>
-                  </Link>
-                ))}
+          <div className="case-hero__rest">
+            <dl className="facts">
+              <div>
+                <dt className="t-meta">Years</dt>
+                <dd className="t-body">{c.years}</dd>
               </div>
-            </section>
-          )}
+              <div>
+                <dt className="t-meta">Where</dt>
+                <dd className="t-body">{c.geography}</dd>
+              </div>
+              <div>
+                <dt className="t-meta">Disciplines</dt>
+                <dd className="t-body">{c.disciplines.join(', ')}</dd>
+              </div>
+            </dl>
+            <p className="t-meta case-hero__reviewed">
+              Last reviewed <time dateTime={c.lastReviewed}>{formatDate(c.lastReviewed)}</time>
+              <span className="meta-sep" aria-hidden="true">/</span>
+              <span className="visually-hidden">, </span>
+              <a className="link" href="#sources">
+                {m.sources.count} {m.sources.count === 1 ? 'source' : 'sources'}
+              </a>
+            </p>
 
-          {/* Previous/Next Navigation */}
-          <PrevNextNav
-            type="case-study"
-            prev={
-              prevCaseStudy
-                ? {
-                    href: `/case-studies/${prevCaseStudy.slug}`,
-                    title: prevCaseStudy.frontmatter.title,
-                  }
-                : undefined
-            }
-            next={
-              nextCaseStudy
-                ? {
-                    href: `/case-studies/${nextCaseStudy.slug}`,
-                    title: nextCaseStudy.frontmatter.title,
-                  }
-                : undefined
-            }
+            {m.shows.length > 0 && (
+              <section className="shows" aria-labelledby="shows-title">
+                <h2 id="shows-title" className="t-label shows__heading">
+                  Lessons this case shows
+                </h2>
+                <ul>
+                  {m.shows.map(({ lesson, noteHtml }) => (
+                    <li key={lesson.slug}>
+                      <LessonChip lesson={lesson} size={56} />
+                      <div>
+                        <h3 className="t-h5">
+                          <a className="title-link" href={href(`/lessons/${lesson.slug}`)}>
+                            <span className="visually-hidden">Lesson {lesson.number}: </span>
+                            {lesson.title}
+                          </a>
+                        </h3>
+                        {noteHtml && <Html as="p" className="t-body" html={noteHtml} />}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+              </section>
+            )}
+          </div>
+        </div>
+
+        <div className="layout grid12">
+          <PageRail
+            orientation={orientation}
+            onThisPage={onThisPage}
+            cases={cases}
+            currentCase={c.slug}
+            casesTitle={`${numberWord(cases.length)} cases`}
+            lessons={caseLessons}
+            lessonsTitle="Lessons in this case"
+            page={path}
           />
+          <article className="article" aria-label={c.title}>
+            {m.introHtml && <div className="prose" dangerouslySetInnerHTML={{ __html: m.introHtml }} />}
+            <ArticleSections sections={m.sections} caseStudy={c} lessons={caseLessons} />
+            <PeopleList people={c.people} />
+            <GoDeeperList items={c.goDeeper} />
+            <FeedbackBox
+              title="Know this case well?"
+              text="Tell us what we got wrong or left out. Corrections with a source help us fix things quickly."
+              links={[
+                { label: 'Flag an error on this page', type: 'correction' },
+                { label: 'Suggest a related case', type: 'suggest-case' },
+              ]}
+              page={path}
+            />
+            <SourcesList model={m.sources} lastReviewed={c.lastReviewed} />
+            <Pager
+              label="Previous and next case"
+              prev={
+                m.prev
+                  ? { dir: 'Previous case', title: m.prev.shortTitle, to: `/case-studies/${m.prev.slug}` }
+                  : { dir: 'All cases', title: `All ${all} cases`, to: '/case-studies' }
+              }
+              next={
+                m.next
+                  ? { dir: 'Next case', title: m.next.shortTitle, to: `/case-studies/${m.next.slug}` }
+                  : { dir: 'Next', title: `The ${numberWord(lessons.length, true)} lessons`, to: '/lessons' }
+              }
+            />
           </article>
         </div>
       </div>
-    </>
+    </PageShell>
   );
 }

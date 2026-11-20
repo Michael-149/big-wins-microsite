@@ -1,0 +1,471 @@
+# Cases we considered
+#
+# The long list behind "When Social Science Scales". Built from the 67-row
+# candidate sheet (37 rows from SIL's own examples list, 2021 to 2025, and 30
+# from the Public Solutions R&D network's proof-points analysis), plus two
+# candidates named in the same source documents but missing from the sheet
+# (syringe services programs and Chile's college application platform).
+# Duplicates were merged, names and researcher credits corrected, and items
+# outside social science or without a documented research contribution
+# removed. Every kept, merged and dropped row, with reasons and the checks
+# behind each researcher credit, is logged in the private ledger
+# redesign/factcheck/considered.md.
+#
+# These are candidates, not vetted claims. Only the eight selected cases have
+# been fact-checked in full. Summaries carry no impact figures on purpose.
+#
+# Fields: name, domain, geography, pathway, researchers (confirmed names only;
+# an empty list means no individual researcher was confirmed), summary (one
+# neutral sentence), selected (true only for the eight featured cases), slug
+# (selected cases only; matches the case page URL), source.
+#
+# Order: the eight featured cases in their display order, then the rest by name.
+
+- name: "Moving to Opportunity and Creating Moves to Opportunity"
+  domain: "Housing and urban policy"
+  geography: "United States"
+  pathway: "Housing experiments informing voucher redesign"
+  researchers: ["Raj Chetty", "Nathaniel Hendren", "Lawrence Katz", "Stefanie DeLuca", "James Rosenbaum"]
+  summary: "Studies of families who moved to lower-poverty neighborhoods with housing assistance, from Chicago's Gautreaux program to HUD's Moving to Opportunity experiment, found long-run gains for children who moved when young and informed voucher redesigns such as Creating Moves to Opportunity in Seattle and HUD's Small Area Fair Market Rents."
+  selected: true
+  slug: "moving-to-opportunity"
+  source: "Public Solutions R&D proof points"
+
+- name: "Syringe services programs (needle exchange)"
+  domain: "Health"
+  geography: "United States"
+  pathway: "Community-initiated practice tested by researchers"
+  researchers: ["Don Des Jarlais", "Edward Kaplan", "Robert Heimer", "David Vlahov"]
+  summary: "Syringe exchanges started by activists and public health workers during the AIDS epidemic were evaluated in New Haven, New York, Baltimore and other cities, and evidence that they reduced HIV transmission without increasing drug use helped them gain legal authorization and public funding in many states and cities."
+  selected: true
+  slug: "needle-exchange"
+  source: "Public Solutions R&D proof points"
+
+- name: "Behavioral nudges in savings and public services"
+  domain: "Household finance"
+  geography: "United States, United Kingdom and other countries"
+  pathway: "Behavioral insights in policy design"
+  researchers: ["Richard Thaler", "Shlomo Benartzi", "Brigitte Madrian", "Cass Sunstein"]
+  summary: "Behavioral economics research on how defaults and the design of choices shape decisions, including studies of automatic enrollment and Save More Tomorrow in retirement plans, informed the Pension Protection Act of 2006 and the creation of government behavioral insights teams in the United Kingdom, the United States and other countries."
+  selected: true
+  slug: "behavioral-nudges"
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Emissions trading"
+  domain: "Climate and environment"
+  geography: "United States, European Union and other countries"
+  pathway: "Market-based regulation"
+  researchers: ["Ronald Coase", "John Dales", "W. David Montgomery", "Robert Stavins"]
+  summary: "Economic research on controlling pollution with tradable permits shaped the US Acid Rain Program's market for sulfur dioxide allowances, created in 1990, and later carbon markets such as the European Union Emissions Trading System."
+  selected: true
+  slug: "emissions-trading"
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Growth mindset interventions in schools"
+  domain: "Education"
+  geography: "United States and other countries"
+  pathway: "Psychology intervention adopted in schools"
+  researchers: ["Carol Dweck", "David Yeager", "Gregory Walton"]
+  summary: "Psychology research on students' beliefs about whether ability can grow, including a national randomized trial of a short online lesson in US high schools, shaped teacher training and school programs, while the size of its effects remains debated."
+  selected: true
+  slug: "growth-mindset"
+  source: "Public Solutions R&D proof points"
+
+- name: "DICE climate-economy model and the social cost of carbon"
+  domain: "Climate and environment"
+  geography: "United States and global"
+  pathway: "Model used in federal rulemaking"
+  researchers: ["William Nordhaus", "Michael Greenstone"]
+  summary: "William Nordhaus's DICE model, which links economic growth and climate damage, was one of the models a US interagency working group used from 2010 to estimate the social cost of carbon (the damage caused by each additional ton of carbon dioxide emitted), which federal agencies used in regulatory analysis until the working group was disbanded in 2025."
+  selected: true
+  slug: "dice-modeling"
+  source: "Public Solutions R&D proof points"
+
+- name: "FCC spectrum auctions"
+  domain: "Telecommunications"
+  geography: "United States"
+  pathway: "Market design"
+  researchers: ["Ronald Coase", "Paul Milgrom", "Robert Wilson", "R. Preston McAfee"]
+  summary: "Economists' arguments for assigning radio spectrum by price, from Ronald Coase's 1959 proposal to the auction designs Paul Milgrom, Robert Wilson and Preston McAfee developed, shaped the auctions the Federal Communications Commission has used to award spectrum licenses since 1994."
+  selected: true
+  slug: "fcc-spectrum"
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Advance market commitment for pneumococcal vaccines"
+  domain: "Health"
+  geography: "Low- and middle-income countries"
+  pathway: "Market design"
+  researchers: ["Michael Kremer", "Rachel Glennerster", "Ruth Levine", "Owen Barder", "Christopher Snyder"]
+  summary: "Economists proposed that donors promise in advance to pay for vaccines against diseases that mainly affect poor countries, and a pilot advance market commitment launched with Gavi in 2009 helped bring pneumococcal vaccines to low-income countries."
+  selected: true
+  slug: "amc-vaccines"
+  source: "SIL examples, 2021 to 2025"
+
+- name: "ALICE measure of financial hardship"
+  domain: "Poverty and social protection"
+  geography: "United States"
+  pathway: "Measurement used in planning"
+  researchers: ["Stephanie Hoopes"]
+  summary: "The ALICE measure, developed by researcher Stephanie Hoopes with United Way, counts households that earn more than the federal poverty line but less than the local cost of basic needs, and United Ways and some state and local governments use it in planning."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Becoming a Man youth program"
+  domain: "Public safety"
+  geography: "United States"
+  pathway: "Randomized evaluation, expanded with public funding"
+  researchers: ["Sara Heller", "Anuj Shah", "Jonathan Guryan", "Jens Ludwig", "Sendhil Mullainathan", "Harold Pollack"]
+  summary: "Randomized trials by the University of Chicago Crime Lab found that Becoming a Man, a school-based program for teenage boys that draws on cognitive behavioral therapy, reduced violent-crime arrests in Chicago, and it expanded to more schools and cities, though whether its effects hold at larger scale is still being studied."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Cash on Delivery Aid"
+  domain: "Foreign aid"
+  geography: "Global"
+  pathway: "Policy proposal piloted by donors"
+  researchers: ["Nancy Birdsall", "William Savedoff"]
+  summary: "Center for Global Development economists Nancy Birdsall and William Savedoff proposed that donors pay governments for independently verified progress, such as more children completing school, and the UK aid agency piloted the approach in Rwanda's education sector."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Chlorine dispensers for safe water"
+  domain: "Health"
+  geography: "Kenya, Uganda and Malawi"
+  pathway: "Randomized evaluation, scaled by a nonprofit"
+  researchers: ["Michael Kremer", "Edward Miguel", "Clair Null", "Alix Peterson Zwane"]
+  summary: "Field experiments in rural Kenya found that free chlorine dispensers placed at community water sources, backed by a local promoter, sustained household water treatment better than other approaches tested, and the nonprofit Evidence Action expanded the dispensers in Kenya, Uganda and Malawi."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Coleman Report on equality of educational opportunity"
+  domain: "Education"
+  geography: "United States"
+  pathway: "Measurement that redirected policy attention"
+  researchers: ["James S. Coleman"]
+  summary: "A federally commissioned national survey of US schools, led by sociologist James Coleman and published in 1966, found that students' family backgrounds explained more of the differences in achievement than school resources did, and turned research and policy toward measuring what students learn."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "College admissions research at highly selective universities"
+  domain: "Education"
+  geography: "United States"
+  pathway: "Admissions research informing university policy"
+  researchers: ["Raj Chetty", "David Deming", "John Friedman"]
+  summary: "Research by Opportunity Insights economists on admissions at highly selective colleges, including how test scores and legacy and athletic preferences relate to later outcomes, informed debate over admissions rules and was cited when some universities reinstated standardized test requirements."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "College application information in Chile"
+  domain: "Education"
+  geography: "Chile"
+  pathway: "Randomized evaluation adopted by government"
+  researchers: ["Tomás Larroucau", "Ignacio Ríos", "Anaïs Fabre", "Christopher Neilson"]
+  summary: "Researchers working with Chile's Ministry of Education found that personalized warnings and information on the national college application platform reduced application mistakes, and the government built these messages into the platform used by all applicants."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Conditional cash transfers (Mexico's PROGRESA)"
+  domain: "Poverty and social protection"
+  geography: "Mexico and other countries"
+  pathway: "Randomized evaluation adopted by government"
+  researchers: ["Santiago Levy", "T. Paul Schultz", "Paul Gertler"]
+  summary: "Mexico built a randomized evaluation into PROGRESA, which paid poor families on the condition that children attend school and health checkups, and evidence of gains in schooling and health helped the program survive a change of government and spread as a model across Latin America and beyond."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Early childhood programs and their long-run returns"
+  domain: "Education"
+  geography: "United States"
+  pathway: "Evidence informing program expansion"
+  researchers: ["Janet Currie", "James Heckman"]
+  summary: "Long-run studies of early childhood programs, including Janet Currie's research on Head Start and James Heckman's analyses of the Perry Preschool experiment, helped make the case for expanding public preschool and early childhood programs."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Earned Income Tax Credit"
+  domain: "Poverty and social protection"
+  geography: "United States"
+  pathway: "Evidence informing program expansion"
+  researchers: ["Nada Eissa", "Jeffrey Liebman", "Hilary Hoynes", "Douglas Miller"]
+  summary: "Studies finding that the Earned Income Tax Credit, a refundable tax credit for low-income working families, drew single mothers into work and improved infant health strengthened the case for the credit and informed debates over expanding it."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Eviction research and the Eviction Lab"
+  domain: "Housing and urban policy"
+  geography: "United States"
+  pathway: "Measurement that redirected policy attention"
+  researchers: ["Matthew Desmond"]
+  summary: "Sociologist Matthew Desmond's ethnography of eviction in Milwaukee and the national eviction records his Eviction Lab assembled drew attention to eviction as a cause of poverty and gave governments and courts national data on evictions."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "FDA priority review vouchers"
+  domain: "Health"
+  geography: "United States, with global aims"
+  pathway: "Policy proposal adopted into law"
+  researchers: ["David Ridley", "Henry Grabowski", "Jeffrey Moe"]
+  summary: "A 2006 Health Affairs paper by David Ridley, Henry Grabowski and Jeffrey Moe proposed rewarding companies that develop drugs for neglected diseases with a voucher for faster FDA review of another drug, and Congress created the program in 2007."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Free distribution of insecticide-treated bed nets"
+  domain: "Health"
+  geography: "Kenya and other countries"
+  pathway: "Pricing experiment informing donor policy"
+  researchers: ["Jessica Cohen", "Pascaline Dupas"]
+  summary: "A randomized pricing experiment in Kenya found that charging even small fees for insecticide-treated bed nets sharply reduced uptake without improving use, evidence that supported the move by donors and health agencies toward free mass distribution of nets."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Global skill partnerships"
+  domain: "Migration"
+  geography: "Global"
+  pathway: "Policy proposal piloted by governments"
+  researchers: ["Michael Clemens"]
+  summary: "Economist Michael Clemens proposed agreements in which destination countries help fund training in origin countries for workers who may either migrate or stay, an idea named in the 2018 Global Compact for Migration and piloted in programs such as one between Belgium and Morocco."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "High-dosage tutoring"
+  domain: "Education"
+  geography: "United States"
+  pathway: "Trials and evidence reviews informing school spending"
+  researchers: ["Jonathan Guryan", "Jens Ludwig", "Philip Oreopoulos"]
+  summary: "Randomized trials of intensive small-group tutoring during the school day, including Chicago trials of the Saga math model, and reviews of tutoring studies informed federal and school district efforts to expand tutoring with pandemic recovery funds."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Housing First and supportive housing"
+  domain: "Housing and urban policy"
+  geography: "United States and Canada"
+  pathway: "Practitioner model validated by randomized trials"
+  researchers: ["Sam Tsemberis", "Dennis Culhane"]
+  summary: "Randomized trials of Sam Tsemberis's Housing First model, which offers permanent housing without first requiring treatment, and Dennis Culhane's studies of shelter use informed US and Canadian homelessness policy for many years, though a 2025 US executive order directed federal agencies to move away from Housing First."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Immunization incentives"
+  domain: "Health"
+  geography: "India, Pakistan and Nigeria"
+  pathway: "Randomized evaluation, tested and expanded by governments and nonprofits"
+  researchers: ["Abhijit Banerjee", "Esther Duflo", "Rachel Glennerster", "Dhruva Kothari"]
+  summary: "A randomized evaluation in Rajasthan, India, found that small non-cash incentives such as lentils, offered at reliable immunization camps, raised full immunization rates, and incentive programs for vaccination have since been tested and expanded in other Indian states, Pakistan and Nigeria."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Kidney exchange"
+  domain: "Health"
+  geography: "United States and other countries"
+  pathway: "Market design"
+  researchers: ["Alvin Roth", "Tayfun Sönmez", "M. Utku Ünver"]
+  summary: "Market design research on matching patients who have a willing but incompatible living donor into exchanges with other such pairs helped launch regional and national kidney exchange programs, which let more patients receive living-donor transplants."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Law and economics training for federal judges"
+  domain: "Courts and law"
+  geography: "United States"
+  pathway: "Training that spread economic reasoning to judges"
+  researchers: ["Henry Manne"]
+  summary: "The Manne Economics Institute for Federal Judges taught economics to many federal judges from 1976, and a later study by Elliott Ash, Daniel Chen and Suresh Naidu found that judges who attended afterwards used more economics language in their opinions, ruled against regulatory agencies more often and imposed more severe criminal sentences."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Lead removal from gasoline"
+  domain: "Climate and environment"
+  geography: "United States"
+  pathway: "Cost-benefit analysis used in federal rulemaking"
+  researchers: ["Herbert Needleman", "Joel Schwartz", "Albert Nichols"]
+  summary: "Studies linking low-level childhood lead exposure to lower IQ scores and behavior problems, and a 1985 EPA cost-benefit analysis that found the benefits of cutting lead in gasoline far exceeded the costs, helped make the case for phasing lead out of US gasoline."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Mask promotion in Bangladesh during COVID-19"
+  domain: "Health"
+  geography: "Bangladesh"
+  pathway: "Randomized evaluation adopted by government"
+  researchers: ["Jason Abaluck", "Laura Kwong", "Ahmed Mushfiq Mobarak", "Stephen Luby"]
+  summary: "A community-level randomized trial in rural Bangladesh found that free masks plus in-person promotion raised mask wearing and modestly reduced symptomatic COVID-19, and BRAC and the government expanded the promotion model, though the size of the health effect has been debated."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Mass media campaign for family planning in Burkina Faso"
+  domain: "Health"
+  geography: "Burkina Faso"
+  pathway: "Randomized evaluation, scaled by a nonprofit"
+  researchers: ["Rachel Glennerster", "Joanna Murray", "Victor Pouliquen"]
+  summary: "A randomized evaluation of a radio campaign by the nonprofit Development Media International found that it increased women's use of modern contraception, and the campaign was then broadcast nationally across Burkina Faso."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Matching doctors to residency programs"
+  domain: "Health"
+  geography: "United States"
+  pathway: "Market design"
+  researchers: ["Alvin Roth", "Elliott Peranson"]
+  summary: "Game theory research on stable matching informed the late-1990s redesign of the National Resident Matching Program's algorithm, which assigns graduating US medical students to residency programs and lets couples apply together."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Minimum parking requirements and housing costs"
+  domain: "Housing and urban policy"
+  geography: "United States"
+  pathway: "Economic analysis informing zoning reform"
+  researchers: ["Donald Shoup", "Lewis Lehe"]
+  summary: "Research by urban planner Donald Shoup and others showing that minimum parking requirements raise the cost of building housing informed decisions by cities such as Buffalo and Minneapolis, and by California for sites near transit, to drop parking minimums."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Minimum wage and employment"
+  domain: "Work and wages"
+  geography: "United States"
+  pathway: "Natural experiment informing policy debate"
+  researchers: ["David Card", "Alan Krueger"]
+  summary: "David Card and Alan Krueger's comparison of fast-food restaurants in New Jersey and neighboring Pennsylvania found no evidence that a minimum wage increase reduced employment, a finding that is still debated and that shaped decades of research and policy argument over minimum wage increases."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Mobile phone advice for farmers (Precision Development)"
+  domain: "Agriculture"
+  geography: "India, Kenya and other countries in Asia and Africa"
+  pathway: "Randomized evaluation, scaled by a nonprofit"
+  researchers: ["Michael Kremer", "Shawn Cole", "Daniel Björkegren"]
+  summary: "Randomized studies in India and Kenya of agricultural advice delivered by mobile phone led economists including Michael Kremer and Shawn Cole to co-found Precision Development, a nonprofit that works with governments to deliver phone-based advice to farmers in Asia and Africa."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Nurse-Family Partnership"
+  domain: "Health"
+  geography: "United States"
+  pathway: "Randomized evaluation adopted by government"
+  researchers: ["David Olds"]
+  summary: "Randomized trials led by David Olds in Elmira, Memphis and Denver found that nurse home visits to first-time, low-income mothers improved outcomes for mothers and children, and the program spread nationally and helped shape the federal home visiting program created in 2010."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Phonics in early reading instruction"
+  domain: "Education"
+  geography: "United States"
+  pathway: "Research synthesis informing standards"
+  researchers: ["Jeanne Chall"]
+  summary: "Syntheses of reading research, from Jeanne Chall's 1967 study to the National Reading Panel's 2000 report, found that systematic phonics instruction helps children learn to read, and informed federal Reading First grants and recent state laws on how schools teach reading."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Prize-linked savings"
+  domain: "Household finance"
+  geography: "United States"
+  pathway: "Research informing a federal law"
+  researchers: ["Peter Tufano", "Melissa Kearney"]
+  summary: "Research by economists including Peter Tufano and Melissa Kearney on savings accounts that offer lottery-style prizes, together with credit union pilots such as Save to Win, informed the American Savings Promotion Act of 2014, which allowed federally insured banks and credit unions to offer them."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "RAND Health Insurance Experiment"
+  domain: "Health"
+  geography: "United States"
+  pathway: "Social experiment informing policy design"
+  researchers: ["Joseph Newhouse"]
+  summary: "A large randomized experiment run by the RAND Corporation in the 1970s and early 1980s found that higher cost sharing reduced people's use of health care with little effect on the health of the average participant, evidence that shaped the design of deductibles and copayments in US health insurance."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "School choice assignment systems"
+  domain: "Education"
+  geography: "United States"
+  pathway: "Market design"
+  researchers: ["Atila Abdulkadiroğlu", "Parag Pathak", "Alvin Roth", "Tayfun Sönmez"]
+  summary: "Market design economists helped New York City and Boston replace their public school assignment rules with algorithms that make it safe for families to rank schools in their true order of preference, and other districts later adopted similar designs."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "School-based deworming"
+  domain: "Health"
+  geography: "Kenya, India and other countries"
+  pathway: "Randomized evaluation adopted by government"
+  researchers: ["Edward Miguel", "Michael Kremer"]
+  summary: "A randomized evaluation in western Kenya by Edward Miguel and Michael Kremer found that school-based deworming reduced school absence, and the evidence helped lead governments in Kenya, India and other countries to run national school deworming programs, though the size of the education and long-run benefits is still debated."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Social determinants of health and the Whitehall studies"
+  domain: "Health"
+  geography: "United Kingdom and global"
+  pathway: "Measurement that redirected policy attention"
+  researchers: ["Michael Marmot"]
+  summary: "Michael Marmot's Whitehall studies of British civil servants found that health worsens step by step down the employment hierarchy, and Marmot went on to chair the World Health Organization's Commission on Social Determinants of Health and England's 2010 review of health inequalities."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Strategic Decision Support Centers in Chicago"
+  domain: "Public safety"
+  geography: "Chicago, United States"
+  pathway: "Research and police data partnership"
+  researchers: []
+  summary: "The University of Chicago Crime Lab worked with the Chicago Police Department to set up district-level centers that use crime data and civilian analysts to guide deployment, and evaluations by the Crime Lab and by RAND assessed their effects on violence as the department expanded the centers to more districts."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Teacher preparation and licensing"
+  domain: "Education"
+  geography: "United States"
+  pathway: "Research synthesis informing standards"
+  researchers: ["Linda Darling-Hammond"]
+  summary: "Linda Darling-Hammond's research on teacher preparation, and the 1996 report of the National Commission on Teaching and America's Future that she directed, informed new state laws on teacher licensing and preparation, though evidence on how much certification affects student learning is debated."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Teaching at the Right Level"
+  domain: "Education"
+  geography: "India and Africa"
+  pathway: "Randomized evaluation adopted by government"
+  researchers: ["Abhijit Banerjee", "Rukmini Banerji", "James Berry", "Shawn Cole", "Esther Duflo", "Leigh Linden"]
+  summary: "Randomized evaluations by J-PAL researchers with the Indian nonprofit Pratham found that grouping children by learning level rather than by grade improved basic reading and math, and governments in India and in several African countries, including Zambia, adopted the approach."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Tobacco control: evidence on smoking and tobacco taxes"
+  domain: "Health"
+  geography: "United States, United Kingdom and global"
+  pathway: "Epidemiology and economics informing public health policy"
+  researchers: ["Richard Doll", "Austin Bradford Hill", "E. Cuyler Hammond", "Daniel Horn", "Frank Chaloupka"]
+  summary: "Cohort studies linking smoking to lung cancer and early death informed the 1964 US Surgeon General's report, and economic research on how cigarette prices affect smoking, including Frank Chaloupka's, informed tobacco tax policies such as the price measures in the World Health Organization's tobacco control treaty."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Ultra-poor graduation programs"
+  domain: "Poverty and social protection"
+  geography: "Bangladesh and other low- and middle-income countries"
+  pathway: "Practitioner model validated by randomized trials"
+  researchers: ["Abhijit Banerjee", "Esther Duflo", "Dean Karlan", "Oriana Bandiera", "Robin Burgess", "Imran Rasul"]
+  summary: "Randomized evaluations of BRAC's graduation program in Bangladesh and of similar programs in several other countries found lasting gains in income and assets from a package of a productive asset, training, coaching and cash support, and governments including Rwanda and the Philippines are building the approach into national social protection."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "UrbanSim land use model"
+  domain: "Housing and urban policy"
+  geography: "United States"
+  pathway: "Planning model used by regional agencies"
+  researchers: ["Paul Waddell"]
+  summary: "Urban planner Paul Waddell's UrbanSim, a simulation of household, business and real estate decisions, has been used by regional planning agencies such as the Puget Sound Regional Council to test long-range land use and transportation plans."
+  selected: false
+  source: "Public Solutions R&D proof points"
+
+- name: "Welfare-to-work experiments"
+  domain: "Poverty and social protection"
+  geography: "United States"
+  pathway: "Social experiment informing policy design"
+  researchers: ["Judith Gueron"]
+  summary: "Large randomized evaluations of state welfare-to-work programs, many run by the research organization MDRC, informed the Family Support Act of 1988 and later federal welfare reform, and helped make random assignment a standard way to evaluate US social programs."
+  selected: false
+  source: "SIL examples, 2021 to 2025"
+
+- name: "Zoning and housing supply"
+  domain: "Housing and urban policy"
+  geography: "United States"
+  pathway: "Economic analysis informing zoning reform"
+  researchers: ["Edward Glaeser", "Joseph Gyourko"]
+  summary: "Research by economists including Edward Glaeser and Joseph Gyourko linking local land-use rules to high housing prices informed state and local reforms that allow more homes, such as laws permitting accessory dwelling units and more than one home on lots once zoned for a single house."
+  selected: false
+  source: "Public Solutions R&D proof points"

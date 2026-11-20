@@ -1,43 +1,82 @@
 ---
-title: "Emissions Trading Schemes"
 slug: "emissions-trading"
-icon: "GlobeAltIcon"
-domain: "Environmental Economics / Climate Policy"
-domainColor: "sil-teal-2"
-keyResearchers: ["Ronald Coase", "Robert Stavins", "Thomas Tietenberg"]
-timespan: "1960-present"
-heroMetric: "95% reduction in acid rain pollution"
-lessonsExemplified: ["archetypes", "knowledge-brokers", "design-details", "legitimacy-narrative"]
+title: "Emissions Trading Schemes"
+shortTitle: "Emissions trading"
+order: 4
+domain: "Climate and environment"
+disciplines:
+  - "Economics"
+geography: "United States and European Union"
+years: "1960 to today"
+winStatement: "[draft] Emissions Trading Schemes (ETS), also known as cap-and-trade systems, transformed how governments regulate pollution by creating markets where firms can buy and sell emission allowances."
+summary: "[draft] Emissions Trading Schemes (ETS), also known as cap-and-trade systems, transformed how governments regulate pollution by creating markets where firms can buy and sell emission allowances. Rather than mandating specific pollution control technologies (command-and-control regulation), ETS sets an overall emissions cap and allows firms to find the most cost-effective ways to meet targets, those that can reduce emissions cheaply do so..."
+people:
+  - name: "Ronald Coase"
+    role: "[draft] role to confirm"
+  - name: "Robert Stavins"
+    role: "[draft] role to confirm"
+  - name: "Thomas Tietenberg"
+    role: "[draft] role to confirm"
+lessons:
+  - slug: "2-archetypes"
+    note: "[draft]"
+  - slug: "4-knowledge-brokers"
+    note: "[draft]"
+  - slug: "3-design-details"
+    note: "[draft]"
+  - slug: "5-legitimacy-narrative"
+    note: "[draft]"
+stats:
+  - value: "95%"
+    label: "Reduction in acid rain pollution"
+    detail: "[draft] from the January 2026 draft; not yet checked"
+    source: "jan2026-draft"
+  - value: "3.8%"
+    label: "EU emissions reduction"
+    detail: "[draft] from the January 2026 draft; not yet checked"
+    source: "jan2026-draft"
 timeline:
-  - year: "1960-1970s"
-    title: "Theoretical Foundation"
-    description: "Coase, Dales, and Montgomery develop property rights and market-based pollution control theory"
-  - year: "1990"
-    title: "Clean Air Act Amendments"
-    description: "Congress authorizes EPA to implement first major cap-and-trade program for acid rain"
-  - year: "1995"
-    title: "Acid Rain Program Launch"
-    description: "EPA begins SO₂ and NOx trading program for power plants nationwide"
-  - year: "2005"
-    title: "EU ETS Established"
-    description: "European Union launches world's largest carbon market covering 11,000+ installations"
-  - year: "2008-2016"
-    title: "Proven Impact"
-    description: "95% SO₂ reduction in U.S.; EU ETS achieves 3.8% emissions reduction representing half of Kyoto commitments"
-  - year: "2024"
-    title: "Global Adoption"
-    description: "68 carbon pricing instruments operate worldwide, pricing 30%+ of global GHG emissions"
+  - year: 1960
+    endYear: 1970
+    phase: "origin"
+    text: "Theoretical Foundation: Coase, Dales, and Montgomery develop property rights and market-based pollution control theory"
+    source: "jan2026-draft"
+  - year: 1990
+    phase: "research"
+    text: "Clean Air Act Amendments: Congress authorizes EPA to implement first major cap-and-trade program for acid rain"
+    source: "jan2026-draft"
+  - year: 1995
+    phase: "research"
+    text: "Acid Rain Program Launch: EPA begins SO₂ and NOx trading program for power plants nationwide"
+    source: "jan2026-draft"
+  - year: 2005
+    phase: "translation"
+    text: "EU ETS Established: European Union launches world's largest carbon market covering 11,000+ installations"
+    source: "jan2026-draft"
+  - year: 2008
+    endYear: 2016
+    phase: "scale"
+    text: "Proven Impact: 95% SO₂ reduction in U.S.; EU ETS achieves 3.8% emissions reduction representing half of Kyoto commitments"
+    source: "jan2026-draft"
+  - year: 2024
+    phase: "scale"
+    text: "Global Adoption: 68 carbon pricing instruments operate worldwide, pricing 30%+ of global GHG emissions"
+    source: "jan2026-draft"
+goDeeper: []
+lastReviewed: "2026-01-01"
+sources:
+  - id: "jan2026-draft"
+    citation: "[draft] Stanford Impact Labs. (2026). January 2026 draft of this page. Figures and links not yet checked."
+    type: "web"
 ---
-
-# Emissions Trading Schemes
 
 ## Overview
 
-Emissions Trading Schemes (ETS), also known as cap-and-trade systems, transformed how governments regulate pollution by creating markets where firms can buy and sell emission allowances. Rather than mandating specific pollution control technologies (command-and-control regulation), ETS sets an overall emissions cap and allows firms to find the most cost-effective ways to meet targets—those that can reduce emissions cheaply do so and sell permits, while others buy permits if reduction costs exceed permit prices. This market mechanism achieves environmental goals at lower economic cost than traditional regulation.
+Emissions Trading Schemes (ETS), also known as cap-and-trade systems, transformed how governments regulate pollution by creating markets where firms can buy and sell emission allowances. Rather than mandating specific pollution control technologies (command-and-control regulation), ETS sets an overall emissions cap and allows firms to find the most cost-effective ways to meet targets, those that can reduce emissions cheaply do so and sell permits, while others buy permits if reduction costs exceed permit prices. This market mechanism achieves environmental goals at lower economic cost than traditional regulation.
 
-The impact has been substantial and global. The U.S. EPA's Acid Rain Program reduced sulfur dioxide (SO₂) emissions by 95% and nitrogen oxides (NOx) by 89% from power plants since 1995, essentially solving the acid rain problem that threatened forests and lakes across the Northeast. The European Union Emissions Trading System (EU ETS), launched in 2005, contributed an estimated 3.8% reduction in total EU emissions from 2008-2016—nearly half the EU's Kyoto Protocol commitments—with health benefits estimated in hundreds of billions of euros. China's regional pilot programs (2009-2025) showed 16.7% emissions reductions. Today, 68 carbon pricing instruments operate globally (36 carbon taxes, 32 ETS systems), collectively pricing over 30% of global GHG emissions.
+The impact has been substantial and global. The U.S. EPA's Acid Rain Program reduced sulfur dioxide (SO₂) emissions by 95% and nitrogen oxides (NOx) by 89% from power plants since 1995, essentially solving the acid rain problem that threatened forests and lakes across the Northeast. The European Union Emissions Trading System (EU ETS), launched in 2005, contributed an estimated 3.8% reduction in total EU emissions from 2008-2016, nearly half the EU's Kyoto Protocol commitments, with health benefits estimated in hundreds of billions of euros. China's regional pilot programs (2009-2025) showed 16.7% emissions reductions. Today, 68 carbon pricing instruments operate globally (36 carbon taxes, 32 ETS systems), collectively pricing over 30% of global GHG emissions.
 
-> "The Acid Rain Program demonstrated that market-based environmental regulation could achieve dramatic pollution reductions at lower cost than traditional command-and-control approaches." — Summary of U.S. EPA evaluation
+> "The Acid Rain Program demonstrated that market-based environmental regulation could achieve dramatic pollution reductions at lower cost than traditional command-and-control approaches.", Summary of U.S. EPA evaluation
 
 ## Impact Metrics
 
@@ -72,25 +111,25 @@ The intellectual trajectory moved from abstract economic theory (1960s-1970s) to
 
 Simultaneously, the newly created EPA (1970) began experimenting with "flexible" regulation between 1972-1978, allowing firms to offset emissions violations at one facility with improvements at another. This practical tinkering operated independently of academic theory initially, driven by pragmatic regulators seeking cost-effective compliance. The Carter administration's 1978 push for innovative regulatory approaches amid business complaints about overregulation gave these experiments momentum.
 
-**Proof of Concept (1979-1988):** The EPA incrementally introduced market-like mechanisms: emission "credits" (1979), "banking" to smooth price volatility (1980), and inter-firm trading. However, reformers faced internal resistance from EPA staff accustomed to command-and-control methods and external opposition from environmental NGOs who viewed selling pollution rights as ethically problematic. Terminology shifts—from "rights" to "allowances"—and efficiency arguments gradually built acceptance.
+**Proof of Concept (1979-1988):** The EPA incrementally introduced market-like mechanisms: emission "credits" (1979), "banking" to smooth price volatility (1980), and inter-firm trading. However, reformers faced internal resistance from EPA staff accustomed to command-and-control methods and external opposition from environmental NGOs who viewed selling pollution rights as ethically problematic. Terminology shifts, from "rights" to "allowances", and efficiency arguments gradually built acceptance.
 
-Tietenberg's 1985 evaluation found that while the piecemeal EPA programs proved the principle that trading could work, implementation fell short of theoretical potential—banking and trading were underutilized. Through most of the 1980s, political incentives limited broader adoption despite accumulating evidence.
+Tietenberg's 1985 evaluation found that while the piecemeal EPA programs proved the principle that trading could work, implementation fell short of theoretical potential, banking and trading were underutilized. Through most of the 1980s, political incentives limited broader adoption despite accumulating evidence.
 
 **Critical Inflection Points:**
 
-*Project 88 - Knowledge Brokering:* The breakthrough came through deliberate coalition-building. In 1988, economist Robert Stavins (with Environmental Defense Fund experience) partnered with Senators Wirth and Heinz on Project 88, a nonpartisan effort funded by major philanthropies. The project convened cross-sector stakeholders—industry, academia, environmental organizations, government—to develop emissions trading recommendations grounded in both theory and practice. This wasn't just academic research; it was strategic policy entrepreneurship designed to build political coalitions around market mechanisms rather than taxation-based regulations.
+*Project 88 - Knowledge Brokering:* The breakthrough came through deliberate coalition-building. In 1988, economist Robert Stavins (with Environmental Defense Fund experience) partnered with Senators Wirth and Heinz on Project 88, a nonpartisan effort funded by major philanthropies. The project convened cross-sector stakeholders, industry, academia, environmental organizations, government, to develop emissions trading recommendations grounded in both theory and practice. This wasn't just academic research; it was strategic policy entrepreneurship designed to build political coalitions around market mechanisms rather than taxation-based regulations.
 
 Under President George H.W. Bush, Stavins led a second Project 88 round, further refining proposals with attention to political concerns like protecting coal industry workers and providing industry-specific incentives. This knowledge brokering proved essential: it translated abstract economics into politically viable policy.
 
-*1990 Acid Rain Program - Policy Prototype:* The academic and practice streams converged in the 1990 Clean Air Act amendments establishing the Acid Rain Program—a national cap-and-trade system for SO₂ and NOx. The program succeeded spectacularly, exceeding emissions reduction targets at costs far below projections (partly due to greater-than-expected availability of low-sulfur coal as an alternative to expensive scrubbers). This success provided compelling proof that market-based regulation could work at scale.
+*1990 Acid Rain Program - Policy Prototype:* The academic and practice streams converged in the 1990 Clean Air Act amendments establishing the Acid Rain Program, a national cap-and-trade system for SO₂ and NOx. The program succeeded spectacularly, exceeding emissions reduction targets at costs far below projections (partly due to greater-than-expected availability of low-sulfur coal as an alternative to expensive scrubbers). This success provided compelling proof that market-based regulation could work at scale.
 
 **Scaling Mechanisms:**
 
-The Acid Rain Program's success catalyzed global diffusion. The 1997 Kyoto Protocol incorporated three market-based mechanisms for greenhouse gases, heavily influenced by U.S. advocacy based on acid rain experience. When the U.S. withdrew from Kyoto in 2001, the EU took leadership, launching the EU ETS in 2005—now in its fourth phase and proven effective through rigorous causal evaluations.
+The Acid Rain Program's success catalyzed global diffusion. The 1997 Kyoto Protocol incorporated three market-based mechanisms for greenhouse gases, heavily influenced by U.S. advocacy based on acid rain experience. When the U.S. withdrew from Kyoto in 2001, the EU took leadership, launching the EU ETS in 2005, now in its fourth phase and proven effective through rigorous causal evaluations.
 
 Private sector adoption followed: in the late 1990s, BP and Shell established internal carbon markets. The 1999 launch of the International Emissions Trading Association (IETA) professionalized the sector, creating centers of expertise in emissions pricing and trading. Regional and national ETS proliferated: UK (early 2000s), China's pilots (2009-2025), and numerous others. The Paris Agreement (2015) further endorsed market mechanisms.
 
-Today, emissions trading represents an established policy tool with ongoing refinement. Debates continue about relative merits of quantity-based controls (cap-and-trade) versus price-based controls (carbon taxes), but the core principle—using markets to achieve environmental goals cost-effectively—has achieved mainstream acceptance.
+Today, emissions trading represents an established policy tool with ongoing refinement. Debates continue about relative merits of quantity-based controls (cap-and-trade) versus price-based controls (carbon taxes), but the core principle, using markets to achieve environmental goals cost-effectively, has achieved mainstream acceptance.
 
 ## Current Status
 
@@ -100,17 +139,17 @@ However, implementation challenges persist. Early EU ETS phases suffered from ov
 
 Recent innovations include hybrid approaches: the EU's Carbon Border Adjustment Mechanism (CBAM) addresses competitiveness concerns by taxing imports from countries without carbon pricing. Research continues on optimal auction design, banking/borrowing rules, linking systems across jurisdictions, and addressing carbon leakage. The field has matured from "does emissions trading work?" to "how do we design ETS optimally for different contexts?"
 
-Climate policy debates increasingly center not on whether to price carbon but how—with ETS as one proven tool alongside carbon taxes, technology subsidies, and complementary regulations.
+Climate policy debates increasingly center not on whether to price carbon but how, with ETS as one proven tool alongside carbon taxes, technology subsidies, and complementary regulations.
 
 ## Lessons Exemplified
 
-**Field Accumulation:** Emissions trading's success resulted from decades of accumulating evidence across multiple scales—theoretical proofs (1960s-1970s), EPA experiments (1970s-1980s), Acid Rain Program demonstration (1990s), international implementations (2000s). No single paper or program convinced skeptics; it was the weight of converging evidence that established legitimacy.
+**Field Accumulation:** Emissions trading's success resulted from decades of accumulating evidence across multiple scales, theoretical proofs (1960s-1970s), EPA experiments (1970s-1980s), Acid Rain Program demonstration (1990s), international implementations (2000s). No single paper or program convinced skeptics; it was the weight of converging evidence that established legitimacy.
 
-**Knowledge Brokers:** Project 88 exemplifies the critical role of institutional translators. Stavins and colleagues didn't just publish academic papers—they convened stakeholders, built coalitions, framed proposals politically, and provided implementation guidance. This bridging function between academic theory and policy practice proved essential for translating economic concepts into operational regulation.
+**Knowledge Brokers:** Project 88 exemplifies the critical role of institutional translators. Stavins and colleagues didn't just publish academic papers, they convened stakeholders, built coalitions, framed proposals politically, and provided implementation guidance. This bridging function between academic theory and policy practice proved essential for translating economic concepts into operational regulation.
 
-**Design Details Matter:** The Acid Rain Program's success hinged on getting implementation right—appropriate cap levels, auction versus free allocation, banking provisions, monitoring and enforcement. Generic advice to "use markets" wouldn't have worked; operational success required sophisticated design tailored to political economy constraints (protecting workers), institutional capacity (EPA enforcement), and market structure (electricity sector characteristics). Ongoing refinements in EU ETS and other systems demonstrate that design iteration based on experience is as important as initial concept.
+**Design Details Matter:** The Acid Rain Program's success hinged on getting implementation right, appropriate cap levels, auction versus free allocation, banking provisions, monitoring and enforcement. Generic advice to "use markets" wouldn't have worked; operational success required sophisticated design tailored to political economy constraints (protecting workers), institutional capacity (EPA enforcement), and market structure (electricity sector characteristics). Ongoing refinements in EU ETS and other systems demonstrate that design iteration based on experience is as important as initial concept.
 
-**Cross-Sector Coalitions:** Project 88 succeeded by bringing together unusual allies—environmentalists seeking effectiveness, industry seeking cost flexibility, economists advocating efficiency. This coalition-building around shared interests (cost-effective pollution reduction) rather than ideological purity proved politically powerful.
+**Cross-Sector Coalitions:** Project 88 succeeded by bringing together unusual allies, environmentalists seeking effectiveness, industry seeking cost flexibility, economists advocating efficiency. This coalition-building around shared interests (cost-effective pollution reduction) rather than ideological purity proved politically powerful.
 
 **Terminology and Framing:** The shift from "pollution rights" to "allowances," emphasizing cost savings over moral questions about selling the right to pollute, illustrates how framing affects policy acceptance. Market-based environmental regulation succeeded partly through strategic communication that neutralized ethical objections.
 

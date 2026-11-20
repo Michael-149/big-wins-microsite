@@ -1,43 +1,81 @@
 ---
-title: "FCC Spectrum Licensing Reforms"
 slug: "fcc-spectrum"
-icon: "ChartBarIcon"
-domain: "Market Design / Telecommunications"
-domainColor: "sil-teal-3"
-keyResearchers: ["Paul Milgrom", "Robert Wilson", "Ronald Coase"]
-timespan: "1959-present"
-heroMetric: "$233B in auction revenues"
-lessonsExemplified: ["knowledge-brokers", "policy-windows", "design-details", "long-timeline"]
+title: "FCC Spectrum Licensing Reforms"
+shortTitle: "Spectrum auctions"
+order: 7
+domain: "Market design and telecommunications"
+disciplines:
+  - "Economics"
+geography: "United States"
+years: "1959 to today"
+winStatement: "[draft] Radio spectrum, the electromagnetic frequencies underpinning all wireless communication, was allocated for decades through politicized bureaucratic processes characterized by inefficiency, favoritism, and misallocation."
+summary: "[draft] Radio spectrum, the electromagnetic frequencies underpinning all wireless communication, was allocated for decades through politicized bureaucratic processes characterized by inefficiency, favoritism, and misallocation. Economic research transformed this system into sophisticated market-based auctions and unlicensed spectrum sharing arrangements, generating over $233 billion in government revenues while enabling the mobile and Wi-Fi revolutions that touch hundreds of millions of Americans daily."
+people:
+  - name: "Paul Milgrom"
+    role: "[draft] role to confirm"
+  - name: "Robert Wilson"
+    role: "[draft] role to confirm"
+  - name: "Ronald Coase"
+    role: "[draft] role to confirm"
+lessons:
+  - slug: "4-knowledge-brokers"
+    note: "[draft]"
+  - slug: "6-policy-windows"
+    note: "[draft]"
+  - slug: "3-design-details"
+    note: "[draft]"
+  - slug: "7-long-timeline"
+    note: "[draft]"
+stats:
+  - value: "$233B"
+    label: "In auction revenues"
+    detail: "[draft] from the January 2026 draft; not yet checked"
+    source: "jan2026-draft"
+  - value: "$233+ billion"
+    label: "- Total U.S. spectrum auction revenues from ~100..."
+    detail: "[draft] from the January 2026 draft; not yet checked"
+    source: "jan2026-draft"
 timeline:
-  - year: "1959"
-    title: "Coase's Radical Proposal"
-    description: "Ronald Coase proposes treating spectrum as property that can be bought and sold—initially dismissed as impractical"
-  - year: "1984-1993"
-    title: "Internal Advocacy"
-    description: "FCC economists Kwerel & Williams build case for auctions; Congress authorizes experimental approach"
-  - year: "1994"
-    title: "First Spectrum Auctions"
-    description: "FCC conducts inaugural auctions using Milgrom-Wilson simultaneous ascending design, proving concept viable"
-  - year: "2008"
-    title: "700 MHz Auction Success"
-    description: "$19.6B raised in auction enabling 4G LTE deployment nationwide"
-  - year: "2020"
-    title: "6 GHz Band Opening"
-    description: "FCC opens 1200 MHz for unlicensed Wi-Fi use, expanding capacity 5x and enabling Wi-Fi 6E/7"
-  - year: "2023"
-    title: "$233B+ Total Impact"
-    description: "Over 100 auctions conducted, with 6 GHz unlicensed opening generating $870B economic value"
+  - year: 1959
+    phase: "origin"
+    text: "Coase's Radical Proposal: Ronald Coase proposes treating spectrum as property that can be bought and sold, initially dismissed as impractical"
+    source: "jan2026-draft"
+  - year: 1984
+    endYear: 1993
+    phase: "research"
+    text: "Internal Advocacy: FCC economists Kwerel & Williams build case for auctions; Congress authorizes experimental approach"
+    source: "jan2026-draft"
+  - year: 1994
+    phase: "research"
+    text: "First Spectrum Auctions: FCC conducts inaugural auctions using Milgrom-Wilson simultaneous ascending design, proving concept viable"
+    source: "jan2026-draft"
+  - year: 2008
+    phase: "translation"
+    text: "700 MHz Auction Success: $19.6B raised in auction enabling 4G LTE deployment nationwide"
+    source: "jan2026-draft"
+  - year: 2020
+    phase: "scale"
+    text: "6 GHz Band Opening: FCC opens 1200 MHz for unlicensed Wi-Fi use, expanding capacity 5x and enabling Wi-Fi 6E/7"
+    source: "jan2026-draft"
+  - year: 2023
+    phase: "scale"
+    text: "$233B+ Total Impact: Over 100 auctions conducted, with 6 GHz unlicensed opening generating $870B economic value"
+    source: "jan2026-draft"
+goDeeper: []
+lastReviewed: "2026-01-01"
+sources:
+  - id: "jan2026-draft"
+    citation: "[draft] Stanford Impact Labs. (2026). January 2026 draft of this page. Figures and links not yet checked."
+    type: "web"
 ---
-
-# FCC Spectrum Licensing Reforms
 
 ## Overview
 
-Radio spectrum—the electromagnetic frequencies underpinning all wireless communication—was allocated for decades through politicized bureaucratic processes characterized by inefficiency, favoritism, and misallocation. Economic research transformed this system into sophisticated market-based auctions and unlicensed spectrum sharing arrangements, generating over $233 billion in government revenues while enabling the mobile and Wi-Fi revolutions that touch hundreds of millions of Americans daily.
+Radio spectrum, the electromagnetic frequencies underpinning all wireless communication, was allocated for decades through politicized bureaucratic processes characterized by inefficiency, favoritism, and misallocation. Economic research transformed this system into sophisticated market-based auctions and unlicensed spectrum sharing arrangements, generating over $233 billion in government revenues while enabling the mobile and Wi-Fi revolutions that touch hundreds of millions of Americans daily.
 
-The transformation began conceptually with Ronald Coase's controversial 1959 proposal to treat spectrum as property that could be bought and sold. It took 35 years for this idea to reach implementation, requiring new auction designs by economists Paul Milgrom, Robert Wilson, and others that operationalized game theory into implementable policy. The Federal Communications Commission (FCC) held its first spectrum auctions in 1994, proving the concept viable. Since then, over 100 auctions have raised $233+ billion while allocating spectrum more efficiently to highest-value uses. Complementary reforms opened vast swaths of spectrum for unlicensed use (Wi-Fi, Bluetooth), generating enormous economic value—the 6 GHz band opening alone created an estimated [$870 billion in economic value in 2023-2024](https://docs.fcc.gov/public/attachments/DOC-417577A1.pdf).
+The transformation began conceptually with Ronald Coase's controversial 1959 proposal to treat spectrum as property that could be bought and sold. It took 35 years for this idea to reach implementation, requiring new auction designs by economists Paul Milgrom, Robert Wilson, and others that operationalized game theory into implementable policy. The Federal Communications Commission (FCC) held its first spectrum auctions in 1994, proving the concept viable. Since then, over 100 auctions have raised $233+ billion while allocating spectrum more efficiently to highest-value uses. Complementary reforms opened vast swaths of spectrum for unlicensed use (Wi-Fi, Bluetooth), generating enormous economic value, the 6 GHz band opening alone created an estimated [$870 billion in economic value in 2023-2024](https://docs.fcc.gov/public/attachments/DOC-417577A1.pdf).
 
-> "The FCC has moved 'from scarcity to abundance' in spectrum management by leveraging market-based allocation and unlicensed sharing." — Industry analysis
+> "The FCC has moved 'from scarcity to abundance' in spectrum management by leveraging market-based allocation and unlicensed sharing.", Industry analysis
 
 ## Impact Metrics
 
@@ -67,21 +105,21 @@ The intellectual trajectory moved from theoretical property rights arguments to 
 
 ## Path from Science to Impact
 
-**Initial Research (1959-1990):** Coase's 1959 article arguing for property rights in spectrum was initially dismissed by engineers and regulators who viewed spectrum as inherently scarce public resource requiring expert allocation. The idea lay dormant for two decades until the 1970s-1980s when FCC staff economists Kwerel and Williams began internally advocating for market approaches. Their research demonstrated that comparative hearings (the existing system) wasted resources, delayed deployment, and allocated spectrum to politically connected rather than economically efficient uses. However, they faced fierce institutional resistance—existing regulatory processes created rents for incumbents and staff who benefited from discretionary power.
+**Initial Research (1959-1990):** Coase's 1959 article arguing for property rights in spectrum was initially dismissed by engineers and regulators who viewed spectrum as inherently scarce public resource requiring expert allocation. The idea lay dormant for two decades until the 1970s-1980s when FCC staff economists Kwerel and Williams began internally advocating for market approaches. Their research demonstrated that comparative hearings (the existing system) wasted resources, delayed deployment, and allocated spectrum to politically connected rather than economically efficient uses. However, they faced fierce institutional resistance, existing regulatory processes created rents for incumbents and staff who benefited from discretionary power.
 
-**Proof of Concept (1993-1994):** Congressional action created the policy window. Facing budget deficits and needing revenue, Congress passed legislation in 1993 authorizing FCC spectrum auctions. This wasn't driven primarily by economic efficiency arguments—it was a budget maneuver. But it gave reformers the opening they needed. The FCC hired academic economists including Milgrom, Wilson, and McAfee to design auction formats that would be fair, prevent collusion, and allocate spectrum efficiently. The first auctions in 1994 for narrowband PCS licenses succeeded dramatically, raising $617 million and demonstrating the concept's viability. Crucially, bidders accepted the outcomes as legitimate, and spectrum reached companies that rapidly deployed services.
+**Proof of Concept (1993-1994):** Congressional action created the policy window. Facing budget deficits and needing revenue, Congress passed legislation in 1993 authorizing FCC spectrum auctions. This wasn't driven primarily by economic efficiency arguments, it was a budget maneuver. But it gave reformers the opening they needed. The FCC hired academic economists including Milgrom, Wilson, and McAfee to design auction formats that would be fair, prevent collusion, and allocate spectrum efficiently. The first auctions in 1994 for narrowband PCS licenses succeeded dramatically, raising $617 million and demonstrating the concept's viability. Crucially, bidders accepted the outcomes as legitimate, and spectrum reached companies that rapidly deployed services.
 
 **Critical Inflection Points:**
 
-*Design Details Mattered:* The success hinged on technical innovations in auction design. Economists developed the "simultaneous ascending auction" allowing bidders to assemble complementary licenses (geographic coverage) while revealing information about competitors' valuations. They created activity rules preventing bid sniping, anti-collusion measures, and bidding credits for small businesses. When Auction 66 in 2006 revealed gaming strategies (SpectrumCo using bid signaling), economists adjusted rules. This iterative refinement—learning from each auction to improve the next—was essential. It wasn't one-off academic work but sustained engagement with implementation details.
+*Design Details Mattered:* The success hinged on technical innovations in auction design. Economists developed the "simultaneous ascending auction" allowing bidders to assemble complementary licenses (geographic coverage) while revealing information about competitors' valuations. They created activity rules preventing bid sniping, anti-collusion measures, and bidding credits for small businesses. When Auction 66 in 2006 revealed gaming strategies (SpectrumCo using bid signaling), economists adjusted rules. This iterative refinement, learning from each auction to improve the next, was essential. It wasn't one-off academic work but sustained engagement with implementation details.
 
-*Knowledge Brokers - Economists as Official Advisors:* A pivotal moment came in 2012 when the FCC hired Milgrom and Levin as official Chief Economists. This institutionalized academic expertise within the agency, giving economists direct influence on auction design, spectrum policy, and regulatory decisions. Unlike external consultants, they could shape policy from inside. Their work on the 2016-2017 Incentive Auction—the world's first two-sided auction reallocating TV broadcast spectrum to wireless—demonstrated the value of sophisticated economic design. The Incentive Auction successfully reallocated 84 MHz while raising $19.8 billion, a technical and policy triumph.
+*Knowledge Brokers - Economists as Official Advisors:* A pivotal moment came in 2012 when the FCC hired Milgrom and Levin as official Chief Economists. This institutionalized academic expertise within the agency, giving economists direct influence on auction design, spectrum policy, and regulatory decisions. Unlike external consultants, they could shape policy from inside. Their work on the 2016-2017 Incentive Auction, the world's first two-sided auction reallocating TV broadcast spectrum to wireless, demonstrated the value of sophisticated economic design. The Incentive Auction successfully reallocated 84 MHz while raising $19.8 billion, a technical and policy triumph.
 
-*Complementary Unlicensed Approach:* Economists also advocated for expanding unlicensed spectrum bands (Wi-Fi, Bluetooth), recognizing that innovation in decentralized technologies required commons-based access, not just property rights. The 2020 decision to open the 6 GHz band (1200 MHz) for unlicensed use—opposed by incumbents—was informed by economic analysis showing enormous potential consumer benefits. This generated an estimated $870 billion in value within 3-4 years by enabling next-generation Wi-Fi.
+*Complementary Unlicensed Approach:* Economists also advocated for expanding unlicensed spectrum bands (Wi-Fi, Bluetooth), recognizing that innovation in decentralized technologies required commons-based access, not just property rights. The 2020 decision to open the 6 GHz band (1200 MHz) for unlicensed use, opposed by incumbents, was informed by economic analysis showing enormous potential consumer benefits. This generated an estimated $870 billion in value within 3-4 years by enabling next-generation Wi-Fi.
 
 **Scaling Mechanisms:**
 
-After U.S. success, spectrum auctions spread globally. By the early 2000s, European countries, Australia, and others adopted variations of FCC auction designs, often hiring the same economists as advisors. The approach became international best practice recommended by the International Telecommunication Union (ITU) and World Bank. The revenue potential created political buy-in—governments discovered spectrum auctions could raise billions while improving allocation efficiency. The U.S. alone conducted ~100 auctions through 2023, continually refining designs for different spectrum bands and uses.
+After U.S. success, spectrum auctions spread globally. By the early 2000s, European countries, Australia, and others adopted variations of FCC auction designs, often hiring the same economists as advisors. The approach became international best practice recommended by the International Telecommunication Union (ITU) and World Bank. The revenue potential created political buy-in, governments discovered spectrum auctions could raise billions while improving allocation efficiency. The U.S. alone conducted ~100 auctions through 2023, continually refining designs for different spectrum bands and uses.
 
 ## Current Status
 
@@ -89,17 +127,17 @@ Spectrum auctions are now standard practice globally, but the U.S. faces challen
 
 The focus has shifted toward hybrid approaches balancing licensed auctions with unlicensed commons. The 2020 6 GHz opening demonstrated that massive economic value can be created through well-designed unlicensed allocation. Current debates center on mid-band spectrum (3-7 GHz) allocation, balancing incumbent users (satellite, military, federal agencies) with commercial needs, and designing sharing mechanisms that allow multiple uses without harmful interference.
 
-Recent innovations include dynamic spectrum sharing using databases (Citizens Broadband Radio Service in 3.5 GHz band) and discussions of automated frequency coordination. These approaches extend the economic logic of market mechanisms to more complex technical environments. The intellectual framework—treating spectrum as an economic resource with tradable rights and prices reflecting opportunity costs—remains dominant, though implementation continues to evolve with technology.
+Recent innovations include dynamic spectrum sharing using databases (Citizens Broadband Radio Service in 3.5 GHz band) and discussions of automated frequency coordination. These approaches extend the economic logic of market mechanisms to more complex technical environments. The intellectual framework, treating spectrum as an economic resource with tradable rights and prices reflecting opportunity costs, remains dominant, though implementation continues to evolve with technology.
 
 ## Lessons Exemplified
 
-**Knowledge Brokers:** Economists served as essential translators between academic theory and policy implementation. Milgrom, Wilson, McAfee, and others didn't just publish papers—they designed actual auction formats, wrote regulatory rules, testified before Congress, and worked inside agencies. The 2012 hiring of academic economists as official FCC advisors institutionalized this knowledge brokering role.
+**Knowledge Brokers:** Economists served as essential translators between academic theory and policy implementation. Milgrom, Wilson, McAfee, and others didn't just publish papers, they designed actual auction formats, wrote regulatory rules, testified before Congress, and worked inside agencies. The 2012 hiring of academic economists as official FCC advisors institutionalized this knowledge brokering role.
 
 **Policy Windows:** The 1993 Congressional authorization for auctions emerged from budget politics, not economic efficiency arguments. Reformers capitalized on this window to demonstrate success quickly (1994 auctions), building political support. Similarly, the mobile data explosion of the 2000s-2010s created demand for more spectrum, opening opportunities for both auction and unlicensed reforms.
 
-**Design Details Matter:** Spectrum auction success required getting technical details right—activity rules, anti-collusion measures, package bidding, two-sided markets. Generic "use markets" advice wouldn't have worked; operational success depended on sophisticated mechanism design tailored to spectrum's unique characteristics (geographic complementarities, existing incumbents, interference constraints). Economists' sustained engagement in iterative refinement was crucial.
+**Design Details Matter:** Spectrum auction success required getting technical details right, activity rules, anti-collusion measures, package bidding, two-sided markets. Generic "use markets" advice wouldn't have worked; operational success depended on sophisticated mechanism design tailored to spectrum's unique characteristics (geographic complementarities, existing incumbents, interference constraints). Economists' sustained engagement in iterative refinement was crucial.
 
-**Sustained Researcher Engagement Beyond Publication:** Milgrom and Wilson maintained active involvement from the 1990s through 2020s—three decades of auction design, advising, and refinement. They didn't just contribute once but responded to new challenges (incentive auctions, unlicensed policy) and learned from implementation experience. This long-term commitment enabled continuous improvement.
+**Sustained Researcher Engagement Beyond Publication:** Milgrom and Wilson maintained active involvement from the 1990s through 2020s, three decades of auction design, advising, and refinement. They didn't just contribute once but responded to new challenges (incentive auctions, unlicensed policy) and learned from implementation experience. This long-term commitment enabled continuous improvement.
 
 **Institutional and Political Barriers:** Despite economic logic, spectrum reform faced fierce resistance from incumbents benefiting from administrative allocation, agencies protective of regulatory discretion, and ideological opposition to markets in public resources. Success required Congressional action to override FCC reluctance, compelling evidence from successful auctions, and politically astute framing (revenue generation) alongside efficiency arguments.
 

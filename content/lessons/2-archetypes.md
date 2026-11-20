@@ -1,16 +1,28 @@
 ---
 number: 2
-slug: "archetypes"
+slug: "2-archetypes"
 title: "Two Key Archetypes of Success: 'PI as Idea-Entrepreneur' vs 'Field Accumulation'"
-shortTitle: "Two Pathways to Impact"
-icon: "UserGroupIcon"
-topics: ["Researcher Roles", "Impact Pathways"]
-relatedCaseStudies: ["growth-mindset", "dice-modeling", "amc-vaccines", "needle-exchange", "emissions-trading", "behavioral-nudges"]
+shortTitle: "Two paths"
+inBrief: "[draft] Research achieves large-scale societal impact through two fundamentally different patterns. Recognizing these archetypes helps funders and institutions provide appropriate support, because what works for one pathway can undermine the other."
+cases:
+  - slug: "growth-mindset"
+    how: "[draft]"
+  - slug: "dice-modeling"
+    how: "[draft]"
+  - slug: "amc-vaccines"
+    how: "[draft]"
+  - slug: "needle-exchange"
+    how: "[draft]"
+  - slug: "emissions-trading"
+    how: "[draft]"
+  - slug: "behavioral-nudges"
+    how: "[draft]"
+sources: []
 ---
 
 ## Two Distinct Paths to Transformative Impact
 
-Research achieves large-scale societal impact through two fundamentally different patterns. Recognizing these archetypes helps funders and institutions provide appropriate support—because what works for one pathway can undermine the other.
+Research achieves large-scale societal impact through two fundamentally different patterns. Recognizing these archetypes helps funders and institutions provide appropriate support, because what works for one pathway can undermine the other.
 
 ### Archetype A: The Idea-Entrepreneur
 
@@ -20,17 +32,17 @@ Individual researchers champion a coherent idea over decades, iterating through 
 
 **Key characteristics:**
 - **Sustained focus:** Visible commitment to a specific problem spanning 10-30 years
-- **Decision-ready artifacts:** They produce tools policymakers can immediately use—social cost of carbon estimates, classroom playbooks, contract templates
+- **Decision-ready artifacts:** They produce tools policymakers can immediately use, social cost of carbon estimates, classroom playbooks, contract templates
 - **Strategic coalition building:** Create broad alliances around frameworks that work across ideological divides
 - **Patient capital:** Require long-term flexible funding to pivot and iterate as understanding deepens
 
-Carol Dweck spent 40 years developing growth mindset from academic theory to classroom practice. William Nordhaus refined DICE for 32 years before it became the federal government's primary climate-economy tool. These weren't quick wins—they were sustained campaigns.
+Carol Dweck spent 40 years developing growth mindset from academic theory to classroom practice. William Nordhaus refined DICE for 32 years before it became the federal government's primary climate-economy tool. These weren't quick wins, they were sustained campaigns.
 
 ### Archetype B: Field Accumulation
 
 **Examples:** Syringe Services Programs, Emissions Trading Systems, Behavioral Nudges (in part)
 
-Impact emerges from accumulating evidence across many researchers and institutions. A single "keystone study" often crystallizes decades of prior work, reframing assumptions and triggering cascading adoption. The researchers involved may not personally drive implementation—the field does.
+Impact emerges from accumulating evidence across many researchers and institutions. A single "keystone study" often crystallizes decades of prior work, reframing assumptions and triggering cascading adoption. The researchers involved may not personally drive implementation, the field does.
 
 **Key characteristics:**
 - **Distributed contribution:** Multiple teams build evidence independently
@@ -38,7 +50,7 @@ Impact emerges from accumulating evidence across many researchers and institutio
 - **Self-sustaining diffusion:** Once the paradigm shifts, adoption spreads through normal channels
 - **Funding breadth over depth:** Needs diverse portfolio of research approaches, not repeated bets on one PI
 
-Robert Heimer's New Haven needle exchange study didn't invent harm reduction—activists had been working on it for years. But his rigorous evaluation changed the conversation, enabling evidence-based advocacy that overcame political opposition. Emissions trading had similar dynamics: Ronald Coase's 1959 theory, decades of refinement, then EPA's acid rain program proved the concept at scale.
+Robert Heimer's New Haven needle exchange study didn't invent harm reduction, activists had been working on it for years. But his rigorous evaluation changed the conversation, enabling evidence-based advocacy that overcame political opposition. Emissions trading had similar dynamics: Ronald Coase's 1959 theory, decades of refinement, then EPA's acid rain program proved the concept at scale.
 
 ## The Overton Window Challenge
 
@@ -64,4 +76,4 @@ Both pathways work. But they require different evaluation criteria. Judging fiel
 
 ## Key Takeaway
 
-Different problems require different engagement models. Some challenges need sustained champions who can bridge research and implementation over decades. Others need diverse research portfolios where accumulating evidence eventually shifts paradigms. Both pathways create transformative impact—but mixing up the support structures designed for each undermines success. The art lies in recognizing which archetype a project represents and providing the right scaffolding accordingly.
+Different problems require different engagement models. Some challenges need sustained champions who can bridge research and implementation over decades. Others need diverse research portfolios where accumulating evidence eventually shifts paradigms. Both pathways create transformative impact, but mixing up the support structures designed for each undermines success. The art lies in recognizing which archetype a project represents and providing the right scaffolding accordingly.

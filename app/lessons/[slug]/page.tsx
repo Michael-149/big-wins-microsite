@@ -1,186 +1,136 @@
-import { getLesson, getAllLessons, getCaseStudiesForLesson } from '@/lib/content';
-import LessonSidebar from '@/components/lesson/LessonSidebar';
-import LessonHero from '@/components/lesson/LessonHero';
-import LessonTabs from '@/components/lesson/LessonTabs';
-import LessonAccordion from '@/components/lesson/LessonAccordion';
-import RelatedCaseStudies from '@/components/lesson/RelatedCaseStudies';
-import ReadingProgressBar from '@/components/ui/ReadingProgressBar';
-import Breadcrumbs from '@/components/ui/Breadcrumbs';
-import PrevNextNav from '@/components/ui/PrevNextNav';
-import { notFound } from 'next/navigation';
+import { Breadcrumbs, PageShell } from '@/components/chrome';
+import { ArticleSections, SourcesList } from '@/components/content-blocks';
+import { GuideContents, LessonStrip, PageRail, type OnThisPageItem } from '@/components/nav';
+import { FeedbackBox, Html, MetaLine, Pager } from '@/components/ui';
+import { getCases, getHome, getLesson, getLessons } from '@/lib/content';
+import { pageMetadata } from '@/lib/metadata';
+import { buildLessonPage } from '@/lib/page-models';
+import { LAST_UPDATED, href, numberWord, pad2 } from '@/lib/site';
+import type { Lesson } from '@/lib/types';
 
-interface PageProps {
-  params: Promise<{
-    slug: string;
-  }>;
+type Params = { params: Promise<{ slug: string }> };
+
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return getLessons().map((l) => ({ slug: l.slug }));
 }
 
-// Parse H2 sections from HTML content
-function parseSections(htmlContent: string) {
-  const h2Regex = /<h2[^>]*>(.*?)<\/h2>/gi;
-  const matches = [...htmlContent.matchAll(h2Regex)];
-
-  if (matches.length === 0) {
-    return [{
-      id: 'overview',
-      title: 'Overview',
-      content: htmlContent,
-    }];
-  }
-
-  const sections: Array<{ id: string; title: string; content: string }> = [];
-
-  for (let i = 0; i < matches.length; i++) {
-    const match = matches[i];
-    const title = match[1].replace(/<[^>]*>/g, '');
-    const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-
-    const startIndex = match.index! + match[0].length;
-    const endIndex = i < matches.length - 1 ? matches[i + 1].index! : htmlContent.length;
-
-    const content = htmlContent.slice(startIndex, endIndex).trim();
-
-    sections.push({ id, title, content });
-  }
-
-  return sections;
-}
-
-// Generate static params for all lessons
-export async function generateStaticParams() {
-  const lessons = getAllLessons();
-  return lessons.map((lesson) => ({
-    slug: lesson.slug,
-  }));
-}
-
-// Generate metadata for each lesson
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({ params }: Params) {
   const { slug } = await params;
-  const lesson = await getLesson(slug);
-
-  if (!lesson) {
-    return {
-      title: 'Lesson Not Found',
-    };
-  }
-
-  return {
-    title: `${lesson.frontmatter.shortTitle} | Big Wins in Social Science`,
-    description: lesson.frontmatter.title,
-  };
+  const l = getLesson(slug);
+  return pageMetadata({ title: `Lesson ${l.number}: ${l.shortTitle}`, description: l.inBrief, path: `/lessons/${l.slug}` });
 }
 
-export default async function LessonPage({ params }: PageProps) {
+function LessonTab({ lesson }: { lesson: Lesson }) {
+  return (
+    <div className={`lesson-tab l${lesson.number}`} aria-hidden="true">
+      <span className="t-meta lesson-tab__word">Lesson</span>
+      <span className="lesson-tab__n">{lesson.number}</span>
+    </div>
+  );
+}
+
+export default async function LessonPage({ params }: Params) {
   const { slug } = await params;
-  const lesson = await getLesson(slug);
-  const allLessons = getAllLessons();
-
-  if (!lesson) {
-    notFound();
-  }
-
-  const relatedCaseStudies = await getCaseStudiesForLesson(slug);
-
-  // Parse sections from content
-  const sections = parseSections(lesson.content);
-
-  // Calculate previous and next lessons
-  const currentIndex = allLessons.findIndex(l => l.slug === slug);
-  const prevLesson = currentIndex > 0 ? allLessons[currentIndex - 1] : null;
-  const nextLesson = currentIndex < allLessons.length - 1 ? allLessons[currentIndex + 1] : null;
-
-  // Engaging descriptions for each lesson
-  const descriptions: Record<number, string> = {
-    1: "From partnerships to advocacy to community-driven innovation—engagement takes many forms, all essential for translating research into lasting change.",
-    2: "Different archetypes of researcher-champions drive impact in distinct ways—from idea entrepreneurs to field builders.",
-    3: "Implementation details are the intervention itself—small design choices determine success or failure at scale.",
-    4: "Translators between academic research and policy implementation are essential catalysts for evidence-based change.",
-    5: "Strategic framing that cuts across ideological divides enables adoption at scale in polarized environments.",
-    6: "Seizing political and institutional moments of opportunity accelerates impact when research is ready.",
-    7: "Decades-long sustained engagement—not quick wins—characterizes transformative research trajectories.",
-    8: "Researchers play multiple roles beyond publishing: advocate, advisor, implementer, and knowledge broker.",
-  };
+  const l = getLesson(slug);
+  const m = buildLessonPage(l);
+  if (m.warnings.length) console.warn(m.warnings.join('\n'));
+  const lessons = getLessons();
+  const cases = getCases();
+  const path = `/lessons/${l.slug}`;
+  const where = `Lesson ${l.number} of ${m.total}`;
+  const drawnCases = m.drawn.map((d) => d.case);
+  const onThisPage: OnThisPageItem[] = [
+    ...m.sections.map((s) => ({ id: s.id, title: s.title })),
+    ...(m.sources.count || m.sources.unused.length ? [{ id: 'sources', title: 'Sources' }] : []),
+  ];
+  const orientation = { where, title: l.shortTitle, lesson: l };
 
   return (
-    <>
-      <ReadingProgressBar />
+    <PageShell current="lessons" page={path} className={`lesson-page l${l.number}`} contributeTeaser={getHome()?.contributeTeaser}>
+      <div className="container">
+        <Breadcrumbs
+          items={[{ label: 'Home', to: '/' }, { label: 'Lessons', to: '/lessons' }, { label: `Lesson ${l.number}: ${l.shortTitle}` }]}
+        />
+        <LessonStrip lessons={lessons} current={l.slug} />
+        <GuideContents orientation={orientation} onThisPage={onThisPage} cases={cases} lessons={lessons} />
 
-      {/* Hero Section */}
-      <LessonHero
-        number={lesson.frontmatter.number}
-        title={lesson.frontmatter.title}
-        icon={lesson.frontmatter.icon}
-        topics={lesson.frontmatter.topics}
-        description={descriptions[lesson.frontmatter.number]}
-      />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="flex gap-12">
-          {/* Sidebar Navigation */}
-          <LessonSidebar lessons={allLessons} currentSlug={slug} />
-
-        {/* Main Content */}
-        <article className="flex-1 max-w-4xl">
-          {/* Breadcrumbs */}
-          <Breadcrumbs
-            items={[
-              { label: 'Home', href: '/' },
-              { label: 'Lessons', href: '/lessons' },
-              { label: lesson.frontmatter.shortTitle },
-            ]}
-          />
-
-          {/* Section Navigation: Tabs (desktop) and Accordion (mobile) */}
-          <LessonTabs sections={sections} />
-          <LessonAccordion sections={sections} />
-
-          {/* Key Takeaway Box */}
-          <div className="mt-12 p-6 bg-sil-teal-3/10 border-2 border-sil-teal-3 rounded-lg">
-            <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
-              <span>💡</span>
-              Key Takeaway
-            </h3>
-            <p className="text-gray-700 leading-relaxed">
-              {lesson.frontmatter.shortTitle}: This lesson emphasizes the importance of {
-                lesson.frontmatter.number === 1 ? 'engaging with stakeholders throughout the research process' :
-                lesson.frontmatter.number === 2 ? 'understanding different researcher archetypes and their unique contributions' :
-                lesson.frontmatter.number === 3 ? 'paying careful attention to implementation details' :
-                lesson.frontmatter.number === 4 ? 'having translators who bridge academic research and policy' :
-                lesson.frontmatter.number === 5 ? 'strategic framing that appeals across political divides' :
-                lesson.frontmatter.number === 6 ? 'recognizing and seizing windows of opportunity' :
-                lesson.frontmatter.number === 7 ? 'sustained long-term engagement beyond initial publication' :
-                'researchers taking on multiple roles throughout the impact journey'
-              }.
-            </p>
+        <div className="lesson-hero grid12">
+          <div className="lesson-hero__rule" aria-hidden="true" />
+          <div className="lesson-hero__main">
+            <div className="lesson-hero__head">
+              <LessonTab lesson={l} />
+              <div>
+                <MetaLine items={[where, l.shortTitle]} />
+                <h1 className="t-h1">{l.title}</h1>
+              </div>
+            </div>
+            <section className="in-brief" aria-labelledby="in-brief-title">
+              <h2 id="in-brief-title" className="t-meta in-brief__tab">
+                In brief
+              </h2>
+              <Html as="p" className="t-lead" html={m.inBriefHtml} />
+              {m.drawn.length > 0 && (
+                <div className="in-brief__drawn">
+                  <p className="t-meta">
+                    Drawn from {numberWord(m.drawn.length, true)} {m.drawn.length === 1 ? 'case' : 'cases'}
+                  </p>
+                  {m.drawn.map(({ case: c }) => (
+                    <a key={c.slug} className="link t-body" href={href(`/case-studies/${c.slug}`)}>
+                      <span className="num" aria-hidden="true">
+                        {pad2(c.order)}
+                      </span>
+                      <span className="visually-hidden">Case {c.order}: </span>
+                      {c.shortTitle}
+                    </a>
+                  ))}
+                </div>
+              )}
+            </section>
           </div>
+          <div className="lesson-hero__tab">
+            <LessonTab lesson={l} />
+          </div>
+        </div>
 
-          {/* Related Case Studies */}
-          <RelatedCaseStudies caseStudies={relatedCaseStudies} />
-
-          {/* Previous/Next Navigation */}
-          <PrevNextNav
-            type="lesson"
-            prev={
-              prevLesson
-                ? {
-                    href: `/lessons/${prevLesson.slug}`,
-                    title: `Lesson ${prevLesson.frontmatter.number}: ${prevLesson.frontmatter.shortTitle}`,
-                  }
-                : undefined
-            }
-            next={
-              nextLesson
-                ? {
-                    href: `/lessons/${nextLesson.slug}`,
-                    title: `Lesson ${nextLesson.frontmatter.number}: ${nextLesson.frontmatter.shortTitle}`,
-                  }
-                : undefined
-            }
+        <div className="layout grid12">
+          <PageRail
+            orientation={orientation}
+            onThisPage={onThisPage}
+            cases={drawnCases}
+            casesTitle="Cases in this lesson"
+            page={path}
           />
-        </article>
+          <article className="article" aria-label={`Lesson ${l.number}: ${l.shortTitle}`}>
+            {m.introHtml && <div className="prose" dangerouslySetInnerHTML={{ __html: m.introHtml }} />}
+            <ArticleSections sections={m.sections} />
+            <FeedbackBox
+              title="Does this lesson hold in your field?"
+              text="These lessons are our reading of eight cases. Tell us where they fit your experience and where they do not."
+              links={[
+                { label: 'Challenge this lesson', type: 'general' },
+                { label: 'Suggest a case that tests it', type: 'suggest-case' },
+              ]}
+              page={path}
+            />
+            <SourcesList model={m.sources} lastReviewed={l.lastReviewed ?? LAST_UPDATED} />
+            <Pager
+              label="Previous and next lesson"
+              prev={
+                m.prev
+                  ? { dir: 'Previous lesson', title: m.prev.shortTitle, to: `/lessons/${m.prev.slug}`, lesson: m.prev }
+                  : { dir: 'All lessons', title: `All ${numberWord(m.total, true)} lessons`, to: '/lessons' }
+              }
+              next={
+                m.next
+                  ? { dir: 'Next lesson', title: m.next.shortTitle, to: `/lessons/${m.next.slug}`, lesson: m.next }
+                  : { dir: 'Next', title: 'How we built this', to: '/method' }
+              }
+            />
+          </article>
+        </div>
       </div>
-    </div>
-    </>
+    </PageShell>
   );
 }

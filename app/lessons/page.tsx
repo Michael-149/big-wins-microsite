@@ -1,46 +1,47 @@
-import { getAllLessons } from '@/lib/content';
-import LessonCard from '@/components/cards/LessonCard';
+import { Breadcrumbs, PageShell } from '@/components/chrome';
+import { LessonRow } from '@/components/cards';
+import { LessonsMatrix } from '@/components/viz';
+import { getCases, getHome, getLessons } from '@/lib/content';
+import { pageMetadata } from '@/lib/metadata';
+import { href, numberWord } from '@/lib/site';
 
-export default function LessonsPage() {
-  const lessons = getAllLessons();
+const FALLBACK_INTRO =
+  'What the cases have in common, stated as claims that could be wrong, with the evidence from each case and what they mean for funders and research leaders.';
 
+export function generateMetadata() {
+  const intro = getHome()?.lessonsIntro ?? FALLBACK_INTRO;
+  return pageMetadata({ title: `${numberWord(getLessons().length)} lessons`, description: intro, path: '/lessons' });
+}
+
+export default function LessonsHub() {
+  const lessons = getLessons();
+  const cases = getCases();
+  const home = getHome();
   return (
-    <>
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-sil-primary via-sil-teal-2 to-sil-teal-3 text-white py-20 md:py-28 overflow-hidden">
-        {/* Subtle background pattern */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2" />
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-white rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2" />
-        </div>
-
-        <div className="relative max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
-          <div className="inline-block bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
-            <span className="text-white font-semibold text-sm">8 Research Lessons</span>
-          </div>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
-            Lessons from Big Wins
-          </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-3xl leading-relaxed font-light mb-8">
-            What we learned from studying transformative social science research that achieved large-scale societal impact over the past 50 years.
+    <PageShell current="lessons" page="/lessons" contributeTeaser={home?.contributeTeaser}>
+      <div className="container">
+        <Breadcrumbs items={[{ label: 'Home', to: '/' }, { label: 'Lessons' }]} />
+        <div className="page-head">
+          <h1 className="t-h1">{numberWord(lessons.length)} lessons</h1>
+          <p className="t-lead page-head__lead">{home?.lessonsIntro ?? FALLBACK_INTRO}</p>
+          <p className="t-body page-head__note">
+            These are our reading of the cases, open to challenge.{' '}
+            <a className="link" href={href('/method#lessons')}>
+              How we drew the lessons
+            </a>
           </p>
-          <div className="flex items-center gap-2 text-white/80">
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-            <span className="text-sm font-medium">Explore the lessons below</span>
-          </div>
         </div>
-      </section>
-
-      {/* Lessons Grid */}
-      <section className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {lessons.map((lesson) => (
-            <LessonCard key={lesson.slug} lesson={lesson} />
+        <ol className="lesson-list">
+          {lessons.map((l) => (
+            <li key={l.slug}>
+              <LessonRow lesson={l} size="large" headingLevel={2} />
+            </li>
           ))}
+        </ol>
+        <div style={{ paddingBottom: 'var(--space-2xl)' }}>
+          <LessonsMatrix lessons={lessons} cases={cases} />
         </div>
-      </section>
-    </>
+      </div>
+    </PageShell>
   );
 }

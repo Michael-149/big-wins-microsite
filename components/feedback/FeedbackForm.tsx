@@ -61,11 +61,16 @@ export default function FeedbackForm({ endpoint, fallbackEmail, siteName, versio
   // Prefill from links such as /contribute?type=correction&page=/case-studies/needle-exchange
   useEffect(() => {
     startedAt.current = Date.now();
+    // The page is static, so only the browser knows the query string; reading it
+    // once after hydration is intended (a lazy initial state would not match the
+    // server-rendered HTML).
     const params = new URLSearchParams(window.location.search);
     const t = params.get('type');
+    /* eslint-disable react-hooks/set-state-in-effect */
     if (t && TYPES.some((x) => x.value === t)) setType(t as FeedbackType);
     const p = params.get('page');
     if (p && p.startsWith('/') && p.length < 300) setPage(p);
+    /* eslint-enable react-hooks/set-state-in-effect */
   }, []);
 
   useEffect(() => {

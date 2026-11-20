@@ -1,43 +1,83 @@
 ---
-title: "Growth Mindset in Education"
 slug: "growth-mindset"
-icon: "AcademicCapIcon"
-domain: "Educational Psychology / Social-Emotional Learning"
-domainColor: "sil-teal-1"
-keyResearchers: ["Carol S. Dweck", "David S. Yeager", "Gregory Walton"]
-timespan: "1970s-present"
-heroMetric: "Millions of students reached"
-lessonsExemplified: ["archetypes", "knowledge-brokers", "legitimacy-narrative"]
+title: "Growth Mindset in Education"
+shortTitle: "Growth mindset"
+order: 5
+domain: "Education"
+disciplines:
+  - "Psychology"
+geography: "United States"
+years: "1970 to today"
+winStatement: "[draft] Carol Dweck's research on \"growth mindset\", the belief that intelligence and abilities can be developed through effort and learning, transformed how educators, policymakers, and psychologists approach student motivation and achievement."
+summary: "[draft] Carol Dweck's research on \"growth mindset\", the belief that intelligence and abilities can be developed through effort and learning, transformed how educators, policymakers, and psychologists approach student motivation and achievement. Beginning in the 1970s, Dweck's work demonstrated that students who view intelligence as malleable show greater persistence, resilience, and performance compared to those who see ability as fixed."
+people:
+  - name: "Carol S. Dweck"
+    role: "[draft] role to confirm"
+  - name: "David S. Yeager"
+    role: "[draft] role to confirm"
+  - name: "Gregory Walton"
+    role: "[draft] role to confirm"
+lessons:
+  - slug: "2-archetypes"
+    note: "[draft]"
+  - slug: "4-knowledge-brokers"
+    note: "[draft]"
+  - slug: "1-public-engagement"
+    note: "[draft]"
+  - slug: "8-different-roles"
+    note: "[draft]"
+stats:
+  - value: "Millions"
+    label: "of students reached"
+    detail: "[draft] from the January 2026 draft; not yet checked"
+    source: "jan2026-draft"
+  - value: "~65%"
+    label: "Of students globally demonstrated growth mindset beliefs"
+    detail: "[draft] from the January 2026 draft; not yet checked"
+    source: "jan2026-draft"
 timeline:
-  - year: "1970s-1980s"
-    title: "Early Research Foundations"
-    description: "Dweck's work on learned helplessness establishes connections between beliefs about ability and academic performance"
-  - year: "2006"
-    title: "Mindset Book Published"
-    description: "Dweck's bestselling book popularizes growth mindset for mainstream audiences, catalyzing educational adoption"
-  - year: "2010-2015"
-    title: "Large-Scale Trials"
-    description: "Yeager and colleagues conduct major studies showing mindset interventions improve achievement for thousands of students"
-  - year: "2015-2018"
-    title: "EdTech Integration"
-    description: "Khan Academy, Coursera, and school districts integrate growth mindset into platforms reaching millions"
-  - year: "2018"
-    title: "Global Adoption"
-    description: "PISA survey shows 65% of students globally demonstrate growth mindset beliefs"
-  - year: "2024"
-    title: "Widespread Implementation"
-    description: "Growth mindset embedded in teacher training, curricula, and accountability systems across dozens of countries"
+  - year: 1970
+    endYear: 1980
+    phase: "origin"
+    text: "Early Research Foundations: Dweck's work on learned helplessness establishes connections between beliefs about ability and academic performance"
+    source: "jan2026-draft"
+  - year: 2006
+    phase: "research"
+    text: "Mindset Book Published: Dweck's bestselling book popularizes growth mindset for mainstream audiences, catalyzing educational adoption"
+    source: "jan2026-draft"
+  - year: 2010
+    endYear: 2015
+    phase: "research"
+    text: "Large-Scale Trials: Yeager and colleagues conduct major studies showing mindset interventions improve achievement for thousands of students"
+    source: "jan2026-draft"
+  - year: 2015
+    endYear: 2018
+    phase: "translation"
+    text: "EdTech Integration: Khan Academy, Coursera, and school districts integrate growth mindset into platforms reaching millions"
+    source: "jan2026-draft"
+  - year: 2018
+    phase: "scale"
+    text: "Global Adoption: PISA survey shows 65% of students globally demonstrate growth mindset beliefs"
+    source: "jan2026-draft"
+  - year: 2024
+    phase: "scale"
+    text: "Widespread Implementation: Growth mindset embedded in teacher training, curricula, and accountability systems across dozens of countries"
+    source: "jan2026-draft"
+goDeeper: []
+lastReviewed: "2026-01-01"
+sources:
+  - id: "jan2026-draft"
+    citation: "[draft] Stanford Impact Labs. (2026). January 2026 draft of this page. Figures and links not yet checked."
+    type: "web"
 ---
-
-# Growth Mindset in Education
 
 ## Overview
 
-Carol Dweck's research on "growth mindset"—the belief that intelligence and abilities can be developed through effort and learning—transformed how educators, policymakers, and psychologists approach student motivation and achievement. Beginning in the 1970s, Dweck's work demonstrated that students who view intelligence as malleable show greater persistence, resilience, and performance compared to those who see ability as fixed. This deceptively simple insight sparked a global movement affecting how millions of students are taught.
+Carol Dweck's research on "growth mindset", the belief that intelligence and abilities can be developed through effort and learning, transformed how educators, policymakers, and psychologists approach student motivation and achievement. Beginning in the 1970s, Dweck's work demonstrated that students who view intelligence as malleable show greater persistence, resilience, and performance compared to those who see ability as fixed. This deceptively simple insight sparked a global movement affecting how millions of students are taught.
 
 The concept spread rapidly from academic journals to mainstream education practice. By 2006, Dweck's book *Mindset: The New Psychology of Success* popularized the framework for broad audiences, catalyzing widespread adoption. Today, growth mindset interventions are embedded in teacher training programs, curriculum standards, EdTech platforms (including Khan Academy and Coursera), and school accountability systems reaching millions of students across dozens of countries. The research demonstrated that small shifts in how students understand their own potential can have measurable effects on academic outcomes, particularly for students previously marginalized by fixed-ability labels.
 
-> "My research looks at the origins of these mindsets, their role in motivation and self-regulation, and their impact on achievement and interpersonal processes." — Carol Dweck
+> "My research looks at the origins of these mindsets, their role in motivation and self-regulation, and their impact on achievement and interpersonal processes.", Carol Dweck
 
 ## Impact Metrics
 
@@ -59,19 +99,19 @@ The concept spread rapidly from academic journals to mainstream education practi
 - [Mueller & Dweck, 1998](https://psycnet.apa.org/doi/10.1037/0022-3514.75.1.33): Showed students viewing intelligence as malleable sought challenges and persisted through adversity
 - [Blackwell, Trzesniewski, & Dweck, 2007](https://pubmed.ncbi.nlm.nih.gov/17328703/): Longitudinal study showing growth mindset predicted upward mathematics achievement trajectory in adolescence; intervention improved grades
 - [Yeager & Dweck, 2019](https://www.nature.com/articles/s41586-019-1466-y): National experiment (N=12,000+ students, 65 schools) found interventions most powerful for struggling adolescents; highlighted importance of implementation context
-- [Dweck & Yeager, 2020](https://psycnet-apa-org.stanford.idm.oclc.org/manuscript/2020-99903-019.pdf): Critical reflection on boundary conditions, emphasizing context and implementation fidelity matter greatly
+- [Dweck & Yeager, 2020](https://psycnet.apa.org/manuscript/2020-99903-019.pdf): Critical reflection on boundary conditions, emphasizing context and implementation fidelity matter greatly
 
 The evidence base evolved from individual laboratory studies to large-scale randomized controlled trials, revealing that effects depend heavily on supportive school climates and thoughtful implementation.
 
 ## Path from Science to Impact
 
-**Initial Research (1970s-1990s):** Building on the cognitive revolution's emphasis on mental processes, Dweck and collaborators studied why some students wilted at failure while others relished challenges. They discovered that beliefs about intelligence malleability—not just ability itself—profoundly shaped responses to difficulty. Early studies with [Institute of Education Sciences funding](https://ies.ed.gov/use-work/awards/influence-students-intelligence-beliefs-attention-information-processing-and-learning?ID=85) established the theoretical foundation.
+**Initial Research (1970s-1990s):** Building on the cognitive revolution's emphasis on mental processes, Dweck and collaborators studied why some students wilted at failure while others relished challenges. They discovered that beliefs about intelligence malleability, not just ability itself, profoundly shaped responses to difficulty. Early studies with [Institute of Education Sciences funding](https://ies.ed.gov/use-work/awards/influence-students-intelligence-beliefs-attention-information-processing-and-learning?ID=85) established the theoretical foundation.
 
-**Proof of Concept (2003-2007):** Key longitudinal studies by [Blackwell et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17328703/) demonstrated academic gains for middle school students given brief growth mindset interventions, particularly in mathematics. These weren't just correlation studies—randomized trials showed teaching students about brain plasticity improved grades.
+**Proof of Concept (2003-2007):** Key longitudinal studies by [Blackwell et al. (2007)](https://pubmed.ncbi.nlm.nih.gov/17328703/) demonstrated academic gains for middle school students given brief growth mindset interventions, particularly in mathematics. These weren't just correlation studies, randomized trials showed teaching students about brain plasticity improved grades.
 
 **Critical Inflection Points:**
 
-*Dweck as Idea-Entrepreneur:* Unlike many academic research programs, growth mindset succeeded partly because Dweck actively engaged in public communication and implementation partnerships. Her 2006 book *Mindset* became a bestseller, reaching educators and parents worldwide. This wasn't accidental—Dweck deliberately framed the concept in accessible language that resonated across ideologies: growth mindset appealed to progressives' emphasis on equity and conservatives' emphasis on personal responsibility.
+*Dweck as Idea-Entrepreneur:* Unlike many academic research programs, growth mindset succeeded partly because Dweck actively engaged in public communication and implementation partnerships. Her 2006 book *Mindset* became a bestseller, reaching educators and parents worldwide. This wasn't accidental, Dweck deliberately framed the concept in accessible language that resonated across ideologies: growth mindset appealed to progressives' emphasis on equity and conservatives' emphasis on personal responsibility.
 
 *Policy Windows:* The rise of social-emotional learning (SEL) frameworks created receptive conditions. [CASEL](https://casel.org/fundamentals-of-sel/what-is-the-casel-framework/) (est. 1994) formally integrated growth mindset into its 2020 framework updates. A 2015 UK Cabinet Office survey concluded disadvantaged children would benefit most from SEL, creating demand for evidence-based approaches.
 
@@ -85,13 +125,13 @@ By 2015, growth mindset had achieved unusual breadth. California's [CORE distric
 
 Growth mindset remains widely adopted in 2023-2025, though with growing sophistication about implementation. The concept is now embedded in major EdTech platforms, teacher certification programs, and education policy documents globally. However, critical evaluations have tempered initial enthusiasm. [Meta-analyses by Macnamara & Burgoyne (2022)](https://psychsciences.case.edu/2022/11/analysis-of-growth-mindset-research-suggests-little-to-no-positive-effect-on-student-performance/) found average effects on student performance are smaller and more variable than early studies suggested.
 
-Current understanding emphasizes that **context matters enormously**. Brief online interventions delivered without supportive school climates show minimal effects. Successful implementations require: teacher buy-in and training, alignment with school culture, addressing structural barriers to achievement, and avoiding superficial "just try harder" messaging that ignores systemic inequities. The [2019 national study](https://www.nature.com/articles/s41586-019-1466-y) demonstrated effects concentrated among lower-achieving students in supportive contexts—not a universal panacea.
+Current understanding emphasizes that **context matters enormously**. Brief online interventions delivered without supportive school climates show minimal effects. Successful implementations require: teacher buy-in and training, alignment with school culture, addressing structural barriers to achievement, and avoiding superficial "just try harder" messaging that ignores systemic inequities. The [2019 national study](https://www.nature.com/articles/s41586-019-1466-y) demonstrated effects concentrated among lower-achieving students in supportive contexts, not a universal panacea.
 
 The field has moved from "Does growth mindset work?" to "Under what conditions does it work, for whom, and how should it be implemented?" This evolution represents maturation rather than failure, distinguishing between the robust underlying psychological insight and the challenge of translating it into diverse educational settings.
 
 ## Lessons Exemplified
 
-**PI as Idea-Entrepreneur:** Dweck exemplifies the researcher-as-champion archetype. Beyond publishing academic papers, she actively translated findings for public audiences, partnered with implementation organizations (PERTS), and maintained engagement through implementation challenges. Her sustained involvement—from initial research in the 1970s through current refinements—contrasts with researchers who publish and move on.
+**PI as Idea-Entrepreneur:** Dweck exemplifies the researcher-as-champion archetype. Beyond publishing academic papers, she actively translated findings for public audiences, partnered with implementation organizations (PERTS), and maintained engagement through implementation challenges. Her sustained involvement, from initial research in the 1970s through current refinements, contrasts with researchers who publish and move on.
 
 **Sustained Researcher Engagement Beyond Publication:** Growth mindset's spread required ongoing researcher involvement in intervention design, teacher training, evaluation of implementation fidelity, and public correction of misapplications. Dweck and collaborators have published extensively on what *doesn't* work, helping practitioners avoid superficial adoptions.
 

@@ -1,108 +1,365 @@
 ---
-title: "Moving to Opportunity"
-slug: "moving-to-opportunity"
-icon: "HomeIcon"
-domain: "Housing Policy / Economic Mobility"
-domainColor: "sil-teal-1"
-keyResearchers: ["Raj Chetty", "Nathaniel Hendren", "Lawrence Katz"]
-timespan: "1994-present"
-heroMetric: "31% higher adult earnings"
-lessonsExemplified: ["archetypes", "design-details", "knowledge-brokers"]
+slug: moving-to-opportunity
+title: "Moving to Opportunity and CMTO"
+shortTitle: "Moving to Opportunity"
+order: 1
+domain: "Housing and economic mobility"
+disciplines: ["Economics", "Sociology"]
+geography: "United States"
+years: "1994 to today"
+winStatement: "Tax records from a 1990s housing lottery showed that children whose families used its low-poverty voucher to move before age 13 earned 31% more in their mid-twenties; a later trial of search help informed a $50 million federal demonstration."
+summary: "In the 1990s, a federal housing lottery decided which of 4,604 low-income families in five cities would be offered vouchers. Twenty years later, tax records showed that children whose families used a voucher limited to low-poverty areas to move before age 13 earned 31% more in their mid-twenties. A follow-up trial in Seattle and King County showed how to help families make those moves and informed a federal demonstration, whose study enrollment ended early in June 2026; its services run to October 2028."
+people:
+  - name: "Raj Chetty"
+    role: "Economist, Harvard University; director, Opportunity Insights"
+  - name: "Nathaniel Hendren"
+    role: "Economist, MIT; co-director, Opportunity Insights"
+  - name: "Lawrence F. Katz"
+    role: "Economist, Harvard University"
+  - name: "Stefanie DeLuca"
+    role: "Sociologist, Johns Hopkins University"
+  - name: "Jens Ludwig"
+    role: "Economist, University of Chicago"
+lessons:
+  - slug: "3-design-details"
+    note: "Housing search help, not the voucher alone, changed where families moved: 53% reached high-opportunity areas with it, against 15% without."
+  - slug: "8-different-roles"
+    note: "Research moved from suggesting the idea, to testing it, to explaining it, to designing a service with housing agencies."
+  - slug: "7-long-timeline"
+    note: "The earnings finding arrived more than 20 years after the first families enrolled, once the children had grown up."
+  - slug: "1-public-engagement"
+    note: "CMTO was built with two housing authorities, and interviews with families helped explain why it worked."
+stats:
+  - value: "31%"
+    label: "Higher earnings in their mid-twenties"
+    detail: "for children whose families used the MTO experimental voucher to move before the child turned 13 ($3,477 a year on a control average of $11,270)"
+    source: chetty2016
+  - value: "15% to 53%"
+    label: "Voucher families moving to high-opportunity areas"
+    detail: "without and with CMTO's search help, Seattle and King County, 2018 to 2019"
+    source: bergman2024
+  - value: "4,604"
+    label: "Families in the original lottery"
+    detail: "in Baltimore, Boston, Chicago, Los Angeles and New York, 1994 to 1998"
+    source: hud-mto-final
+  - value: "$50 million"
+    label: "Federal funding for HUD's national mobility demonstration"
+    detail: "in the fiscal 2019 and 2020 spending laws, plus $3 million for its evaluation"
+    source: fr-2026-ccd
 timeline:
-  - year: "1994"
-    title: "MTO Experiment Launched"
-    description: "HUD randomized trial with 4,600 families in five cities testing neighborhood effects"
-  - year: "2003"
-    title: "Interim Results: Mixed Findings"
-    description: "Initial evaluation shows health improvements but limited economic gains"
-  - year: "2011"
-    title: "Final Evaluation Published"
-    description: "Documented well-being improvements for adults, but neighborhood effects appear modest"
-  - year: "2015-2016"
-    title: "Breakthrough Reanalysis"
-    description: "Chetty et al. link MTO to tax data, revealing 31% earnings boost for children who moved young"
-  - year: "2019"
-    title: "CMTO Pilot Success"
-    description: "Creating Moves to Opportunity program increases successful moves from 15% to 53%"
-  - year: "2021"
-    title: "National Expansion"
-    description: "HUD funds 9 mobility demonstration sites nationwide based on evidence"
+  - year: 1966
+    phase: origin
+    text: "Chicago public housing residents sue HUD and the Chicago Housing Authority over segregation (the Gautreaux case). The regional mobility program that follows in the late 1970s, and studies of it, inspire MTO."
+    source: hud-mto-interim
+  - year: 1994
+    endYear: 1998
+    phase: research
+    text: "Authorized by Congress in 1992, MTO enrolls 4,604 families in five cities and assigns them by lottery to a voucher restricted to low-poverty areas with counseling, a regular voucher, or no new voucher."
+    source: hud-mto-final
+  - year: 2003
+    phase: research
+    text: "HUD's interim evaluation finds safer neighborhoods and better adult mental health, but no gains in adults' work or earnings."
+    source: hud-mto-interim
+  - year: 2011
+    phase: research
+    text: "The final evaluation, 10 to 15 years after enrollment, finds lower rates of extreme obesity, diabetes and depression among adults, and still no effects on their earnings."
+    source: hud-mto-final
+  - year: 2015
+    endYear: 2016
+    phase: research
+    text: "Linking MTO to tax records, Raj Chetty, Nathaniel Hendren and Lawrence Katz find that children whose families used the experimental voucher to move before age 13 earn 31% more in their mid-twenties."
+    source: chetty2016
+  - year: 2018
+    endYear: 2020
+    phase: research
+    text: "In the first phase of the Creating Moves to Opportunity (CMTO) trial in Seattle and King County, search help raises the share of voucher families moving to high-opportunity areas from 15% to 53%."
+    source: bergman2024
+  - year: 2019
+    phase: translation
+    text: "Congress authorizes a HUD housing mobility demonstration, funded with $50 million for services and vouchers and $3 million for an evaluation."
+    source: fr-2026-ccd
+  - year: 2021
+    phase: scale
+    text: "HUD awards $45.7 million to nine lead and four partner housing agencies to run the demonstration."
+    source: hud-2021-awards
+  - year: 2022
+    endYear: 2026
+    phase: scale
+    text: "The demonstration, renamed the Community Choice Demonstration, enrolls families from August 2022 until HUD ends study enrollment early, on June 30, 2026."
+    source: fr-2026-ccd
+goDeeper:
+  - title: "Coming of Age in the Other America (DeLuca, Clampet-Lundquist and Edin, 2016)"
+    url: "https://www.russellsage.org/publications/book/coming-age-other-america"
+    type: book
+    note: "Ten years of fieldwork with 150 young people raised in Baltimore public housing, including MTO movers: the human side of the statistics."
+  - title: "Neighborhoods Matter: Assessing the Evidence for Place Effects (Chyn and Katz, 2021)"
+    url: "https://www.aeaweb.org/articles?id=10.1257/jep.35.4.197"
+    type: article
+    note: "A free, readable review of what experiments and natural experiments show about neighborhood effects on children and adults."
+  - title: "Using Big Data to Solve Economic and Social Problems, lectures 2 and 3 (Raj Chetty)"
+    url: "https://opportunityinsights.org/course/"
+    type: video
+    note: "Two recorded lectures, on the causal effects of neighborhoods and on moving families versus improving places, pitched at readers with no economics background."
+  - title: "In Seattle, a Move Across Town Could Be a Path Out of Poverty (NPR, 2019)"
+    url: "https://www.npr.org/2019/08/05/747610085/in-seattle-a-move-across-town-could-be-a-path-out-of-poverty"
+    type: article
+    note: "A radio report from inside the CMTO trial, with families and housing navigators."
+  - title: "The Opportunity Atlas"
+    url: "https://www.opportunityatlas.org/"
+    type: data
+    note: "Look up how children who grew up in each census tract fared as adults."
+lastReviewed: "2026-11-20"
+sources:
+  - id: hud-mto-interim
+    citation: "Orr, L., Feins, J. D., Jacob, R., et al. (2003). Moving to Opportunity for Fair Housing Demonstration Program: Interim impacts evaluation. U.S. Department of Housing and Urban Development, Office of Policy Development and Research."
+    url: "https://www.huduser.gov/publications/pdf/MTOFullReport.pdf"
+    type: report
+  - id: hud-mto-final
+    citation: "Sanbonmatsu, L., Ludwig, J., Katz, L. F., et al. (2011). Moving to Opportunity for Fair Housing Demonstration Program: Final impacts evaluation. U.S. Department of Housing and Urban Development, Office of Policy Development and Research."
+    url: "https://www.huduser.gov/portal/publications/pdf/MTOFHD_fullreport_v2.pdf"
+    type: report
+  - id: ludwig2012
+    citation: "Ludwig, J., Duncan, G. J., Gennetian, L. A., et al. (2012). Neighborhood effects on the long-term well-being of low-income adults. Science, 337(6101), 1505-1510."
+    url: "https://doi.org/10.1126/science.1224648"
+    altUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3491569/"
+    type: paper
+  - id: crs-fy27
+    citation: "McCarty, M., & Marshall, J. J. (2026). Transportation, Housing and Urban Development, and Related Agencies (THUD) appropriations for FY2027 (R49341). Congressional Research Service."
+    url: "https://www.congress.gov/crs_external_products/R/PDF/R49341/R49341.3.pdf"
+    type: report
+  - id: kling2007
+    citation: "Kling, J. R., Liebman, J. B., & Katz, L. F. (2007). Experimental analysis of neighborhood effects. Econometrica, 75(1), 83-119."
+    url: "https://doi.org/10.1111/j.1468-0262.2007.00733.x"
+    altUrl: "https://www.nber.org/papers/w11577"
+    type: paper
+  - id: web-ludwig
+    citation: "University of Chicago Harris School of Public Policy. (2026). Jens Ludwig. Harris Directory."
+    url: "https://harris.uchicago.edu/directory/jens-ludwig"
+    type: web
+  - id: ludwig2011
+    citation: "Ludwig, J., Sanbonmatsu, L., Gennetian, L., et al. (2011). Neighborhoods, obesity, and diabetes: A randomized social experiment. New England Journal of Medicine, 365(16), 1509-1519."
+    url: "https://doi.org/10.1056/NEJMsa1103216"
+    altUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3410541/"
+    type: paper
+  - id: chetty2016-summary
+    citation: "Chetty, R., Hendren, N., & Katz, L. F. (2015). The effects of exposure to better neighborhoods on children: Non-technical research summary. Opportunity Insights."
+    url: "https://opportunityinsights.org/wp-content/uploads/2018/03/mto_exec_summary.pdf"
+    type: web
+  - id: chetty2016
+    citation: "Chetty, R., Hendren, N., & Katz, L. F. (2016). The effects of exposure to better neighborhoods on children: New evidence from the Moving to Opportunity experiment. American Economic Review, 106(4), 855-902."
+    url: "https://doi.org/10.1257/aer.20150572"
+    altUrl: "https://www.nber.org/papers/w21156"
+    type: paper
+  - id: web-chetty
+    citation: "Chetty, R. (2026). Raj Chetty: Home. rajchetty.com."
+    url: "https://rajchetty.com/"
+    type: web
+  - id: web-oi-team
+    citation: "Opportunity Insights. (2026). Our team. Opportunity Insights."
+    url: "https://opportunityinsights.org/team/"
+    type: web
+  - id: web-hendren
+    citation: "MIT Department of Economics. (2026). Nathaniel Hendren. MIT Economics."
+    url: "https://economics.mit.edu/people/faculty/nathaniel-hendren"
+    type: web
+  - id: chettyhendren2018
+    citation: "Chetty, R., & Hendren, N. (2018). The impacts of neighborhoods on intergenerational mobility I: Childhood exposure effects. Quarterly Journal of Economics, 133(3), 1107-1162."
+    url: "https://doi.org/10.1093/qje/qjy007"
+    altUrl: "https://www.nber.org/papers/w23001"
+    type: paper
+  - id: hud-2021-awards
+    citation: "U.S. Department of Housing and Urban Development. (2021, April 30). HUD to increase access to opportunity for 10,000 families through new $50M housing mobility demonstration (HUD No. 21-076). HUD Archives."
+    url: "https://archives.hud.gov/news/2021/pr21-076.cfm"
+    type: web
+  - id: bergman2024
+    citation: "Bergman, P., Chetty, R., DeLuca, S., et al. (2024). Creating Moves to Opportunity: Experimental evidence on barriers to neighborhood choice. American Economic Review, 114(5), 1281-1337."
+    url: "https://doi.org/10.1257/aer.20200407"
+    altUrl: "https://www.nber.org/papers/w26164"
+    type: paper
+  - id: crec-2018
+    citation: "U.S. House of Representatives. (2018, July 10). Housing Choice Voucher Mobility Demonstration Act of 2018 [floor debate on H.R. 5793]. Congressional Record, 164(115), H6010."
+    url: "https://www.govinfo.gov/content/pkg/CREC-2018-07-10/html/CREC-2018-07-10-pt1-PgH6010.htm"
+    type: law
+  - id: house-roll314
+    citation: "Clerk of the U.S. House of Representatives. (2018). Final vote results for roll call 314: H.R. 5793, Housing Choice Voucher Mobility Demonstration Act (July 10, 2018)."
+    url: "https://clerk.house.gov/evs/2018/roll314"
+    type: data
+  - id: fr-2026-ccd
+    citation: "U.S. Department of Housing and Urban Development. (2026). Section 8 Housing Choice Vouchers: Revisions to study enrollment, treatment arms and funding guidance for the Community Choice Demonstration. Federal Register, 91, 48921."
+    url: "https://www.federalregister.gov/d/2026-15643"
+    type: law
+  - id: fr-2020-ccd
+    citation: "U.S. Department of Housing and Urban Development. (2020). Section 8 Housing Choice Vouchers: Implementation of the Housing Choice Voucher Mobility Demonstration. Federal Register, 85, 42890."
+    url: "https://www.federalregister.gov/d/2020-15037"
+    type: law
+  - id: harvard-gazette-2018b
+    citation: "Powell, A. (2018, June 21). Raj Chetty returning to Harvard. Harvard Gazette."
+    url: "https://news.harvard.edu/gazette/story/2018/06/raj-chetty-returning-to-harvard/"
+    type: article
+  - id: harvard-gazette-2018
+    citation: "Powell, A. (2018, October 1). Raj Chetty, fellow researchers ask: Why stop at research? Harvard Gazette."
+    url: "https://news.harvard.edu/gazette/story/2018/10/harvard-researchers-ask-why-stop-at-research/"
+    type: article
+  - id: hud-rce-2024
+    citation: "Lubell, J., Gubits, D., Paulen, L., et al. (2024). Rapid cycle evaluation report: An early look at the Community Choice Demonstration. U.S. Department of Housing and Urban Development, Office of Policy Development and Research."
+    url: "https://www.huduser.gov/portal/publications/Rapid-Cycle-Evaluation-Report.html"
+    type: report
+  - id: hud-cj-fy23
+    citation: "U.S. Department of Housing and Urban Development. (2022). Tenant-based rental assistance: 2023 congressional justifications. HUD."
+    url: "https://archives.hud.gov/budget/fy23/2023_CJ_Program_TBRA.pdf"
+    type: report
+  - id: ncsha-fy23
+    citation: "National Council of State Housing Agencies. (2022). FY 2023 budget chart for select HUD and USDA housing programs (FY23 omnibus). NCSHA."
+    url: "https://www.ncsha.org/wp-content/uploads/FY-2023-Budget-for-HUD-and-USDA-FY23-Omnibus-12.20.22-2.pdf"
+    type: data
+  - id: crs-fy26
+    citation: "Minter, A. N. (2025). Department of Housing and Urban Development (HUD): FY2026 budget request fact sheet (R48567). Congressional Research Service."
+    url: "https://www.congress.gov/crs_external_products/R/PDF/R48567/R48567.2.pdf"
+    type: report
+  - id: nlihc-fy26
+    citation: "National Low Income Housing Coalition. (2026). NLIHC's analysis of final FY26 appropriations bill for HUD programs. NLIHC."
+    url: "https://nlihc.org/sites/default/files/FY26_Final_Analysis_021726.pdf"
+    type: report
+  - id: chynkatz2021
+    citation: "Chyn, E., & Katz, L. F. (2021). Neighborhoods matter: Assessing the evidence for place effects. Journal of Economic Perspectives, 35(4), 197-222."
+    url: "https://doi.org/10.1257/jep.35.4.197"
+    altUrl: "https://www.aeaweb.org/articles?id=10.1257/jep.35.4.197"
+    type: paper
+  - id: kling2005
+    citation: "Kling, J. R., Ludwig, J., & Katz, L. F. (2005). Neighborhood effects on crime for female and male youth: Evidence from a randomized housing voucher experiment. Quarterly Journal of Economics, 120(1), 87-130."
+    url: "https://doi.org/10.1162/0033553053327470"
+    altUrl: "https://www.nber.org/papers/w10777"
+    type: paper
+  - id: kessler2016
+    citation: "Kessler, R. C., Duncan, G. J., Gennetian, L. A., et al. (2016). Notice of retraction and replacement: Associations of housing mobility interventions for children in high-poverty neighborhoods with subsequent mental disorders during adolescence (JAMA, 2014). JAMA, 316(2), 227-228."
+    url: "https://doi.org/10.1001/jama.2016.6187"
+    altUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6005353/"
+    type: paper
+  - id: retractionwatch2016
+    citation: "Retraction Watch. (2016, June 17). JAMA authors retract (and replace) paper about moves and kids' mental health. Retraction Watch."
+    url: "https://retractionwatch.com/2016/06/17/jama-authors-retract-and-replace-paper-about-moves-and-kids-mental-health/"
+    type: article
+  - id: clampet2008
+    citation: "Clampet-Lundquist, S., & Massey, D. S. (2008). Neighborhood effects on economic self-sufficiency: A reconsideration of the Moving to Opportunity experiment. American Journal of Sociology, 114(1), 107-143."
+    url: "https://doi.org/10.1086/588740"
+    type: paper
+  - id: ludwig2008
+    citation: "Ludwig, J., Liebman, J. B., Kling, J. R., et al. (2008). What can we learn about neighborhood effects from the Moving to Opportunity experiment? American Journal of Sociology, 114(1), 144-188."
+    url: "https://doi.org/10.1086/588741"
+    type: paper
+  - id: sampson2008
+    citation: "Sampson, R. J. (2008). Moving to inequality: Neighborhood effects and experiments meet social structure. American Journal of Sociology, 114(1), 189-231."
+    url: "https://doi.org/10.1086/589843"
+    altUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4211272/"
+    type: paper
+  - id: heckman2025
+    citation: "Heckman, J., & Eshaghnia, S. (2025, September 4). ZIP code is destiny? Turns out that's bunk. Wall Street Journal."
+    url: "https://www.wsj.com/opinion/zip-code-is-destiny-turns-out-thats-bunk-a17fd9d9"
+    altUrl: "https://www.archbridgeinstitute.org/zip-code-is-destiny-turns-out-thats-bunk/"
+    type: article
+  - id: oi-response-2025
+    citation: "Chetty, R., Chyn, E., DeLuca, S., et al. (2025). ZIP codes matter: A response to 'ZIP Code is Destiny?' Opportunity Insights."
+    url: "https://opportunityinsights.org/wp-content/uploads/2025/09/Heckman_Eshaghnia_Response.pdf"
+    type: web
+  - id: mogstad2024
+    citation: "Mogstad, M., Romano, J. P., Shaikh, A. M., & Wilhelm, D. (2024). Inference for ranks with applications to mobility across neighbourhoods and academic achievement across countries. Review of Economic Studies, 91(1), 476-518."
+    url: "https://doi.org/10.1093/restud/rdad006"
+    altUrl: "https://www.nber.org/papers/w26883"
+    type: paper
+  - id: hr5793-actions
+    citation: "Congress.gov. (2018). H.R. 5793, Housing Choice Voucher Mobility Demonstration Act of 2018: All actions (115th Congress). Library of Congress."
+    url: "https://www.congress.gov/bill/115th-congress/house-bill/5793/all-actions"
+    type: law
+  - id: hud-nofo-2023
+    citation: "U.S. Department of Housing and Urban Development. (2023). Housing mobility-related services (Notice of funding opportunity FR-6700-N-87). Grants.gov."
+    url: "https://simpler.grants.gov/opportunity/673b3230-921a-4234-9084-05ddf7d23188"
+    type: report
+  - id: hud-2023-mobility-awards
+    citation: "U.S. Department of Housing and Urban Development. (2023, November 27). HUD awards $25 million to public housing agencies to expand more housing choices for families (HUD No. 23-263). HUD Archives."
+    url: "https://archives.hud.gov/news/2023/pr23-263.cfm"
+    type: web
+  - id: hud-2023-mobility-awardees
+    citation: "U.S. Department of Housing and Urban Development. (2023). Housing mobility-related services awards [list of awardees]. HUD Archives."
+    url: "https://archives.hud.gov/news/2023/Housing_Mobility_Related_Services_Awardees.pdf"
+    type: data
+  - id: oi-cmto-phase3
+    citation: "Devlin-Foltz, S., Le, J., & Birkebak, S. (2021, June 30). Early implementation lessons from CMTO Phase III: Adapting a housing mobility program to serve existing voucher holders. Opportunity Insights."
+    url: "https://opportunityinsights.org/wp-content/uploads/2021/06/Phase-III-Implementation-Observations_vF.pdf"
+    type: report
+  - id: web-eshaghnia
+    citation: "Center for the Economics of Human Development. (2026). Sadegh Eshaghnia. University of Chicago."
+    url: "https://cehd.uchicago.edu/?page_id=2320"
+    type: web
+  - id: web-mdrc
+    citation: "MDRC. (2026). About MDRC. MDRC."
+    url: "https://www.mdrc.org/about"
+    type: web
 ---
 
-# Moving to Opportunity
+## The problem
 
-## Overview
+In the mid-1990s, the families who signed up for Moving to Opportunity (MTO) lived in public and subsidized housing in neighborhoods (census tracts) where at least 40% of residents were poor, in Baltimore, Boston, Chicago, Los Angeles and New York {{cite:hud-mto-interim}}. Almost every household was headed by a woman, nearly two-thirds were African American, and three-quarters of household heads were on welfare. In more than 40% of households, someone had been a crime victim in the previous 6 months {{cite:hud-mto-final}}.
 
-The Moving to Opportunity (MTO) experiment, launched in 1994, tested a deceptively simple question: If you help low-income families move from high-poverty to lower-poverty neighborhoods, will their lives improve? The original HUD-funded randomized trial involving 4,600 families in five cities showed mixed results, leading many to conclude neighborhood effects were limited. But in 2015, economists Raj Chetty, Nathaniel Hendren, and Lawrence Katz linked MTO participants to administrative tax records, revealing a stunning finding: children who moved to better neighborhoods before age 13 earned 31% more as adults—approximately $302,000 more in lifetime earnings per child.
+By one 2012 estimate, nearly 9 million Americans lived in extreme-poverty neighborhoods {{cite:ludwig2012}}. The rental assistance programs of the U.S. Department of Housing and Urban Development (HUD) serve nearly 5 million families, and in fiscal year 2026 the Housing Choice Voucher program alone made up 46% of HUD's gross discretionary budget {{cite:crs-fy27}}.
 
-This discovery transformed housing policy. It demonstrated that neighborhoods profoundly shape children's long-term economic outcomes and that timing matters critically. The research sparked a new wave of "mobility" interventions providing customized housing search assistance to help voucher holders move to high-opportunity areas. The Creating Moves to Opportunity (CMTO) program, piloted in Seattle and King County, proved that intensive support could increase successful moves from 15% to 53%. Today, HUD has funded nine mobility demonstration sites nationwide, adapting these evidence-based strategies. The work has influenced hundreds of millions in federal housing assistance spending and changed how policymakers think about place-based poverty.
+The question was whether neighborhoods themselves shape people's lives. In the Gautreaux case, filed in 1966 by Chicago public housing residents against HUD and the Chicago Housing Authority, a court-ordered remedy let about 7,100 Black families move across the region from the late 1970s. Studies in the late 1980s suggested the movers did better, but the gains might reflect which families chose to move, a problem called selection bias. MTO was designed as the experiment to test the idea directly {{cite:hud-mto-interim}}. Congress authorized it in 1992 and asked HUD to report on families' "long-term housing, employment, and educational achievements" {{cite:hud-mto-final}}.
 
-> "Children who moved to better neighborhoods before age 13 earned 31% more as adults—transforming housing policy's understanding of neighborhood effects." — Summary of Chetty et al. 2016 findings
+## The research
 
-## Impact Metrics
+From 1994 to 1998, HUD enrolled 4,604 families and assigned them by lottery to three groups {{cite:hud-mto-final}}. One received housing vouchers, which pay part of the rent on a private apartment, usable for the first year only in tracts where fewer than 10% of residents were poor, plus counseling and help finding a unit. A second received regular Section 8 vouchers (renamed Housing Choice Vouchers in 1999). A control group kept its existing assistance {{cite:hud-mto-interim}}. Because a lottery decided who got which offer, later differences between groups can be credited to the offers: the logic of a randomized controlled trial.
 
-- **31% higher adult earnings** (~$3,500 annually) for children who moved to low-poverty neighborhoods before age 13 ([Chetty, Hendren, Katz, 2016](https://www.aeaweb.org/articles?id=10.1257/aer.20150572))
-- **$302,000 lifetime earnings increase** per child moved to opportunity neighborhoods ([Opportunity Insights estimate](https://opportunityinsights.org/paper/newmto/))
-- **15% to 53% success rate increase** with customized search assistance in CMTO program ([Bergman et al., 2024](https://www.aeaweb.org/articles?id=10.1257/aer.20200407))
-- **9 HUD mobility demonstration sites** (2021-present) serving thousands of families with evidence-based supports ([HUD, 2021](https://www.huduser.gov/portal/pdredge/pdr-edge-frm-asst-sec-061121.html))
+Of the experimental group, 48% moved with the voucher {{cite:hud-mto-final}}. Four to seven years in, HUD's interim evaluation found safer neighborhoods, less adult obesity and better mental health for adults and girls, but no change in adults' employment or earnings {{cite:hud-mto-interim,kling2007}}. The final evaluation, directed by Jens Ludwig, a University of Chicago economist, with Harvard economist Lawrence Katz as principal investigator {{cite:hud-mto-final,web-ludwig,web-oi-team}}, found lower rates of extreme obesity, diabetes and major depression among adults 10 to 15 years on, but still no effect on their earnings or children's test scores {{cite:hud-mto-final,ludwig2011}}. HUD's report called the early pattern "disappointing for many in the research and policy communities" {{cite:hud-mto-final}}.
 
-## Scientific Foundations
+That reading changed once the youngest children grew up. In the mid-2010s, Katz and two other economists, Raj Chetty, now at Harvard, and Nathaniel Hendren, now at MIT {{cite:web-chetty,web-hendren}}, linked MTO records to tax data {{cite:chetty2016}}.
 
-**Key Researchers and Institutions:**
-- Raj Chetty (Harvard/Opportunity Insights) - tax data analysis revealing age-specific effects
-- Nathaniel Hendren (MIT) - co-author of landmark 2016 reanalysis
-- Lawrence Katz (Harvard) - original MTO evaluation and long-term follow-up
-- Stefanie DeLuca (Johns Hopkins), Peter Bergman (UT Austin), Christopher Palmer (MIT) - CMTO intervention design
+Children whose families used the experimental voucher to move before the child turned 13 earned 31% more in their mid-twenties than children in the control group: $3,477 a year on a control average of $11,270. Counting every child offered that voucher, the gain was $1,624, about 14%. Children 13 or older at the move did no better and, if anything, worse {{cite:chetty2016}}. The authors found no clear evidence of a "critical age": every extra year of childhood in a lower-poverty area appeared to help {{cite:chetty2016-summary}}.
 
-**Major Publications:**
-- [MTO Interim Impacts Evaluation, 2003](https://www.mdrc.org/publication/moving-opportunity): Initial mixed findings on employment and earnings for adults
-- [MTO Final Impacts Evaluation, 2011](https://www.huduser.gov/publications/pdf/mtofullreport.pdf): Documented health and well-being improvements but limited economic gains for adults
-- [Chetty, Hendren, Katz, 2016](https://www.aeaweb.org/articles?id=10.1257/aer.20150572): "The Effects of Exposure to Better Neighborhoods on Children" - linked MTO to IRS data, revealed 31% earnings gain for young movers
-- [Chetty & Hendren, 2018](https://academic.oup.com/qje/article/133/3/1107/4850660): "The Impacts of Neighborhoods on Intergenerational Mobility" - mapped opportunity at Census tract level nationally
-- [Bergman et al., 2024](https://www.aeaweb.org/articles?id=10.1257/aer.20200407): "Creating Moves to Opportunity" - experimental evidence that customized assistance increases successful moves from 15% to 53%
+The authors had predicted this pattern before re-analyzing the data {{cite:chetty2016}}. In a study of more than 7 million families who moved between areas, Chetty and Hendren had found that each year a child spent in a better area closed about 4% of the gap between the child's adult outcomes and those of children raised there {{cite:chettyhendren2018}}. A lottery result that matches such a prediction is less likely to be chance {{cite:chetty2016}}.
 
-The evidence base evolved from disappointing initial results to transformative findings once researchers could track children into adulthood using administrative data, then to actionable interventions addressing barriers families face.
+HUD cites barriers to such moves, from deposit money to landlords who refuse vouchers {{cite:hud-2021-awards}}. Creating Moves to Opportunity (CMTO) was one response. Peter Bergman of the University of Texas at Austin, Christopher Palmer of MIT, Stefanie DeLuca, a Johns Hopkins sociologist, and Chetty, Hendren and Katz tested it with the Seattle and King County housing authorities from 2018 to 2020, in a randomized trial of 712 families with vouchers and a child under 15. The nonprofit research organization MDRC {{cite:web-mdrc}} implemented the trial, its analysis plan was registered in advance, and its funders included the Gates and William T. Grant foundations {{cite:bergman2024}}.
 
-## Path from Science to Impact
+Housing navigators helped each family learn about high-opportunity areas, prepare rental documents, deal with credit problems and find units and landlords. Landlords could draw on a damage fund, and families got help with deposits. Navigators averaged about 6 hours per family, and up-front costs were $2,670. With CMTO, 53% of families moved to high-opportunity areas (neighborhoods where children from low-income families have tended to do better as adults), against 15% in the control group. About 87% of both groups found a place to rent, so CMTO changed where families rented, not whether {{cite:bergman2024}}.
 
-**Initial Research (1994-2011):** HUD launched MTO in five cities (Baltimore, Boston, Chicago, Los Angeles, New York) as a randomized controlled trial. Families in high-poverty public housing were randomly assigned to: (1) receive Section 8 vouchers with counseling to move to low-poverty neighborhoods, (2) receive vouchers without restrictions, or (3) control group. Early evaluations (2003, 2011) found improvements in mental health and safety but disappointing economic outcomes—adults didn't earn significantly more. Many researchers concluded neighborhood effects were overstated, and the experiment seemed to confirm that poverty was about people, not places.
+In a second phase, full services had five times the effect of information plus financial incentives. Interviews by DeLuca's Johns Hopkins team suggested why: the program addressed each family's specific needs, "from identifying suitable units to providing emotional support to brokering with landlords." Many low-income families, the authors conclude, do not strongly prefer to stay in low-opportunity areas {{cite:bergman2024}}.
 
-**Breakthrough Reanalysis (2015-2016):** Chetty, Hendren, and Katz obtained IRS permission to link MTO participants to tax records, allowing them to track children into adulthood. Their 2016 paper revealed what short-term studies missed: children who moved young (before age 13) had dramatically better outcomes—31% higher earnings, higher college attendance rates, better neighborhoods as adults. Crucially, they found that every additional year of childhood exposure to a better neighborhood improved outcomes, with no effect (or slightly negative effects) for children who moved as teenagers. This timing pattern was highly policy-relevant: it suggested a critical window for intervention.
+## From research to change
 
-**Critical Inflection Points:**
+In 2018, Chetty returned to Harvard after three years at Stanford {{cite:harvard-gazette-2018b}} and co-founded Opportunity Insights there with Hendren and others to "go beyond the research itself" {{cite:harvard-gazette-2018}}. In a July 10, 2018, House debate on a bill led by Representatives Sean Duffy (R-Wis.) and Emanuel Cleaver (D-Mo.) to create a voucher mobility demonstration, Rep. Bill Huizenga (R-Mich.) cited the 2016 paper's projection of children's added lifetime earnings, and Cleaver urged colleagues to read the research {{cite:crec-2018}}.
 
-*From Research to Actionable Policy:* The 2016 findings created a policy window—suddenly, housing mobility was back on the agenda as an anti-poverty strategy. But the original MTO had a problem: even with vouchers and some counseling, only about 15% of families successfully moved to low-poverty neighborhoods. Most faced barriers: landlords rejecting vouchers, unfamiliarity with better neighborhoods, security deposits, moving costs, and fear of discrimination. If mobility was powerful but rare, the policy challenge became: How do we help more families move?
+The bill passed the House 368 to 19 {{cite:house-roll314}} but went no further in the Senate {{cite:hr5793-actions}}. Congress instead created the demonstration in its fiscal 2019 spending law, signed on February 15, 2019, and with the fiscal 2020 law provided $50 million for services and vouchers, plus $3 million for an evaluation {{cite:fr-2020-ccd,fr-2026-ccd}}. HUD's 2020 notice implementing it cites the MTO and CMTO papers and says HUD will draw on CMTO's experience {{cite:fr-2020-ccd}}.
 
-*Design Details - CMTO Intervention:* Researchers partnered with the Seattle and King County housing authorities to test "Creating Moves to Opportunity" (CMTO)—intensive, customized assistance including: one-on-one housing navigators, short-term financial help (security deposits, application fees), landlord engagement, and tailored information about neighborhoods and schools. The [2024 experimental evaluation](https://www.aeaweb.org/articles?id=10.1257/aer.20200407) showed this package increased successful moves from 15% to 53%—a 3.5x improvement. Crucially, the intervention was cost-effective: the additional services cost about $2,600 per family, while the projected earnings gains for children far exceeded costs.
+## The impact
 
-*Knowledge Brokers - Opportunity Insights:* Chetty founded Opportunity Insights at Harvard, explicitly designed to translate research into policy. The organization created public data tools (Opportunity Atlas) showing economic mobility by neighborhood, partnered directly with cities and housing authorities to implement interventions, and maintained ongoing relationships with HUD and local policymakers. This wasn't traditional academic work—it was active policy entrepreneurship.
+In April 2021, HUD awarded $45.7 million to nine lead and four partner housing agencies {{cite:hud-2021-awards}}. Early results for the first 596 families pointed the same way as CMTO, with a smaller effect: within 12 months, about 24% of families offered comprehensive services had moved to an opportunity area, against 4% of controls {{cite:hud-rce-2024}}.
 
-**Scaling Mechanisms:**
+Sites then enrolled only about 3,200 families from August 2022 to August 2024, 67% of the target for that point. Several agencies withdrew, HUD dropped a planned cheaper treatment arm in early 2025, and it ended study enrollment early, on June 30, 2026. Services continue through October 1, 2028, now also for families signed up outside the study {{cite:fr-2026-ccd}}. We found no published final results as of November 2026.
 
-HUD launched a [Mobility Demonstration program in 2021](https://www.huduser.gov/portal/pdredge/pdr-edge-frm-asst-sec-061121.html), providing competitive grants to nine public housing authorities nationwide to implement CMTO-style interventions. Sites include Chicago, Milwaukee, St. Louis, and others. These demonstrations test variations of the model adapted to local contexts while building evidence for what works. Philanthropies including the Bill & Melinda Gates Foundation have funded mobility programs. Several states and cities have incorporated mobility supports into voucher administration.
+Congress also provided $25 million in fiscal 2022 for mobility services modeled on those in the demonstration {{cite:hud-nofo-2023}}, and in November 2023 HUD awarded $24.5 million of it to seven other housing agencies, including the Seattle Housing Authority {{cite:hud-2023-mobility-awards,hud-2023-mobility-awardees}}. A $445 million request for fiscal 2023 went unfunded {{cite:hud-cj-fy23,ncsha-fy23}}. Proposals to replace vouchers and HUD's other main rental aid with a smaller state block grant (fiscal 2026) and to stop reissuing vouchers when families leave (fiscal 2027) had not been adopted as of September 2026 {{cite:crs-fy26,nlihc-fy26,crs-fy27}}.
 
-The diffusion followed a classic evidence-based policy pattern: compelling academic findings → pilot demonstration with implementation partners → rigorous evaluation showing cost-effectiveness → federal funding for scaled replication → adaptation to local contexts.
+## What is still debated
 
-## Current Status
+Whether MTO succeeded depends on whose outcomes, and when. A 2021 review by Eric Chyn, then at Dartmouth College, and Katz, who led MTO's final evaluation and coauthored CMTO, concludes that childhood neighborhoods affect long-run economic and educational outcomes, while effects on adults' labor market outcomes are more ambiguous {{cite:chynkatz2021}}.
 
-Housing mobility interventions are now mainstream in policy discussions, though implementation remains uneven. The Biden administration's 2023 budget included significant funding for mobility-related services. HUD continues expanding demonstration sites and encouraging housing authorities to adopt evidence-based mobility practices. However, challenges remain: landlord discrimination against voucher holders (legal in most states), limited housing supply in high-opportunity neighborhoods, and political resistance to economic integration.
+The offer to move reduced arrests among girls; among boys it cut violent-crime arrests, at least in the short run, but raised property-crime arrests and problem behavior {{cite:kling2005}}. A 2014 JAMA paper found more depression, post-traumatic stress disorder and conduct disorder among boys in voucher families. It was retracted and replaced in 2016 after the authors found errors in two tables; the corrected paper drops a reported decline in girls' depression but keeps the boys' findings {{cite:kessler2016,retractionwatch2016}}. Yet boys who moved young still earned more in their mid-twenties {{cite:chetty2016-summary}}.
 
-Recent research continues refining understanding. Studies examine which neighborhood characteristics matter most (school quality, peer effects, local labor markets), how to identify opportunity areas in real-time as neighborhoods change, and whether supports can be targeted more efficiently. There's growing recognition that moving isn't the only solution—improving conditions in existing neighborhoods (place-based investments) may complement mobility strategies. The field is moving toward hybrid approaches combining housing assistance, place-based investments, and addressing discrimination.
+In a 2008 exchange, Susan Clampet-Lundquist of Saint Joseph's University and Douglas Massey of Princeton University argued that families' own choices within MTO limited what it could show, and found that time spent in different neighborhoods was associated with employment and earnings. Ludwig and colleagues replied that such estimates "add back the selection problems" the lottery was meant to overcome; Harvard sociologist Robert Sampson argued that segregated cities limit what any such experiment can show {{cite:clampet2008,ludwig2008,sampson2008}}.
 
-The original MTO demonstration ended, but its scientific legacy thrives through ongoing evaluations of CMTO and related programs, creating a continuous feedback loop between research and practice. This sustained engagement over 30 years—from initial experiment through reanalysis to new interventions—exemplifies how patient, rigorous social science can ultimately reshape policy even when early findings disappoint.
+In September 2025, James Heckman, a Nobel laureate economist at the University of Chicago, and Sadegh Eshaghnia, a senior research associate there {{cite:web-eshaghnia}}, argued in the Wall Street Journal that MTO "didn't improve employment outcomes for adults or educational outcomes for youths," and that studies of movers mistake family sorting for neighborhood effects {{cite:heckman2025}}. MTO did not raise test scores, though children offered the voucher before 13 were more likely to attend college {{cite:hud-mto-final,chetty2016}}. Chetty and six coauthors, including Katz, replied that MTO raised young children's later earnings and that they had tested studies of movers for sorting with sibling comparisons and placebo checks; they agreed that claims of neighborhood destiny "can be overblown in public and advocacy circles" {{cite:oi-response-2025}}.
 
-## Lessons Exemplified
+Which neighborhoods count as high-opportunity is also uncertain: University of Chicago economist Magne Mogstad and coauthors show that tract and county mobility rankings become much less informative once statistical uncertainty is counted {{cite:mogstad2024}}; the CMTO authors reply that their program needs only the chosen areas to be better on average {{cite:bergman2024}}.
 
-**Field Accumulation:** MTO's impact resulted from accumulated evidence over three decades, not a single breakthrough. The original experiment (1994), interim evaluations (2003-2011), long-term reanalysis (2016), subsequent observational studies mapping opportunity nationally (2018), and intervention experiments (2024) built on each other. No single paper transformed policy—it was the weight of converging evidence from multiple methods (RCT, administrative data, observational studies, new experiments).
+The effect was smaller at national scale: within a year, HUD's demonstration raised moves to opportunity areas by about 20 percentage points {{cite:hud-rce-2024}}, against about 38 in Seattle and King County {{cite:bergman2024}}. The comparison is rough: the demonstration mainly serves families who already hold vouchers and defines opportunity areas differently {{cite:hud-rce-2024}}. The CMTO authors had cautioned that results might not carry over, since Seattle bans discrimination against voucher holders and its housing authorities had high lease-up rates even without CMTO, though its tight market could also mean larger effects elsewhere {{cite:bergman2024}}.
 
-**Sustained Researcher Engagement Beyond Publication:** Researchers didn't just publish findings and move on. Chetty, Hendren, and Katz maintained active partnerships with HUD, housing authorities, and local governments for over a decade after their 2016 paper. They created Opportunity Insights to institutionalize this engagement, designed implementation tools, and partnered on new experiments. This long-term commitment enabled translating research into operational programs.
+Cost depends on what is counted. Beyond $2,670 in services, moves to pricier areas raised voucher payments by an estimated $17,633 per lease over 7 years. Counting both, the authors estimate $1.35 in children's projected future income per $1 of government spending {{cite:bergman2024}}.
 
-**Design Details Matter:** CMTO's success hinged on getting implementation details right—customized one-on-one assistance, financial flexibility for security deposits, proactive landlord engagement, addressing families' specific fears and information gaps. Generic "provide vouchers and counseling" hadn't worked (15% success); tailored intensive support did (53% success). The difference between policy success and failure was in the operational details, not just the concept of mobility.
+Effects on the neighborhoods families leave and enter are largely unstudied, as the CMTO authors note. CMTO's designers also evaluated it, though MDRC implemented the preregistered trial {{cite:bergman2024}}; HUD's demonstration has outside evaluators, Abt Global and the Urban Institute {{cite:hud-rce-2024}}. After the trial, the two housing authorities ran a third, nonrandomized CMTO phase for families who already held vouchers {{cite:oi-cmto-phase3}}; from public sources we could not confirm what either offers today.
 
-**Administrative Data Unlocks Insights:** The transformation from disappointing early findings to transformative later findings came from linking experimental data to IRS tax records. This allowed tracking children into adulthood and revealed age-specific effects invisible in short-term surveys. The lesson: investing in data infrastructure enabling long-term follow-up can fundamentally change what we learn from social experiments.
+## What this case teaches
 
-**Addressing Barriers, Not Preferences:** A key finding was that families wanted to move to better neighborhoods but faced practical barriers, not lack of preferences. This shifted the policy frame from "do families value opportunity?" to "how do we remove obstacles?" That reframe unlocked practical interventions with bipartisan appeal (helping families achieve their own goals rather than imposing planner preferences).
+MTO showed that moving young children to lower-poverty areas could raise their later earnings, but not how to help families make those moves. CMTO's answer was a set of [operational details](/lessons/3-design-details) that together had five times the effect of information and money alone.
 
----
+Research did a [different job at each stage](/lessons/8-different-roles): Gautreaux studies suggested the idea, the MTO lottery tested it, tax records showed the payoff, CMTO designed a service, and HUD's demonstration is testing it at scale.
 
-*Sources: [Chetty, Hendren, Katz 2016 AER](https://www.aeaweb.org/articles?id=10.1257/aer.20150572), [Bergman et al. 2024 AER](https://www.aeaweb.org/articles?id=10.1257/aer.20200407), [HUD MTO Final Report](https://www.huduser.gov/publications/pdf/mtofullreport.pdf), [Opportunity Insights](https://opportunityinsights.org/paper/newmto/)*
+The payoff [took decades](/lessons/7-long-timeline). The earnings finding came more than 20 years after enrollment began; a funder judging MTO by its 2003 or 2011 reports would have seen health gains and no earnings effects.
+
+CMTO rested on [close work with practitioners and families](/lessons/1-public-engagement): it was built with two housing authorities, and interviews with families helped explain why full support worked.
