@@ -5,9 +5,9 @@
 # the build fails otherwise. Stakes from cases still in draft carry a
 # "[draft]" label so their figures are not mistaken for checked ones.
 slug: home
-title: "When Social Science Scales"
-description: "[draft] Eight cases where research changed systems at scale, and what they teach, from Stanford Impact Labs."
-heroTitle: "When Social Science Scales"
+title: "Social Science Delivers"
+description: "[draft] How research changed policy and practice for millions of people and saved billions of dollars. From Stanford Impact Labs."
+heroTitle: "Social Science Delivers"
 heroLead: "[draft] From housing vouchers to vaccine markets, these cases trace who did the research, how it reached the people who made decisions, and what changed."
 stakes:
   - value: "31%"

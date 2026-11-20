@@ -2,8 +2,8 @@
 slug: about
 title: "About this project"
 shortTitle: "About"
-description: "Why Stanford Impact Labs built When Social Science Scales, where it is going, who made it, how to cite it and how we handle corrections."
-lead: "When Social Science Scales collects cases where social science research helped change systems that touch millions of lives, and asks what they teach. It is a beta: illustrative, unfinished and meant to grow with help from people who know these fields better than we do."
+description: "Why Stanford Impact Labs built Social Science Delivers, where it is going, who made it, how to cite it and how we handle corrections."
+lead: "Social Science Delivers collects cases where social science research changed policy and practice for millions of people, and asks what they teach. It is a beta: illustrative, unfinished and meant to grow with help from people who know these fields better than we do."
 lastReviewed: "2026-11-20"
 sources:
   - id: sil-home
@@ -38,7 +38,7 @@ The public value of the life sciences is easy to point to: a vaccine, a cancer d
 
 That makes it hard for funders, university leaders and the public to judge what social science is worth, and hard for researchers to learn from work that has reached millions of people. Such stories are usually told one at a time, often by the people involved. A collection that sets several cases side by side, in one format and with every source linked, makes the patterns easier to see and easier to argue with.
 
-These eight cases show what social science can look like when it changes systems at scale. They are not the only kind of success. Most useful social science improves one program, informs one decision or builds knowledge that others use years later, and the large changes described here rest on many contributions of that kind.
+These eight cases show some of the largest changes social science research has helped bring about. They are not the only kind of success. Most useful social science improves one program, informs one decision or builds knowledge that others use years later, and the large changes described here rest on many contributions of that kind.
 
 ## Where this is going
 
@@ -70,11 +70,11 @@ This is a beta, released in November 2026, and we will keep revising it. Each pa
 
 To cite the collection:
 
-Stanford Impact Labs. (2026). *When Social Science Scales* (beta). https://michael-149.github.io/big-wins-microsite/
+Stanford Impact Labs. (2026). *Social Science Delivers* (beta). https://michael-149.github.io/big-wins-microsite/
 
 To cite a single case or lesson, use its title and page address, and add the date you read it, since pages change during the beta. For example:
 
-Stanford Impact Labs. (2026). Moving to Opportunity and CMTO. In *When Social Science Scales* (beta). Retrieved [date], from [page address].
+Stanford Impact Labs. (2026). Moving to Opportunity and CMTO. In *Social Science Delivers* (beta). Retrieved [date], from [page address].
 
 ## Corrections
 

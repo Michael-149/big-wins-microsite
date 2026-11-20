@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { NOINDEX, OG_IMAGE, SITE_NAME, absoluteUrl } from './site';
 import { stripCites } from './markdown';
 
-/** Title "<page> | When Social Science Scales" (from the layout template), description, Open Graph. */
+/** Title "<page> | Social Science Delivers" (from the layout template), description, Open Graph. */
 export function pageMetadata({ title, description, path }: { title?: string; description: string; path: string }): Metadata {
   const desc = stripCites(description).replace(/\s+/g, ' ').trim();
   const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;

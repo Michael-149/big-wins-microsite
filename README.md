@@ -1,6 +1,6 @@
-# When Social Science Scales
+# Social Science Delivers
 
-Eight cases where research changed systems at scale, and what they teach. A static site published by Stanford Impact Labs (SIL), built with Next.js 16 (static export) on the Stanford Impact Labs 2026 09 design system.
+How research changed policy and practice for millions of people and saved billions of dollars. A static site published by Stanford Impact Labs (SIL), built with Next.js 16 (static export) on the Stanford Impact Labs 2026 09 design system.
 
 Live (open beta): https://michael-149.github.io/big-wins-microsite/
 

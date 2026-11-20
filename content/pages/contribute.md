@@ -2,7 +2,7 @@
 slug: contribute
 title: "Help build this collection"
 shortTitle: "Contribute"
-description: "Suggest a case we missed, flag an error, share an effort that stalled or propose a new topic area for When Social Science Scales."
+description: "Suggest a case we missed, flag an error, share an effort that stalled or propose a new topic area for Social Science Delivers."
 lead: "This collection is a beta and a starting point. Eight cases cannot cover what social science has done, and an outside view gets things wrong. Tell us what we missed, what we got wrong and where we should look next."
 lastReviewed: "2026-11-20"
 sources: []

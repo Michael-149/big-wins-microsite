@@ -1,7 +1,8 @@
 // Site settings, in one place. Content files never hardcode any of these.
 
-export const SITE_NAME = 'When Social Science Scales';
-export const TAGLINE = 'Eight cases where research changed systems at scale, and what they teach.';
+export const SITE_NAME = 'Social Science Delivers';
+export const TAGLINE =
+  'How research changed policy and practice for millions of people and saved billions of dollars.';
 export const ORG = 'Stanford Impact Labs';
 export const ORG_URL = 'https://impact.stanford.edu/';
 /** SIL's mission line. Reuse it verbatim. */
@@ -18,7 +19,7 @@ export const BASE_PATH: string = (
 export const SITE_URL = 'https://michael-149.github.io/big-wins-microsite';
 
 /** Open Graph and social card image (public/og.png, 1200 by 630), as an absolute URL. */
-export const OG_IMAGE = { url: `${SITE_URL}/og.png`, width: 1200, height: 630, alt: `${SITE_NAME}: eight cases where research changed systems at scale` };
+export const OG_IMAGE = { url: `${SITE_URL}/og.png`, width: 1200, height: 630, alt: `${SITE_NAME}. ${TAGLINE}` };
 
 /** Set at release, not at build time, so a rebuild does not change it. */
 export const LAST_UPDATED = '2026-11-20';
