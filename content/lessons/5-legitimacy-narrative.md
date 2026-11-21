@@ -2,7 +2,7 @@
 number: 5
 slug: "5-legitimacy-narrative"
 title: "Ideas spread in untested forms, and changes outside permanent law were easier to undo"
-shortTitle: "Legitimacy"
+shortTitle: "Drift and durability"
 inBrief: "In a 2016 online poll, 77% of more than 600 teachers said they were familiar or very familiar with growth mindset, 3 years before its national test was published. What spread in classrooms was not what that study tested. In these few cases, changes resting on executive orders, a yearly spending law or time-limited authority were reversed or interrupted more often than those in permanent law. Funders can pay to test the version practitioners use and ask early what legal footing a change will rest on."
 cases:
   - slug: "growth-mindset"

@@ -14,6 +14,6 @@ Public static site from Stanford Impact Labs (SIL): eight case studies of social
 
 ## Open items (owner: Michael Eddy)
 
-- Lesson titles and the lesson 5 short title are working versions pending his decision.
+- Lesson titles are working versions pending his decision (lesson 5's short title "Drift and durability" and the subtitle were approved on 2026-11-21).
 - Google Analytics (`app/layout.tsx`) runs without a privacy note.
 - Hosting stays on the personal GitHub Pages URL for the beta; the formal announcement waits on Stanford's accessibility review.
