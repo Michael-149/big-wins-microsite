@@ -6,7 +6,7 @@
 # "[draft]" label so their figures are not mistaken for checked ones.
 slug: home
 title: "Social Science Delivers"
-description: "[draft] How research changed policy and practice for millions of people and saved billions of dollars. From Stanford Impact Labs."
+description: "[draft] How research changed policy and practice for millions of people and generated billions of dollars. From Stanford Impact Labs."
 heroTitle: "Social Science Delivers"
 heroLead: "[draft] From housing vouchers to vaccine markets, these cases trace who did the research, how it reached the people who made decisions, and what changed."
 stakes:

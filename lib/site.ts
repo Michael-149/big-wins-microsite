@@ -2,7 +2,7 @@
 
 export const SITE_NAME = 'Social Science Delivers';
 export const TAGLINE =
-  'How research changed policy and practice for millions of people and saved billions of dollars.';
+  'How research changed policy and practice for millions of people and generated billions of dollars.';
 export const ORG = 'Stanford Impact Labs';
 export const ORG_URL = 'https://impact.stanford.edu/';
 /** SIL's mission line. Reuse it verbatim. */

@@ -1,6 +1,6 @@
 # Social Science Delivers
 
-How research changed policy and practice for millions of people and saved billions of dollars. A static site published by Stanford Impact Labs (SIL), built with Next.js 16 (static export) on the Stanford Impact Labs 2026 09 design system.
+How research changed policy and practice for millions of people and generated billions of dollars. A static site published by Stanford Impact Labs (SIL), built with Next.js 16 (static export) on the Stanford Impact Labs 2026 09 design system.
 
 Live (open beta): https://michael-149.github.io/big-wins-microsite/
 
