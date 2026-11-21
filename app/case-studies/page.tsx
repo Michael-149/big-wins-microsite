@@ -27,8 +27,8 @@ export default function CasesHub() {
           <p className="t-lead page-head__lead">{home?.casesIntro ?? FALLBACK_INTRO}</p>
           <p className="t-body page-head__note">
             {candidates
-              ? `These ${numberWord(cases.length, true)} were chosen from ${candidates} candidates. `
-              : `These ${numberWord(cases.length, true)} were chosen from a longer list of candidates. `}
+              ? `These ${numberWord(cases.length, true)} were chosen starting from a long list of ${candidates} candidates. `
+              : `These ${numberWord(cases.length, true)} were chosen starting from a long list of candidates. `}
             <a className="link" href={href('/method#how-we-chose')}>
               How we chose them
             </a>

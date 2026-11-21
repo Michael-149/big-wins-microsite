@@ -185,10 +185,51 @@ export function TimelineList({ items }: { items: { years: string; phase: Phase; 
   );
 }
 
+/**
+ * A chart value in its unit: "$" and "$ billion" go before the number ("$12",
+ * "$2.67 billion"), "%" sits right after it, and words follow a space
+ * ("720 days", "752 thousand"). `withWords` false drops word units, for the
+ * inner axis ticks.
+ */
+export function formatChartValue(value: number, unit = '', withWords = true): string {
+  const n = Number(value.toFixed(2)).toLocaleString('en-US', { maximumFractionDigits: 2 });
+  const u = unit.trim();
+  if (u.startsWith('$')) {
+    const rest = u.slice(1).trim();
+    return rest && withWords ? `$${n} ${rest}` : `$${n}`;
+  }
+  if (u === '%') return `${n}%`;
+  return u && withWords ? `${n} ${u}` : n;
+}
+
+/** Bars fill at most this share of the value column, leaving room for the label at the end. */
+const BAR_SPAN = 0.8;
+
+const isRound = (x: number) => [1, 2, 2.5, 5, 10].some((m) => Math.abs(x / 10 ** Math.floor(Math.log10(x)) - m) < 1e-9);
+
+/**
+ * Axis ticks from 0 to max: quarters of max (0, 25, 50, 75, 100%) when a
+ * quarter is a round number, otherwise the smallest round step that gives at
+ * most five intervals, so labels stay short and never collide on phones.
+ */
+function axisTicks(max: number): number[] {
+  let step = max / 4;
+  if (!isRound(step)) {
+    const mag = 10 ** Math.floor(Math.log10(max / 5));
+    step = [1, 2, 2.5, 5, 10, 20].map((m) => m * mag).find((s) => max / s <= 5) ?? max;
+  }
+  const ticks: number[] = [];
+  for (let i = 0; i * step <= max * (1 + 1e-9); i++) ticks.push(i * step);
+  return ticks;
+}
+
 /** A direct-labeled bar chart built as a table (DESIGN-DECISION 9.3). */
 export function BarChart({ chart, noteHtml, sourceHtml }: { chart: Chart; noteHtml?: string; sourceHtml: string }) {
   const max = chart.max ?? Math.max(...chart.groups.flatMap((g) => g.bars.map((b) => b.value)));
   const unit = chart.unit ?? '';
+  // Tick labels carry "$" or "%"; a word unit ("days") gets its own line under the axis.
+  const ticks = axisTicks(max).map((v) => ({ left: `${(v / max) * BAR_SPAN * 100}%`, label: formatChartValue(v, unit, false) }));
+  const unitWords = unit.replace(/[$%]/g, '').trim();
   return (
     <figure className="chart">
       <table>
@@ -209,17 +250,29 @@ export function BarChart({ chart, noteHtml, sourceHtml }: { chart: Chart; noteHt
                 </th>
                 <td>
                   <div className="bar">
-                    <span className={`bar__fill${i % 2 === 1 ? ' bar__fill--alt' : ''}`} style={{ width: `${Math.max(0.5, (b.value / max) * 100) * 0.8}%` }} aria-hidden="true" />
-                    <span className="t-body">
-                      {b.value}
-                      {unit}
-                    </span>
+                    <span className={`bar__fill${i % 2 === 1 ? ' bar__fill--alt' : ''}`} style={{ width: `${Math.max(0.5, (b.value / max) * 100) * BAR_SPAN}%` }} aria-hidden="true" />
+                    <span className="t-body">{formatChartValue(b.value, unit)}</span>
                   </div>
                 </td>
               </tr>
             )),
           )}
         </tbody>
+        <tfoot aria-hidden="true">
+          <tr>
+            <td />
+            <td>
+              <div className="chart__axis">
+                {ticks.map((t) => (
+                  <span key={t.left} className="chart__tick t-meta" style={{ left: t.left }}>
+                    {t.label}
+                  </span>
+                ))}
+              </div>
+              {unitWords && <p className="chart__axis-unit t-meta">{unitWords}</p>}
+            </td>
+          </tr>
+        </tfoot>
       </table>
       <figcaption>
         {noteHtml && <p className="t-body chart__note" dangerouslySetInnerHTML={{ __html: noteHtml }} />}

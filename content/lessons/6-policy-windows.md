@@ -1,153 +1,104 @@
 ---
 number: 6
 slug: "6-policy-windows"
-title: "Windows Open, Then Slam Shut: Success Cases Were Policy-Window Ready"
+title: "Outside events set the timing, and research mattered where a usable option was ready"
 shortTitle: "Policy windows"
-inBrief: "[draft] Policy windows, moments when conditions align for transformative change, open unexpectedly and close quickly. The difference between missed opportunities and lasting impact often comes down to whether research is \"shelf-ready\" when the moment arrives."
+inBrief: "In the clearest cases a court ruling, an election, budget politics or an HIV outbreak set the moment, a pattern political scientist John Kingdon described in 1984. Research mattered where something usable already existed: an open climate model, a cap-and-trade proposal, auction theory and an agency staff paper, and years of studies linking needle exchanges, which drug users and activists started, to lower HIV risk. Funders cannot schedule a ruling or an outbreak, but many openings are on the calendar, and readiness has to be paid for before they arrive."
 cases:
-  - slug: "fcc-spectrum"
-    how: "[draft]"
   - slug: "dice-modeling"
-    how: "[draft]"
+    how: "DICE had been published and open for 16 years when a 2008 court ruling created demand for a carbon value; within 18 months government staff were running it alongside two other models."
   - slug: "emissions-trading"
-    how: "[draft]"
-  - slug: "moving-to-opportunity"
-    how: "[draft]"
+    how: "Project 88 reported in December 1988, as a president who had pledged action prepared to take office and a Senate leader from an acid rain state replaced one from a coal state."
+  - slug: "fcc-spectrum"
+    how: "After commerce committees in Congress had long blocked auctions, a 1993 budget law gave the FCC 210 days to write rules, when theory and a staff proposal were ready; the authority lapsed from 2023 until a 2025 law restored it."
   - slug: "needle-exchange"
-    how: "[draft]"
-sources: []
+    how: "The federal health department accepted the evidence in 1998 but kept the ban; after a 2015 HIV outbreak, a governor who had opposed exchanges allowed one on health officials' advice, and Congress eased the ban that December."
+  - slug: "behavioral-nudges"
+    how: "Congress's 2006 pension overhaul, made urgent by underfunded traditional pensions, came a year after the Retirement Security Project's proposal and overrode restrictive state laws, which the proposal had asked Congress to confirm."
+sources:
+  - id: kingdon1984
+    citation: "Kingdon, J. W. (1984). Agendas, alternatives, and public policies. Little, Brown."
+    url: "https://openlibrary.org/works/OL2034197W"
+    type: book
+  - id: house-divisions
+    citation: "U.S. House of Representatives, Office of the Historian. (n.d.). Party divisions of the House of Representatives, 1789 to present. History, Art & Archives."
+    url: "https://history.house.gov/Institution/Party-Divisions/Party-Divisions/"
+    type: data
+  - id: oliver2014
+    citation: "Oliver, K., Innvaer, S., Lorenc, T., et al. (2014). A systematic review of barriers to and facilitators of the use of evidence by policymakers. BMC Health Services Research, 14, 2."
+    url: "https://doi.org/10.1186/1472-6963-14-2"
+    type: paper
+  - id: stavins2001
+    citation: "Stavins, R. N. (2001). Lessons from the American experiment with market-based environmental policies (Discussion Paper 01-53). Resources for the Future."
+    url: "https://media.rff.org/documents/RFF-DP-01-53.pdf"
+    type: report
+  - id: howlett1998
+    citation: "Howlett, M. (1998). Predictable and unpredictable policy windows: Institutional and exogenous correlates of Canadian federal agenda-setting. Canadian Journal of Political Science, 31(3), 495-524."
+    url: "https://doi.org/10.1017/S0008423900009100"
+    type: paper
+  - id: weiss1979
+    citation: "Weiss, C. H. (1979). The many meanings of research utilization. Public Administration Review, 39(5), 426-431."
+    url: "https://doi.org/10.2307/3109916"
+    type: paper
+  - id: kingdon2014
+    citation: "Kingdon, J. W. (2014). Agendas, alternatives, and public policies (2nd ed., Pearson new international ed.). Pearson."
+    url: "https://www.pearson.de/media/muster/ext/9781292053875.pdf"
+    type: book
+  - id: cairney2018
+    citation: "Cairney, P. (2018). Three habits of successful policy entrepreneurs. Policy & Politics, 46(2), 199-215."
+    url: "https://doi.org/10.1332/030557318X15230056771696"
+    altUrl: "https://storre.stir.ac.uk/bitstream/1893/27246/1/Cairney%20PP%20Practical%20Lessons%2016.2.18.pdf"
+    type: paper
+  - id: cairney-jones2016
+    citation: "Cairney, P., & Jones, M. D. (2016). Kingdon's multiple streams approach: What is the empirical impact of this universal theory? Policy Studies Journal, 44(1), 37-58."
+    url: "https://doi.org/10.1111/psj.12111"
+    type: paper
 ---
 
-## Opportunity Doesn't Wait for Research to Catch Up
+## In the cases
 
-Policy windows, moments when conditions align for transformative change, open unexpectedly and close quickly. The difference between missed opportunities and lasting impact often comes down to whether research is "shelf-ready" when the moment arrives.
+**A court ruling and a model already built.** When a federal appeals court held a fuel economy rule arbitrary in 2008, in part for failing to put a dollar value on carbon cuts, Yale economist William Nordhaus's Dynamic Integrated Climate-Economy model ([DICE](/case-studies/dice-modeling)) had been published and open for 16 years. Within 18 months government staff were running it alongside two other models to set the first full government-wide social cost of carbon (the future damage from one more ton of carbon dioxide, discounted to today's dollars).
 
-Excellent research published at the wrong time gathers dust. Good-enough research available at the right time changes the world.
+**New leaders and a proposal in hand.** More than 70 bills to control sulfur dioxide, the gas behind acid rain, failed in the 1980s. In November 1988 George Mitchell of Maine, a state hit hard by acid rain, was elected to succeed Robert Byrd of West Virginia, a high-sulfur coal state, as Senate Majority Leader, and incoming president George H. W. Bush had pledged action. The next month Project 88, directed by Harvard economist Robert Stavins, proposed [cap-and-trade](/case-studies/emissions-trading) (a cap on emissions, with tradable allowances); a version became law in 1990.
 
-## What Opens Policy Windows?
+**Budget politics and a staff paper.** Congress's commerce committees long blocked license auctions. In 1993 budget politics opened the door: the August budget law authorized auctions and gave the Federal Communications Commission (FCC) 210 days to write rules. Auction theory was in print, and in 1985 FCC economist Evan Kwerel and a colleague had proposed [spectrum auctions](/case-studies/fcc-spectrum).
 
-Windows rarely open on schedule. They emerge from external events that create sudden demand for solutions:
+**An outbreak and an option already in use.** Scott County, Indiana, had reported fewer than five HIV cases a year; from November 2014 to November 2015, 181 people linked to an outbreak were diagnosed. [Needle exchanges](/case-studies/needle-exchange) ran in other states but were illegal in Indiana, and Gov. Mike Pence had opposed them; in March 2015, on health officials' advice, he declared an emergency, and the county's exchange opened in April. That December Congress partly lifted a federal funding ban, a change researchers attribute largely to HIV outbreaks among rural and suburban people injecting prescription opioids.
 
-### External Crises Create Urgent Demand
+## The pattern
 
-The 2015 Scott County, Indiana HIV outbreak, a small, rural, conservative community that recorded 215 new HIV cases in a single year, nearly matching the annual total for the entire state, created immediate demand for evidence-based interventions. Decades of needle exchange research suddenly became relevant to lawmakers who had previously dismissed harm reduction as urban liberal policy.
+In these four cases something outside research set the moment, and a usable option already existed. Research built it in three; for needle exchange, research had tested a practice that drug users and activists started, though we found no source showing Pence cited the studies. Political scientist John Kingdon of the University of Michigan called such a moment a policy window: a short period when a pressing problem, a workable proposal and receptive politics line up {{cite:kingdon1984}}. In [retirement saving](/case-studies/behavioral-nudges) the window opened for another problem: underfunded traditional pensions drove Congress's 2006 overhaul, which overrode restrictive state laws as a 2005 automatic enrollment proposal had asked.
 
-Without that crisis, needle exchange evidence might have remained unused in that context. The window opened because a health emergency forced reconsideration of ideological opposition. Researchers didn't create the window, but they had evidence ready when it opened.
+People close to the decision [carried the options through](/lessons/4-knowledge-brokers): incoming White House Counsel C. Boyden Gray brought Stavins to the White House, two White House officials co-led the carbon value working group, and Kwerel led the FCC's design group. Stavins and Kwerel fit what Kingdon called policy entrepreneurs, advocates who invest in a proposal and wait to attach it to a problem {{cite:kingdon1984}}.
 
-### Budget Pressures Change Political Calculus
+Evidence and a ready option could still wait years. In 1998 Donna Shalala, Secretary of Health and Human Services, determined that exchanges can help reduce HIV transmission, but the administration kept the restriction, which stayed in spending laws for 11 more years. Congress lifted it in December 2009, with Democrats holding the House, and restored it in December 2011, after Republicans took a majority that January {{cite:house-divisions}}; we found no reason Congress stated for either change.
 
-When the federal government faced budget shortfalls in the 1990s, spectrum allocation suddenly became a revenue question, not just a technical telecom regulation. Milgrom and Wilson's auction designs offered a solution: generate billions in revenue while allocating spectrum efficiently. The fiscal pressure created willingness to experiment with market mechanisms that had been theoretically interesting but politically dormant.
+Research sometimes helped build the demand. In [Moving to Opportunity](/case-studies/moving-to-opportunity), a member of Congress cited a 2016 study in a 2018 House debate, and Congress created a voucher mobility demonstration the next year. Even for DICE, peer-reviewed estimates made a value of zero hard to defend.
 
-The research existed before the budget crisis. The crisis made it politically viable.
+Two cases fit less well. Political champions in Britain and Italy, not any outside event we found, took up the idea of [promising in advance to buy vaccines](/case-studies/amc-vaccines) in 2005. [Growth mindset](/case-studies/growth-mindset) spread through many separate decisions rather than one.
 
-### Regulatory Requirements Create Sudden Demand
+## Why it is easy to miss
 
-Federal courts didn't just encourage climate cost analysis, they *required* it. When judges ruled that federal agencies must quantify the climate impacts of regulatory decisions, Nordhaus's DICE model provided exactly what was needed: a defensible, peer-reviewed methodology for calculating the Social Cost of Carbon.
+Crediting the moment of change hides what had to exist before it: when Congress gave the FCC 210 days, the 1985 staff proposal was 8 years old. Readiness shows no payoff until a window opens; within one grant, it looks as if nothing happened.
 
-Decades of prior work meant the model was validated, documented, and ready for immediate regulatory deployment. Had the research not been ready when courts demanded climate cost accounting, agencies would have adopted cruder, potentially problematic methods. Preparation determined whether rigorous science shaped policy or expedient shortcuts filled the gap.
+A systematic review of policymakers' use of evidence found "lack of timely research output" among the barriers, and collaboration between researchers and policymakers among the facilitators, reported most often {{cite:oliver2014}}. These cases suggest an answer besides faster research: work finished before the window opened, some at officials' request, and carried by people close to the decision.
 
-### Political Transitions Reset Priorities
+## What it means for funders and research leaders
 
-New administrations, leadership changes, and electoral shifts create openness to approaches that previous leaders rejected. The Obama administration's interest in behavioral science opened doors for nudge-based interventions that might have faced resistance earlier. Conservative state governments embracing needle exchanges after leadership transitions demonstrated that policy windows aren't purely partisan, they reflect changing coalitions and priorities within parties.
+- **Fund the usable form as well as the finding.** Usable often meant fitting an existing process, such as agencies' cost-benefit analysis.
+- **Pay to keep options current, including while a window is closed.** Nordhaus kept releasing new versions of DICE, and four reviews for Congress and federal agencies from 1993 to 1997 kept the exchange evidence current. Federal carbon estimates, withdrawn in 2017, returned in 2021, and the Environmental Protection Agency's 2023 estimate drew on newer models rather than DICE. Federal use largely ended in 2025, but the field's work outlasted any one tool.
+- **Know which windows are on the calendar.** Project 88 was subtitled "Initiatives for the New President" {{cite:stavins2001}}, and the FCC's restored auction authority runs to September 30, 2034. A study of Canada's federal agenda distinguishes predictable from unpredictable windows {{cite:howlett1998}}; ask grantees which transition, budget bill or expiring law their work targets.
+- **Keep money for the window itself.** At the FCC only the ingredients were ready: the format came from economists whom bidders hired after the 210-day clock started. A flexible reserve lets grantees answer an agency's request between grant cycles.
+- **Ask of your own projects.** If a court ruling, a budget bill or an outbreak made your question urgent next month, what could a decision maker use in time, and who knows them well enough to bring it?
 
-### Focusing Events Concentrate Attention
+## Where it may not hold
 
-High-profile successes or failures focus political attention. The success of early emissions trading programs created appetite for cap-and-trade expansion. Spectrum auction successes abroad made U.S. policymakers more willing to experiment. Moving to Opportunity's long-term earnings findings arrived precisely when HUD sought evidence-based mobility interventions.
+We see only successes, options that met a window and not those that never did, so the cases cannot say how often readiness pays. The eight were also chosen to favor short causal chains, and most turn on a single law, ruling or rule, where a window is easy to see.
 
-Focusing events don't just create awareness, they lower the political risk of adoption by providing proof that similar approaches have worked elsewhere.
+The lesson weakens where change runs through many separate decisions, as when employers adopted automatic enrollment in the late 1990s, years before Congress acted. It also weakens where decision makers set the timing: Connecticut's legislature approved a trial exchange in New Haven in 1990, and the evaluation answered a question it had asked. The sample also favors what sociologist Carol Weiss of Harvard called the problem-solving use of research, for a pending decision, over slower changes in how people define a problem {{cite:weiss1979}}. And it underrepresents partnership-based work.
 
-## The Readiness Paradox
+## What others have found
 
-The paradox of policy windows: they're unpredictable, but readiness determines whether you can seize them. When opportunity strikes, four elements must be in place:
+Kingdon's account of policy windows {{cite:kingdon1984}} already covers much of this, including his conclusion: "Academics, researchers, and consultants affect the alternatives more than the agenda, and affect long-term directions more than short-term outcomes" {{cite:kingdon2014}}. The cases fit that finding rather than extend it, adding detail on what made options usable, who carried them and how windows closed.
 
-### 1. Political Will
-
-Decision-makers must be motivated to act, not just interested in the research, but facing pressure to make decisions. This motivation comes from external forces (crises, budget pressures, court orders, electoral mandates) that create urgency. Research quality alone doesn't generate political will; it provides options when will already exists.
-
-### 2. Knowledge Brokers in Position
-
-Intermediaries who can translate research into immediately actionable forms must be ready. When DICE's Social Cost of Carbon became required for federal rulemakings, OMB and EPA economists who understood the model were positioned to implement it. When HUD sought mobility interventions, Opportunity Insights had working relationships and implementation-ready designs.
-
-The broker infrastructure can't be built during the window, it must preexist the opportunity.
-
-### 3. Stakeholder Buy-In Developed
-
-Even without formal partnerships, successful cases had cultivated stakeholder relationships before windows opened. Spectrum auction researchers had engaged with FCC economists for years. Emissions trading advocates had worked with EPA administrators and environmental groups. When windows opened, these stakeholders weren't encountering the ideas for the first time, they had context, trust, and readiness to act.
-
-Building these relationships after the window opens is too late. The decision cycle moves faster than trust-building.
-
-### 4. Public Motivation Aligned
-
-Broader constituencies must be ready to support change. Needle exchanges succeeded when communities faced HIV crises. Spectrum auctions succeeded when fiscal pressures made revenue-generating mechanisms attractive. Behavioral nudges succeeded when both parties sought cost-effective social interventions.
-
-Public motivation can't be manufactured on demand, but research can be positioned to align with motivations that already exist or are emerging.
-
-## Concrete Examples of Readiness Enabling Impact
-
-### DICE and the Social Cost of Carbon: Decades of Preparation
-
-William Nordhaus didn't develop DICE in response to regulatory demand, he built it over 30+ years because climate economics interested him. When federal courts required agencies to quantify climate costs, that decades-long investment paid off: the model was validated, documented, peer-reviewed, and comprehensible to regulators.
-
-Had Nordhaus waited until 2009 to start building a climate-economic model, agencies would have improvised cruder methods. The work was done, the experts were known, the methodology was defensible. When the window opened, DICE walked through it.
-
-### Moving to Opportunity: Research Meets Operational Demand
-
-HUD didn't announce "we need mobility interventions" years in advance, giving researchers time to design and test programs. The agency's interest emerged when Chetty's research demonstrated massive earnings impacts from childhood neighborhood changes. That research alone wouldn't have changed policy, but Opportunity Insights had already partnered with housing authorities to design and pilot Creating Moves to Opportunity.
-
-When HUD's window opened, they didn't just have evidence that mobility matters, they had a tested, implementable intervention with documented implementation guides, landlord engagement strategies, and measurement tools. The readiness enabled rapid scaling.
-
-### FCC Spectrum Auctions: Relationships Before Opportunity
-
-Milgrom and Wilson didn't just write papers and hope someone noticed. They engaged with FCC economists, presented at policy seminars, and made themselves known to regulators as experts in auction design. When budget pressures created demand for spectrum auction revenue, FCC leadership knew exactly who to call.
-
-The window opened because of fiscal pressure. But the readiness existed because researchers had invested years building relationships and translating theory into implementable mechanisms.
-
-## The Unpredictability Challenge for Funders
-
-Policy windows create a funding paradox: the highest-impact research might not pay off for years, success depends partly on external factors beyond researcher control, and predicting which windows will open is nearly impossible.
-
-This creates uncomfortable realities:
-- Funding decisions must be made years before windows open
-- Research might be excellent but miss its window entirely
-- Success requires sustained funding through periods with no visible policy traction
-- Traditional milestone-based funding doesn't account for external timing factors
-
-Yet the cases demonstrate that preparation matters decisively. Research that's shelf-ready when windows open has transformative impact. Research that's not ready, even if superior methodologically, misses the opportunity.
-
-## Implications for Sustained Investment
-
-If policy impact matters, funding strategies must account for the readiness requirement:
-
-**For funders:**
-- Support multi-year investments in research areas where windows might open
-- Fund relationship-building and broker engagement, not just research production
-- Recognize that "shelf-ready" research requires sustained investment without immediate payoff
-- Evaluate proposals partly on likelihood of policy window emergence
-- Support implementation-ready artifacts (toolkits, model legislation, technical specs), not just publications
-- Fund knowledge brokering infrastructure in parallel with research
-
-**For researchers:**
-- Cultivate relationships with potential policy users before windows open
-- Develop implementation-ready tools alongside research findings
-- Engage with knowledge brokers who can position research for rapid deployment
-- Monitor policy landscapes for emerging windows
-- Ensure documentation, code, and methodologies are accessible enough for rapid adoption
-- Invest in translation even when no immediate policy demand exists
-
-**Critical questions for assessing readiness:**
-- What external events might create policy demand for this research?
-- Are knowledge brokers positioned to translate findings when windows open?
-- Have stakeholder relationships been cultivated in advance?
-- Are implementation tools being developed alongside research findings?
-- Will the work be immediately deployable when opportunity emerges?
-- Is documentation accessible enough for rapid policy adoption?
-
-## The Patient Capital Problem
-
-Readiness requires patient capital, funding that sustains research and broker engagement through periods with no visible policy traction. The timeline from initial research to policy adoption in these cases ranged from 10 to 40+ years. Impact often came long after initial funding cycles ended.
-
-This creates challenges for funders seeking demonstrable near-term impact. Yet the cases show that sustained investment in readiness, even through "dormant" periods, determines whether windows become transformation or frustration.
-
-## Key Takeaway
-
-Policy windows open unpredictably and close quickly. Impact requires not just excellent research, but research that's "shelf-ready" when opportunity strikes, with validated methodologies, engaged stakeholders, positioned knowledge brokers, and implementation-ready tools. Success depends on sustained investment in readiness, often through long periods without visible policy traction. Funders should assess not just research quality, but whether the work will be deployable when external events create sudden demand. The highest-impact research is research that's prepared to seize unpredictable opportunities. Sometimes the best investment is ensuring rigorous work is ready to walk through doors that haven't opened yet.
+Published advice to policy entrepreneurs already says to have a solution ready {{cite:cairney2018}}. A review of studies applying Kingdon's approach finds most engage with policy theory only superficially, which it attributes largely to the approach's "intuitive appeal and low 'barrier to entry'" {{cite:cairney-jones2016}}. That is a caution here too: after the fact, almost any change can be told as a window that opened.

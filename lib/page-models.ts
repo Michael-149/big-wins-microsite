@@ -242,7 +242,8 @@ function shortCitation(c: CaseStudy, id: string): string {
   if (!s) return '';
   const m = /^([^,(]+)[^(]*\((\d{4})/.exec(s.citation);
   const etAl = /et al\.|&/.test(s.citation.split('(')[0]);
-  return m ? `Source: ${m[1].trim()}${etAl ? ' et al.' : ''} (${m[2]})` : `Source: ${s.citation}`;
+  // Organization authors end in a period ("Dalberg. (2021)"); drop it before the year.
+  return m ? `Source: ${m[1].trim().replace(/\.$/, '')}${etAl ? ' et al.' : ''} (${m[2]})` : `Source: ${s.citation}`;
 }
 
 // ---------------------------------------------------------------------------

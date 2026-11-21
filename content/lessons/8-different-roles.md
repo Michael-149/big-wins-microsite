@@ -1,244 +1,88 @@
 ---
 number: 8
 slug: "8-different-roles"
-title: "Different Roles of Research at Different Stages"
+title: "Research did a different job at each stage, and later studies often changed the picture"
 shortTitle: "Roles of research"
-inBrief: "[draft] The word \"research\" conceals crucial distinctions. Generating breakthrough concepts requires different skills, timelines, and partnerships than validating those concepts empirically, which differs from understanding mechanisms, optimizing implementation, or adapting approaches to new contexts."
+inBrief: "Research did a different job at each stage of these cases: it supplied the theory behind emissions trading, for example, and evaluated needle exchanges that drug users, activists, clinicians and governments had started. Later studies often changed the picture: at three companies, low defaults and cautious funds roughly offset automatic enrollment's gain in average saving, though saving rose at the bottom, and the vaccine commitment worked by a different route than Gavi, the Vaccine Alliance, had assumed. Funders who stop paying once a policy is adopted lose that later research."
 cases:
-  - slug: "fcc-spectrum"
-    how: "[draft]"
-  - slug: "moving-to-opportunity"
-    how: "[draft]"
-  - slug: "growth-mindset"
-    how: "[draft]"
-  - slug: "emissions-trading"
-    how: "[draft]"
-  - slug: "dice-modeling"
-    how: "[draft]"
   - slug: "needle-exchange"
-    how: "[draft]"
-sources: []
+    how: "Drug users, activists, clinicians and governments started exchanges; research then evaluated programs, informed a series of reviews, answered misreadings and, after 2015, mapped where outbreaks could strike."
+  - slug: "behavioral-nudges"
+    how: "Thaler proposed the idea, and employers and the Internal Revenue Service acted before research measured it; studies then exposed its costs and designed fixes, and a 2025 study found gains shrink between 12 and 36 months after hire, though saving gaps narrow."
+  - slug: "emissions-trading"
+    how: "Theory supplied the idea and evaluations showed which designs failed; after 1990, studies found costs far below forecasts, large unplanned health benefits and, in some estimates, higher damages where trading moved emissions."
+  - slug: "fcc-spectrum"
+    how: "Research supplied theory, design proposals and laboratory tests before the first auctions in 1994, then evaluations, a study of collusion and a new design; Congress and the FCC made the decisions."
+  - slug: "amc-vaccines"
+    how: "The idea and the vaccines came from elsewhere; research supplied the economic case and the supply-commitment design, and evaluations found the commitment sped up supply and uptake but not vaccine development."
+  - slug: "moving-to-opportunity"
+    how: "Gautreaux studies suggested the idea, the lottery tested it, tax records showed the payoff and CMTO designed a service; in a rough comparison, HUD's demonstration then raised moves to opportunity areas less."
+  - slug: "dice-modeling"
+    how: "Nordhaus's research supplied the model; later, a 2015 study found little evidence that valuing carbon changed which policy agencies chose, though a 2014 analysis found the value could decide whether the proposed Clean Power Plan's climate benefits exceeded its costs; EPA's 2023 estimate no longer used DICE."
+  - slug: "growth-mindset"
+    how: "Carol Dweck pursued the question from 1973 to the 2019 national study, with a wider cast building and testing the programs; later work by others changed the picture, as trials in England and Argentina found no effect and two meta-analyses split."
+sources:
+  - id: boswell2017
+    citation: "Boswell, C., & Smith, K. (2017). Rethinking policy 'impact': Four models of research-policy relations. Palgrave Communications, 3, 44."
+    url: "https://doi.org/10.1057/s41599-017-0042-z"
+    type: paper
+  - id: weiss1979
+    citation: "Weiss, C. H. (1979). The many meanings of research utilization. Public Administration Review, 39(5), 426-431."
+    url: "https://doi.org/10.2307/3109916"
+    type: paper
+  - id: hgse-weiss2013
+    citation: "Harvard Graduate School of Education. (2013). HGSE remembers Professor Carol Weiss. Harvard Graduate School of Education."
+    url: "https://www.gse.harvard.edu/ideas/news/13/01/hgse-remembers-professor-carol-weiss"
+    type: web
+  - id: onken2014
+    citation: "Onken, L. S., Carroll, K. M., Shoham, V., et al. (2014). Reenvisioning clinical science: Unifying the discipline to improve the public health. Clinical Psychological Science, 2(1), 22-34."
+    url: "https://doi.org/10.1177/2167702613497932"
+    altUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4374633/"
+    type: paper
+  - id: ioannidis2005
+    citation: "Ioannidis, J. P. A. (2005). Contradicted and initially stronger effects in highly cited clinical research. JAMA, 294(2), 218-228."
+    url: "https://doi.org/10.1001/jama.294.2.218"
+    type: paper
 ---
 
-## Research Isn't a Single Activity
+## In the cases
 
-The word "research" conceals crucial distinctions. Generating breakthrough concepts requires different skills, timelines, and partnerships than validating those concepts empirically, which differs from understanding mechanisms, optimizing implementation, or adapting approaches to new contexts. These aren't just different tasks, they're different stages in the pathway from idea to transformative impact.
+**Research followed practice.** [Needle exchanges](/case-studies/needle-exchange) began outside research, with a drug users' group in Amsterdam in 1984. After New Haven opened a city-run exchange in 1990, Yale operations researcher Edward Kaplan, who builds mathematical models for decisions, used tests of returned syringes to estimate that it cut clients' HIV infection rate by at least a third, a modeled minimum, not a count.
 
-Understanding these stages helps match funding and support to what's actually needed at each point in the pipeline.
+**Measuring what employers had started.** Economist Richard Thaler, now at the University of Chicago, proposed [automatic enrollment](/case-studies/behavioral-nudges) in 401(k) retirement plans in 1994, but employers adopted it and the Internal Revenue Service approved it in 1998, before research measured it. At one large company, economist Brigitte Madrian, then of the University of Chicago, and compensation executive Dennis Shea found 86% of new hires in the plan, against 37% of those hired just before, at equal time on the job. But 61% stayed at both the 3% default and a low-risk money market fund, and at three companies, later work found, low defaults and cautious funds roughly offset the gain in average saving, though saving rose at the bottom.
 
-## The Five Stages of Research-Driven Impact
+**A different causal path.** In 2000, Michael Kremer, then a Harvard economist, set out the economic case for an existing idea, committing in advance to buy vaccines for poor countries; the [pneumococcal vaccine commitment](/case-studies/amc-vaccines) that followed targeted a disease with two vaccines nearly ready. Evaluations that Gavi, the Vaccine Alliance, commissioned from outside consultancies found that firms expanded capacity in response (some of it planned earlier) but that the commitment did little to speed vaccine development. It worked by a different route than Gavi assumed, the final evaluation concluded: few country decision makers knew of it or cited its supply and price promises.
 
-Each stage serves distinct functions, requires different capabilities, and faces different barriers:
+## The pattern
 
-### Stage 1: Genesis, Generate Ideas, Challenge Assumptions
+Across the eight, research did five jobs, in no fixed order: supplying an idea, testing it, explaining it, designing a working version and measuring it at scale. Theory supplied ideas, as for [emissions trading](/case-studies/emissions-trading), and the [Moving to Opportunity](/case-studies/moving-to-opportunity) voucher lottery tested one that earlier studies had suggested. Family interviews helped explain why its follow-up, Creating Moves to Opportunity (CMTO), worked, and the Department of Housing and Urban Development (HUD) is testing a version in eight regions. In [spectrum auctions](/case-studies/fcc-spectrum), economists whom bidders hired proposed the format, an experimental economist tested rules in the laboratory and Federal Communications Commission (FCC) staff recommended the design.
 
-**Core Function:** Produce conceptual breakthroughs that challenge existing paradigms and open new possibilities.
+Even the cases in [lesson 2](/lessons/2-archetypes) where one researcher stayed with a question across stages had a wider cast. Government staff ran Yale economist William Nordhaus's [climate-economy model](/case-studies/dice-modeling) alongside two others to put a federal dollar value on carbon damage. Stanford psychologist Carol Dweck pursued the question behind [growth mindset](/case-studies/growth-mindset) from 1973 to a 2019 national study, but others also funded, built and tested the programs.
 
-**Examples:**
-- **Ronald Coase (1959):** Challenged FCC spectrum allocation assumptions, proposing property rights and market mechanisms where command-and-control regulation had been unquestioned
-- **Kahneman & Tversky (1970s):** Questioned rational choice models, documenting systematic deviations from economic rationality and establishing behavioral economics
-- **Early emissions trading theory (1970s):** Proposed market-based environmental protection when regulation meant mandates, not markets
+A changed picture means a change in an effect's size, its costs, who gained or how it worked. Two later studies of automatic enrollment, both tied to the early default studies' authors, asked different questions: one found its gains shrinking between 12 and 36 months after hire, though it narrowed gaps in saving; the other, a study of borrowing, found Army civilian hires' contributions over 4 years up 4.1% of annual salary with little sign of increased financial distress, but could not measure net worth. Other studies found what early ones could not yet see, such as the sulfur dioxide program's largest, unplanned benefits, projected to come mostly from fewer deaths and illnesses.
 
-**Characteristics:**
-- High-risk work that might not have obvious applications for decades
-- Often challenges disciplinary orthodoxy or institutional practice
-- May be unfunded or supported only by basic research grants with no application requirements
-- Success measured by conceptual novelty and theoretical contribution
-- Individual or small-team efforts, limited stakeholder engagement
+Sometimes the new picture changed policy: studies of automatic enrollment's costs designed fixes that legislators and regulators adopted, such as rising defaults. Sometimes it did not: California's 2023 math framework cited the national growth mindset study and a favorable meta-analysis (a study pooling many studies' results) in arguing that changing mindsets raises math achievement. By then, trials of other versions in England and Argentina had found no effect, and a second 2022 meta-analysis had found little or none.
 
-**Key Challenge:** Academic incentives reward genesis work, but most genesis never translates to impact. The question is which conceptual innovations merit continued investment.
+## Why it is easy to miss
 
-### Stage 2: Proof of Concept, Test If It Actually Works
+Policy scholars Christina Boswell and Katherine Smith, then both of the University of Edinburgh, argue that notions of research impact are "typically premised on simplistic, linear models of the policy process" {{cite:boswell2017}}. A search for the study that started or decided each change misses what research did where drug users, clinicians and activists began needle exchanges, employers began automatic enrollment and Congress, in a [policy window](/lessons/6-policy-windows), decided to auction spectrum. Later jobs come years after the decision, and some were unfinished as of November 2026: we found no published estimate of the national growth mindset program's effect on graduation, and no HUD report on its demonstration's effects, expected in 2026.
 
-**Core Function:** Provide rigorous empirical evidence that an intervention or approach produces desired outcomes.
+## What it means for funders and research leaders
 
-**Examples:**
-- **New Haven needle exchange (1988):** Documented HIV prevention without increasing drug use, countering moral objections with evidence
-- **Moving to Opportunity (1994-2010):** Large-scale RCT testing whether neighborhood changes improve life outcomes, initially showing mixed results, later revealing massive earnings impacts for young movers
-- **Early growth mindset experiments:** Small-scale classroom studies demonstrating that mindset interventions improve academic persistence and achievement
+- **Name the job, then judge by it.** Ask which of the five jobs a project should do. Then judge a design by whether a named partner will run it, a scale evaluation by its data and sample size.
+- **Put the evaluation in the program's budget.** Congress paired $50 million for services and vouchers in HUD's mobility demonstration with $3 million for its evaluation.
+- **Five years on.** If your work changes a policy next year, who outside the design team will measure its effects five years later, who will pay, and who has agreed to act on the findings?
 
-**Characteristics:**
-- Rigorous empirical work using RCTs, quasi-experiments, or robust observational designs
-- Tests core hypotheses but often in controlled or limited contexts
-- May not address implementation challenges or mechanisms
-- Success measured by statistical significance, effect sizes, and methodological rigor
-- Requires significant resources for data collection and analysis
+## Where it may not hold
 
-**Key Challenge:** Proof of concept establishes that something *can* work, not that it *will* work at scale under real-world constraints. Many validated interventions fail when implemented broadly.
+The lesson is partly built in by how the cases were chosen: one criterion ensured that some ideas came from outside research, and any case documented well enough to be chosen has had years to gather later studies. Every case worked, so the collection cannot show that research doing each job leads to success. Stages may also blur in research-practice partnerships, where one team does several jobs at once and which [this collection underrepresents](/method#what-we-favored).
 
-### Stage 3: Mechanism, Explain Why It Works
+Later studies did not always change the picture. An early review of six FCC auctions, by an economist bidders had hired, found that similar licenses sold for similar prices, and the HIV evidence for needle exchanges went from tentative in a 2010 review to sufficient in the same lead author's 2022 review. Whether a study changed it is a judgment, too: MDRC, a research nonprofit, called its smaller re-analysis estimate consistent with the national study's results.
 
-**Core Function:** Uncover the processes and pathways through which interventions produce effects, identifying critical mechanisms and potential failure points.
+Some later research left the question open. Economist Analisa Packham of Vanderbilt University found that needle exchange openings cut HIV diagnoses but raised opioid deaths; researchers including two from a syringe exchange network replied that her methods were too fragile to show cause, though one called her work a good-faith use of standard tools.
 
-**Examples:**
-- **Stefanie DeLuca's qualitative work:** Revealed why Moving to Opportunity struggled, families faced voucher acceptance deadlines, landlords resisted, families lacked search support. This mechanism research informed CMTO's design, transforming 15% success to 53%
-- **Growth mindset mechanism research:** Identified how mindset shapes persistence, effort attribution, and response to failure, understanding that enabled refinement of interventions
-- **Emissions trading studies (1980s):** Explained why market approaches succeeded, flexibility enabled cost-effective abatement, trading created price discovery, monitoring ensured compliance
+## What others have found
 
-**Characteristics:**
-- Combines qualitative and quantitative methods to understand processes
-- Fills critical gap between "it works" and "we understand how/why"
-- Often reveals barriers, enabling conditions, and context dependencies
-- Essential for troubleshooting failures and adapting to new contexts
-- May not generate high-prestige publications despite being critical for impact
+Sociologist Carol Weiss of Harvard distinguished several meanings of research use {{cite:weiss1979,hgse-weiss2013}}. The cases show less of her knowledge-driven model, in which basic research leads step by step to application, than of three others: research answering a decision maker's defined question (the FCC's auction rules), researchers in a joint search with officials and practitioners (New Haven) and research used as ammunition (the needle exchange funding fight). The collection underrepresents what she called enlightenment, the slow change in how people think about a problem {{cite:weiss1979}}.
 
-**Key Challenge:** Academic incentives often undervalue mechanism research, journals prefer novel effects over understanding existing ones. Yet mechanism understanding determines whether interventions scale successfully.
-
-### Stage 4: Design, Optimize for Real-World Implementation
-
-**Core Function:** Transform validated concepts into implementable interventions that function in messy, resource-constrained, politically complex real-world environments.
-
-**Examples:**
-- **Milgrom & Wilson FCC auction designs:** Didn't just propose auctions, designed specific mechanisms addressing strategic delay, package bidding, collusion prevention, and default penalties. Each detail determined whether auctions generated billions while allocating spectrum efficiently
-- **Creating Moves to Opportunity (CMTO):** Developed bundled support packages, customized search assistance, financial help for deposits, landlord engagement, barrier-specific problem-solving. Design work was the difference between 15% and 53% success
-- **Specific nudge interventions:** Opt-out organ donation, default 401(k) enrollment, calorie disclosure formats, each required careful design of choice architecture, timing, framing, and feedback
-
-**Characteristics:**
-- Highly applied work that academic incentives rarely reward
-- Focuses on making things work under constraints, not just in principle
-- Requires deep engagement with practitioners and policymakers
-- Iterative process of testing, failing, refining, testing again
-- Success measured by adoption and implementation fidelity, not publications
-
-**Key Challenge:** This is often the hardest, highest-impact work, yet generates the least academic recognition. Many PhDs who excel at design leave academia because incentives don't reward their contributions.
-
-### Stage 5: Scale, Adapt to New Contexts and Populations
-
-**Core Function:** Understand what works where and why, enabling responsible scaling across diverse settings while identifying boundary conditions.
-
-**Examples:**
-- **Regional DICE model variants:** Adapting global climate-economic models for specific geographies, enabling localized policy analysis
-- **CMTO replications across cities:** Implementing in Seattle, King County, Minneapolis, each with different housing markets, voucher programs, and community contexts. Adaptation research identifies which design elements transfer and which require modification
-- **Emissions trading system adaptations:** Applying cap-and-trade to different pollutants (SO2, NOx, CO2), different scales (regional, national, international), different institutional contexts (US, EU, China)
-
-**Characteristics:**
-- Implementation science assessing transferability and adaptation requirements
-- Documents what works where and for whom, identifying heterogeneity in effects
-- Prevents overgeneralization and premature scaling failures
-- Balances fidelity (maintaining core mechanisms) with adaptation (fitting context)
-- Success measured by sustained adoption and maintained effectiveness across contexts
-
-**Key Challenge:** Scaling research is often unfunded, initial funders supported proof-of-concept, implementation funders want immediate deployment, and nobody funds the systematic adaptation work that makes scaling responsible.
-
-## Why These Distinctions Matter for Funding
-
-Different stages demand fundamentally different approaches:
-
-### Timelines Vary Dramatically
-- **Genesis:** May take decades of foundational work before applications emerge (behavioral economics: 60+ years)
-- **Proof of concept:** Often 5-10 years for rigorous empirical validation
-- **Mechanism:** 3-5 years of additional investigation after initial validation
-- **Design:** Iterative cycles of months to years, depending on complexity
-- **Scale:** Ongoing process as contexts change and adaptations accumulate
-
-### Skills and Expertise Differ
-- **Genesis:** Theoretical innovation, disciplinary boundary-crossing, paradigm challenge
-- **Proof of concept:** Experimental design, causal identification, statistical rigor
-- **Mechanism:** Qualitative research, mixed methods, process tracing
-- **Design:** Implementation expertise, stakeholder engagement, systems thinking
-- **Scale:** Adaptation frameworks, contextual analysis, dissemination strategy
-
-### Partnership Requirements Evolve
-- **Genesis:** Often solo or small teams with minimal stakeholder engagement
-- **Proof of concept:** May require research partnerships for access to populations
-- **Mechanism:** Benefits from practitioner input to identify real-world barriers
-- **Design:** Requires deep co-design with implementers and beneficiaries
-- **Scale:** Demands multi-site collaborations and community engagement
-
-### Success Measures Change
-- **Genesis:** Citations, theoretical influence, paradigm shifts
-- **Proof of concept:** Effect sizes, statistical significance, replication
-- **Mechanism:** Explanatory power, practical utility for adaptation
-- **Design:** Adoption rates, implementation quality, operational feasibility
-- **Scale:** Sustained uptake, maintained effectiveness, responsible adaptation
-
-## The Funding Pipeline Problem
-
-Most funders gravitate toward stages they're comfortable with, creating gaps and bottlenecks:
-
-### Basic Research Funders Stay at Genesis
-National Science Foundation, private foundations supporting fundamental research, these funders excel at supporting conceptual innovation. But they rarely fund the later stages that translate ideas into impact. Brilliant concepts languish because nobody supports the transition from genesis to validation and implementation.
-
-### Implementation Funders Want to Skip to Stage 4-5
-Foundations focused on immediate social impact often want to fund proven, implementable solutions. They avoid early-stage work, assuming others will fund proof-of-concept and mechanism research. This creates a funding desert for Stages 2-3.
-
-### The "Messy Middle" Gets Neglected
-Mechanism research (Stage 3) and design work (Stage 4) are hardest to fund:
-- Too applied for basic research funders
-- Too risky for implementation funders
-- Least rewarded by academic incentives
-- Longest timeline uncertainties
-
-Yet these stages often determine whether validated concepts achieve impact. Moving to Opportunity had proof-of-concept for decades, mechanism research and design work transformed it from interesting research to impactful policy.
-
-### Early-Stage Abandonment
-Funders supporting proof-of-concept often discontinue funding after initial validation, before mechanism research reveals why things work (or fail). This premature abandonment forfeits the investment, like funding 80% of a bridge and stopping before it reaches the other side.
-
-### Late-Stage Neglect
-Scaling receives minimal funding. Initial funders supported proof-of-concept. Implementation funders want immediate deployment. Nobody funds the systematic adaptation research that makes scaling responsible rather than reckless.
-
-## Matching Support to Stage
-
-Effective funding strategies recognize stage-specific needs:
-
-**For Stage 1 (Genesis):**
-- Patient capital with no application requirements
-- Support for boundary-crossing, paradigm-challenging work
-- Accept high failure rates, most genesis never translates
-- Evaluate based on conceptual contribution, not applied impact
-
-**For Stage 2 (Proof of Concept):**
-- Sufficient resources for rigorous validation
-- Long enough timelines for meaningful outcomes (often 5-10 years)
-- Expectation of null results, learning what doesn't work has value
-- Support for replication and robustness checks
-
-**For Stage 3 (Mechanism):**
-- Mixed-methods funding combining qualitative and quantitative work
-- Resources for iteration, understanding mechanisms takes multiple studies
-- Partnership development with practitioners who understand barriers
-- Recognition that mechanism research enables later stages
-
-**For Stage 4 (Design):**
-- Support for co-design with implementers and communities
-- Flexibility for rapid iteration based on implementation learning
-- Non-academic rewards for researchers doing design work
-- Resources for creating implementation-ready artifacts (toolkits, training, specifications)
-
-**For Stage 5 (Scale):**
-- Multi-site funding enabling systematic adaptation research
-- Documentation resources to capture adaptation knowledge
-- Long-term support through multiple implementation cycles
-- Frameworks for responsible scaling that prevent overgeneralization
-
-## Critical Questions for Funders and Researchers
-
-When evaluating any research proposal, explicitly identify:
-
-**1. Which stage(s) does this work address?**
-Don't accept vague "research" framing. Is this genesis, validation, mechanism, design, or scaling? Each requires different support structures.
-
-**2. Are earlier stages sufficiently established?**
-Design work without mechanism understanding often fails. Scaling without design optimization spreads ineffective implementations. Genesis needs validation before massive investment in design.
-
-**3. Do later stages have clear pathways?**
-Funding proof-of-concept without mechanism research capacity leaves validated findings stranded. Supporting mechanism work without design partnerships means understanding doesn't translate to improved practice.
-
-**4. Do proposed activities match stage needs?**
-Academic publication strategies suit genesis and validation, but not design and scaling. Partnership structures appropriate for mechanism research differ from those needed for design. Timeline and evaluation metrics should align with stage requirements.
-
-**5. Is this the right research for this stage?**
-Excellence in genesis doesn't predict excellence in design. Methodological rigor in validation differs from implementation skill in scaling. Match researcher strengths to stage requirements.
-
-## The Full Pipeline Imperative
-
-Impact requires supporting the complete pipeline, not just the stages funders find comfortable or that academic incentives reward. The cases demonstrate that gaps at any stage derail transformation:
-
-- Behavioral economics needed 60+ years at Stage 1 before applications emerged, premature demand for impact would have killed it
-- Moving to Opportunity had proof-of-concept for decades but needed mechanism research to identify why success rates were low and design work to fix it
-- Emissions trading had genesis and validation but required extensive design work to function in real regulatory environments
-- Spectrum auctions needed all five stages: genesis (Coase), validation (experimental economics), mechanism (auction theory), design (FCC-specific formats), and scaling (international adoption)
-
-## Key Takeaway
-
-"Research" encompasses distinct activities serving different functions across the idea-to-impact pipeline. Genesis generates conceptual innovations. Proof-of-concept validates that interventions work. Mechanism research explains why they work. Design optimizes implementation. Scaling enables responsible adaptation. Each stage requires different skills, timelines, partnerships, and success measures. Most funders gravitate toward stages they're comfortable with, creating bottlenecks and abandoning promising work between stages. Effective impact strategies support the full pipeline, matching funding structures, evaluation criteria, and researcher incentives to stage-specific needs. The right question isn't "is this good research?" but "is this the right research for this stage, is this stage ready for this investment, and are pathways to subsequent stages viable?" Transformative impact requires sustained support through all five stages, not just the ones that generate prestigious publications or immediate visible progress.
+The title's first half also echoes stage models: in the National Institutes of Health (NIH) Stage Model, research runs from basic science to implementation studies in no required order, studying mechanisms at every stage {{cite:onken2014}}. Its second half has precedent: of 45 highly cited clinical studies reporting an effective intervention, epidemiologist John Ioannidis, then of the University of Ioannina, found that later studies contradicted or found weaker effects for 14, while 20 were replicated and 11 went largely unchallenged {{cite:ioannidis2005}}.

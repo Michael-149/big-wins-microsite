@@ -12,7 +12,7 @@ import type { ConsideredEntry } from '@/lib/types';
 
 const PATH = '/cases-considered';
 const FALLBACK_LEAD =
-  'Before choosing the featured cases, we gathered a long list of candidates where social science research appeared to have helped change a policy, program or market at scale.';
+  'Before choosing the featured cases, we gathered a long list of candidates where social science research appeared to have helped change a policy, program, market or practice.';
 const CAVEAT =
   'These are candidates, not vetted claims. Only the eight featured cases have been fact-checked in full. Summaries carry no impact figures on purpose.';
 

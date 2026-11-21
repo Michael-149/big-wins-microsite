@@ -457,13 +457,18 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 .chart th, .chart td { text-align: left; font-weight: 400; padding: 6px 0; vertical-align: middle; font-size: 16px; line-height: 24px; }
 .chart tbody th { width: 36%; padding-right: 16px; }
 .chart tr.chart__group th { padding-top: 16px; }
-.chart__axis { display: flex; justify-content: space-between; color: var(--ink-muted); }
+.chart tfoot td { padding-top: 0; }
+.chart__axis { position: relative; height: 28px; color: var(--ink-muted); }
+.chart__axis::before { content: ''; position: absolute; left: 0; top: 0; width: 80%; border-top: 1px solid var(--ink-muted); }
+.chart__tick { position: absolute; top: 4px; transform: translateX(-50%); white-space: nowrap; }
+.chart__tick:first-child { transform: none; }
+.chart__axis-unit { color: var(--ink-muted); }
 .bar { display: flex; align-items: center; gap: 10px; }
 .bar__fill { height: 20px; background: var(--chart-1); }
 .bar__fill--alt { background: var(--chart-3); }
 .chart__note { margin-top: 12px; color: var(--ink-muted); }
 .chart__source { margin-top: 4px; }
-@media (max-width: 767px) { .chart tbody tr { display: grid; } .chart tbody th { width: auto; padding-bottom: 0; } }
+@media (max-width: 767px) { .chart tbody tr, .chart tfoot tr { display: grid; } .chart tbody th { width: auto; padding-bottom: 0; } .chart tfoot td:first-child { display: none; } }
 
 /* ---------- People, go deeper ---------- */
 .people { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--gutter); border-top: 1px solid var(--line-strong); }

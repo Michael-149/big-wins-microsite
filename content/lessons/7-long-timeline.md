@@ -1,207 +1,107 @@
 ---
 number: 7
 slug: "7-long-timeline"
-title: "Pace of Large-Scale Change Can Be Long"
+title: "These changes took a decade or more and drew on many separate investments"
 shortTitle: "Decades"
-inBrief: "[draft] The timeline from initial research to widespread policy adoption consistently exceeded what typical funding cycles anticipate. Understanding these timescales isn't just academically interesting, it's crucial for setting realistic expectations, designing appropriate support structures, and avoiding premature abandonment of promising work."
+inBrief: "Counted from the first research or the first program, each of these changes took a decade or more and drew on several funders, public programs or private decisions. The time went to different things: the Moving to Opportunity earnings finding came more than 20 years after enrollment began, once the children had grown up; federal health officials accepted the evidence on needle exchanges in 1998 but kept the spending-law ban on federal funding, which Congress did not lift until 2009. Funders should judge each investment by what it left for the next stage, such as data, a usable design or a next funder, not by whether the change arrived within one grant period."
 cases:
-  - slug: "needle-exchange"
-    how: "[draft]"
-  - slug: "behavioral-nudges"
-    how: "[draft]"
-  - slug: "emissions-trading"
-    how: "[draft]"
   - slug: "moving-to-opportunity"
-    how: "[draft]"
+    how: "The earnings finding came more than 20 years after enrollment began; a funder judging MTO by its 2003 or 2011 reports would have seen health gains and no earnings gains."
   - slug: "dice-modeling"
-    how: "[draft]"
+    how: "Thirty-five years separate Nordhaus's 1975 carbon model from the first full US government-wide value in 2010; the National Science Foundation supported both his 1975 paper and the 1992 DICE paper."
+  - slug: "needle-exchange"
+    how: "Congress first lifted the spending-law ban 21 years after the 1988 law, for 2 years, and in December 2015 let federal funds pay for exchange costs other than needles and syringes; state, local and private money kept exchanges spreading, and federal support was narrowing again in 2026."
+  - slug: "growth-mindset"
+    how: "From Dweck's research in the early 1970s to the 2019 national study, the work drew on a federal small-business award, foundations and Stanford, and the free program built from the study ran from 2017 to 2025."
+  - slug: "amc-vaccines"
+    how: "From Kremer's 2000 papers, funded by the National Science Foundation and the MacArthur Foundation, to the first supply agreements in 2010, the work drew on Gates funding, five donor governments and, for a third vaccine that joined in 2020, more than a decade of development with PATH."
+  - slug: "emissions-trading"
+    how: "From Thomas Crocker's 1966 proposal to the 1990 acid rain trading program, the idea was tried in EPA's trading programs from 1976 and turned into a proposal by Project 88, while federal acid rain research costing more than $500 million informed the debate."
+  - slug: "behavioral-nudges"
+    how: "Employers began adopting automatic enrollment, and the Internal Revenue Service approved it in 1998, before research measured it; from Thaler's 1994 proposal to a 2022 mandate for new plans, the work drew on the National Institute on Aging, a Pew-supported policy project and, later, grants from the TIAA Institute and Nest."
   - slug: "fcc-spectrum"
-    how: "[draft]"
-sources: []
+    how: "Auction theory funded by federal agencies including the National Science Foundation, and an FCC staff proposal in 1985, preceded the 1993 law; a 2002 staff proposal for auctions in which license holders could sell their airwaves reached an auction in 2016 to 2017."
+sources:
+  - id: teles2011
+    citation: "Teles, S., & Schmitt, M. (2011). The elusive craft of evaluating advocacy. Stanford Social Innovation Review, Summer 2011, 38-43."
+    url: "https://ssir.org/articles/entry/the_elusive_craft_of_evaluating_advocacy"
+    type: article
+  - id: mayne2012
+    citation: "Mayne, J. (2012). Contribution analysis: Coming of age? Evaluation, 18(3), 270-280."
+    url: "https://doi.org/10.1177/1356389012451663"
+    type: paper
+  - id: dellavigna2024
+    citation: "DellaVigna, S., Kim, W., & Linos, E. (2024). Bottlenecks for evidence adoption. Journal of Political Economy, 132(8), 2748-2789."
+    url: "https://doi.org/10.1086/729447"
+    type: paper
+  - id: dellavigna2022wp
+    citation: "DellaVigna, S., Kim, W., & Linos, E. (2022). Bottlenecks for evidence adoption (NBER Working Paper No. 30144). National Bureau of Economic Research."
+    url: "https://www.nber.org/papers/w30144"
+    type: paper
+  - id: weiss1979
+    citation: "Weiss, C. H. (1979). The many meanings of research utilization. Public Administration Review, 39(5), 426-431."
+    url: "https://doi.org/10.2307/3109916"
+    type: paper
+  - id: sabatier1988
+    citation: "Sabatier, P. A. (1988). An advocacy coalition framework of policy change and the role of policy-oriented learning therein. Policy Sciences, 21(2-3), 129-168."
+    url: "https://doi.org/10.1007/BF00136406"
+    type: paper
+  - id: baumgartner1991
+    citation: "Baumgartner, F. R., & Jones, B. D. (1991). Agenda dynamics and policy subsystems. Journal of Politics, 53(4), 1044-1074."
+    url: "https://doi.org/10.2307/2131866"
+    type: paper
+  - id: morris2011
+    citation: "Morris, Z. S., Wooding, S., & Grant, J. (2011). The answer is 17 years, what is the question: Understanding time lags in translational research. Journal of the Royal Society of Medicine, 104(12), 510-520."
+    url: "https://doi.org/10.1258/jrsm.2011.110180"
+    altUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3241518/"
+    type: paper
+  - id: hanney2015
+    citation: "Hanney, S. R., Castle-Clarke, S., Grant, J., et al. (2015). How long does biomedical research take? Studying the time taken between biomedical and health research and its translation into products, policy, and practice. Health Research Policy and Systems, 13, 1."
+    url: "https://doi.org/10.1186/1478-4505-13-1"
+    type: paper
 ---
 
-## Impact Unfolds in Decades, Not Years
+## In the cases
 
-The timeline from initial research to widespread policy adoption consistently exceeded what typical funding cycles anticipate. Understanding these timescales isn't just academically interesting, it's crucial for setting realistic expectations, designing appropriate support structures, and avoiding premature abandonment of promising work.
+**More than 20 years to the earnings result.** [Moving to Opportunity](/case-studies/moving-to-opportunity) (MTO) enrolled 4,604 families in five cities from 1994 to 1998 and offered vouchers by lottery. Federal evaluations in 2003 and 2011 found safer neighborhoods and better adult health, but no effect on adults' earnings. In the mid-2010s, tax records showed that children whose families used the experimental voucher, limited to low-poverty areas, to move before age 13 earned 31% more in their mid-twenties than children in the control group.
 
-Most funding operates on 3-5 year cycles. Most transformative impact requires 20-40 years. This mismatch creates systemic problems.
+**Thirty-five years from model to federal value.** Yale economist William Nordhaus began modeling carbon dioxide in 1974 at a research institute in Austria, with its support and the National Science Foundation's (NSF), and published his [DICE](/case-studies/dice-modeling) (Dynamic Integrated Climate-Economy) model in 1992. In 2010 a White House-led working group ran DICE and two other models to set the first full US government-wide social cost of carbon (the future damage from one more ton of carbon dioxide, discounted to today's dollars), 35 years after his 1975 paper.
 
-## The Real Timeline of Transformation
+**Twenty-one years to lift a ban.** A 1988 AIDS law barred its funds from supplying needles for illegal drug use, and from 1989 spending laws restricted federal money for [needle exchanges](/case-studies/needle-exchange). Exchanges spread anyway with state, local and private money, to 28 states and one territory by 1998. Congress lifted the spending-law ban in December 2009, restored it in 2011 and, in December 2015, let federal funds pay for exchange costs other than needles and syringes where health officials find a risk of outbreaks.
 
-Look at the actual time horizons from foundational research to widespread adoption:
+**Ten years from papers to supply agreements.** The [advance market commitment for pneumococcal vaccines](/case-studies/amc-vaccines), a donor pledge to top up vaccine prices in return for long-term supply, took its economic case from 2000 papers by Michael Kremer, then a Harvard economist, funded by the NSF and the MacArthur Foundation. A Gates-funded working group then turned it into a proposal, five governments and the Gates Foundation pledged $1.5 billion in 2007, and the first supply agreements followed in 2010.
 
-### Needle Exchanges: 32 Years
-- **1985:** First U.S. needle exchange programs launched by activists in response to AIDS crisis
-- **1988:** Studies begin documenting effectiveness at reducing HIV transmission
-- **2000s:** CDC endorses approach, but federal funding ban persists
-- **2015:** Major legitimacy breakthrough when conservative Indiana embraces needle exchanges during rural HIV outbreak
-- **2017:** Federal funding ban lifted after decades of evidence accumulation
+## The pattern
 
-Thirty-two years from initial programs to mainstream policy acceptance. The evidence was compelling within a decade, but institutional change required three more decades.
+Every case took a decade or more from its first research or program, but the time went to different things. Some of it was waiting for outcomes: MTO's earnings effect could not show until the children had grown up and their records were linked to tax data. After that the next step was quick: in 2019 Congress created a federal mobility demonstration, whose 2020 notice cited the MTO research and a follow-up trial's 2019 results. Some of it was waiting for politics: the Department of Health and Human Services (HHS) accepted the evidence on needle exchanges in 1998 but kept the spending-law ban, which Congress lifted only in December 2009.
 
-### Behavioral Nudges: 60+ Years
-- **1950s-1970s:** Herbert Simon, Kahneman & Tversky establish bounded rationality and behavioral biases
-- **2001:** Madrian & Shea demonstrate 401(k) auto-enrollment impact
-- **2008:** Thaler & Sunstein publish *Nudge*, providing accessible framework
-- **2010:** UK establishes Behavioural Insights Team; Obama creates SBST
-- **2020s:** Hundreds of government nudge units operating globally
+Elsewhere an idea took years to become something a government could use, and adoption came quickly once a [window](/lessons/6-policy-windows) opened. [Emissions trading](/case-studies/emissions-trading) went from economists' proposals in 1966 and 1968, through Environmental Protection Agency (EPA) trading programs from 1976 and a 1988 proposal by Project 88, a study two senators created, to the 1990 law. When Congress authorized [spectrum auctions](/case-studies/fcc-spectrum) in 1993, it gave the Federal Communications Commission, whose staff had proposed them 8 years earlier, 210 days to write the rules.
 
-Sixty years from foundational behavioral economics to institutionalization in governments worldwide. Even the "rapid" adoption phase from *Nudge* publication to global implementation took a decade.
+In two cases practice outran the evidence. A drug users' group in Amsterdam started the first needle exchange in 1984, outside research. [Automatic enrollment in retirement plans](/case-studies/behavioral-nudges) ran from a 1994 proposal by economist Richard Thaler, now at the University of Chicago, to the 2006 Pension Protection Act, but employers were adopting it by the late 1990s, and the Internal Revenue Service approved it in 1998, before research measured the effect.
 
-### Emissions Trading: 60+ Years
-- **1960:** Coase proposes pollution property rights in *The Problem of Social Cost*
-- **1970s-1980s:** Theoretical development and small-scale experiments
-- **1990:** Clean Air Act Amendments authorize EPA to create first major trading program
-- **1995:** Acid Rain Program launches, demonstrates efficacy
-- **2005:** EU Emissions Trading System begins
-- **2020s:** Carbon pricing systems operating in 40+ jurisdictions globally
+## Why it is easy to miss
 
-Six decades from theoretical proposition to global carbon pricing infrastructure. The concept existed for 35 years before the first major implementation.
+Evaluation clocks and payoff clocks run at different speeds, as writing on advocacy funding has argued {{cite:teles2011}}. A funder judging MTO by its 2003 or 2011 reports would have seen health gains and no earnings gains.
 
-### DICE Climate Modeling: 30+ Years
-- **1992:** Nordhaus publishes first DICE model
-- **1990s-2000s:** Continuous refinement, validation, peer review
-- **2009:** OMB begins developing Social Cost of Carbon using DICE and other models
-- **2013:** Federal agencies required to incorporate SCC in rulemakings
-- **2022:** Biden administration updates SCC methodology, expanding DICE influence
+Credit also gathers at the ends of the story, on the researcher with the idea and the decision that adopted it; the agency staff, demonstrations, foundations and public programs in between are harder to see. Some, such as EPA's early trading programs, were regulation rather than research, so counting research funding alone understates what the changes took.
 
-Thirty years from initial model to mandatory regulatory incorporation. The Nobel Prize in 2018 came after the policy impact was already well established.
+## What it means for funders and research leaders
 
-### FCC Spectrum Reform: 35 Years
-- **1959:** Coase proposes property rights approach to spectrum allocation
-- **1980s-1990s:** Milgrom, Wilson, and others develop auction theory and mechanisms
-- **1994:** First U.S. spectrum auctions conducted
-- **2000s:** Auctions become standard globally, generating hundreds of billions in revenue
+- **Agree on what progress looks like.** Name at the start what would show that a grant moved the work forward (a reusable asset such as MTO's lottery records or DICE's open code, a design ready for a window, or a next funder ready to take over) and what would show a stall. Budget early for the data agreements a later link to records will need.
+- **Fund the middle.** Pay for design projects, demonstrations and working groups between idea and decision, such as Project 88, and count them in impact reviews.
+- **Know whether you are the anchor or one leg of a relay.** The NSF funded Nordhaus's 1975 and 1992 papers; the vaccine commitment passed from research grants to a foundation-funded working group to donor governments. An anchor needs a long horizon; a relay funder should name the next stage's likely funder before its grant ends.
+- **Judge related grants together.** Review them over "the longest feasible time horizon" {{cite:teles2011}}, and credit contribution rather than sole cause, as contribution analysis does by treating an investment as one of several causes {{cite:mayne2012}}.
 
-Thirty-five years from theoretical foundation to implementation. The auction designs required decades of theoretical development before becoming policy-ready.
+## Where it may not hold
 
-### Moving to Opportunity: 30+ Years
-- **1994:** Original Moving to Opportunity experiment begins
-- **2000s:** Early results disappointing; 15% success rate
-- **2015:** Long-term follow-up reveals massive earnings impacts for young movers
-- **2018:** Creating Moves to Opportunity pilots new implementation design, achieves 53% success rate
-- **2020s:** HUD scales mobility programs nationwide based on evidence
+The selection explains part of this lesson. Each case had to be a change already made, with research's part documented in published sources, which favors long-running stories because such accounts take years to appear; our preference for short causal chains cuts the other way. Long efforts that never paid off are absent, so these cases cannot say how often patience pays.
 
-Thirty years from initial experiment to current implementation programs. The breakthrough came from sustained research commitment through initially disappointing results.
+The pattern is weakest where a change rides an existing system. Of 73 trials that 30 US cities ran with a national nudge unit (a team applying behavioral science for governments) from 2015 to 2019, 27% had led cities to adopt the tested change when checked in 2021 and 2022; the largest predictor was whether the trial used communications the city already sent {{cite:dellavigna2024,dellavigna2022wp}}. Most of the eight needed a new law, market or institution; quick, local and partnership-based changes, underrepresented here, matter too.
 
-## The Recognition Lag Phenomenon
+A long arc can also end in a small result or be cut back quickly. [Growth mindset](/case-studies/growth-mindset) research, built on work Carol Dweck, a psychologist now at Stanford University, began in the early 1970s, produced a free program with a small, contested benefit for lower-achieving students; its nonprofit provider ended it in June 2025, giving no reason on its program page. In 2025 an executive order withdrew the federal estimates of the social cost of carbon, citing what it called logical deficiencies and politicization among other reasons. In April 2026, citing another 2025 order, the Substance Abuse and Mental Health Services Administration said no HHS funds may buy or distribute syringes for illicit drug use, drug test strips or safer smoking supplies, though Congress kept the 2015 change for fiscal 2026 (see [lesson 5](/lessons/5-legitimacy-narrative)).
 
-Academic recognition often lags policy impact, sometimes dramatically. Both DICE and growth mindset research showed the same pattern: widespread policy adoption preceded peak academic citations. The work was already changing the world before the academic community fully appreciated its significance.
+## What others have found
 
-This creates a paradox: researchers seeking academic advancement may deemphasize policy-impactful work because it doesn't generate immediate scholarly recognition. Yet that's precisely the work that eventually achieves transformative real-world influence.
+Long arcs are familiar in policy-process research. Sociologist Carol Weiss of Harvard described research's enlightenment role, its gradual influence on how people understand a problem {{cite:weiss1979}}, and policy scholar Paul Sabatier of the University of California, Davis, built such findings into his advocacy coalition framework, a model of change driven by coalitions with shared policy beliefs, over "periods of a decade or more" {{cite:sabatier1988}}. Political scientists Frank Baumgartner and Bryan Jones, then of Texas A&M University, found that many policies go through "long periods of stability and short periods of dramatic reversals" {{cite:baumgartner1991}}.
 
-## Why Large-Scale Change Takes Decades
-
-The long timelines aren't accidental inefficiency. They reflect fundamental features of how evidence translates to lasting institutional change:
-
-### 1. Evidence Accumulation Takes Time
-
-Single studies rarely change institutional behavior, no matter how rigorous. Convergent evidence from multiple sources, contexts, and methodologies builds confidence that findings are robust and generalizable. Meta-analyses require multiple studies to meta-analyze. Replication studies take years. Long-term follow-up studies tracking effects over decades, like Moving to Opportunity's earnings impacts, require waiting for decades.
-
-This accumulation can't be rushed. Some questions simply require extended observation periods to answer meaningfully.
-
-### 2. Coalition Building Is Slow
-
-Assembling cross-sector support requires relationship development, trust-building, and iterative dialogue. Environmental Defense Fund didn't convince business interests to support emissions trading overnight, it took years of convening discussions, demonstrating mechanisms, and building shared understanding.
-
-Knowledge brokers need time to translate research for different audiences. Stakeholders need time to understand implications for their interests. Building political coalitions that survive leadership transitions requires cultivating champions across multiple organizations and political constituencies.
-
-These relationships can't be conjured on demand when a policy window opens, they must preexist the opportunity.
-
-### 3. Institutional Change Moves Incrementally
-
-Large organizations change slowly by design, institutional stability is valuable. New approaches need champions at multiple levels: front-line implementers who believe it will work, mid-level managers who allocate resources, senior leaders who authorize pilots, external supporters who provide political cover.
-
-Each layer requires persuasion, demonstration, and iteration. Early pilots reveal problems. Refinements require additional cycles. Successes must be documented and communicated. Failed experiments necessitate redesign and rebuilding trust.
-
-This process compounds across multiple institutions. Getting one organization to adopt an approach takes years; getting an entire sector to adopt takes decades.
-
-### 4. Political Cycles Create Wait Times
-
-Ideas may need to wait for leadership transitions, electoral shifts, or enabling events. Research ready in 2005 might not find receptive policymakers until 2015. The Obama administration's interest in behavioral science opened doors that might have remained closed under different leadership. Conservative states embracing needle exchanges required generational leadership shifts within Republican coalitions.
-
-These political dynamics operate on their own timeline, independent of research quality or readiness.
-
-### 5. Implementation Learning Requires Multiple Cycles
-
-Early adopters work out problems that later adopters avoid by learning from their experience. The original Moving to Opportunity program's 15% success rate provided lessons that Creating Moves to Opportunity incorporated to achieve 53% success. The EPA's Acid Rain Program demonstrated emissions trading viability, reducing perceived risk for EU and other jurisdictions considering cap-and-trade.
-
-This learning-by-doing takes time. First-generation implementations reveal challenges nobody anticipated. Second-generation refinements address those challenges. Third-generation implementations finally achieve scale and efficiency.
-
-Rushing this process by demanding immediate large-scale adoption often backfires, poorly implemented interventions discredit good ideas.
-
-## The Fundamental Funding Mismatch
-
-Most research funding operates on 3-5 year cycles with milestone-based evaluation. But transformative impact requires 20-40 years of sustained work with outcomes that aren't measurable until long after initial funding ends. This creates predictable problems:
-
-**Pressure for quick wins:** Researchers face incentives to generate short-term publishable results rather than invest in long-term relationship-building, implementation refinement, and coalition development.
-
-**Abandonment of promising work:** Important research gets discontinued when it doesn't produce immediate policy traction, often right before the accumulation of evidence reaches critical mass for adoption.
-
-**Misaligned evaluation:** Traditional metrics (publications, citations, grants) don't capture early-stage policy influence. By the time impact becomes measurable, initial funders have moved on.
-
-**Bias toward incremental refinement:** Short funding cycles favor applying proven methods to new contexts over foundational work that enables future breakthroughs.
-
-None of these patterns serve long-term impact. They're rational responses to misaligned incentive structures.
-
-## When Patient Capital Makes Sense
-
-Not all research should target 30-year timelines. The question is: under what conditions is long-term investment appropriate?
-
-**Patient capital makes sense for:**
-
-- **Foundational theoretical advances:** Work that will enable future applications but lacks immediate policy hooks. Behavioral economics research in the 1970s had no clear policy applications, but it eventually enabled the nudge revolution.
-
-- **Infrastructure and platform building:** Research tools, data systems, or methodologies that others will use. The DICE model took decades to develop but enables countless climate policy analyses.
-
-- **Changing deeply entrenched practices:** When you're challenging institutional norms or ideological commitments, expect long timelines. Needle exchanges confronted moral objections; emissions trading confronted ideological resistance to market mechanisms.
-
-- **Work with intermediate milestones:** Long timelines don't mean no accountability. Evidence accumulation, coalition building, and pilot demonstrations provide checkpoints showing progress toward eventual impact.
-
-**Shorter timelines are appropriate for:**
-
-- **Applying proven methods:** Using behavioral nudges in new contexts doesn't require decades, the foundational evidence exists.
-
-- **Implementation refinement:** Improving already-adopted approaches can show results quickly.
-
-- **Policy-ready solutions:** When research directly addresses current policy problems and political will exists, adoption can be rapid.
-
-The key is matching funding timelines to the actual dynamics of the change being pursued, not forcing all research into the same 3-5 year box.
-
-## Implications for Funders and Researchers
-
-If transformative impact matters, funding strategies must align with realistic timelines:
-
-**For funders:**
-- Be explicit about time horizons and adjust evaluation criteria accordingly
-- Provide sustained support through multiple funding cycles for high-potential work
-- Value patience alongside urgency, some problems require long-term commitment
-- Build impact measurement frameworks that track progress over decades, not just years
-- Recognize that the most impactful work often shows minimal early returns
-- Fund knowledge brokering and coalition building, not just research production
-- Accept that some funded work will have impact long after your funding ends, and design evaluation accordingly
-
-**For researchers:**
-- Set realistic expectations about timelines with funders and institutions
-- Document intermediate progress (evidence accumulation, stakeholder engagement, pilot results)
-- Invest in relationships and translation even when immediate policy demand doesn't exist
-- Recognize that long-term impact often requires sustained commitment through periods with minimal visible progress
-- Build coalitions and knowledge brokering infrastructure in parallel with research
-- Don't abandon promising work prematurely when policy adoption lags research quality
-
-**Critical questions for long-term work:**
-- What intermediate milestones indicate progress toward eventual impact?
-- What institutional relationships need cultivation before policy windows open?
-- What evidence accumulation timeline is realistic given the question being asked?
-- How long do coalition-building and trust-development require in this domain?
-- Are funders prepared to sustain commitment through periods with minimal measurable impact?
-
-## The Patient Capital Imperative
-
-These cases demonstrate that the research with the greatest eventual impact often shows minimal short-term results. Needle exchanges required 32 years. Emissions trading required 60 years. Behavioral nudges required 60+ years. DICE required 30 years.
-
-Abandoning any of these efforts after the typical 5-year funding cycle would have meant forgoing transformative impact. Yet that's precisely what current incentive structures encourage.
-
-## Key Takeaway
-
-Transformative policy impact typically unfolds over 20-40 years, not 3-5 year funding cycles. This timeline reflects genuine features of how evidence accumulates, coalitions form, institutions change, and implementation learns. Funders must explicitly design for these timelines, providing sustained support, using appropriate milestones, and accepting that measurable impact may come long after initial funding ends. Researchers must set realistic expectations and invest in relationship-building and translation even during periods with minimal visible policy traction. The question isn't whether to fund long-term work, but how to do so intelligently with clear intermediate goals, appropriate flexibility, and recognition that the most important research often requires decades to change the world. Patient capital isn't optional for transformative impact, it's essential.
+A review from the University of Cambridge and RAND Europe found that the often-cited average of 17 years from research to clinical practice "hides complexities" {{cite:morris2011}}, and a later team measured lags along overlapping tracks of research and implementation and at the hand-offs between them {{cite:hanney2015}}. Biomedical lags may not transfer to policy, but the question of where the time goes does.

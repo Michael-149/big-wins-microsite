@@ -211,6 +211,70 @@ function checkText(p: Problems, file: string, raw: string, allowWorkingTitle = f
   }
 }
 
+/** Folders whose files hold UI strings (templates, components, site settings). */
+const UI_DIRS = ['app', 'components', 'lib'];
+/** The checker itself names the rules it enforces. */
+const UI_SKIP = [path.join('lib', 'content.ts')];
+
+/** The same dash and naming rules on every UI string in the templates (DESIGN-DECISION 13.3, items 2 and 3). */
+function checkUiStrings(p: Problems) {
+  const root = process.cwd();
+  const visit = (rel: string) => {
+    const full = path.join(root, rel);
+    if (!fs.existsSync(full)) return;
+    if (fs.statSync(full).isDirectory()) {
+      for (const f of fs.readdirSync(full).sort()) visit(path.join(rel, f));
+      return;
+    }
+    if (!/\.(tsx?|css)$/.test(rel) || UI_SKIP.includes(rel)) return;
+    readFile(full)
+      .split('\n')
+      .forEach((line, i) => {
+        if (/[–—]/.test(line)) p.error(rel, `line ${i + 1} has an em or en dash: "${line.trim().slice(0, 80)}"`);
+        if (/\bbig wins?\b/i.test(line)) p.error(rel, `line ${i + 1} uses "Big Wins"; only the About page content may mention it`);
+      });
+  };
+  UI_DIRS.forEach(visit);
+}
+
+const MD_SYNTAX = /\[[^\]\n]+\]\([^)\s]+\)|\*\*[^*\n]+\*\*/;
+
+/**
+ * Frontmatter strings render in one of three ways: with citations (`cite`),
+ * as inline Markdown with citations (`markdown`), or as plain text. A cite
+ * token or Markdown in a plain-text field would show on the page as raw text,
+ * so it fails the build. Paths look like "stats[0].detail".
+ */
+function checkFieldSyntax(p: Problems, file: string, data: Obj, fields: { cite: RegExp; markdown?: RegExp }) {
+  const visit = (v: unknown, at: string) => {
+    if (typeof v === 'string') {
+      const md = fields.markdown?.test(at) ?? false;
+      if (v.includes('{{') && !md && !fields.cite.test(at)) p.error(file, `${at} has a citation token, but that field shows plain text`);
+      if (MD_SYNTAX.test(v) && !md) p.error(file, `${at} has Markdown (a link or bold), but that field shows plain text`);
+    } else if (Array.isArray(v)) v.forEach((x, i) => visit(x, `${at}[${i}]`));
+    else if (isObj(v)) for (const [k, x] of Object.entries(v)) visit(x, at ? `${at}.${k}` : k);
+  };
+  visit(data, '');
+}
+
+/** Case fields rendered with citation markers (lib/page-models.ts). */
+const CASE_CITE_FIELDS = /^(winStatement|stats\[\d+\]\.detail|lessons\[\d+\]\.note|timeline\[\d+\]\.text|keyStudies\[\d+\]\.finding|pullQuote\.(text|cite)|chart\.note)$/;
+/** Page fields that render as inline Markdown; the others strip cite tokens or show plain text. */
+const PAGE_MARKDOWN_FIELDS = /^(lead|methodTeaser|note)$/;
+const PAGE_CITE_FIELDS = /^(description|heroLead|stakes\[\d+\]\.detail)$/;
+
+/** Links inside frontmatter strings that render as Markdown. */
+function fieldLinks(data: Obj, fields: RegExp): { url: string; text: string }[] {
+  const links: { url: string; text: string }[] = [];
+  for (const [k, v] of Object.entries(data)) {
+    if (typeof v !== 'string' || !fields.test(k)) continue;
+    walk(parseMarkdown(v).children ?? [], (n) => {
+      if (n.type === 'link' && typeof n.url === 'string') links.push({ url: n.url, text: textOf(n) });
+    });
+  }
+  return links;
+}
+
 interface ParsedBody {
   intro: MdNode[];
   sections: BodySection[];
@@ -358,8 +422,23 @@ function readCase(p: Problems, fileName: string): { item: CaseStudy; links: Pars
     }
   }
 
+  if (chart) {
+    for (const g of chart.groups) {
+      for (const b of g.bars) {
+        if (chart.max !== undefined && b.value > chart.max) p.error(file, `chart bar "${g.label} / ${b.label}" (${b.value}) is above chart.max (${chart.max})`);
+        if (b.value < 0) p.error(file, `chart bar "${g.label} / ${b.label}" is negative`);
+      }
+    }
+  }
+
+  const lessonRefs = objList(p, file, data, 'lessons').map((x, i) => ({
+    slug: str(p, file, x, 'slug', `lessons[${i}].`),
+    note: optStr(p, file, x, 'note', `lessons[${i}].`) ?? '',
+  }));
+
   const sources = readSources(p, file, data);
   const parsed = parseBody(p, file, body);
+  checkFieldSyntax(p, file, data, { cite: CASE_CITE_FIELDS });
   checkCites(
     p,
     file,
@@ -367,9 +446,11 @@ function readCase(p: Problems, fileName: string): { item: CaseStudy; links: Pars
       body,
       winStatement,
       ...stats.map((s) => s.detail ?? ''),
+      ...lessonRefs.map((l) => l.note),
       ...timeline.map((t) => t.text),
       ...(keyStudies ?? []).map((k) => k.finding),
       pullQuote?.text ?? '',
+      pullQuote?.cite ?? '',
       chart?.note ?? '',
     ],
     sources,
@@ -400,10 +481,7 @@ function readCase(p: Problems, fileName: string): { item: CaseStudy; links: Pars
       name: str(p, file, x, 'name', `people[${i}].`),
       role: str(p, file, x, 'role', `people[${i}].`),
     })),
-    lessons: objList(p, file, data, 'lessons').map((x, i) => ({
-      slug: str(p, file, x, 'slug', `lessons[${i}].`),
-      note: optStr(p, file, x, 'note', `lessons[${i}].`) ?? '',
-    })),
+    lessons: lessonRefs,
     stats,
     timeline,
     goDeeper,
@@ -445,6 +523,7 @@ function readLesson(p: Problems, fileName: string): { item: Lesson; links: Parse
     slug: str(p, file, x, 'slug', `cases[${i}].`),
     how: optStr(p, file, x, 'how', `cases[${i}].`) ?? '',
   }));
+  checkFieldSyntax(p, file, data, { cite: /^inBrief$/ });
   checkCites(p, file, [body, inBrief], sources, []);
   const lastReviewed = optStr(p, file, data, 'lastReviewed');
   const item: Lesson = {
@@ -479,6 +558,8 @@ function readPage(p: Problems, fileName: string): { item: Page; links: ParsedBod
   const { data, body } = frontmatter(raw);
   const sources = data.sources === undefined ? [] : readSources(p, file, data);
   const parsed = parseBody(p, file, body);
+  parsed.links.push(...fieldLinks(data, PAGE_MARKDOWN_FIELDS));
+  checkFieldSyntax(p, file, data, { cite: PAGE_CITE_FIELDS, markdown: PAGE_MARKDOWN_FIELDS });
   const textFields = Object.values(data).filter((v): v is string => typeof v === 'string');
   checkCites(p, file, [body, ...textFields], sources, []);
   const item: Page = {
@@ -608,6 +689,7 @@ export function loadContent(): SiteContent {
   const lessonReads = lessonFiles.map((f) => readLesson(p, f));
   const pageReads = pageFiles.map((f) => readPage(p, f));
   const considered = readConsidered(p);
+  checkUiStrings(p);
 
   const cases = caseReads.map((r) => r.item).sort((a, b) => a.order - b.order);
   const lessons = lessonReads.map((r) => r.item).sort((a, b) => a.number - b.number);
@@ -666,11 +748,29 @@ export function loadContent(): SiteContent {
         continue;
       }
       // The home StatList shows one short line per stake; long lines push rows below the fold.
-      const shown = s.detail ?? stat.detail ?? '';
-      if (shown.replace(/\s*\{\{cite:[^}]*\}\}/g, '').length > 64) {
-        p.warn('content/pages/home.md', `stake "${s.value}" detail is ${shown.length} characters; add a short \`detail\` (about 60 or fewer) so the stakes fit above the fold`);
+      const shown = (s.detail ?? stat.detail ?? '').replace(/\s*\{\{cite:[^}]*\}\}/g, '');
+      if (shown.length > 60) {
+        p.warn('content/pages/home.md', `stake "${s.value}" detail is ${shown.length} characters; the spec allows 60 or fewer, so the stakes fit above the fold`);
       }
     }
+  }
+
+  // Method glance figures and limits, shown on the home page and the method page.
+  if (pages.method) {
+    const file = 'content/pages/method.md';
+    const d = pages.method.data;
+    const glance = objList(p, file, d, 'glance');
+    glance.forEach((g, i) => {
+      str(p, file, g, 'value', `glance[${i}].`);
+      str(p, file, g, 'label', `glance[${i}].`);
+    });
+    if (glance.length !== 3) p.warn(file, `has ${glance.length} glance figures; the spec asks for three`);
+    const limits = objList(p, file, d, 'limitsSummary');
+    limits.forEach((x, i) => {
+      str(p, file, x, 'title', `limitsSummary[${i}].`);
+      str(p, file, x, 'text', `limitsSummary[${i}].`);
+    });
+    if (limits.length !== 4) p.warn(file, `has ${limits.length} limitsSummary items; the spec asks for exactly four`);
   }
   for (const e of considered) {
     if (e.slug && !caseBySlug.has(e.slug)) p.error('content/considered.yaml', `entry "${e.name}" links to case "${e.slug}", which does not exist`);

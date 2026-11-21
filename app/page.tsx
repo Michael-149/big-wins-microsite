@@ -13,7 +13,8 @@ import type { GlanceFigure, LimitSummary } from '@/lib/types';
 // to the first stat of the first cases and leaves the method band out.
 
 export function generateMetadata() {
-  return pageMetadata({ description: getHome()?.heroLead ?? TAGLINE, path: '/' });
+  const home = getHome();
+  return pageMetadata({ description: home?.description ?? home?.heroLead ?? TAGLINE, path: '/' });
 }
 
 function SectionHead({ id, part, title, intro }: { id: string; part: string; title: string; intro?: string }) {

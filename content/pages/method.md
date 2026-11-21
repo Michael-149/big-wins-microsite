@@ -120,7 +120,7 @@ We did not choose cases for any Stanford connection. None of the eight is an SIL
 
 Each case began as desk research by a member of the SIL team, using process tracing: following the sequence of events from the research to the change and checking each link against the evidence. In fall 2025 the team compared the drafts side by side and wrote down patterns that appeared in several cases.
 
-Reviewers' comments on early drafts then reshaped the lessons. We rewrote each lesson as a claim that could turn out to be wrong, tied each one to the cases that show it most clearly, and added a section on where it may not hold.
+Reviewers' comments on early drafts then reshaped the lessons. We rewrote each lesson as a claim that could turn out to be wrong, tied each one to every case that illustrates it, strongest first, and added a section on where it may not hold.
 
 The lessons are our reading of eight cases, not the output of a systematic analysis. We did not code the cases against a fixed framework, and a different team could reasonably draw different lessons from the same material. Each lesson page names the cases behind it so readers can judge for themselves.
 
@@ -134,7 +134,7 @@ The lessons are our reading of eight cases, not the output of a systematic analy
 - **A narrow spread.** We aimed for a mix of places and disciplines but fell short. Seven of the eight cases involve policy or programs in the United States, only one (the pneumococcal vaccine commitment) centers on low- and middle-income countries, and economics is central to most of them.
 - **What worked once may not transfer.** Political, institutional and cultural conditions differ across places and decades. A route that worked in one setting is evidence, not a blueprint.
 - **Our outside view.** The SIL team wrote these cases as outsiders to most of these fields, and none of us took part in these stories. People who were there, or who study these fields, will see things we missed or got wrong.
-- **Not new.** Reviewers of early drafts pointed out that several lessons echo long-standing findings in research on how evidence is used. They are right, and the next section cites that work. What we hope to add is the evidence and the stories, set side by side.
+- **Not new.** Reviewers of early drafts pointed out that several lessons echo long-standing findings in research on how evidence is used and how policy changes. They are right: each lesson page names the earlier work it echoes, and the next section describes the main strands. [Lesson 1](/lessons/1-public-engagement), for example, echoes a review that found collaboration and better relationships between researchers and policymakers were the facilitators of evidence use reported most often {{cite:oliver2014}}; [lesson 6](/lessons/6-policy-windows) echoes the classic account of policy windows {{cite:kingdon1984}}; and [lesson 8](/lessons/8-different-roles) echoes the classic distinction among several meanings of research use {{cite:weiss1979}}. What we hope to add is the evidence and the stories, set side by side.
 
 ## What this builds on
 
