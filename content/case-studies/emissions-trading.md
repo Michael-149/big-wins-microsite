@@ -7,8 +7,8 @@ domain: "Environment and air pollution"
 disciplines: ["Economics", "Public policy"]
 geography: "United States, then worldwide"
 years: "1960 to today"
-winStatement: "A 1990 US law capped power plant sulfur dioxide and let plants trade allowances, an idea economists developed from the 1960s; emissions fell 36% from 1990 to 2004, more cheaply than under prescriptive rules."
-summary: "In the 1980s, sulfur dioxide from power plants was causing acid rain, and more than 70 bills to curb it failed. Economists' idea of trading rights to pollute was tried in smaller EPA programs, turned into a cap-and-trade proposal by Project 88 and enacted in 1990 with backing from the White House, Senate leaders and the Environmental Defense Fund. Emissions fell at lower cost than forecast, most of the estimated benefits came from fewer deaths, and by April 2026, 40 trading systems for greenhouse gases operated worldwide."
+winStatement: "A 1990 US law capped power plant sulfur dioxide and let plants trade allowances, an idea economists developed from the 1960s; emissions fell 36% by 2004, about two-thirds of early cuts credited to the program."
+summary: "In the 1980s, sulfur dioxide from power plants was causing acid rain, and more than 70 bills to curb it failed. Economists' idea of trading rights to pollute was tried in smaller Environmental Protection Agency programs, turned into a cap-and-trade proposal by Project 88 and enacted in 1990 with backing from the White House, Senate leaders and the Environmental Defense Fund. Emissions fell at lower cost than forecast, most of the estimated benefits came from fewer deaths, and by April 2026, 40 trading systems for greenhouse gases operated worldwide."
 people:
   - name: "Robert N. Stavins"
     role: "Economist, Harvard Kennedy School; directed Project 88"
@@ -21,7 +21,7 @@ people:
   - name: "C. Boyden Gray"
     role: "Lawyer; White House Counsel, 1989 to 1993"
   - name: "George Mitchell"
-    role: "U.S. senator from Maine; elected Senate Majority Leader in November 1988"
+    role: "US senator from Maine; elected Senate Majority Leader in November 1988"
 lessons:
   - slug: "3-design-details"
     note: "Title IV fixed what had failed in EPA's earlier credit trading: a cap in tons set in law, trades without prior approval, continuous monitoring and a $2,000-a-ton penalty; banking, kept from the earlier programs, produced more than half the savings."
@@ -34,15 +34,15 @@ lessons:
 stats:
   - value: "36%"
     label: "Fall in power plant sulfur dioxide emissions"
-    detail: "1990 to 2004, from 15.9 million to 10.2 million tons, while coal-fired generation rose 25%"
+    detail: "1990 to 2004, from 15.9 million to 10.2 million tons, while coal-fired generation rose 25%; Schmalensee and Stavins credit about two-thirds of early cuts to the program and one-third to rail deregulation"
     source: ss2012-nber
   - value: "$200 million"
     label: "Lower compliance costs from trading in 2002"
     detail: "at least this much for 761 coal units, about 20% of their costs, against a uniform standard with the same total emissions, in 1995 dollars"
     source: chan2018
   - value: "20,000 to 50,000"
-    label: "Lives saved each year"
-    detail: "EPA's 2010 estimate, from lower fine-particle pollution after the program's SO2 and nitrogen oxide cuts"
+    label: "Premature deaths avoided a year, estimated"
+    detail: "the Environmental Protection Agency's 2010 estimate, from lower fine-particle pollution after the program's sulfur dioxide and nitrogen oxide cuts"
     source: epa-2010-release
   - value: "$59 billion to $116 billion"
     label: "Projected yearly benefits, mostly to health"
@@ -87,7 +87,7 @@ timeline:
     source: ec-euets
   - year: 2008
     endYear: 2012
-    phase: scale
+    phase: setback
     text: "A federal court strikes down EPA's 2005 interstate trading rule, then leaves it in place until EPA replaces it; the 2011 replacement limits trading, and sulfur dioxide allowance prices fall below $1 a ton by 2012."
     source: ss2012-nber
 keyStudies:
@@ -225,7 +225,7 @@ sources:
     type: web
   - id: web-mit-schmalensee
     citation: "MIT Sloan School of Management. (2026). Richard L. Schmalensee. Faculty directory."
-    url: "https://mitsloan.mit.edu/faculty/directory/richard-l-schmalensee"
+    url: "https://mitsloan.mit.edu/faculty/directory/richard-schmalensee"
     type: web
   - id: conniff2009
     citation: "Conniff, R. (2009, August). The political history of cap and trade. Smithsonian Magazine."
@@ -363,7 +363,7 @@ sources:
 
 ## The problem
 
-In the 1980s, coal-fired power plants were the main source of sulfur dioxide (SO2), the gas behind the acid rain damaging lakes, forests and buildings in the northeastern United States and southeastern Canada {{cite:ss2012-nber,chan2012}}. Few knew that the same pollution, as fine sulfate particles, was also shortening lives; the U.S. Environmental Protection Agency (EPA) estimated in 2010 that lower fine-particle levels were saving about 20,000 to 50,000 lives a year {{cite:ss2012-nber,epa-2010-release}}.
+In the 1980s, coal-fired power plants were the main source of sulfur dioxide (SO2), the gas behind the acid rain damaging lakes, forests and buildings in the northeastern United States and southeastern Canada {{cite:ss2012-nber,chan2012}}. Few knew that the same pollution, as fine sulfate particles, was also shortening lives; the US Environmental Protection Agency (EPA) estimated in 2010 that lower fine-particle levels were saving about 20,000 to 50,000 lives a year {{cite:ss2012-nber,epa-2010-release}}.
 
 Industrial and regional interests blocked more than 70 bills to control SO2 in the 1980s {{cite:burtrawpalmer2003,voss2007-wp}}, and the Senate Majority Leader in 1988, Robert Byrd (D-West Virginia), represented a high-sulfur coal state {{cite:chan2012}}. The National Acid Precipitation Assessment Program, federal research costing more than $500 million, informed the debate but did not directly produce the eventual compromise {{cite:burtrawpalmer2003}}.
 

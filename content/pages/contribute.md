@@ -12,7 +12,7 @@ sources: []
 
 - **Cases we missed.** Social science research that helped change a policy, program, market or practice for large numbers of people, anywhere in the world. We especially want cases from outside the United States, from disciplines other than economics, and cases where the idea began with practitioners or with the people affected.
 - **Corrections.** A wrong number, date, name or attribution; a source that does not say what we say it does; a policy whose status has changed; a debate we left out.
-- **Near misses and stalled efforts.** Research that looked ready to scale and did not, or programs that worked in trials and faded when they grew. Every case on this site is a success, so these are the stories we most lack.
+- **Near misses and stalled efforts.** Research that looked ready to scale and did not, or programs that worked in trials and faded when they grew. Every case on this site is one in which change happened, so these are the stories we most lack.
 - **New topic areas.** Fields where a collection like this would be useful, and people who could help build one.
 
 ## What to include

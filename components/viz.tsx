@@ -3,24 +3,27 @@
 
 import { LessonChip } from './ui';
 import { LAST_UPDATED, href, numberWord, pad2 } from '@/lib/site';
-import { PHASE_LABEL, phaseSentence, phaseSpans } from '@/lib/page-models';
-import type { CaseStudy, Chart, Lesson, Phase } from '@/lib/types';
+import { PHASE_LABEL, phaseSentence, phaseSpans, setbackMarks, setbackYears } from '@/lib/page-models';
+import { PHASES, type CaseStudy, type Chart, type Lesson, type TimelinePhase } from '@/lib/types';
 
-const PHASE_DEFINITIONS: Record<Phase, string> = {
+const PHASE_DEFINITIONS: Record<TimelinePhase, string> = {
   origin: 'the problem or idea appears.',
   research: 'studies test it.',
   translation: 'findings reach decision makers.',
   scale: 'change across a system.',
+  setback: 'a change is repealed, lapses or is withdrawn.',
 };
 
-function PhaseKey({ phase }: { phase: Phase }) {
+function PhaseKey({ phase }: { phase: TimelinePhase }) {
   return <span className={`phase-key ph-${phase}${phase === 'origin' ? ' phase-key--origin' : ''}`} aria-hidden="true" />;
 }
 
-export function PhaseLegend() {
+/** The phase definitions; "Setback" joins them when any case shown has one. */
+export function PhaseLegend({ setbacks = false }: { setbacks?: boolean }) {
+  const shown: TimelinePhase[] = setbacks ? [...PHASES, 'setback'] : PHASES;
   return (
     <ul className="cot__legend t-body">
-      {(Object.keys(PHASE_LABEL) as Phase[]).map((p) => (
+      {shown.map((p) => (
         <li key={p}>
           <PhaseKey phase={p} />
           <span>
@@ -35,7 +38,8 @@ export function PhaseLegend() {
 /** Every case on one shared year axis, phases drawn from its timeline (DESIGN-DECISION 9.1). */
 export function CasesOverTime({ cases, headingLevel = 2 }: { cases: CaseStudy[]; headingLevel?: 2 | 3 }) {
   const today = Number(LAST_UPDATED.slice(0, 4));
-  const rows = cases.map((c) => ({ c, spans: phaseSpans(c) }));
+  const rows = cases.map((c) => ({ c, spans: phaseSpans(c), setbacks: setbackMarks(c) }));
+  const anySetback = rows.some((r) => r.setbacks.length > 0);
   const minYear = Math.min(...rows.flatMap((r) => r.spans.map((s) => s.start)));
   const from = Math.floor(minYear / 10) * 10;
   const to = today;
@@ -51,7 +55,7 @@ export function CasesOverTime({ cases, headingLevel = 2 }: { cases: CaseStudy[];
         {numberWord(cases.length)} cases over time
       </H>
       <div style={{ marginTop: 16 }}>
-        <PhaseLegend />
+        <PhaseLegend setbacks={anySetback} />
       </div>
       <div className="cot__axis" aria-hidden="true">
         <span />
@@ -67,7 +71,7 @@ export function CasesOverTime({ cases, headingLevel = 2 }: { cases: CaseStudy[];
         </div>
       </div>
       <ol>
-        {rows.map(({ c, spans }) => {
+        {rows.map(({ c, spans, setbacks }) => {
           const first = spans[0];
           const scale = spans.find((s) => s.phase === 'scale');
           return (
@@ -88,6 +92,13 @@ export function CasesOverTime({ cases, headingLevel = 2 }: { cases: CaseStudy[];
                     style={{ left: pct(s.start), width: `calc(${pct(s.end)} - ${pct(s.start)} + ${s.end === s.start ? '3px' : '0px'})` }}
                   />
                 ))}
+                {setbacks.map((b) => (
+                  <span
+                    key={`setback-${b.start}`}
+                    className="cot__seg cot__seg--setback ph-setback"
+                    style={{ left: `min(${pct(b.start)}, calc(100% - 6px))`, width: `calc(${pct(Math.max(b.end, b.start + 1))} - ${pct(b.start)})` }}
+                  />
+                ))}
                 {first && (
                   <span className="cot__year" style={{ left: pct(first.start) }}>
                     {first.start}
@@ -100,7 +111,7 @@ export function CasesOverTime({ cases, headingLevel = 2 }: { cases: CaseStudy[];
                 )}
                 <span className="cot__today" style={{ left: pct(today) }} />
               </div>
-              <span className="visually-hidden">{phaseSentence(c, spans)}</span>
+              <span className="visually-hidden">{phaseSentence(c, spans, setbacks)}</span>
             </li>
           );
         })}
@@ -117,21 +128,33 @@ export function CasesOverTime({ cases, headingLevel = 2 }: { cases: CaseStudy[];
 export function PhaseStrip({ c }: { c: CaseStudy }) {
   const spans = phaseSpans(c);
   if (spans.length === 0) return null;
+  const setbacks = setbackMarks(c);
   const from = spans[0].start;
-  const to = Math.max(...spans.map((s) => s.end), from + 1);
+  // A setback after the last phase ends still needs room on the strip.
+  const to = Math.max(...spans.map((s) => s.end), ...setbacks.map((b) => Math.max(b.end, b.start + 1)), from + 1);
   const at = (y: number) => ((y - from) / (to - from)) * 100;
+  const setbackLabel = setbacks.length > 0 && (
+    <>
+      <PhaseKey phase="setback" />
+      <span>
+        <strong className="t-h6">{PHASE_LABEL.setback}</strong> {setbacks.map(setbackYears).join(', ')}
+      </span>
+    </>
+  );
   return (
     <div className="phase-strip-wrap">
-      <p className="visually-hidden">{phaseSentence(c, spans)}</p>
+      <p className="visually-hidden">{phaseSentence(c, spans, setbacks)}</p>
       <div className="phase-strip" aria-hidden="true">
         {spans.map((s, i) => {
           const left = at(s.start);
           const right = left > 72;
+          // Late labels end where their segment ends (the strip's end, unless a
+          // later setback extends the strip), so each label stays by its bar.
           return (
             <span
               key={`l-${s.phase}`}
               className={`phase-strip__label t-body phase-strip__label--${i % 2 === 0 ? 'above' : 'below'}${right ? ' phase-strip__label--right' : ''}`}
-              style={right ? undefined : { left: `${left}%` }}
+              style={right ? { right: `${Math.max(0, 100 - at(s.end)).toFixed(2)}%` } : { left: `${left}%` }}
             >
               <strong className="t-h6">{PHASE_LABEL[s.phase]}</strong> {s.start}
             </span>
@@ -145,8 +168,20 @@ export function PhaseStrip({ c }: { c: CaseStudy }) {
               style={{ left: `${at(s.start)}%`, width: `calc(${(at(s.end) - at(s.start)).toFixed(2)}% + ${s.end === s.start ? '4px' : '0px'})` }}
             />
           ))}
+          {setbacks.map((b) => (
+            <span
+              key={`setback-${b.start}`}
+              className="phase-strip__seg phase-strip__seg--setback ph-setback"
+              style={{ left: `min(${at(b.start).toFixed(2)}%, calc(100% - 6px))`, width: `${(at(Math.max(b.end, b.start + 1)) - at(b.start)).toFixed(2)}%` }}
+            />
+          ))}
         </div>
       </div>
+      {setbackLabel && (
+        <p className="phase-strip__setbacks t-body" aria-hidden="true">
+          {setbackLabel}
+        </p>
+      )}
       <ul className="phase-strip__list t-body" aria-hidden="true">
         {spans.map((s) => (
           <li key={s.phase}>
@@ -156,12 +191,13 @@ export function PhaseStrip({ c }: { c: CaseStudy }) {
             </span>
           </li>
         ))}
+        {setbackLabel && <li className="phase-strip__list-setback">{setbackLabel}</li>}
       </ul>
     </div>
   );
 }
 
-export function TimelineList({ items }: { items: { years: string; phase: Phase; textHtml: string }[] }) {
+export function TimelineList({ items }: { items: { years: string; phase: TimelinePhase; textHtml: string }[] }) {
   return (
     <>
       <h3 className="t-h3s timeline-head" id="timeline">

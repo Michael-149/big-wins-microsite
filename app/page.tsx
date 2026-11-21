@@ -118,7 +118,7 @@ export default function Home() {
           <ul className="lesson-list">
             {lessons.map((l) => (
               <li key={l.slug}>
-                <LessonRow lesson={l} />
+                <LessonRow lesson={l} compact />
               </li>
             ))}
           </ul>

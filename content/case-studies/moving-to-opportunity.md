@@ -34,7 +34,7 @@ lessons:
 stats:
   - value: "31%"
     label: "Higher earnings in their mid-twenties"
-    detail: "for children whose families used the MTO experimental voucher to move before the child turned 13 ($3,477 a year on a control average of $11,270)"
+    detail: "for children whose families used the Moving to Opportunity experimental voucher to move before the child turned 13 ($3,477 a year on a control average of $11,270)"
     source: chetty2016
   - value: "15% to 53%"
     label: "Voucher families moving to high-opportunity areas"
@@ -45,7 +45,7 @@ stats:
     detail: "in Baltimore, Boston, Chicago, Los Angeles and New York, 1994 to 1998"
     source: hud-mto-final
   - value: "$50 million"
-    label: "Federal funding for HUD's multi-site mobility demonstration"
+    label: "Federal funding for the housing department's multi-site mobility demonstration"
     detail: "in the fiscal 2019 and 2020 spending laws, plus $3 million for its evaluation"
     source: fr-2026-ccd
 timeline:
@@ -86,7 +86,7 @@ timeline:
     source: hud-2021-awards
   - year: 2022
     endYear: 2026
-    phase: scale
+    phase: setback
     text: "The demonstration, renamed the Community Choice Demonstration, enrolls families from August 2022 until HUD ends study enrollment early, on June 30, 2026."
     source: fr-2026-ccd
 keyStudies:
@@ -295,6 +295,10 @@ sources:
     url: "https://doi.org/10.1086/589843"
     altUrl: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4211272/"
     type: paper
+  - id: harvard-gazette-2018b
+    citation: "Powell, A. (2018, June 21). Raj Chetty returning to Harvard. Harvard Gazette."
+    url: "https://news.harvard.edu/gazette/story/2018/06/raj-chetty-returning-to-harvard/"
+    type: article
   - id: heckman2025
     citation: "Heckman, J., & Eshaghnia, S. (2025, September 4). ZIP code is destiny? Turns out that's bunk. Wall Street Journal."
     url: "https://www.wsj.com/opinion/zip-code-is-destiny-turns-out-thats-bunk-a17fd9d9"
@@ -352,7 +356,7 @@ sources:
 
 In the mid-1990s, the families who signed up for Moving to Opportunity (MTO) lived in public and subsidized housing in neighborhoods (census tracts) where at least 40% of residents were poor, in Baltimore, Boston, Chicago, Los Angeles and New York {{cite:hud-mto-interim}}. Almost every household was headed by a woman, nearly two-thirds were African American, and three-quarters of household heads were on welfare. In more than 40% of households, someone had been a crime victim in the previous 6 months {{cite:hud-mto-final}}.
 
-By one 2012 estimate, nearly 9 million Americans lived in extreme-poverty neighborhoods {{cite:ludwig2012}}. Rental assistance programs of the U.S. Department of Housing and Urban Development (HUD) serve nearly 5 million families {{cite:crs-fy27}}.
+By one 2012 estimate, nearly 9 million Americans lived in extreme-poverty neighborhoods {{cite:ludwig2012}}. Rental assistance programs of the US Department of Housing and Urban Development (HUD) serve nearly 5 million families {{cite:crs-fy27}}.
 
 In the Gautreaux case, filed in 1966 by Chicago public housing residents against HUD and the Chicago Housing Authority, a court-ordered remedy let about 7,100 Black families move across the region from the late 1970s. Studies from the late 1980s suggested that families who moved to the suburbs did better, but the gains might reflect which families ended up there, a problem called selection bias {{cite:hud-mto-interim}}.
 
@@ -404,7 +408,7 @@ In HUD's eight-region demonstration, moves to opportunity areas rose less: about
 
 CMTO's services cost $2,670 per family offered them, and moves to pricier areas raised voucher payments by an estimated $17,633 over 7 years per family that leased a unit. Counting both, and projecting the lifetime income of a child who moves at birth and grows up there, the authors estimate $1.35 in children's future income, discounted to present value, per $1 of government spending {{cite:bergman2024}}. HUD's evaluators put the demonstration's services at a preliminary $5,423 per family offered them, against $3,227 for CMTO's (its $2,670, in 2023 dollars), and call that similar to other mobility programs {{cite:hud-rce-2024}}; unlike CMTO, the demonstration includes help after the move {{cite:fr-2020-ccd}}.
 
-The CMTO authors note that effects on the neighborhoods families leave and enter, especially at scale, need further study {{cite:bergman2024}}. CMTO's designers also evaluated it, though the research nonprofit MDRC {{cite:web-mdrc}} ran the trial under an analysis plan registered in advance {{cite:bergman2024}}. Abt Global and the Urban Institute evaluate HUD's demonstration, advised by DeLuca, Chetty, Katz, Sarah Oppenheimer (formerly research director at the King County Housing Authority) and others {{cite:hud-rce-2024,web-oppenheimer}}.
+The CMTO authors note that effects on the neighborhoods families leave and enter, especially at scale, need further study {{cite:bergman2024}}. CMTO's designers also evaluated it, though the research nonprofit MDRC {{cite:web-mdrc}} ran the trial under an analysis plan registered in advance {{cite:bergman2024}}. Abt Global and the Urban Institute evaluate HUD's demonstration, advised by DeLuca, Chetty, Katz, Sarah Oppenheimer (formerly research director at the King County Housing Authority) and others {{cite:hud-rce-2024,web-oppenheimer}}. We are part of Stanford University, where Chetty was on the faculty from 2015 to 2018 {{cite:harvard-gazette-2018b}}.
 
 ## What this case teaches
 

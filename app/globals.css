@@ -36,6 +36,8 @@ main:focus { outline: none; }
 .t-h3s { font-size: 24px; line-height: 32px; font-weight: 400; }
 .t-h4 { font-size: 24px; line-height: 32px; font-weight: 500; }
 .t-h5 { font-size: 20px; line-height: 32px; font-weight: 500; }
+/* Headings never leave one word alone on their last line. */
+.t-h2, .t-h3, .t-h3s, .t-h4, .t-h5, .t-h6, .prose > h3, .prose > h4, .prose > .leadin { text-wrap: balance; }
 .t-h6 { font-size: 16px; line-height: 24px; font-weight: 500; }
 .t-statement { font-size: 26px; line-height: 32px; font-weight: 400; }
 .t-lead { font-size: 24px; line-height: 40px; }
@@ -166,7 +168,7 @@ main:focus { outline: none; }
 /* ---------- Breadcrumbs ---------- */
 .crumbs { padding-top: 20px; }
 .crumbs ol { display: flex; flex-wrap: wrap; gap: 4px 0; }
-.crumbs li + li::before { content: "/"; padding: 0 10px; color: var(--ink-muted); }
+.crumbs li:not(:last-child)::after { content: "/"; padding: 0 10px; color: var(--ink-muted); }
 .crumbs a { color: var(--ink); text-decoration-line: underline; text-decoration-color: var(--link-underline); text-underline-offset: 4px; }
 .crumbs a:hover { color: var(--link-hover); text-decoration-color: var(--link-hover); }
 .crumbs [aria-current] { color: var(--ink-muted); }
@@ -201,7 +203,7 @@ a.lesson-tag:hover .lesson-tag__text { color: var(--link-hover); text-decoration
 .stats li:last-child { border-bottom: 0; }
 .stat { display: grid; grid-template-columns: var(--stat-col, 240px) minmax(0, 1fr); column-gap: 24px; align-items: end; padding: 24px 0; color: inherit; text-decoration: none; }
 .stats li:first-child .stat { padding-top: 0; }
-.stat__value { font-size: 72px; line-height: 72px; font-weight: 400; color: var(--emphasis); letter-spacing: -0.01em; overflow-wrap: anywhere; }
+.stat__value { font-size: 72px; line-height: 72px; font-weight: 400; color: var(--emphasis); letter-spacing: -0.01em; overflow-wrap: anywhere; text-wrap: balance; }
 .stat__value--long { font-size: 44px; line-height: 44px; }
 .stat__name { position: relative; top: -6px; font-size: 16px; line-height: 24px; font-weight: 500; letter-spacing: 1.25px; text-transform: uppercase; }
 .stat__detail { display: block; margin-top: 6px; font-size: 16px; line-height: 24px; letter-spacing: 0; text-transform: none; font-weight: 400; }
@@ -237,13 +239,13 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 .case-card { display: grid; grid-template-rows: subgrid; grid-row: span 5; align-content: start; padding-top: 20px; padding-bottom: var(--space-xl); border-top: 1px solid var(--line-strong); }
 .case-card__meta { display: flex; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
 .case-card__meta span:first-child { flex: none; white-space: nowrap; }
-.case-card__meta span:last-child { text-align: right; color: var(--ink-muted); }
-.case-card__title { max-width: 20ch; }
+.case-card__meta span:last-child { text-align: right; color: var(--ink-muted); text-wrap: balance; }
+.case-card__title { text-wrap: balance; }
 .case-card__text { margin-top: 16px; max-width: 54ch; }
 .case-card__stats { margin-top: 24px; padding: 16px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(var(--n, 1), minmax(0, 1fr)); column-gap: var(--gutter); align-self: stretch; align-content: center; align-items: start; }
 .case-card__stat { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 16px; align-items: end; }
 .case-card__stats--2 .case-card__stat { grid-template-columns: minmax(0, 1fr); row-gap: 6px; }
-.case-card__figure { order: -1; font-size: 44px; line-height: 44px; color: var(--emphasis); overflow-wrap: anywhere; }
+.case-card__figure { order: -1; font-size: 44px; line-height: 44px; color: var(--emphasis); overflow-wrap: anywhere; text-wrap: balance; }
 .case-card__stats--2 .case-card__figure { font-size: 32px; line-height: 40px; }
 .case-card__lessons { margin-top: 16px; display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 16px; align-items: start; }
 .case-card__lessons > .t-meta { padding-top: 4px; }
@@ -255,15 +257,22 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
   .case-card__stat { grid-template-columns: minmax(0, 1fr); row-gap: 6px; }
   .case-card__lessons { grid-template-columns: minmax(0, 1fr); row-gap: 8px; }
 }
+@media (max-width: 479px) { .case-card__stats--2 { grid-template-columns: minmax(0, 1fr); row-gap: 16px; } }
 
 /* ---------- Lesson rows ---------- */
 .lesson-list > li { border-bottom: 1px solid var(--line); }
 .lesson-list > li:first-child { border-top: 1px solid var(--line-strong); }
 .lesson-row { display: grid; grid-template-columns: 56px minmax(0, 1fr) minmax(0, 0.45fr); column-gap: var(--gutter); padding: 28px 0; align-items: start; }
 .lesson-row__brief { margin-top: 10px; max-width: 64ch; }
+.lesson-row__short { margin-bottom: 4px; color: var(--ink-muted); }
 .lesson-row__cases .t-meta { margin-bottom: 8px; color: var(--ink-muted); }
 .lesson-row__cases li + li { margin-top: 4px; }
 @media (max-width: 1023px) { .lesson-row { grid-template-columns: 56px minmax(0, 1fr); } .lesson-row__cases { grid-column: 2; margin-top: 16px; } }
+/* Home rows (compact) at every width, and all rows on phones: "Drawn from" runs inline. */
+.lesson-row--compact { padding: 24px 0; }
+.lesson-row--compact .lesson-row__cases ul { display: flex; flex-wrap: wrap; }
+.lesson-row--compact .lesson-row__cases li + li { margin-top: 0; }
+.lesson-row--compact .lesson-row__cases li:not(:last-child)::after { content: "/"; padding: 0 8px; color: var(--ink-muted); }
 @media (max-width: 767px) {
   .lesson-row { grid-template-columns: 40px minmax(0, 1fr); column-gap: 16px; }
   .lesson-row__cases ul { display: flex; flex-wrap: wrap; }
@@ -281,6 +290,12 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 .ph-research { --phase: var(--phase-research); }
 .ph-translation { --phase: var(--phase-translation); }
 .ph-scale { --phase: var(--phase-scale); }
+.ph-setback { --phase: var(--phase-setback); }
+/* Setback marks: grey fill with a dark 1px edge, drawn over the phase bars. */
+.phase-key.ph-setback, .cot__seg--setback, .phase-strip__seg--setback { box-sizing: border-box; border: 1px solid var(--phase-setback-edge); }
+.cot__seg--setback { min-width: 6px; z-index: 1; }
+.phase-strip__seg--setback { min-width: 6px; z-index: 1; }
+.phase-strip__setbacks { display: flex; align-items: baseline; gap: 8px; margin: calc(8px - var(--space-l)) 0 var(--space-l); font-size: 14px; line-height: 20px; }
 .cot__axis, .cot__row { display: grid; grid-template-columns: 260px minmax(0, 1fr); column-gap: 24px; }
 .cot__ticks { position: relative; height: 24px; border-bottom: 1px solid var(--line-strong); }
 .cot__tick { position: absolute; bottom: 4px; transform: translateX(-50%); color: var(--ink-muted); }
@@ -290,7 +305,8 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 .cot__track { position: relative; height: 44px; }
 .cot__seg { position: absolute; top: 20px; height: 16px; background: var(--phase); }
 .cot__seg.ph-origin { top: 27px; height: 2px; }
-.cot__year { position: absolute; top: 0; font-size: 12px; line-height: 16px; font-weight: 500; white-space: nowrap; }
+.cot__year { position: absolute; top: 0; font-size: 14px; line-height: 16px; font-weight: 500; white-space: nowrap; }
+@media (max-width: 1023px) { .cot__year { font-size: 12px; } }
 .cot__year--end { transform: translateX(-100%); }
 .cot__today { position: absolute; top: -12px; bottom: -13px; width: 1px; background: var(--black); }
 .cot__tick--today { transform: translateX(-100%); color: var(--ink); padding-right: 6px; }
@@ -315,6 +331,7 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 .phase-strip__label--right { right: 0; text-align: right; }
 .phase-strip__list { display: none; }
 @media (max-width: 767px) {
+  .phase-strip__setbacks { display: none; }
   .phase-strip { height: auto; }
   .phase-strip__bar { position: relative; top: 0; }
   .phase-strip__label { display: none; }
@@ -355,15 +372,18 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 .rail__inner { position: sticky; top: 24px; max-height: calc(100vh - 48px); overflow-y: auto; padding: 4px 4px 4px 0; }
 .rail__where { display: flex; align-items: center; gap: 12px; padding-bottom: 16px; border-bottom: 1px solid var(--line-strong); }
 .rail__where .t-meta { display: block; color: var(--ink-muted); }
-.rail nav, .rail .rail__block { margin-top: 24px; }
+.rail nav, .rail .rail__block { margin-top: 16px; }
 .rail__title { padding-bottom: 8px; border-bottom: 1px solid var(--line); margin-bottom: 4px; }
 .rail-list a { display: flex; gap: 10px; align-items: baseline; padding: 6px 0 6px 12px; font-size: 15px; line-height: 22px; color: var(--ink); text-decoration: none; border-left: 3px solid transparent; }
+/* Desktop rail rows are 24px (the minimum target size), so the case rail's four
+   lists fit a 900px-tall window without an inner scroll. */
+.rail .rail-list a { padding-top: 2px; padding-bottom: 2px; line-height: 20px; }
 .rail-list a:hover { color: var(--link-hover); text-decoration-line: underline; text-decoration-color: var(--link-hover); text-underline-offset: 4px; }
 .rail-list a[aria-current] { border-left-color: var(--teal-1); font-weight: 500; }
 .rail-list .num { flex: none; width: 22px; font-size: 13px; font-weight: 500; color: var(--ink-muted); }
-.rail-lessons li + li { margin-top: 8px; }
+.rail-lessons li + li { margin-top: 4px; }
 .rail-lessons { padding-top: 8px; }
-.rail__flag { margin-top: 24px; font-size: 15px; line-height: 22px; }
+.rail__flag { margin-top: 16px; font-size: 15px; line-height: 22px; }
 .article { grid-column: 4 / -1; min-width: 0; max-width: var(--container-narrow); }
 .guide { display: none; }
 @media (max-width: 1023px) {
@@ -379,7 +399,7 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 .guide[open] .icon-minus { display: block; }
 .guide__panel { padding: 8px 0 20px; display: grid; gap: 20px; }
 .guide__panel .rail-list--two { display: grid; grid-template-columns: 1fr 1fr; column-gap: 16px; }
-@media (max-width: 479px) { .guide__panel .rail-list--two { grid-template-columns: 1fr; } }
+@media (max-width: 359px) { .guide__panel .rail-list--two { grid-template-columns: 1fr; } }
 
 /* ---------- Article sections and prose ---------- */
 .article-section > * + * { margin-top: 24px; }
@@ -419,8 +439,10 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 
 /* Citation markers: bracketed, with at least a 24px hit area */
 .cite { position: relative; top: -0.6em; font-size: .65em; line-height: 0; vertical-align: baseline; font-weight: 500; white-space: nowrap; margin-left: 1px; }
-.cite a { color: var(--ink); text-decoration-line: underline; text-decoration-color: var(--link-underline); text-decoration-thickness: 1px; text-underline-offset: 2px; padding: 8px 5px; margin: -8px -5px; }
-.cite--multi a { margin: -8px -4px; padding: 8px 4px; }
+.cite a { color: var(--ink); text-decoration-line: underline; text-decoration-color: var(--link-underline); text-decoration-thickness: 1px; text-underline-offset: 2px; padding: 8px 7px; margin: -8px -7px; }
+/* In "[3, 5]" each number is its own 24px target; the -2px margins keep
+   neighboring targets from overlapping (centers stay 24px or more apart). */
+.cite--multi a { display: inline-block; min-width: 24px; min-height: 24px; text-align: center; line-height: 1; padding: 7px 0; margin: -7px -2px; }
 .cite a:hover { color: var(--link-hover); text-decoration-color: var(--link-hover); }
 .stat .cite, .quote .cite { font-size: 13px; }
 .quote .cite a { color: var(--emphasis); }
@@ -533,6 +555,11 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
   .lesson-strip .lesson-tag__text { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .lesson-strip .chip--28 { width: 36px; height: 36px; font-size: 16px; }
 }
+/* Seven 36px squares, one 48px and the gaps need 328px; under 360px use 30 and 40. */
+@media (max-width: 359px) {
+  .lesson-strip .chip--28 { width: 30px; height: 30px; font-size: 14px; }
+  .lesson-strip .chip--48 { width: 40px; height: 40px; font-size: 18px; }
+}
 .lesson-hero { padding-top: var(--space-l); padding-bottom: var(--space-xl); }
 .lesson-hero__rule { grid-column: 1 / -1; height: 8px; background: var(--lesson); margin-bottom: var(--space-m); }
 .lesson-hero__main { grid-column: 1 / 10; }
@@ -555,7 +582,8 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
   .lesson-hero__head .lesson-tab__n { font-size: 44px; line-height: 44px; }
   .lesson-hero__head .lesson-tab__word { font-size: 12px; left: 10px; top: 8px; }
 }
-@media (max-width: 767px) { .in-brief { padding: 36px 20px 20px; } .lesson-hero__head { flex-direction: column; gap: 12px; } }
+@media (max-width: 767px) { .in-brief { padding: 36px 20px 20px; } }
+@media (max-width: 479px) { .lesson-hero__head { flex-direction: column; gap: 12px; } }
 .lesson-page .article-section > h2 { border-top: 2px solid var(--lesson); }
 /* Examples in "In the cases" */
 .examples { border-top: 1px solid var(--line); }
@@ -591,6 +619,7 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 .matrix thead th .num { display: block; color: var(--ink-muted); }
 .matrix tbody th { text-align: left; }
 .matrix tbody th a { display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 500; }
+@media (min-width: 1024px) { .matrix tbody th a { white-space: nowrap; } }
 .matrix td .chip--12 { display: inline-block; }
 .matrix .matrix__count { font-weight: 500; }
 .matrix tfoot th, .matrix tfoot td { border-bottom: 0; border-top: 1px solid var(--line-strong); font-weight: 500; }
@@ -631,27 +660,25 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
 @media (max-width: 767px) { .site-footer__sym { width: 60px; height: 44px; top: 2px; right: 2px; } .footer-nav ul { grid-template-columns: 1fr 1fr; column-gap: 16px; } .global-footer img { width: 150px; } }
 
 /* ---------- Home (DESIGN-DECISION 6.1) ---------- */
-.home-hero { padding-top: 40px; padding-bottom: var(--space-l); grid-template-rows: auto 1fr; }
+.home-hero { padding-top: var(--space-m); padding-bottom: var(--space-l); grid-template-rows: auto 1fr; }
 .home-hero__top { grid-column: 1 / 8; grid-row: 1; }
 .home-hero__stakes { grid-column: 8 / -1; grid-row: 1 / span 2; }
 .home-hero__rest { grid-column: 1 / 8; grid-row: 2; }
 .home-hero h1 { margin-top: 16px; max-width: 14ch; }
 .home-hero__subtitle { margin-top: 16px; max-width: 34ch; }
 .home-hero__lead { margin-top: 16px; max-width: 62ch; }
+/* body-lg's smaller step (18/32) on desktop, so the limits line clears the
+   1440x900 fold beside the four stakes (DESIGN-DECISION 6.1). */
+@media (min-width: 1024px) { .home-hero__lead { font-size: 18px; line-height: 32px; } }
 .home-hero__actions { margin-top: 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 32px; }
 .home-hero__limits { margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--line-strong); max-width: 62ch; }
-.stats--home .stats__heading { margin-bottom: 12px; }
-/* Home stakes at 1200px and up: figure beside its name (DS row), figure column
-   sized to the widest figure through subgrid, figures at the DS compact step
-   (44/44), so four rows fit the first screen. Narrower screens stack them. */
-@media (min-width: 1200px) {
-  .stats--home ul { display: grid; grid-template-columns: max-content minmax(0, 1fr); column-gap: 24px; }
-  .stats--home li { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; }
-  .stats--home .stat { grid-column: 1 / -1; grid-template-columns: subgrid; align-items: start; column-gap: 24px; }
-  .stats--home .stat__name { top: 0; padding-top: 2px; }
-  .stats--home .stat__detail { margin-top: 2px; }
-}
-.stats--home .stat { padding: 12px 0; row-gap: 2px; }
+/* Home stakes: each figure (DS compact step, 44/44) sits over its name, detail
+   and case, so the text gets the column's full width. Beside the figure, the
+   text column was under 200px wide and four rows ran past the 1440x900 fold
+   (DESIGN-DECISION 6.1 fold check). Rows use the kit's 8px step. */
+.stats--home .stats__heading { margin-bottom: 8px; padding-bottom: 8px; }
+.stats--home .stat { padding: 8px 0; row-gap: 2px; }
+.stats--home .stat__detail { margin-top: 0; }
 .stats--home .stat__case { margin-top: 4px; }
 .stats--home .stat__value { font-size: 44px; line-height: 44px; }
 .stats--home .stat__value--long { font-size: 44px; line-height: 44px; }
@@ -685,6 +712,11 @@ a.stat:hover .stat__value, a.stat:hover .stat__name, a.stat:hover .stat__plus { 
   .stats--home .stat__value, .stats--home .stat__value--long { font-size: 40px; line-height: 40px; }
   .home-hero__actions .btn { width: 100%; text-align: center; }
   .method-band__limits ul { grid-template-columns: minmax(0, 1fr); }
+  /* Method figures in a row of three at 40px, as on the method page's glance band. */
+  .method-band__figures .stats ul { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 12px; }
+  .method-band__figures .stats li { border-bottom: 0; }
+  .method-band__figures .stat { padding: 0; }
+  .method-band__figures .stat__name { font-size: 12px; line-height: 16px; letter-spacing: .6px; }
 }
 
 /* ---------- Not found ---------- */

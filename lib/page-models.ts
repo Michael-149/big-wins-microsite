@@ -4,7 +4,7 @@
 
 import { Citer, blocksToHtml, inlineToHtml, textOf, walk, type MdNode, type NumberedSource } from './markdown';
 import { casesOfLesson, getCases, getLessons, lessonsOfCase } from './content';
-import { PHASES, type BodySection, type CaseStudy, type Chart, type Lesson, type Page, type Phase, type Source } from './types';
+import { PHASES, type BodySection, type CaseStudy, type Chart, type Lesson, type Page, type Phase, type Source, type TimelinePhase } from './types';
 import type { FeedbackType } from './site';
 
 // ---------------------------------------------------------------------------
@@ -34,19 +34,50 @@ export function phaseSpans(c: CaseStudy): PhaseSpan[] {
   });
 }
 
-export const PHASE_LABEL: Record<Phase, string> = {
+export const PHASE_LABEL: Record<TimelinePhase, string> = {
   origin: 'Origin',
   research: 'Research',
   translation: 'Translation',
   scale: 'Scale',
+  setback: 'Setback',
 };
 
-/** "Moving to Opportunity: origin from 1966, research from 1994, ... scale from 2021 to 2026." */
-export function phaseSentence(c: CaseStudy, spans = phaseSpans(c)): string {
+/** A dated setback (repeal, lapse or withdrawal): drawn as a grey mark over the phase bars. */
+export interface SetbackMark {
+  start: number;
+  end: number;
+}
+
+/** The case's setback events, oldest first. They never start, end or extend a phase. */
+export function setbackMarks(c: CaseStudy): SetbackMark[] {
+  return c.timeline
+    .filter((t) => t.phase === 'setback')
+    .map((t) => ({ start: t.year, end: Math.max(t.endYear ?? t.year, t.year) }))
+    .sort((a, b) => a.start - b.start);
+}
+
+/** "2017", or "2022 to 2026" for a setback with an end year. */
+export function setbackYears(m: SetbackMark): string {
+  return m.end > m.start ? `${m.start} to ${m.end}` : String(m.start);
+}
+
+function listJoin(items: string[]): string {
+  if (items.length <= 1) return items.join('');
+  return `${items.slice(0, -1).join(', ')} and ${items[items.length - 1]}`;
+}
+
+/**
+ * "Moving to Opportunity: origin from 1966, research from 1994, ... scale from
+ * 2021 to 2026." Setbacks follow: "...; setbacks in 2017 and 2025."
+ */
+export function phaseSentence(c: CaseStudy, spans = phaseSpans(c), setbacks = setbackMarks(c)): string {
   const parts = spans.map((s, i) =>
     i === spans.length - 1 && s.end > s.start ? `${s.phase} from ${s.start} to ${s.end}` : `${s.phase} from ${s.start}`,
   );
-  return `${c.title}: ${parts.join(', ')}.`;
+  const back = setbacks.length
+    ? `; ${setbacks.length === 1 ? 'setback' : 'setbacks'} in ${listJoin(setbacks.map(setbackYears))}`
+    : '';
+  return `${c.title}: ${parts.join(', ')}${back}.`;
 }
 
 // ---------------------------------------------------------------------------
@@ -64,7 +95,7 @@ export type Block =
   | { kind: 'keyStudies'; items: { year: number; title: string; url?: string; byline: string; findingHtml: string }[] }
   | { kind: 'quote'; textHtml: string; citeHtml: string }
   | { kind: 'phaseStrip' }
-  | { kind: 'timeline'; items: { years: string; phase: Phase; textHtml: string }[] }
+  | { kind: 'timeline'; items: { years: string; phase: TimelinePhase; textHtml: string }[] }
   | { kind: 'chart'; chart: Chart; noteHtml?: string; sourceHtml: string }
   | { kind: 'lessonChips' }
   | { kind: 'examples'; items: ExampleItem[] }

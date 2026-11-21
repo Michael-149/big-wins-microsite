@@ -4,14 +4,15 @@ import { absoluteUrl, href } from '@/lib/site';
 
 // Short alias: /considered forwards to /cases-considered, the page's address.
 // A static host cannot send a redirect, so the page refreshes to it and shows
-// a link for anyone whose browser does not follow the refresh.
+// a link for anyone whose browser does not follow the refresh. Feedback links
+// name the page the alias forwards to.
 
 export const metadata = { title: 'Cases we considered', robots: { index: false, follow: true } };
 
 export default function ConsideredAlias() {
   const to = href('/cases-considered');
   return (
-    <PageShell current="method" page="/considered">
+    <PageShell current="method" page="/cases-considered">
       <meta httpEquiv="refresh" content={`0; url=${to}`} />
       <link rel="canonical" href={absoluteUrl('/cases-considered')} />
       <div className="container">

@@ -3,7 +3,7 @@ number: 8
 slug: "8-different-roles"
 title: "Research did a different job at each stage, and later studies often changed the picture"
 shortTitle: "Roles of research"
-inBrief: "Research did a different job at each stage of these cases: it supplied the theory behind emissions trading, for example, and evaluated needle exchanges that drug users, activists, clinicians and governments had started. Later studies often changed the picture: at three companies, low defaults and cautious funds roughly offset automatic enrollment's gain in average saving, though saving rose at the bottom, and the vaccine commitment worked by a different route than Gavi, the Vaccine Alliance, had assumed. Funders who stop paying once a policy is adopted lose that later research."
+inBrief: "Research did a different job at each stage of these cases: it supplied the theory behind emissions trading, for example, and evaluated needle exchanges that others had started. Later studies often changed the picture: at three companies, low defaults and cautious funds roughly offset automatic enrollment's gain in average saving, though saving rose at the bottom. Funders who stop paying once a policy is adopted lose that later research."
 cases:
   - slug: "needle-exchange"
     how: "Drug users, activists, clinicians and governments started exchanges; research then evaluated programs, informed a series of reviews, answered misreadings and, after 2015, mapped where outbreaks could strike."
@@ -75,7 +75,7 @@ Policy scholars Christina Boswell and Katherine Smith, then both of the Universi
 
 ## Where it may not hold
 
-The lesson is partly built in by how the cases were chosen: one criterion ensured that some ideas came from outside research, and any case documented well enough to be chosen has had years to gather later studies. Every case worked, so the collection cannot show that research doing each job leads to success. Stages may also blur in research-practice partnerships, where one team does several jobs at once and which [this collection underrepresents](/method#what-we-favored).
+The lesson is partly built in by how the cases were chosen: one criterion ensured that some ideas came from outside research, and any case documented well enough to be chosen has had years to gather later studies. We chose only cases in which research helped change policy or practice, so the collection cannot show that research doing each job leads to change. Stages may also blur in research-practice partnerships, where one team does several jobs at once and which [this collection underrepresents](/method#what-we-favored).
 
 Later studies did not always change the picture. An early review of six FCC auctions, by an economist bidders had hired, found that similar licenses sold for similar prices, and the HIV evidence for needle exchanges went from tentative in a 2010 review to sufficient in the same lead author's 2022 review. Whether a study changed it is a judgment, too: MDRC, a research nonprofit, called its smaller re-analysis estimate consistent with the national study's results.
 

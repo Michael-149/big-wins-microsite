@@ -7,9 +7,8 @@
 # (syringe services programs and Chile's college application platform).
 # Duplicates were merged, names and researcher credits corrected, and items
 # outside social science or without a documented research contribution
-# removed. Every kept, merged and dropped row, with reasons and the checks
-# behind each researcher credit, is logged in the private ledger
-# redesign/factcheck/considered.md.
+# removed. Every kept, merged and dropped row was logged, with reasons and the
+# checks behind each researcher credit.
 #
 # These are candidates, not vetted claims. Only the eight selected cases have
 # been fact-checked in full. Summaries carry no impact figures on purpose.
@@ -25,58 +24,58 @@
   domain: "Housing and urban policy"
   geography: "United States"
   pathway: "Housing experiments informing voucher redesign"
-  researchers: ["Raj Chetty", "Nathaniel Hendren", "Lawrence Katz", "Stefanie DeLuca", "James Rosenbaum"]
-  summary: "Studies of families who moved to lower-poverty neighborhoods with housing assistance, from Chicago's Gautreaux program to HUD's Moving to Opportunity experiment, found long-run gains for children who moved when young and informed voucher redesigns such as Creating Moves to Opportunity in Seattle and HUD's Small Area Fair Market Rents."
+  researchers: ["Raj Chetty", "Nathaniel Hendren", "Lawrence Katz", "Stefanie DeLuca"]
+  summary: "Studies of families who moved to lower-poverty neighborhoods with housing vouchers, from Chicago's Gautreaux program to the federal Moving to Opportunity experiment, found long-run gains for children who moved young, and the federal housing department drew on a follow-up trial in Seattle and King County for a multi-site demonstration."
   selected: true
   slug: "moving-to-opportunity"
   source: "Public Solutions R&D proof points"
 
 - name: "Syringe services programs (needle exchange)"
   domain: "Health"
-  geography: "United States"
+  geography: "United States, with evidence from Europe, Canada and Australia"
   pathway: "Community-initiated practice tested by researchers"
-  researchers: ["Don Des Jarlais", "Edward Kaplan", "Robert Heimer", "David Vlahov"]
-  summary: "Syringe exchanges started by activists and public health workers during the AIDS epidemic were evaluated in New Haven, New York, Baltimore and other cities, and evidence that they reduced HIV transmission without increasing drug use helped them gain legal authorization and public funding in many states and cities."
+  researchers: ["Don Des Jarlais", "Edward Kaplan", "Robert Heimer"]
+  summary: "Needle exchanges, begun outside research by drug users, activists, clinicians and governments, were studied in New Haven, New York City, Britain and elsewhere, and evidence linking them to lower HIV risk without more drug use helped make the case for exchange programs in the United States."
   selected: true
   slug: "needle-exchange"
   source: "Public Solutions R&D proof points"
 
 - name: "Behavioral nudges in savings and public services"
   domain: "Household finance"
-  geography: "United States, United Kingdom and other countries"
+  geography: "United States and United Kingdom"
   pathway: "Behavioral insights in policy design"
   researchers: ["Richard Thaler", "Shlomo Benartzi", "Brigitte Madrian", "Cass Sunstein"]
-  summary: "Behavioral economics research on how defaults and the design of choices shape decisions, including studies of automatic enrollment and Save More Tomorrow in retirement plans, informed the Pension Protection Act of 2006 and the creation of government behavioral insights teams in the United Kingdom, the United States and other countries."
+  summary: "Behavioral economics research on defaults, including studies of automatic enrollment and Save More Tomorrow in retirement plans, informed the Pension Protection Act of 2006 and backed the design of Britain's duty on employers to enroll workers, while lighter nudges tested by government teams had smaller effects."
   selected: true
   slug: "behavioral-nudges"
   source: "SIL examples, 2021 to 2025"
 
 - name: "Emissions trading"
   domain: "Climate and environment"
-  geography: "United States, European Union and other countries"
+  geography: "United States, then worldwide"
   pathway: "Market-based regulation"
   researchers: ["Ronald Coase", "John Dales", "W. David Montgomery", "Robert Stavins"]
-  summary: "Economic research on controlling pollution with tradable permits shaped the US Acid Rain Program's market for sulfur dioxide allowances, created in 1990, and later carbon markets such as the European Union Emissions Trading System."
+  summary: "Economists' idea of trading rights to pollute, tried in smaller Environmental Protection Agency programs and turned into a proposal by Project 88, became the sulfur dioxide cap-and-trade program Congress created in 1990, and trading systems for greenhouse gases followed."
   selected: true
   slug: "emissions-trading"
   source: "SIL examples, 2021 to 2025"
 
 - name: "Growth mindset interventions in schools"
   domain: "Education"
-  geography: "United States and other countries"
+  geography: "United States, with trials and programs abroad"
   pathway: "Psychology intervention adopted in schools"
   researchers: ["Carol Dweck", "David Yeager", "Gregory Walton"]
-  summary: "Psychology research on students' beliefs about whether ability can grow, including a national randomized trial of a short online lesson in US high schools, shaped teacher training and school programs, while the size of its effects remains debated."
+  summary: "Psychology research on students' beliefs about whether ability can grow led to short online sessions that a national trial in US high schools found slightly raised lower achievers' grades; other trials found smaller effects or none, and the debate continues."
   selected: true
   slug: "growth-mindset"
   source: "Public Solutions R&D proof points"
 
 - name: "DICE climate-economy model and the social cost of carbon"
   domain: "Climate and environment"
-  geography: "United States and global"
+  geography: "United States"
   pathway: "Model used in federal rulemaking"
   researchers: ["William Nordhaus", "Michael Greenstone"]
-  summary: "William Nordhaus's DICE model, which links economic growth and climate damage, was one of the models a US interagency working group used from 2010 to estimate the social cost of carbon (the damage caused by each additional ton of carbon dioxide emitted), which federal agencies used in regulatory analysis until the working group was disbanded in 2025."
+  summary: "William Nordhaus's DICE model, which links economic growth and climate damage, was one of three models a US interagency working group used from 2010 to estimate the social cost of carbon (the damage caused by each additional ton of carbon dioxide emitted), which executive orders withdrew in 2017, restored in 2021 and withdrew again in 2025."
   selected: true
   slug: "dice-modeling"
   source: "Public Solutions R&D proof points"
@@ -93,10 +92,10 @@
 
 - name: "Advance market commitment for pneumococcal vaccines"
   domain: "Health"
-  geography: "Low- and middle-income countries"
+  geography: "73 lower-income countries eligible for Gavi support"
   pathway: "Market design"
-  researchers: ["Michael Kremer", "Rachel Glennerster", "Ruth Levine", "Owen Barder", "Christopher Snyder"]
-  summary: "Economists proposed that donors promise in advance to pay for vaccines against diseases that mainly affect poor countries, and a pilot advance market commitment launched with Gavi in 2009 helped bring pneumococcal vaccines to low-income countries."
+  researchers: ["Michael Kremer", "Rachel Glennerster", "Ruth Levine", "Christopher Snyder"]
+  summary: "Economists proposed that donors promise in advance to pay for vaccines for poor countries, and in 2007 donors pledged a pilot for pneumococcal vaccines that paid firms committing to long-term supply."
   selected: true
   slug: "amc-vaccines"
   source: "SIL examples, 2021 to 2025"

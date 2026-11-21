@@ -3,7 +3,7 @@ number: 4
 slug: "4-knowledge-brokers"
 title: "Intermediaries carried the research, often economists and officials working inside government"
 shortTitle: "Intermediaries"
-inBrief: "In most of these cases, research reached decision makers through people and organizations that made it into something they could act on: a Treasury official and a policy project for automatic enrollment, Project 88 and the Environmental Defense Fund for emissions trading, a foundation-funded think tank for the vaccine commitment. Many carriers worked inside government, such as a Federal Communications Commission staff economist who proposed auctions in 1985, and some were the researchers themselves. Funders can pay for the step from findings to a proposal and for routes into government, though evidence that paid intermediaries raise research use is thin and trusted carriers sometimes failed."
+inBrief: "In most of these cases, research reached decision makers through people and organizations that turned it into something they could act on. Many worked inside government, such as a Federal Communications Commission staff economist who proposed auctions in 1985, and some were the researchers themselves. Funders can pay for the step from findings to a proposal, though evidence that paid intermediaries raise research use is thin."
 cases:
   - slug: "behavioral-nudges"
     how: "J. Mark Iwry promoted automatic enrollment at Treasury and then helped write the Pew-supported automatic 401(k) proposal; Britain's Pensions Commission turned evidence on undersaving into the employer duty."
@@ -84,7 +84,7 @@ Carriers also seldom took decision makers a journal article. They took worked-ou
 
 ## Where it may not hold
 
-All eight succeeded, and similar carriers may have backed ideas that failed, so the cases cannot show that intermediaries make success more likely. The set leans toward economics, policy and market design, where research [often enters through a rule, an auction, a contract or a model](/method#what-we-favored), which favors carriers inside government. We may also have missed some, such as the benefits consultants our automatic enrollment sources mention only in passing.
+We chose only cases in which change happened, and similar carriers may have backed ideas that failed, so the cases cannot show that intermediaries make success more likely. The set leans toward economics, policy and market design, where research [often enters through a rule, an auction, a contract or a model](/method#what-we-favored), which favors carriers inside government. We may also have missed some, such as the benefits consultants our automatic enrollment sources mention only in passing.
 
 The insiders mostly shaped how to act after elected officials or a court decided to act, the same order [lesson 1](/lessons/1-public-engagement) finds in close work with decision makers. Their work could also be undone when administrations changed, as [lesson 5](/lessons/5-legitimacy-narrative) shows for the social cost of carbon.
 

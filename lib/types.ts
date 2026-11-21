@@ -12,8 +12,16 @@ export interface Source {
   type: SourceType;
 }
 
+/** The four phases a case moves through, in order. Each draws a bar segment. */
 export type Phase = 'origin' | 'research' | 'translation' | 'scale';
 export const PHASES: Phase[] = ['origin', 'research', 'translation', 'scale'];
+/**
+ * A timeline event is one of the four phases or a `setback`: a repeal, lapse
+ * or withdrawal. Setbacks are dated marks, not a phase: they never start,
+ * end or extend a phase bar.
+ */
+export type TimelinePhase = Phase | 'setback';
+export const TIMELINE_PHASES: TimelinePhase[] = [...PHASES, 'setback'];
 
 export interface Stat {
   value: string;
@@ -25,7 +33,7 @@ export interface Stat {
 export interface TimelineEvent {
   year: number;
   endYear?: number;
-  phase: Phase;
+  phase: TimelinePhase;
   text: string;
   source: string;
 }

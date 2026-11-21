@@ -9,7 +9,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { citeIds, parseMarkdown, splitSections, walk, textOf, type MdNode } from './markdown';
 import {
-  PHASES,
+  TIMELINE_PHASES,
   type BodySection,
   type CaseStudy,
   type Chart,
@@ -344,7 +344,7 @@ function readCase(p: Problems, fileName: string): { item: CaseStudy; links: Pars
   const timeline: TimelineEvent[] = objList(p, file, data, 'timeline').map((t, i) => {
     const where = `timeline[${i}].`;
     const phase = str(p, file, t, 'phase', where) as TimelineEvent['phase'];
-    if (phase && !PHASES.includes(phase)) p.error(file, `${where}phase "${phase}" must be one of ${PHASES.join(', ')}`);
+    if (phase && !TIMELINE_PHASES.includes(phase)) p.error(file, `${where}phase "${phase}" must be one of ${TIMELINE_PHASES.join(', ')}`);
     const year = int(p, file, t, 'year', where);
     const endYear = t.endYear === undefined ? undefined : int(p, file, t, 'endYear', where);
     if (endYear !== undefined && endYear < year) p.error(file, `${where}endYear is before year`);
@@ -353,6 +353,14 @@ function readCase(p: Problems, fileName: string): { item: CaseStudy; links: Pars
   if (timeline.length < 5 || timeline.length > 9) p.warn(file, `has ${timeline.length} timeline events; the spec asks for 5 to 9`);
   if (!timeline.some((t) => t.phase === 'research')) p.warn(file, 'timeline has no research event');
   if (!timeline.some((t) => t.phase === 'scale')) p.warn(file, 'timeline has no scale event');
+  // A setback (repeal, lapse or withdrawal) undoes a change, so it follows the
+  // first translation or scale event.
+  const firstChange = Math.min(...timeline.filter((t) => t.phase === 'translation' || t.phase === 'scale').map((t) => t.year));
+  timeline.forEach((t, i) => {
+    if (t.phase === 'setback' && !(t.year >= firstChange)) {
+      p.warn(file, `timeline[${i}] is a setback (${t.year}) before any translation or scale event; setbacks mark a change being repealed, lapsing or withdrawn`);
+    }
+  });
 
   const goDeeper: GoDeeperItem[] = objList(p, file, data, 'goDeeper', false).map((g, i) => {
     const where = `goDeeper[${i}].`;

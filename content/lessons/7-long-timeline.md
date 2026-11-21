@@ -3,7 +3,7 @@ number: 7
 slug: "7-long-timeline"
 title: "These changes took a decade or more and drew on many separate investments"
 shortTitle: "Decades"
-inBrief: "Counted from the first research or the first program, each of these changes took a decade or more and drew on several funders, public programs or private decisions. The time went to different things: the Moving to Opportunity earnings finding came more than 20 years after enrollment began, once the children had grown up; federal health officials accepted the evidence on needle exchanges in 1998 but kept the spending-law ban on federal funding, which Congress did not lift until 2009. Funders should judge each investment by what it left for the next stage, such as data, a usable design or a next funder, not by whether the change arrived within one grant period."
+inBrief: "Counted from the first research or the first program, each of these changes took a decade or more and drew on several funders, public programs or private decisions. The Moving to Opportunity earnings finding came more than 20 years after enrollment began, once the children had grown up. These cases suggest judging each investment by what it left for the next stage, such as data or a usable design, not by whether change came within one grant."
 cases:
   - slug: "moving-to-opportunity"
     how: "The earnings finding came more than 20 years after enrollment began; a funder judging MTO by its 2003 or 2011 reports would have seen health gains and no earnings gains."

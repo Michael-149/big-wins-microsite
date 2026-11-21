@@ -3,7 +3,7 @@ number: 3
 slug: "3-design-details"
 title: "Operational details shaped results, and first versions often got a key one wrong"
 shortTitle: "Design details"
-inBrief: "In these cases operational details decided much of what an idea achieved: in the first phase of a trial in Seattle and King County, 2018 to 2019, housing search help moved 53% of voucher families to high-opportunity areas, against 15% with standard vouchers, and at one firm a 3% default in a money market fund more than doubled 401(k) participation but held most new savers there. First versions often lacked a key detail or got one wrong, and later analysis, regulators and designers supplied fixes, some of which needed fixing in turn. Funders should pay for design work and for testing details after launch, as well as for the first test of an idea."
+inBrief: "In these cases operational details shaped much of what an idea achieved. In the first phase of a Seattle and King County trial, 2018 to 2019, housing search help moved 53% of voucher families to high-opportunity areas, against 15% with standard vouchers. First versions often lacked a key detail or got one wrong, and some fixes needed fixing in turn. These cases suggest funders should pay for design work and for testing details after launch, not only for an idea's first test."
 cases:
   - slug: "moving-to-opportunity"
     how: "Housing navigators, a damage fund for landlords and help with deposits raised the share of voucher families leasing in high-opportunity areas from 15% to 53%."
@@ -78,7 +78,7 @@ Decisive details were often recorded in places that rarely count as research: an
 
 ## Where it may not hold
 
-These are successes chosen after the fact, and eight cases cannot show how often a pattern holds. The set leans toward policy and market design, where research often enters through written rules, auctions, contracts or models, as in four of the five cases; such details are easy to trace and, in hindsight, to call decisive.
+These cases were chosen after the fact because change happened, and eight cases cannot show how often a pattern holds. The set leans toward policy and market design, where research often enters through written rules, auctions, contracts or models, as in four of the five cases; such details are easy to trace and, in hindsight, to call decisive.
 
 [Growth mindset](/case-studies/growth-mindset) programs, which teach that intelligence can grow, test this lesson most directly. Trials run or reported by developers found gains, mostly for struggling students, while independent ones found smaller gains or none, even in 101 English primary schools where teachers delivered the program as intended. Developers reply that large studies, some independent, justify confidence in the research. Two 2022 meta-analyses (pooled analyses of many studies) disagree on whether features such as targeting matter.
 

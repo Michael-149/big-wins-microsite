@@ -7,11 +7,11 @@ domain: "Retirement saving and public services"
 disciplines: ["Economics", "Psychology"]
 geography: "United States and United Kingdom"
 years: "1994 to today"
-winStatement: "At one large US firm, 401(k) participation among new hires rose from 37% to 86% under automatic enrollment; evidence on defaults informed US pension law and a British duty on employers that has enrolled millions."
-summary: "In the 1990s, some US employers began enrolling workers in 401(k) retirement plans unless they opted out. At the first firm studied, participation more than doubled, but most new savers stayed at a low 3% default, and researchers and regulators worked on ways to raise saving. The evidence informed the 2006 Pension Protection Act and Britain's duty on employers to enroll workers; lighter nudges later tested by government teams had much smaller effects than published studies suggested."
+winStatement: "At one US firm, new hires' 401(k) participation rose from 37% to 86% under automatic enrollment; evidence on defaults informed US pension law and backed the design of a British employer duty that has enrolled millions."
+summary: "In the 1990s, some US employers began enrolling workers in 401(k) retirement plans unless they opted out. At the first firm studied, participation more than doubled, but most new savers stayed at a low 3% default, and researchers and regulators worked on ways to raise saving. The evidence informed the 2006 Pension Protection Act and backed the design of Britain's duty on employers to enroll workers; lighter nudges later tested by government teams had much smaller effects than published studies suggested."
 people:
   - name: "Brigitte C. Madrian"
-    role: "Economist; dean, BYU Marriott School of Business"
+    role: "Economist; dean, Brigham Young University's Marriott School of Business"
   - name: "Richard H. Thaler"
     role: "Economist, University of Chicago; 2017 Nobel laureate in economic sciences"
   - name: "Shlomo Benartzi"
@@ -343,7 +343,7 @@ sources:
     type: paper
   - id: web-sugden
     citation: "University of East Anglia. (n.d.). Robert Sugden. Research portal."
-    url: "https://research-portal.uea.ac.uk/en/persons/robert-sugden"
+    url: "https://research-portal.uea.ac.uk/en/persons/bob-sugden/"
     type: web
   - id: web-sunstein
     citation: "Harvard Law School. (n.d.). Cass R. Sunstein. Faculty directory."
@@ -402,7 +402,7 @@ In 2025 the government revived the Pensions Commission, calling automatic enroll
 
 Among US plans Vanguard administers (not a national sample), the share with automatic enrollment rose from 10% in 2006 to 61% in 2025 {{cite:vanguard-has2026}}. Hardship withdrawals, where allowed, rose from 2% of Vanguard participants in 2021 to 6% in 2025 {{cite:vanguard-has2026}}.
 
-The SECURE 2.0 Act of 2022, first proposed in 2020 by Representatives Richard Neal and Kevin Brady, requires new 401(k) plans, and 403(b) plans for school and charity staff, to enroll eligible employees at 3% to 10% of pay, rising to at least 10% {{cite:hr8696,fr-2026-414a,treasury2000}}. It applies from 2025 to plans set up from December 29, 2022, with exemptions including the newest and smallest firms; final rules issued on November 17, 2026, apply from 2028 {{cite:fr-2026-414a,treasury-2026}}. Treasury projects $4.2 billion a year on average in added retirement saving from 2023 to 2032, for about 2.2 million taxpayers a year, including $1.5 billion of tax subsidy and $0.6 billion moved from other saving {{cite:fr-2026-414a}}. For workers whose employers offer no plan, 15 state "auto-IRA" programs, which enroll them in individual retirement accounts, were open to all eligible employers as of October 31, 2026; such programs held $3.41 billion in more than 1.45 million funded accounts {{cite:chalmers2021,cri-2026}}.
+The SECURE 2.0 Act of 2022, first proposed in 2020 by Representatives Richard Neal and Kevin Brady, requires new 401(k) plans, and 403(b) plans for school and charity staff {{cite:treasury2000}}, to enroll eligible employees at 3% to 10% of pay, rising to at least 10% {{cite:hr8696,fr-2026-414a}}. It applies from 2025 to plans set up from December 29, 2022, with exemptions including the newest and smallest firms; final rules issued on November 17, 2026, apply from 2028 {{cite:fr-2026-414a,treasury-2026}}. Treasury projects $4.2 billion a year on average in added retirement saving from 2023 to 2032, for about 2.2 million taxpayers a year, including $1.5 billion of tax subsidy and $0.6 billion moved from other saving {{cite:fr-2026-414a}}. For workers whose employers offer no plan, 15 state "auto-IRA" programs, which enroll them in individual retirement accounts, were open to all eligible employers as of October 31, 2026; such programs held $3.41 billion in more than 1.45 million funded accounts {{cite:chalmers2021,cri-2026}}.
 
 Research did not start the practice or win its first approval {{cite:choi2002,irs-rr98-30}}. It measured the default effect and for whom it worked, showed the cost of low defaults, designed automatic escalation and supplied evidence that Treasury, the Retirement Security Project and Britain's 2010 review cited {{cite:treasury2000,rsp2005,dwp-2010-review}}.
 

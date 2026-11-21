@@ -3,7 +3,7 @@ number: 6
 slug: "6-policy-windows"
 title: "Outside events set the timing, and research mattered where a usable option was ready"
 shortTitle: "Policy windows"
-inBrief: "In the clearest cases a court ruling, an election, budget politics or an HIV outbreak set the moment, a pattern political scientist John Kingdon described in 1984. Research mattered where something usable already existed: an open climate model, a cap-and-trade proposal, auction theory and an agency staff paper, and years of studies linking needle exchanges, which drug users and activists started, to lower HIV risk. Funders cannot schedule a ruling or an outbreak, but many openings are on the calendar, and readiness has to be paid for before they arrive."
+inBrief: "In the clearest cases a court ruling, an election, budget politics or an HIV outbreak set the moment, a pattern political scientist John Kingdon described in 1984. Research mattered where something usable already existed, such as an open climate model, a cap-and-trade proposal or years of studies of needle exchanges. Funders cannot schedule a ruling or an outbreak, but many openings are on the calendar, and readiness has to be paid for before they arrive."
 cases:
   - slug: "dice-modeling"
     how: "DICE had been published and open for 16 years when a 2008 court ruling created demand for a carbon value; within 18 months government staff were running it alongside two other models."
@@ -93,7 +93,7 @@ A systematic review of policymakers' use of evidence found "lack of timely resea
 
 ## Where it may not hold
 
-We see only successes, options that met a window and not those that never did, so the cases cannot say how often readiness pays. The eight were also chosen to favor short causal chains, and most turn on a single law, ruling or rule, where a window is easy to see.
+We see only options that met a window, not those that never did, so the cases cannot say how often readiness pays. The eight were also chosen to favor short causal chains, and most turn on a single law, ruling or rule, where a window is easy to see.
 
 The lesson weakens where change runs through many separate decisions, as when employers adopted automatic enrollment in the late 1990s, years before Congress acted. It also weakens where decision makers set the timing: Connecticut's legislature approved a trial exchange in New Haven in 1990, and the evaluation answered a question it had asked. The sample also favors what sociologist Carol Weiss of Harvard called the problem-solving use of research, for a pending decision, over slower changes in how people define a problem {{cite:weiss1979}}. And it underrepresents partnership-based work.
 

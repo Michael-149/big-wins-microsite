@@ -7,7 +7,7 @@ domain: "Climate change and regulation"
 disciplines: ["Economics", "Climate science"]
 geography: "United States"
 years: "1975 to today"
-winStatement: "From 2010 to 2025, U.S. agencies counted the dollar value of cutting carbon dioxide in dozens of regulatory actions, using a social cost of carbon first estimated with three models, including William Nordhaus's DICE."
+winStatement: "From 2010 to 2025, US agencies counted the dollar value of cutting carbon dioxide in dozens of regulatory actions, using a social cost of carbon first estimated with three models, including William Nordhaus's DICE."
 summary: "In 1992, Yale economist William Nordhaus published DICE, an open model that weighs the costs of cutting greenhouse gases against the damages of warming. After court rulings in 2007 and 2008, a White House-led working group ran it alongside two other models, PAGE and FUND, with inputs it chose, to set the first full government-wide social cost of carbon: the dollar damage from one more ton of carbon dioxide. Agencies used it in dozens of regulatory actions until federal use, which changed with each administration, largely ended in 2025; Washington and Colorado still require such values by law."
 people:
   - name: "William D. Nordhaus"
@@ -28,20 +28,20 @@ lessons:
   - slug: "2-archetypes"
     note: "One economist kept releasing open versions of his model from 1992 to 2024; because the code was public, government economists could rerun it with their own assumptions, which he later criticized in print."
   - slug: "7-long-timeline"
-    note: "Thirty-five years separate Nordhaus's 1975 carbon model from the first full U.S. government-wide value in 2010; the National Science Foundation funded both his 1975 and 1992 papers."
+    note: "Thirty-five years separate Nordhaus's 1975 carbon model from the first full US government-wide value in 2010; the National Science Foundation funded both his 1975 and 1992 papers."
   - slug: "5-legitimacy-narrative"
     note: "No statute set the federal value, which changed in 2017, 2021 and 2025 even though a federal appeals court upheld its use; Washington and Colorado wrote such values into state law."
 stats:
   - value: "$21"
-    label: "First full U.S. government-wide social cost of carbon, per ton"
+    label: "First full US government-wide social cost of carbon, per ton"
     detail: "central value for 2010 emissions, in 2007 dollars at a 3% discount rate, averaged across DICE, FUND and PAGE (2010)"
     source: iwg2010
   - value: "$177 billion"
     label: "Projected climate benefits of one set of vehicle standards"
-    detail: "model years 2012 to 2016; EPA figures, present value over 2010 to 2050 at 3%, in 2007 dollars, at the central social cost of carbon; projected, not measured"
+    detail: "model years 2012 to 2016; Environmental Protection Agency figures, present value over 2010 to 2050 at 3%, in 2007 dollars, at the central social cost of carbon; projected, not measured"
     source: greenstone2011
   - value: "About 7 times"
-    label: "Drop in federal estimates when only U.S. damages counted"
+    label: "Drop in federal estimates when only US damages counted"
     detail: "$50 to $7 per ton for 2020 emissions at a 3% discount rate, in 2018 dollars, 2017 to 2020"
     source: gao2020
   - value: "$66"
@@ -71,7 +71,7 @@ timeline:
     text: "Replacing interim values set in 2009, a working group convened by the Council of Economic Advisers and the Office of Management and Budget publishes the first full government-wide social cost of carbon: $21 a ton for 2010 emissions (2007 dollars), from its own runs of DICE, FUND and PAGE with inputs it chose."
     source: iwg2010
   - year: 2017
-    phase: scale
+    phase: setback
     text: "Executive Order 13783 disbands the working group, withdraws its estimates and directs agencies to follow budget office guidance on domestic effects and discount rates."
     source: eo13783
   - year: 2021
@@ -83,7 +83,7 @@ timeline:
     text: "EPA's new estimate, $190 a ton for 2020 emissions (2.0% near-term discount rate, 2020 dollars), no longer uses DICE, FUND or PAGE."
     source: epa2023
   - year: 2025
-    phase: scale
+    phase: setback
     text: "Executive Order 14154 disbands the working group again and withdraws its estimates, saying the calculation of the social cost of carbon is \"marked by logical deficiencies\"."
     source: eo14154
 keyStudies:
@@ -182,7 +182,7 @@ sources:
   - id: iiasa1975
     citation: "Nordhaus, W. D. (1975). Can we control carbon dioxide? (Working Paper WP-75-63). International Institute for Applied Systems Analysis."
     url: "https://pure.iiasa.ac.at/id/eprint/365/"
-    altUrl: "https://pure.iiasa.ac.at/365/1/WP-75-063.pdf"
+    altUrl: "https://pure.iiasa.ac.at/id/eprint/365/1/WP-75-063.pdf"
     type: report
   - id: nordhaus-lecture2018
     citation: "Nordhaus, W. D. (2018). Climate change: The ultimate challenge for economics [Prize lecture, December 8, 2018]. Nobel Prize Outreach."
@@ -334,7 +334,7 @@ sources:
     type: law
   - id: co-crs-40-3-2-106
     citation: "Colorado General Assembly. (2024). C.R.S. 40-3.2-106: Costs of pollution in utility planning. Colorado Revised Statutes 2024, Title 40."
-    url: "https://leg.colorado.gov/sites/default/files/images/olls/crs2024-title-40.pdf"
+    url: "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-40.pdf"
     type: law
   - id: ipa2017
     citation: "Illinois Power Agency. (2017). Zero Emission Standard procurement plan (final, October 31, 2017)."
@@ -432,7 +432,7 @@ sources:
 
 ## The problem
 
-Global surface temperature in 2011 to 2020 was about 1.09 degrees Celsius (°C) above 1850 to 1900, and the Intergovernmental Panel on Climate Change (IPCC) calls human influence on warming "unequivocal" {{cite:ipcc2021}}. The latest version of the model this case follows puts the loss at 3.1% of world output at 3 °C of warming; an alternative its authors offer puts it near 9% {{cite:barrage2024}}. U.S. federal cost-benefit analyses did not value carbon dioxide cuts before 2008, and in 2008 and 2009 agencies' values ran from $0 to $80 a ton (2006 or 2007 dollars) {{cite:greenstone2011,iwg2010}}.
+Global surface temperature in 2011 to 2020 was about 1.09 degrees Celsius (°C) above 1850 to 1900, and the Intergovernmental Panel on Climate Change (IPCC) calls human influence on warming "unequivocal" {{cite:ipcc2021}}. The latest version of the model this case follows puts the loss at 3.1% of world output at 3 °C of warming; an alternative its authors offer puts it near 9% {{cite:barrage2024}}. US federal cost-benefit analyses did not value carbon dioxide cuts before 2008, and in 2008 and 2009 agencies' values ran from $0 to $80 a ton (2006 or 2007 dollars) {{cite:greenstone2011,iwg2010}}.
 
 ## The research
 
@@ -462,7 +462,7 @@ From 2010 to 2025, agencies used versions of the value in rule analyses, and by 
 
 A 2015 study of 36 federal rules from 2008 to 2013 found little evidence that valuing carbon changed which policy agencies chose {{cite:hahnritz2015}}. A 2014 analysis coauthored by Aldy and Greenstone found the value could decide whether the proposed Clean Power Plan's climate benefits exceeded its costs {{cite:aldystavins2020}}. We found no study measuring money saved; these are valuations and projections.
 
-No statute set the value, which the group issued under a 1993 executive order on cost-benefit analysis; some laws, such as the fuel economy law, require such analysis, and in 2016 an appeals court upheld the Energy Department's use of a value counting global damages {{cite:iwg2010,eo12866,iwg2021}}. In 2017, Executive Order 13783 disbanded the group and withdrew its estimates, saying analyses must rest on "the best available science and economics," and pointed agencies to guidance on domestic effects and discount rates {{cite:eo13783}}. Counting only U.S. damages cut the values about sevenfold, to $7 a ton for 2020 emissions at 3%, from $50 (2018 dollars) {{cite:gao2020}}.
+No statute set the value, which the group issued under a 1993 executive order on cost-benefit analysis; some laws, such as the fuel economy law, require such analysis, and in 2016 an appeals court upheld the Energy Department's use of a value counting global damages {{cite:iwg2010,eo12866,iwg2021}}. In 2017, Executive Order 13783 disbanded the group and withdrew its estimates, saying analyses must rest on "the best available science and economics," and pointed agencies to guidance on domestic effects and discount rates {{cite:eo13783}}. Counting only US damages cut the values about sevenfold, to $7 a ton for 2020 emissions at 3%, from $50 (2018 dollars) {{cite:gao2020}}.
 
 Restored by Executive Order 13990 in 2021, the group reissued its 2016 values adjusted for inflation, $51 a ton for 2020 emissions at 3% (2020 dollars), but we found no record of the final values the order required by January 2022 {{cite:eo13990,iwg2021}}. In November 2023, EPA issued its own peer-reviewed estimate: $190 a ton for 2020 emissions at a 2.0% near-term discount rate, in 2020 dollars. It drew on newer models, among them the Greenhouse Gas Impact Value Estimator (GIVE) from the research group Resources for the Future (RFF), and no longer used DICE, FUND or PAGE {{cite:epa2023,rennert2022}}.
 
@@ -484,7 +484,7 @@ DICE-2023 raised its damages at 3 °C from 2.1% to 3.1% of output, added a new c
 
 A broader critique rejects pricing carbon from damage estimates at all. Stern and two coauthors say the models' methodology "rests on flawed foundations" {{cite:sternstiglitz2022}}, another paper proposes prices set to reach net zero emissions {{cite:kaufman2020}}, and the U.K. has used such "target-consistent" values since 2009 {{cite:uk-desnz}}. Aldy, Stavins and two coauthors call a shift away from the social cost of carbon "ill advised" {{cite:aldy2021}}.
 
-Counting only U.S. damages is also contested. A 2021 review coauthored by Aldy said a domestic focus "may be consistent with standard practice" but "ignores the externality that a country imposes on others" {{cite:aldy2021arre}}. In 2011, Nordhaus called the federal choice of global damages, made "without much justification," "a serious conceptual and potentially also a legal issue" {{cite:nordhaus2011}}.
+Counting only US damages is also contested. A 2021 review coauthored by Aldy said a domestic focus "may be consistent with standard practice" but "ignores the externality that a country imposes on others" {{cite:aldy2021arre}}. In 2011, Nordhaus called the federal choice of global damages, made "without much justification," "a serious conceptual and potentially also a legal issue" {{cite:nordhaus2011}}.
 
 Ties run across these estimates. Greenstone co-directs the Climate Impact Lab, which built one of EPA's three 2023 damage functions (formulas linking warming to economic losses); Howard and Sterner's meta-analysis underlies another {{cite:web-greenstone,epa2023}}. Economist Billy Pizer, RFF's president and a GIVE coauthor, reviewed the DICE-2023 paper {{cite:web-pizer,rennert2022,barrage2024}}.
 
@@ -494,6 +494,6 @@ DICE was ready when a [policy window](/lessons/6-policy-windows) opened: publish
 
 Nordhaus fits the first of [two paths](/lessons/2-archetypes), a persistent researcher with a usable tool. He worked on the question for five decades, and because the code was public, government staff could rerun it with their own assumptions, with no research partnership we could find.
 
-Change took [decades](/lessons/7-long-timeline): 35 years from the 1975 IIASA paper to the first full U.S. government-wide value in 2010. The National Science Foundation supported the early work.
+Change took [decades](/lessons/7-long-timeline): 35 years from the 1975 IIASA paper to the first full US government-wide value in 2010. The National Science Foundation supported the early work.
 
 The federal story shows how [changes outside permanent law were easier to undo](/lessons/5-legitimacy-narrative). With no statute setting it, the value changed with each administration, though an appeals court upheld its use and the group sought outside review; Washington and Colorado wrote such values into state law.

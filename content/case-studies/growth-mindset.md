@@ -78,7 +78,7 @@ timeline:
     text: "Two meta-analyses in Psychological Bulletin reach different conclusions about whether growth mindset programs raise achievement."
     source: macnamara2023
   - year: 2025
-    phase: scale
+    phase: setback
     text: "PERTS discontinues Growth Mindset for 9th Graders in June and points schools to a program on classroom culture."
     source: perts-hg
 keyStudies:

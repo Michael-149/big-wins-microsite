@@ -3,7 +3,7 @@ number: 1
 slug: "1-public-engagement"
 title: "Researchers worked closely with decision makers, often for years, but seldom with the people affected"
 shortTitle: "Engagement"
-inBrief: "In six of these cases, researchers worked closely with those who made or carried out the decision, among them housing authorities, a city program, donors, Federal Communications Commission staff and the White House; only three ran through a program or lab with research built in, and most of the work shaped how to carry out a choice already made. Researchers learned from the people affected in two cases, but on the record we found, none gave them a share in decisions. Funders can ask who asked for the work, who pays for the contact and how the people affected can change it."
+inBrief: "In six of these cases, researchers worked closely with those who made or carried out the decision, such as housing authorities, donors and Federal Communications Commission staff. Most of that work shaped how to carry out a choice already made. Researchers learned from the people affected in two cases, but on the record we found, none gave them a share in decisions. Funders can ask who asked for the work, who pays for the contact and how the people affected can change it."
 cases:
   - slug: "moving-to-opportunity"
     how: "Seattle and King County's housing authorities developed the services of Creating Moves to Opportunity with the researchers, and interviews with families helped explain why full support worked."
@@ -90,7 +90,7 @@ sources:
 
 ## The pattern
 
-Close work with decision makers, meaning work with those deciding on or running a change while it was designed or tested, appeared in six of the eight cases, for years in CMTO and the vaccine commitment (2003 to 2008). Three ran through standing arrangements, programs or labs with research built in: CMTO, New Haven's exchange and a [growth mindset](/case-studies/growth-mindset) session that World Bank and Peruvian researchers built with Peru's education ministry through its innovation lab, MineduLAB {{cite:jpal-minedulab}}.
+Close work with decision makers, meaning work with those deciding on or running a change while it was designed or tested, appeared in six of the eight cases, for years in the vaccine commitment (2003 to 2008) and through CMTO's 2018 to 2020 trial. Three ran through standing arrangements, programs or labs with research built in: CMTO, New Haven's exchange and a [growth mindset](/case-studies/growth-mindset) session that World Bank and Peruvian researchers built with Peru's education ministry through its innovation lab, MineduLAB {{cite:jpal-minedulab}}.
 
 Most of it shaped how a decision was carried out more than whether, the order political scientist John Kingdon of the University of Michigan describes: agenda setters turn to specialists, researchers among them, for alternatives {{cite:kingdon2014}}. Donors had committed $1.5 billion before forming the expert group, though the think tank's blueprint came first. In [emissions trading](/case-studies/emissions-trading), George H. W. Bush had made a campaign pledge on acid rain before his incoming counsel, C. Boyden Gray, brought Harvard economist Robert Stavins, whose Project 88 study proposed trading, and the head of the Environmental Defense Fund to the White House, where the Fund's staff worked on the first trading proposal.
 
@@ -114,7 +114,7 @@ A funder tracking studies would see little of this work, often paid for outside 
 
 ## Where it may not hold
 
-Every case here succeeded, so close work may be as common in efforts that changed nothing. Elsewhere it was often not enough: in 73 trials that 30 US cities co-designed with a national nudge unit (a team applying behavioral science for governments), cities adopted the tested change 27% of the time {{cite:dellavigna2024,dellavigna2022wp}}.
+We chose only cases in which change happened, so close work may be as common in efforts that changed nothing. Elsewhere it was often not enough: in 73 trials that 30 US cities co-designed with a national nudge unit (a team applying behavioral science for governments), cities adopted the tested change 27% of the time {{cite:dellavigna2024,dellavigna2022wp}}.
 
 The eight were chosen to underweight the deep research partnerships we often fund, so the lesson cannot say partnerships matter less, only that close work appeared without them. The same choice may underweight work with the people affected, and our public sources record working relationships poorly.
 

@@ -31,7 +31,7 @@ lessons:
     note: "Research supplied the economic case, the blueprint and the supply-commitment design, while the idea and vaccines came from elsewhere; Gavi's evaluations then found little effect on vaccine development and a route to impact Gavi had not assumed."
 stats:
   - value: "215 million"
-    label: "Children immunized with AMC-supported vaccine"
+    label: "Children immunized with pneumococcal vaccine under the commitment"
     detail: "Gavi's estimate (more than 215 million) for Gavi-supported countries, from the program's start to the end of 2019"
     source: gavi-amc-2020
   - value: "752,000"
@@ -40,10 +40,10 @@ stats:
     source: dalberg2021
   - value: "1 year"
     label: "From rich-country to Gavi-country availability"
-    detail: "for the newer vaccines from GSK and Pfizer, the AMC's first two suppliers; the evaluators say such results cannot be attributed to the AMC alone"
+    detail: "for the newer vaccines from GSK and Pfizer, the commitment's first two suppliers; the evaluators say such results cannot be attributed to the commitment alone"
     source: bcg2015-summary
   - value: "60"
-    label: "Countries that introduced the vaccine under the AMC"
+    label: "Countries that introduced the vaccine under the commitment"
     detail: "of 73 eligible, by December 31, 2020, by Gavi's count, which includes two that began with a donated older vaccine in 2009"
     source: gavi-amc-2020
 timeline:
@@ -226,7 +226,7 @@ sources:
     type: report
   - id: g7-2005
     citation: "G7 Finance Ministers and Central Bank Governors. (2005, December 3). Statement by G7 Finance Ministers and Central Bank Governors, London, December 2-3, 2005. University of Toronto G7 Research Group."
-    url: "https://www.g8.utoronto.ca/finance/fm051203.htm"
+    url: "https://g7.utoronto.ca/finance/fm051203.htm"
     type: web
   - id: gavi-2007-launch
     citation: "GAVI Alliance. (2007, February 9). Five nations and the Bill and Melinda Gates Foundation launch Advance Market Commitment for vaccines [press release]. Gavi, the Vaccine Alliance."
@@ -301,7 +301,7 @@ sources:
     type: web
   - id: gavi-avma
     citation: "Gavi, the Vaccine Alliance. (2026). African Vaccine Manufacturing Accelerator (AVMA). Gavi, the Vaccine Alliance."
-    url: "https://www.gavi.org/programmes-impact/types-support/regional-manufacturing-strategy/avma"
+    url: "https://www.gavi.org/our-work/market-shaping/regional-manufacturing-strategy/avma"
     type: web
   - id: gavi-avma-board-2023
     citation: "Gavi, the Vaccine Alliance. (2023, December 6-7). African Vaccine Manufacturing Accelerator [Gavi Board meeting presentation, Accra, Ghana]. Gavi, the Vaccine Alliance."
@@ -360,7 +360,7 @@ An Implementation Working Group, joining four of the expert group's members with
 
 ## The impact
 
-GlaxoSmithKline (GSK) and Pfizer signed the first supply agreements in March 2010, and that December Nicaragua became the first country to introduce the vaccine under the AMC {{cite:gavi-supply-agreements,gavi-amc-2020}}. Supply rose from 3 million doses a year in 2010 to 150 million in 2017, as the firms invested about $500 million in capacity, partly planned before the AMC {{cite:dalberg2021}}. Gavi's 2015 evaluation, by the Boston Consulting Group, found the firms expanded capacity in response to the AMC and its supply agreements {{cite:bcg2015-summary}}.
+GlaxoSmithKline (GSK) and Pfizer signed the first supply agreements in March 2010, and that December Nicaragua became the first country to introduce the vaccine under the AMC {{cite:gavi-supply-agreements,gavi-amc-2020}}. Supply rose from 3 million doses a year in 2010 to 150 million in 2017, as the firms invested about $500 million in capacity, partly planned before the AMC {{cite:dalberg2021}}. Gavi's 2015 evaluation, by the Boston Consulting Group, found the firms expanded capacity in response to the AMC {{cite:bcg2015-summary}}.
 
 GSK's and Pfizer's newer vaccines became available in Gavi countries a year after rich countries {{cite:bcg2015-summary}}; the first pneumococcal conjugate vaccine had reached them only in 2009, donated to The Gambia and Rwanda {{cite:gavi-amc-2020}}. Coverage in that period was three to four times that of vaccines against rotavirus, a diarrheal virus, and Haemophilus influenzae type b (Hib), another bacterium that kills young children {{cite:bcg2015-summary,wahl2018}}.
 
@@ -386,7 +386,7 @@ The three economists answer that the right benchmark is the least a firm would a
 
 **Who pays now.** The 2013 evaluators found Gavi's payments for the vaccine "strained GAVI's business model severely and were a leading cause of its 2011 funding crisis" {{cite:dalberg2013}}. The vaccine was expected to take about 28% of Gavi's program spending in 2016 to 2020, and the 2021 evaluation questioned whether countries can sustain their share {{cite:gavi-amc-2020,dalberg2021}}. The United States withheld $600 million from Gavi, citing vaccine safety concerns, then said in late July 2026 that it would release it {{cite:kff-gavi-2026,gavi-us-2026}}.
 
-**Where our account may be incomplete.** We relied on published sources. Firms' production costs are confidential, so the returns above are simulations, not company accounts {{cite:dalberg2013}}. The 2013 evaluators also found that the analyses behind the price had not then been made public, so the payment structure "is still the subject of controversy" {{cite:dalberg2013}}.
+**Where our account may be incomplete.** We are part of Stanford University, which Levin now leads {{cite:web-levin}}. Firms' production costs are confidential, so the returns above are simulations, not company accounts {{cite:dalberg2013}}. The 2013 evaluators also found that the analyses behind the price had not then been made public, so the payment structure "is still the subject of controversy" {{cite:dalberg2013}}.
 
 ## What this case teaches
 

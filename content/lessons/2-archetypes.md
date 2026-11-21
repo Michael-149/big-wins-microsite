@@ -3,7 +3,7 @@ number: 2
 slug: "2-archetypes"
 title: "Some changes grew from a persistent researcher with a usable tool, others from accumulating studies"
 shortTitle: "Two paths"
-inBrief: "Three of these changes grew, at least in part, from a researcher who stayed with a question for a decade or more and left something others could use: William Nordhaus's open climate-economy model, Michael Kremer's economic case for promising in advance to buy vaccines and Carol Dweck's research on growth mindset. Four others drew on many teams' studies, which reached decision makers directly or through reviews and proposals built from them, as when President George H. W. Bush commended Project 88 by name. A funder who looks only for the persistent individual will miss the second path, which often ran through someone who pulled the studies together for a particular decision maker."
+inBrief: "Three of these changes grew, at least in part, from a researcher who stayed with a question for a decade or more and left something others could use. Four others drew on many teams' studies, which reached decision makers directly or through reviews and proposals built from them. A funder who looks only for the persistent individual will miss the second path, which often ran through someone who pulled the studies together for a particular decision maker."
 cases:
   - slug: "dice-modeling"
     how: "Path one. Nordhaus began work on the question in 1974 and kept releasing open versions of DICE; government staff then ran it alongside two other models with inputs they chose."
@@ -77,7 +77,7 @@ Path two is hard to see while it happens, because no single study looks decisive
 
 ## Where it may not hold
 
-The classification is our judgment. Every case here worked, so persistent researchers whose tools went unused, and studies that never added up to a change, are missing. The eight were also [chosen for relatively short causal chains](/method#what-we-favored) and well-documented pathways, which may overstate individuals' roles: famous researchers leave better records, and three case pages trace a laureate's role partly through Nobel committee documents.
+The classification is our judgment. We chose only cases in which research helped change policy or practice, so persistent researchers whose tools went unused, and studies that never added up to a change, are missing. The eight were also [chosen for relatively short causal chains](/method#what-we-favored) and well-documented pathways, which may overstate individuals' roles: famous researchers leave better records, and three case pages trace a laureate's role partly through Nobel committee documents.
 
 A tool can also work in ways its author did not first argue. Kremer's 2000 case was for spurring research on vaccines not yet developed, but the pilot backed nearly ready ones. Evaluators found it did little for research but led firms to expand capacity, through supply commitments the expert group recommended. He and two fellow members reply that the best design depends on how far along a product is.
 

@@ -3,7 +3,7 @@
 
 import type { ReactNode } from 'react';
 import { ArrowIcon, ArrowNextIcon, ArrowPrevIcon } from './icons';
-import { FEEDBACK, href, resolve, type FeedbackType } from '@/lib/site';
+import { FEEDBACK, figureText, href, resolve, type FeedbackType } from '@/lib/site';
 import type { Lesson } from '@/lib/types';
 
 /** Renders HTML produced by lib/markdown (sanitized Markdown plus citation markers). */
@@ -117,7 +117,7 @@ export function StatList({
           const long = s.value.length > 8;
           const body = (
             <>
-              <span className={`stat__value${long ? ' stat__value--long' : ''}`}>{s.value}</span>
+              <span className={`stat__value${long ? ' stat__value--long' : ''}`}>{figureText(s.value)}</span>
               <span className="stat__name">
                 {s.label}
                 {s.href && variant !== 'ink' && (

@@ -2,7 +2,7 @@
 // the only link on a card; lesson chips on cards are labels.
 
 import { LessonChip, LessonTag } from './ui';
-import { href, pad2 } from '@/lib/site';
+import { figureText, href, pad2 } from '@/lib/site';
 import { stripCites } from '@/lib/markdown';
 import { lessonsOfCase, casesOfLesson } from '@/lib/content';
 import type { CaseStudy, Lesson } from '@/lib/types';
@@ -39,7 +39,7 @@ export function CaseCard({ c, variant = 'home', headingLevel = 3 }: { c: CaseStu
         {stats.map((s) => (
           <div className="case-card__stat" key={s.value + s.label}>
             <dt className="t-label">{s.label}</dt>
-            <dd className="case-card__figure">{s.value}</dd>
+            <dd className="case-card__figure">{figureText(s.value)}</dd>
           </div>
         ))}
       </dl>
@@ -57,21 +57,52 @@ export function CaseCard({ c, variant = 'home', headingLevel = 3 }: { c: CaseStu
   );
 }
 
-/** Lesson row: 56px chip, linked title, the brief, and the cases it draws on. */
-export function LessonRow({ lesson, size = 'default', headingLevel = 3 }: { lesson: Lesson; size?: 'default' | 'large'; headingLevel?: 2 | 3 }) {
+/** Abbreviations whose period does not end a sentence. */
+const ABBREVIATIONS = /(?:\b(?:e\.g|i\.e|vs|etc|al|Dr|Mr|Ms|Mrs|St|No|Jr|Sr|Inc|Co)|\b[A-Z](?:\.[A-Z])*)\.$/;
+
+/** The first sentence of a plain-text passage (the whole text if it is one sentence). */
+export function firstSentence(text: string): string {
+  const re = /[.?!]["\u201d\u2019)]?(?=\s+["\u201c(]?[A-Z0-9])/g;
+  for (let m = re.exec(text); m; m = re.exec(text)) {
+    const end = m.index + m[0].length;
+    if (!ABBREVIATIONS.test(text.slice(0, m.index + 1))) return text.slice(0, end).trim();
+  }
+  return text.trim();
+}
+
+/**
+ * Lesson row: 56px chip, linked title, the brief, and the cases it draws on.
+ * The home page's compact rows add the short title and show only the brief's
+ * first sentence, so the section stays scannable; hubs show the full brief.
+ */
+export function LessonRow({
+  lesson,
+  size = 'default',
+  headingLevel = 3,
+  compact = false,
+}: {
+  lesson: Lesson;
+  size?: 'default' | 'large';
+  headingLevel?: 2 | 3;
+  compact?: boolean;
+}) {
   const drawn = casesOfLesson(lesson);
   const H = headingLevel === 2 ? 'h2' : 'h3';
+  const brief = stripCites(lesson.inBrief);
   return (
-    <div className="lesson-row" id={`lesson-${lesson.number}`}>
+    <div className={`lesson-row${compact ? ' lesson-row--compact' : ''}`} id={`lesson-${lesson.number}`}>
       <LessonChip lesson={lesson} size={56} />
       <div>
+        {compact && (
+          <p className="t-tag lesson-row__short">{lesson.shortTitle}</p>
+        )}
         <H className={size === 'large' ? 't-h3' : 't-h3s'}>
           <a className="title-link" href={href(`/lessons/${lesson.slug}`)}>
             <span className="visually-hidden">Lesson {lesson.number}: </span>
             {lesson.title}
           </a>
         </H>
-        <p className="t-body lesson-row__brief">{stripCites(lesson.inBrief)}</p>
+        <p className="t-body lesson-row__brief">{compact ? firstSentence(brief) : brief}</p>
       </div>
       <div className="lesson-row__cases">
         <p className="t-meta">Drawn from</p>

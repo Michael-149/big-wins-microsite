@@ -47,7 +47,9 @@ export default function ConsideredPage() {
   const groups = [...new Set(others.map((e) => e.domain))]
     .map((d) => ({ domain: d, id: `domain-${slugify(d)}`, items: others.filter((e) => e.domain === d).sort((a, b) => a.name.localeCompare(b.name)) }))
     .sort((a, b) => b.items.length - a.items.length || a.domain.localeCompare(b.domain));
-  const featured = cases.map((c) => ({ c, entry: entries.find((e) => e.slug === c.slug) }));
+  // Featured cases show their case page's own domain and geography, so the
+  // two pages never label a case differently.
+  const featured = cases;
   const note = typeof page?.data.note === 'string' ? page.data.note : undefined;
   const lead = page?.lead ?? FALLBACK_LEAD;
   const nCases = numberWord(cases.length, true);
@@ -79,7 +81,7 @@ export default function ConsideredPage() {
             The {nCases} featured cases
           </h2>
           <ol className="considered__featured">
-            {featured.map(({ c, entry }) => (
+            {featured.map((c) => (
               <li key={c.slug}>
                 <span className="considered__num" aria-hidden="true">
                   {pad2(c.order)}
@@ -89,7 +91,7 @@ export default function ConsideredPage() {
                     <span className="visually-hidden">Case {c.order}: </span>
                     {c.title}
                   </a>
-                  <MetaLine items={[entry?.domain ?? c.domain, entry?.geography ?? c.geography]} className="considered__meta" />
+                  <MetaLine items={[c.domain, c.geography]} className="considered__meta" />
                 </div>
               </li>
             ))}

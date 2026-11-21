@@ -84,4 +84,8 @@
   --phase-research: var(--teal-1);
   --phase-translation: var(--teal-2);
   --phase-scale: var(--teal-3);
+  /* Setbacks (repeal, lapse, withdrawal): a neutral grey mark with a dark edge,
+     so it reads against white and every teal, never by color alone. */
+  --phase-setback: var(--grey-slide);
+  --phase-setback-edge: var(--grey-700);
 }

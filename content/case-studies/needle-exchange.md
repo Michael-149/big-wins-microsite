@@ -73,7 +73,7 @@ timeline:
     source: hhs-1998
   - year: 2009
     endYear: 2011
-    phase: translation
+    phase: setback
     text: "Congress lifts the 21-year-old federal funding ban, then restores it in December 2011, 2 years later."
     source: kffhn-2011
   - year: 2015
@@ -86,8 +86,8 @@ timeline:
     source: law-fy2016
   - year: 2025
     endYear: 2026
-    phase: scale
-    text: "Citing a 2025 executive order, SAMHSA says in April 2026 that no HHS funds may be used to buy or distribute syringes for injecting illicit drugs."
+    phase: setback
+    text: "Citing a 2025 executive order, the federal Substance Abuse and Mental Health Services Administration says in April 2026 that no HHS funds may be used to buy or distribute syringes for injecting illicit drugs."
     source: samhsa-2026
 keyStudies:
   - source: kaplan1993
@@ -494,7 +494,7 @@ In New York City from 1990 to 2002, syringes exchanged each year rose from 250,0
 
 In Scott County, sharing of injection equipment fell after a response that combined the exchange with testing, contact tracing and treatment {{cite:dasgupta2019,gonsalves2018}}. A modeling study estimated that starting the response in January 2013 could have averted at least 127 of an estimated 183 to 184 infections by August 2015 {{cite:gonsalves2018}}.
 
-A model estimated that Australia's programs averted 19,000 to 77,000 hepatitis C and 192 to 873 HIV infections from 2000 to 2010, assuming far more syringe sharing without them {{cite:kwon2012}}. The A$70 to A$220 million in health care costs they saved that decade (2010 Australian dollars) was less than their A$245 million cost; the authors project payback by 2032 {{cite:kwon2012}}.
+A model estimated that Australia's programs averted 19,000 to 77,000 hepatitis C and 192 to 873 HIV infections from 2000 to 2010, assuming far more syringe sharing without them {{cite:kwon2012}}. The A$70 to A$220 million in health care costs they saved that decade (2010 Australian dollars) was less than their A$245 million cost; the authors project payback by 2032 {{cite:kwon2012}}. After Philadelphia legalized its exchange in 1992, HIV diagnoses among people who inject drugs ran 10,592 below a forecast through 2002, a gap one study valued at $2.4 billion or more in lifetime treatment costs (2012 dollars) {{cite:ruiz2019,schackman2015}}.
 
 Federal backing grew, then reversed. CDC scientists called exchanges "an essential component" of ending the HIV epidemic {{cite:broz2021}}, and the 2022 national drug strategy said its harm reduction focus "addresses a historic gap in past U.S. drug policy" {{cite:ndcs-2022}}. In July 2025 an executive order told HHS that discretionary grants from the Substance Abuse and Mental Health Services Administration (SAMHSA) must not fund harm reduction efforts that "only facilitate illegal drug use and its attendant harm" {{cite:eo-14321}}; in April 2026 SAMHSA said no HHS funding may buy or distribute syringes for illicit drug use, drug test strips or safer smoking supplies {{cite:samhsa-2026}}. Congress kept the 2015 provision for fiscal 2026, and a stopgap law carries it to December 11, 2026 {{cite:law-fy2026,law-cr-fy2027}}.
 
@@ -514,7 +514,7 @@ Opponents also argued that exchanges increase drug use and crime {{cite:crec-199
 
 On overdose, economist Analisa Packham of Vanderbilt University found that US exchange openings cut HIV diagnoses by up to 18.2% but raised opioid deaths, most in rural counties and after fentanyl spread {{cite:packham2022}}. Researchers including two from the North American Syringe Exchange Network replied that her methods were too fragile to show cause {{cite:lambdin2023,pollack2023}}; public health researcher Harold Pollack of the University of Chicago agreed, but called her work a good-faith use of standard tools {{cite:pollack2023}}.
 
-All the savings figures are modeled; the Australian team's 2009 government-commissioned report estimated far more infections averted than its 2012 model {{cite:roi2-2009,kwon2012}}. Our account also has gaps: we found no source showing that Pence cited exchange research, or confirming when Scott County's exchange closed.
+All the savings figures are modeled; the Australian team's 2009 government-commissioned report estimated far more infections averted than its 2012 model {{cite:roi2-2009,kwon2012}}. The Philadelphia forecast rests on nine years of earlier data, with no comparison series for the city, and the study credits the whole gap to the exchange {{cite:ruiz2019}}. Our account also has gaps: we found no source showing that Pence cited exchange research, or confirming when Scott County's exchange closed.
 
 ## What this case teaches
 

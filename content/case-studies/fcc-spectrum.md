@@ -7,8 +7,8 @@ domain: "Telecommunications and public resources"
 disciplines: ["Economics", "Computer science"]
 geography: "United States"
 years: "1981 to today"
-winStatement: "Since 1994, the Federal Communications Commission has sold wireless licenses in auctions based on economists' designs instead of giving them away by hearing or lottery, speeding licensing and raising over $233 billion in revenue."
-summary: "For decades the Federal Communications Commission (FCC) gave radio licenses away, by hearings and then by lotteries that drew hundreds of thousands of speculative applications. After Congress authorized auctions in 1993, the FCC adopted, on its staff's advice, a new format proposed by economists whom bidders had hired. About 100 auctions have since raised over $233 billion in revenue, and a 2016 to 2017 auction designed with economists and computer scientists moved airwaves from TV broadcasting to wireless service."
+winStatement: "Since 1994, the Federal Communications Commission has sold wireless licenses in auctions based on economists' designs instead of giving them away by hearing or lottery, raising more than $233.5 billion in revenue by fiscal 2025."
+summary: "For decades the Federal Communications Commission (FCC) gave radio licenses away, by hearings and then by lotteries that drew hundreds of thousands of speculative applications. After Congress authorized auctions in 1993, the FCC adopted, on its staff's advice, a new format proposed by economists whom bidders had hired. Its 100 auctions through fiscal 2025 raised more than $233.5 billion in revenue, and a 2016 to 2017 auction designed with economists and computer scientists moved airwaves from TV broadcasting to wireless service."
 people:
   - name: "Paul Milgrom"
     role: "Economist, Stanford University"
@@ -76,7 +76,7 @@ timeline:
     source: da17-314
   - year: 2023
     endYear: 2025
-    phase: scale
+    phase: setback
     text: "The FCC's general authority to hold auctions lapses on March 9, 2023, and is restored on July 4, 2025, through September 30, 2034."
     source: fcc-fy2027-budget
   - year: 2026
@@ -146,7 +146,7 @@ goDeeper:
   - title: "The Political Spectrum (Thomas W. Hazlett, Yale University Press, 2017)"
     url: "https://doi.org/10.12987/9780300221107"
     type: book
-    note: "A history of U.S. spectrum policy from the 1920s, critical of regulators, by an economist who argued for auctions."
+    note: "A history of US spectrum policy from the 1920s, critical of regulators, by an economist who argued for auctions."
   - title: "Auctions: Theory and Practice (Paul Klemperer, Princeton University Press, 2004)"
     url: "https://www.nuff.ox.ac.uk/users/klemperer/VirtualBook/VirtualBookCoverSheet.asp"
     type: book
@@ -201,7 +201,7 @@ sources:
     type: paper
   - id: kellogg-weber
     citation: "Kellogg School of Management. (2026). Robert Weber [Faculty directory]. Northwestern University."
-    url: "https://www.kellogg.northwestern.edu/faculty/directory/weber_robert.aspx"
+    url: "https://www.kellogg.northwestern.edu/academics-research/faculty/weber_robert/"
     type: web
   - id: gga2014
     citation: "Golden Goose Award. (2014, December 4). 2014: Auction design [Preston McAfee, Paul Milgrom and Robert Wilson]. Golden Goose Award."
@@ -435,7 +435,7 @@ After Supreme Court rulings in 1995 and 1996 raised doubts about preferences bas
 
 In 2020 political economist Glen Weyl, then at Microsoft, argued that the 2012 law, by treating broadcasters' licenses as theirs to sell, "effectively amounted to a mass privatization of a public resource," and that the auction did little to curb private equity funds that had bought stations ahead of it {{cite:weyl2020}}. Economists led by Ulrich Doraszelski of the University of Pennsylvania estimate from simulations that owners of several stations, by holding some out of the auction, increase payouts to stations by 13.5% to 42.4% {{cite:doraszelski2025}}. Milgrom replied that Congress's choice of an auction made large payments inevitable and that the authors Weyl cited put the funds' manipulation profits at about $100 million; he acknowledged that the funds' pressure killed an Auctionomics proposal meant to limit their market power {{cite:milgrom2020}}.
 
-McAfee and McMillan, two of the advisers, and economist Simon Wilkie of the University of Southern California say academic economists "were generally unwilling to defend their clients' goals when these goals conflicted with the social interest" {{cite:mmw2008}}. Roanoke College economist Edward Nik-Khah, using FCC archives, argues that such first-hand accounts omit how firms' funding shaped economists' participation, and the Nobel committee notes that a designer's advice could serve private interests {{cite:nikkhah2008,kva2020}}. Our account leans on participants too: advisers and FCC staff wrote much of the 1993 to 1994 history {{cite:milgrom2004,mmw2008,kwerel-rosston2000}}.
+McAfee and McMillan, two of the advisers, and economist Simon Wilkie of the University of Southern California say academic economists "were generally unwilling to defend their clients' goals when these goals conflicted with the social interest" {{cite:mmw2008}}. Roanoke College economist Edward Nik-Khah, using FCC archives, argues that such first-hand accounts omit how firms' funding shaped economists' participation, and the Nobel committee notes that a designer's advice could serve private interests {{cite:nikkhah2008,kva2020}}. Our account leans on participants too: advisers and FCC staff wrote much of the 1993 to 1994 history {{cite:milgrom2004,mmw2008,kwerel-rosston2000}}. We are part of Stanford University, as are Milgrom, Wilson, Segal and Rosston, and Levin is its president {{cite:nobel2020-press,milgrom2020,stanford-rosston,levin-cv}}.
 
 ## What this case teaches
 

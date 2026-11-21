@@ -3,15 +3,15 @@ slug: about
 title: "About this project"
 shortTitle: "About"
 description: "Why Stanford Impact Labs built Social Science Delivers, where it is going, who made it, how to cite it and how we handle corrections."
-lead: "Social Science Delivers collects cases where social science research changed policy and practice for millions of people, and asks what they teach. It is a beta: illustrative, unfinished and meant to grow with help from people who know these fields better than we do."
-lastReviewed: "2026-11-20"
+lead: "Social Science Delivers collects cases where social science research helped change policy and practice for millions of people, and asks what they teach. It is a beta: illustrative, unfinished and meant to grow with help from people who know these fields better than we do."
+lastReviewed: "2026-11-21"
 sources:
   - id: sil-home
     citation: "Stanford Impact Labs. (2026). Stanford Impact Labs. Stanford University."
     url: "https://impact.stanford.edu/"
     type: web
   - id: sil-strategy-2026
-    citation: "Gentzkow, M., & Eddy, M. (2026, September 1). Bigger tent, sharper focus: SIL launches new investment strategy. Stanford Impact Labs."
+    citation: "Stanford Impact Labs. (2026, September 1). Bigger tent, sharper focus: SIL launches new investment strategy."
     url: "https://impact.stanford.edu/article/bigger-tent-sharper-focus-sil-launches-new-investment-strategy"
     type: article
   - id: psrd
@@ -38,13 +38,13 @@ The public value of the life sciences is easy to point to: a vaccine, a cancer d
 
 That makes it hard for funders, university leaders and the public to judge what social science is worth, and hard for researchers to learn from work that has reached millions of people. Such stories are usually told one at a time, often by the people involved. A collection that sets several cases side by side, in one format and with every source linked, makes the patterns easier to see and easier to argue with.
 
-These eight cases show some of the largest changes social science research has helped bring about. They are not the only kind of success. Most useful social science improves one program, informs one decision or builds knowledge that others use years later, and the large changes described here rest on many contributions of that kind.
+These eight cases show changes of very different kinds and sizes, each traceable in part to research. Changes like these are not the only way social science creates value. Most useful social science improves one program, informs one decision or builds knowledge that others use years later, and the changes described here rest on many contributions of that kind.
 
 ## Where this is going
 
 We see this as the start of a shared catalog that grows over time, in the spirit of two efforts in global health. The Center for Global Development's [Millions Saved](https://millionssaved.cgdev.org/) began in 2004 with 17 large health programs that worked {{cite:levine2004}}, and its 2016 edition added new cases, including four promising programs that fell short when scaled up {{cite:glassman-temin2016}}. [Exemplars in Global Health](https://www.exemplars.health/) studies countries that made unusual progress on health problems such as child stunting and deaths of children under 5, to learn what they did {{cite:carter2020}}.
 
-We would like this collection to grow the same way: more cases in the fields covered here, and new collections for fields the current eight barely touch, such as public safety or labor and employment, built with people who know them well. We would also like to add efforts that stalled, so that the successes can be read against them. None of that can happen without suggestions from readers, and every page invites them.
+We would like this collection to grow the same way: more cases in the fields covered here, and new collections for fields the current eight barely touch, such as public safety or labor and employment, built with people who know them well. We would also like to add efforts that stalled, so that these cases can be read against them. None of that can happen without suggestions from readers, and every page invites them.
 
 ## Who made it
 
@@ -52,11 +52,11 @@ Stanford Impact Labs (SIL) made this collection. SIL is a university-wide initia
 
 The candidates came from many places. SIL began a list of examples in 2021, added suggestions from more than 30 people and a 2023 workshop at Stanford, and drew on the proof-points analysis of the [Public Solutions R&D](https://www.publicsolutionsrd.org/) network, whose national convening brings together researchers, university leaders, practitioners and funders to build the field of public solutions research and development {{cite:psrd}}. The [method page](/method) explains how we chose the eight and what that choice leaves out.
 
-These are not SIL's cases. None of the eight is an SIL project, and several have no Stanford connection at all. We approached them as outsiders to most of these fields, working from published sources, and we are learning in public. People who took part in these stories, or who study them, will know things we missed.
+These are not SIL's cases. None of the eight is an SIL project, and four have no direct Stanford ties; the [method page](/method#what-we-favored) names the four that do. We approached them as outsiders to most of these fields, working from published sources, and we are learning in public. People who took part in these stories, or who study them, will know things we missed.
 
 ## How SIL uses these lessons
 
-These cases were one input to the investment strategy SIL announced in September 2026, alongside a look at our own grants, a scan of peer funders, a review of research on what makes social science consequential, and 10 sessions to which we invited more than 150 faculty {{cite:sil-strategy-2026}}. Several of the cases reached scale without a formal research partnership, though not without sustained engagement beyond the university. That pattern was one reason for a change in the strategy: SIL now funds a wider range of partnership and engagement {{cite:sil-strategy-2026}}. We treat the lessons as questions to ask about the work we support, not as a checklist.
+These cases were one input to the investment strategy SIL announced in September 2026, alongside a look at our own grants, a scan of peer funders, a review of research on what makes social science consequential, and 10 sessions to which we invited more than 150 faculty {{cite:sil-strategy-2026}}. Several of the cases changed policy or practice without a formal research partnership, though not without sustained engagement beyond the university. That pattern was one reason for a change in the strategy: SIL now funds a wider range of partnership and engagement {{cite:sil-strategy-2026}}. We treat the lessons as questions to ask about the work we support, not as a checklist.
 
 ## Thanks
 

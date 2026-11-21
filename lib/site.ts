@@ -21,8 +21,12 @@ export const SITE_URL = 'https://michael-149.github.io/big-wins-microsite';
 /** Open Graph and social card image (public/og.png, 1200 by 630), as an absolute URL. */
 export const OG_IMAGE = { url: `${SITE_URL}/og.png`, width: 1200, height: 630, alt: `${SITE_NAME}. ${TAGLINE}` };
 
-/** Set at release, not at build time, so a rebuild does not change it. */
-export const LAST_UPDATED = '2026-11-20';
+/**
+ * Set at release, not at build time, so a rebuild does not change it. The
+ * banner, the footer and "This version" on About all read this one value.
+ * Matches the content's last-reviewed date.
+ */
+export const LAST_UPDATED = '2026-11-21';
 export const VERSION = 'Open beta, November 2026';
 /** Shows the beta banner and the beta wording in the footer. */
 export const BETA = true;
@@ -142,7 +146,7 @@ const MONTHS = [
   'July', 'August', 'September', 'October', 'November', 'December',
 ];
 
-/** "2026-11-20" to "November 20, 2026". */
+/** "2026-11-21" to "November 21, 2026". */
 export function formatDate(iso: string): string {
   const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso);
   if (!m) return iso;
@@ -155,6 +159,18 @@ const NUMBER_WORDS = ['Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Sev
 export function numberWord(n: number, lower = false): string {
   const w = NUMBER_WORDS[n] ?? String(n);
   return lower ? w.toLowerCase() : w;
+}
+
+/**
+ * A statistic figure that wraps only between values: a number keeps its unit
+ * ("$116 billion"), and "to" or "vs" stays with the value after it, so
+ * "$59 billion to $116 billion" breaks only before "to".
+ */
+export function figureText(value: string): string {
+  const NB = '\u00a0';
+  return value
+    .replace(/(\d[\d.,]*%?)\s+(?=[A-Za-z])/g, `$1${NB}`)
+    .replace(/\b(to|vs\.?|and|of)\s+(?=[$\d])/g, `$1${NB}`);
 }
 
 /** 1 to "01". */

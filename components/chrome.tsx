@@ -193,15 +193,15 @@ function SiteFooter({ page, teaser }: { page: string; teaser?: string }) {
 
 const STANFORD_LINKS: [string, string][] = [
   ['Stanford Home', 'https://www.stanford.edu/'],
-  ['Maps & Directions', 'https://visit.stanford.edu/plan/'],
+  ['Maps & Directions', 'https://visit.stanford.edu/basics'],
   ['Search Stanford', 'https://www.stanford.edu/search/'],
   ['Emergency Info', 'https://emergency.stanford.edu/'],
-  ['Terms of Use', 'https://www.stanford.edu/site/terms/'],
-  ['Privacy', 'https://www.stanford.edu/site/privacy/'],
+  ['Terms of Use', 'https://www.stanford.edu/terms'],
+  ['Privacy', 'https://www.stanford.edu/privacy'],
   ['Copyright', 'https://uit.stanford.edu/security/copyright-infringement'],
   ['Trademarks', 'https://adminguide.stanford.edu/chapter-1/subchapter-5/policy-1-5-4'],
   ['Non-Discrimination', 'https://non-discrimination.stanford.edu/'],
-  ['Accessibility', 'https://www.stanford.edu/site/accessibility'],
+  ['Accessibility', 'https://www.stanford.edu/accessibility'],
 ];
 
 function StanfordFooter() {

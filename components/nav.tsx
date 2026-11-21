@@ -78,12 +78,22 @@ function LessonList({ lessons, idPrefix, title }: { lessons: Lesson[]; idPrefix:
   );
 }
 
+/** True when the orientation label and the page title say the same thing ("About", "About"). */
+function sameName(o: Orientation): boolean {
+  return o.where.trim().toLowerCase() === o.title.trim().toLowerCase();
+}
+
+/** "Case 1 of 8: Moving to Opportunity", or just "About" when both parts match. */
+function whereText(o: Orientation): string {
+  return sameName(o) ? o.title : `${o.where}: ${o.title}`;
+}
+
 function Where({ o }: { o: Orientation }) {
   return (
     <div className="rail__where">
       {o.lesson && <LessonChip lesson={o.lesson} />}
       <p className="t-h6">
-        <span className="t-meta">{o.where}</span>
+        {!sameName(o) && <span className="t-meta">{o.where}</span>}
         {o.title}
       </p>
     </div>
@@ -146,9 +156,7 @@ export function GuideContents({
       <summary>
         <span>
           <span className="t-meta">Guide contents</span>
-          <span className="t-h6">
-            {orientation.where}: {orientation.title}
-          </span>
+          <span className="t-h6">{whereText(orientation)}</span>
         </span>
         <PlusIcon className="icon-plus" />
         <MinusIcon className="icon-minus" />
@@ -252,9 +260,7 @@ export function DocContents({
       <summary>
         <span>
           <span className="t-meta">Page contents</span>
-          <span className="t-h6">
-            {orientation.where}: {orientation.title}
-          </span>
+          <span className="t-h6">{whereText(orientation)}</span>
         </span>
         <PlusIcon className="icon-plus" />
         <MinusIcon className="icon-minus" />

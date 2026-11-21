@@ -3,14 +3,14 @@ slug: method
 title: "How we chose and checked these cases"
 shortTitle: "Method"
 description: "How Stanford Impact Labs chose eight cases from a long list of candidates, drew lessons from them, checked the facts, and where this approach falls short."
-lead: "We chose eight cases, starting from a long list of 67 candidates gathered between 2021 and 2025, using six criteria and two working priorities that shaped the result. This page explains those choices, how we drew the lessons and checked the facts, and the limits of a small collection of successes. The limits matter as much as the lessons."
-lastReviewed: "2026-11-20"
+lead: "We chose eight cases, starting from a long list of 67 candidates gathered between 2021 and 2025, using six criteria and two working priorities that shaped the result. This page explains those choices, how we drew the lessons and checked the facts, and the limits of a small collection of cases in which change happened. The limits matter as much as the lessons."
+lastReviewed: "2026-11-21"
 glance:
   - { value: "67", label: "Candidates on the long list" }
   - { value: "30+", label: "People consulted, 2021 to 2025" }
   - { value: "6", label: "Selection criteria" }
 limitsSummary:
-  - { title: "Only successes", text: "Efforts that followed the same strategies and failed are not in the sample, so these cases cannot show that any lesson causes success." }
+  - { title: "No failed efforts", text: "Efforts that followed the same strategies and failed are not in the sample, so these cases cannot show that any lesson causes success." }
   - { title: "Eight cases", text: "A sample this small can suggest patterns. It cannot estimate how often a pattern holds." }
   - { title: "Attribution", text: "Research was one force among many in every case, and some changes might have happened without it." }
   - { title: "A narrow spread", text: "Seven of the eight cases involve policy or programs in the United States, and economics is central to most of them." }
@@ -81,7 +81,7 @@ sources:
 
 ## What we mean by social science
 
-By social science we mean research on how people, organizations and societies behave, and on how rules, markets and institutions shape that behavior. It spans economics, psychology, sociology, political science and related fields. In these eight cases it is mostly economics, with psychology, sociology and public health research on behavior and programs. Some cases sit on a boundary: the climate-economy model joins economics to climate science, and the syringe services research drew on epidemiology. We included them because the contribution we describe is the social science part.
+By social science we mean research on how people, organizations and societies behave, and on how rules, markets and institutions shape that behavior. It spans economics, psychology, sociology, political science and related fields; in these eight cases it is mostly economics, with psychology, sociology and public health research on behavior and programs. Some cases sit on a boundary: the climate-economy model joins economics to climate science, and the syringe services research drew on epidemiology. We included them because the contribution we describe is the social science part.
 
 ## What counts as a case
 
@@ -104,6 +104,8 @@ The result was a long list of 67 candidates. We then applied six criteria:
 5. **Variety of pathways to impact.** Cases where research shaped policy, created a market, drove the expansion of a program or shifted public norms.
 6. **Variety of sources of ideas.** Good ideas come from many places: from the communities affected by a problem, from practitioners and from researchers. Research can speed a promising idea to scale, or save effort on one that does not work. We wanted cases from each source.
 
+We read the second criterion as a documented, substantial contribution from research, not proof that research was decisive; in several cases other forces mattered as much or more, and the case pages say so. Growth mindset meets the first criterion least well: [its page](/case-studies/growth-mindset) reports a small, contested benefit for lower-achieving students and no documented savings. We kept it as a contrast, because it shows most clearly how an idea can spread in forms its tests did not cover.
+
 The sixth criterion is why we added syringe services programs, which were not among the 67 candidates: they began outside research, and researchers then tested them. Strong candidates we did not choose this time include conditional cash transfers, Teaching at the Right Level and school choice assignment systems.
 
 The Cases we considered page shows the long list. We merged duplicates, removed items outside social science or without a documented research contribution, and added two candidates that our source notes named but the list missed, syringe services programs among them. That leaves 49 entries, including the eight featured here. Only the eight have been fact-checked in full.
@@ -114,7 +116,7 @@ Two working priorities shaped the final eight, beyond the six criteria. First, w
 
 Those priorities explain much of the set's shape. It leans toward economics, policy and market design, where research often enters through a rule, an auction, a contract or a model. It underrepresents slow shifts in how a field or the public understands a problem, and it underrepresents partnership-based work, which is where much social science creates value. Read the eight as a sample built for learning, not as a representative picture of how social science does good.
 
-We did not choose cases for any Stanford connection. None of the eight is an SIL project, and several have no Stanford connection at all.
+We did not choose cases for any Stanford connection, and none of the eight is an SIL project. Four have Stanford ties, which their pages disclose: [growth mindset](/case-studies/growth-mindset), the [spectrum auctions](/case-studies/fcc-spectrum), the [vaccine commitment](/case-studies/amc-vaccines) and [Moving to Opportunity](/case-studies/moving-to-opportunity). In the other four, Stanford appears at most as the home of one study or data source the page cites.
 
 ## How we drew the lessons
 
@@ -126,7 +128,7 @@ The lessons are our reading of eight cases, not the output of a systematic analy
 
 ## Limits to keep in mind
 
-- **Only successes.** Every case here worked. Efforts that followed the same strategies and failed are not in the sample, so these cases cannot show that any lesson causes success. One global health collection has paired its successes with programs that fell short when scaled up {{cite:glassman-temin2016}}; we have not yet done that.
+- **No failed efforts.** We chose cases in which research helped change policy or practice. Efforts that followed the same strategies and failed are not in the sample, so these cases cannot show that any lesson causes success. One global health collection has paired its successes with programs that fell short when scaled up {{cite:glassman-temin2016}}; we have not yet done that.
 - **Eight cases.** A sample this small can suggest patterns. It cannot estimate how often a pattern holds.
 - **Hindsight.** Looking back makes a path look clearer than it was. Features that seem decisive now may not have been visible, or predictable, at the time.
 - **Attribution.** Research was one force among many in every case, and some changes might have happened without it. We use words like "informed" and "helped make the case for" unless the evidence shows more.
@@ -158,7 +160,7 @@ For this release we rebuilt every page around its sources. For each case and les
 
 Estimates carry the period they cover; where credible sources disagree, we say so or use the more conservative figure. Statements about current status are as of November 2026.
 
-Artificial intelligence (AI) tools assisted with drafting and fact-checking, and every factual claim in the cases and lessons links to a published source.
+Artificial intelligence (AI) tools assisted with drafting and fact-checking. Every factual claim in the cases links to a published source; the lessons cite other work directly and link to the case pages for case facts.
 
 Each page lists its sources, and numbered notes in the text tie each claim to them. Stanford Impact Labs is responsible for any errors that remain.
 

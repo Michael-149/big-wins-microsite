@@ -3,7 +3,7 @@ number: 5
 slug: "5-legitimacy-narrative"
 title: "Ideas spread in untested forms, and changes outside permanent law were easier to undo"
 shortTitle: "Legitimacy"
-inBrief: "In a 2016 online poll, 77% of more than 600 teachers said they were familiar or very familiar with growth mindset, 3 years before its main test, a national US study, was published, and what spread in classrooms was not what that study tested. In these cases, changes resting on executive orders, a yearly spending law or time-limited authority were reversed or interrupted more often than those in permanent law: the federal social cost of carbon was withdrawn in 2017 and again in 2025, while the 1990 cap on power plant sulfur dioxide remains law. For funders, that means paying to test the version of an idea that practitioners use, and asking early what legal footing a change will rest on and who would defend it."
+inBrief: "In a 2016 online poll, 77% of more than 600 teachers said they were familiar or very familiar with growth mindset, 3 years before its national test was published. What spread in classrooms was not what that study tested. In these few cases, changes resting on executive orders, a yearly spending law or time-limited authority were reversed or interrupted more often than those in permanent law. Funders can pay to test the version practitioners use and ask early what legal footing a change will rest on."
 cases:
   - slug: "growth-mindset"
     how: "In a 2016 online poll, 77% of more than 600 teachers said they were familiar or very familiar with growth mindset, 3 years before the national study was published, and the practice they most often reported, praise, was not what that study tested."
@@ -108,7 +108,7 @@ These cases show stories and legal forms alongside outcomes, not their causal ef
 
 Law is not the only anchor. The [advance market commitment](/case-studies/amc-vaccines) for pneumococcal vaccines, a donor pledge to top up prices in return for firms' promises of up to 10 years of supply, rested on contracts, not a statute, and ran until it closed at the end of 2020. Nor is law always enough: executive action narrowed what federal health grants may buy in 2025 and 2026, while Congress kept the December 2015 exchange provision.
 
-Because these eight were chosen for success, ideas with a good story that never spread are absent, and eight cases cannot say how often the pattern holds. The legal forms are mostly American, and the set underrepresents slow shifts in how a field or the public understands a problem, where narrative may matter most.
+Because these eight were chosen from changes that happened, ideas with a good story that never spread are absent, and eight cases cannot say how often the pattern holds. The legal forms are mostly American, and the set underrepresents slow shifts in how a field or the public understands a problem, where narrative may matter most.
 
 ## What others have found
 
