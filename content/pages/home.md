@@ -6,12 +6,12 @@ heroTitle: "Social Science Delivers"
 heroLead: "These eight cases show how social science research helped change policy and practice, from the auctions that sell US airwave licenses to the defaults that enroll workers in retirement plans unless they opt out. Each case weighs what research contributed against other forces and sets out what is still debated, and eight lessons draw out what funders and research leaders can take from them."
 stakes:
   - value: "215 million"
-    label: "Children immunized (estimated)"
+    label: "Children immunized (Gavi estimate)"
     detail: "pneumococcal vaccine, to 2019; not all due to the pledge"
     case: amc-vaccines
     source: gavi-amc-2020
   - value: "42% to 88%"
-    label: "Eligible UK workers saving in a pension"
+    label: "British workers saving in a pension (trend)"
     detail: "private sector, April 2012 to April 2025; descriptive trend"
     case: behavioral-nudges
     source: dwp-2026-stats
@@ -21,8 +21,8 @@ stakes:
     case: fcc-spectrum
     source: fcc-fy2027-budget
   - value: "$2.4 billion"
-    label: "HIV treatment costs avoided (modeled)"
-    detail: "Philadelphia, 1993 to 2002; all credited to the exchange"
+    label: "Philadelphia HIV costs avoided (modeled)"
+    detail: "1993 to 2002, vs a forecast; all credited to the exchange"
     case: needle-exchange
     source: ruiz2019
 casesIntro: "Each case starts with who was affected and what was at stake, then follows the research to the decisions it informed and what changed. It lists its sources, links to them from the text and sets out what is still debated."
